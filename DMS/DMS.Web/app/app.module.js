@@ -1,4 +1,4 @@
 ﻿(function () {
     //Dependencies here
-    angular.module("DMSApp", ['ngRoute']);
+    angular.module("DMSApp", ['ngRoute', 'ngMaterial']);
 })();
