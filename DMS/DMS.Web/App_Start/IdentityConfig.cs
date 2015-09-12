@@ -4,6 +4,8 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using DMS.Web.Models;
+using DMS.Models;
+using DMS.Data;
 
 namespace DMS.Web
 {

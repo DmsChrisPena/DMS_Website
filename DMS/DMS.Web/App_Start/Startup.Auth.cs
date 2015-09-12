@@ -10,6 +10,7 @@ using Microsoft.Owin.Security.OAuth;
 using Owin;
 using DMS.Web.Providers;
 using DMS.Web.Models;
+using DMS.Data;
 
 namespace DMS.Web
 {

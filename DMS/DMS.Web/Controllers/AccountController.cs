@@ -16,6 +16,7 @@ using Microsoft.Owin.Security.OAuth;
 using DMS.Web.Models;
 using DMS.Web.Providers;
 using DMS.Web.Results;
+using DMS.Models;
 
 namespace DMS.Web.Controllers
 {

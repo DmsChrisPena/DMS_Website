@@ -213,7 +213,6 @@
     </Compile>
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
@@ -323,6 +322,16 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DMS.Data\DMS.Data.csproj">
+      <Project>{1cf35f80-fbf2-4851-ac2a-a04f6ab84bd9}</Project>
+      <Name>DMS.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DMS.Models\DMS.Models.csproj">
+      <Project>{e7b05502-e61b-4f73-8834-991a22af088f}</Project>
+      <Name>DMS.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
