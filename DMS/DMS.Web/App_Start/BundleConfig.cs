@@ -22,11 +22,16 @@ namespace DMS.Web
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/angular-material.css",
                       "~/Content/site.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                       "~/Scripts/angular.js",
                       "~/Scripts/angular-route.js",
+                      // Angular material stuff
+                      "~/Scripts/angular-animate.js",
+                      "~/Scripts/angular-aria.js",
+                      "~/Scripts/angular-material.js",
                       // app files
                       "~/app/app.module.js",
                       "~/app/app.route.js",
