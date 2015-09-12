@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html ng-app="DMSApp">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>DMS</title>
+    <base href="/">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-left pull-left"><img src="~/Images/DMS_Logo_White.png" height="40" style="padding-top:10px; padding-left:10px;"></a>
+                <a href="/" class="navbar-brand">&nbsp;&nbsp; DMS</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    <li class="dropdown">
+                        <a href="/about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/about/profile">Company Profile</a></li>
+                            <li><a href="/about/history">Company History</a></li>
+                            <li><a href="/about/founder">DMS Founder</a></li>
+                            <li><a href="/about/testimonials">Testimonials</a></li>
+                            <li><a href="/about/contact">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="/solutions" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Solutions</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/solutions/gaspro">GasPro</a></li>
+                            <li><a href="/solutions/gastrak">GasTrak</a></li>
+                            <li><a href="/solutions/energypro">EnergyPro</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="/services" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/services/consulting">Consulting</a></li>
+                            <li><a href="/services/front">Trading Services</a></li>
+                            <li><a href="/services/middle">Logistic Services</a></li>
+                            <li><a href="/services/back">Accouting/Settlement Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="/education" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Educational Resources</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/education/academic">Academic Course</a></li>
+                            <li><a href="/education/certification">Industry Certification Course</a></li>
+                            <li><a href="/education/publications">Publications</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Data Management Solutions</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/angular")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
