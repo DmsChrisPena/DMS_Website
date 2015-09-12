@@ -335,9 +335,7 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
-  </ItemGroup>
-  <ItemGroup>
+<<<<<<< HEAD
     <ProjectReference Include="..\DMS.Data\DMS.Data.csproj">
       <Project>{1cf35f80-fbf2-4851-ac2a-a04f6ab84bd9}</Project>
       <Name>DMS.Data</Name>
@@ -346,6 +344,9 @@
       <Project>{e7b05502-e61b-4f73-8834-991a22af088f}</Project>
       <Name>DMS.Models</Name>
     </ProjectReference>
+=======
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+>>>>>>> 1273504f4f98e5efcf0a5745940d5f7997a96615
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
