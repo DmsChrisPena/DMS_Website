@@ -1,0 +1,41 @@
+﻿md-toolbar {
+    -webkit-box-shadow: 0px 0px 8px 2px #000000;
+    -moz-box-shadow: 0px 0px 8px 2px #000000;
+    box-shadow: 0px 0px 4px 1px #333;
+    background-color: #01579B !important;
+  
+}
+
+.navbar {
+    ul.left {
+        text-align: right;
+        padding-right: 7%;
+        li {
+            display: inline;
+            color: rgba(255, 255, 255, 0.76);
+            font-size: 14px;
+            padding: 24px;
+            text-transform: uppercase;
+        }
+    }
+    ul.right {
+        text-align: right;
+        padding-right: 7%;
+        li {
+            display: inline;
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 14px;
+            padding: 24px 24px 17px 24px;
+            text-transform: uppercase;
+            
+            &:hover {
+                transition-duration: 2s;
+                transition-timing-function: linear;
+                transition: border .2s ease;  
+                border-bottom: 3px solid #26C6DA;
+                color: white;
+            }
+
+        }
+    }
+}
