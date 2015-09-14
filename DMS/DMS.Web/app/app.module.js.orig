@@ -1,0 +1,8 @@
+﻿(function () {
+    //Dependencies here
+<<<<<<< HEAD
+    angular.module("DMSApp", ['ui.router', 'ngMaterial']);
+=======
+    angular.module("DMSApp", ['ngRoute', 'ngMaterial', 'ngMdIcons']);
+>>>>>>> bea7899619f3785274dd1ab280b56847a7b5648d
+})();

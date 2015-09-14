@@ -10,59 +10,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
-    @*<div class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="/" class="navbar-left pull-left"><img src="~/Images/DMS_Logo_White.png" height="40" style="padding-top:10px; padding-left:10px;"></a>
-                <a href="/" class="navbar-brand">&nbsp;&nbsp; DMS</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                    <li class="dropdown">
-                        <a href="/about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="/about/profile">Company Profile</a></li>
-                            <li><a href="/about/history">Company History</a></li>
-                            <li><a href="/about/founder">DMS Founder</a></li>
-                            <li><a href="/about/testimonials">Testimonials</a></li>
-                            <li><a href="/about/contact">Contact Us</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="/solutions" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Solutions</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="/solutions/gaspro">GasPro</a></li>
-                            <li><a href="/solutions/gastrak">GasTrak</a></li>
-                            <li><a href="/solutions/energypro">EnergyPro</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="/services" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="/services/consulting">Consulting</a></li>
-                            <li><a href="/services/front">Trading Services</a></li>
-                            <li><a href="/services/middle">Logistic Services</a></li>
-                            <li><a href="/services/back">Accouting/Settlement Services</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="/education" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Educational Resources</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="/education/academic">Academic Course</a></li>
-                            <li><a href="/education/certification">Industry Certification Course</a></li>
-                            <li><a href="/education/publications">Publications</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>*@
     <div class="md-topbar">
         <div class="topbar" layout="row">
             <ul class="left" flex="50">
@@ -83,30 +30,97 @@
             <ul class="right" flex="80">
                 <li>
                     <md-menu md-offset="0 86">
-                        <md-button aria-label="Open about interactions menu" ng-click="vm.openMenu($mdOpenMenu, $event)">About &nbsp; <i class="fa fa-sort-desc"></i></md-button>
+                        <md-button aria-label="Open about interactions menu" ng-click="vm.openMenu($mdOpenMenu, $event)">Solutions</md-button>
                         <md-menu-content width="2">
                             <md-menu-item>
-                                <md-button>
+                                <md-button ui-sref="gaspro">
+                                    GasPro
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                                <md-button ui-sref="gastrak">
+                                    GasTrak
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                                <md-button ui-sref="energypro">
+                                    EnergyPro
+                                </md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </li>
+                <li>
+                    <md-menu md-offset="0 86">
+                        <md-button aria-label="Open about interactions menu" ng-click="vm.openMenu($mdOpenMenu, $event)">Services</md-button>
+                        <md-menu-content width="2">
+                            <md-menu-item>
+                                <md-button ui-sref="services.consulting">
+                                    Consulting
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                                <md-button ui-sref="services.front">
+                                    Trading
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                                <md-button ui-sref="services.middle">
+                                    Logistics
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                                <md-button ui-sref="services.back">
+                                    Accounting/Settlement
+                                </md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </li>
+                <li>
+                    <md-menu md-offset="0 86">
+                        <md-button aria-label="Open about interactions menu" ng-click="vm.openMenu($mdOpenMenu, $event)">Learn</md-button>
+                        <md-menu-content width="2">
+                            <md-menu-item>
+                                <md-button ui-sref="education.academic">
+                                    University
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                                <md-button ui-sref="education.certification">
+                                    Certification
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                                <md-button ui-sref="education.publications">
+                                    Publications
+                                </md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </li>
+                <li>
+                    <md-menu md-offset="0 86">
+                        <md-button aria-label="Open about interactions menu" ng-click="vm.openMenu($mdOpenMenu, $event)">About</md-button>
+                        <md-menu-content width="2">
+                            <md-menu-item>
+                                <md-button ui-sref="about.profile">
                                     About Us
                                 </md-button>
                             </md-menu-item>
                             <md-menu-item>
-                                <md-button>
+                                <md-button ui-sref="about.history">
                                     Our History
                                 </md-button>
                             </md-menu-item>
                             <md-menu-item>
-                                <md-button>
+                                <md-button ui-sref="about.testimonials">
                                     Proven
                                 </md-button>
                             </md-menu-item>
                         </md-menu-content>
                     </md-menu>
                 </li>
-
-                <li><md-button>Solutions</md-button></li>
-                <li><md-button>Services</md-button></li>
-                <li><md-button>LEARN</md-button></li>
             </ul>
         </div>
     </md-toolbar>
