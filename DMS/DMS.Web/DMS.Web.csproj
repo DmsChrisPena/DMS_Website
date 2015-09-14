@@ -240,6 +240,7 @@
     <Content Include="app\components\index\indexController.js" />
     <Content Include="app\components\index\indexService.js" />
     <Content Include="app\components\index\indexView.html" />
+    <Content Include="app\components\navbar\navBarController.js" />
     <Content Include="app\components\services\servicesController.js" />
     <Content Include="app\components\services\servicesService.js" />
     <Content Include="app\components\services\servicesView.html" />

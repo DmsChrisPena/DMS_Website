@@ -44,7 +44,8 @@ namespace DMS.Web
                       "~/app/components/about/aboutController.js",
                       "~/app/components/education/educationController.js",
                       "~/app/components/services/servicesController.js",
-                      "~/app/components/solutions/solutionsController.js"));
+                      "~/app/components/solutions/solutionsController.js",
+                      "~/app/components/navbar/navBarController.js"));
         }
     }
 }
