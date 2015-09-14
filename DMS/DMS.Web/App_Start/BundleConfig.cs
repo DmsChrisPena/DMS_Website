@@ -27,7 +27,7 @@ namespace DMS.Web
 
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                       "~/Scripts/angular.js",
-                      "~/Scripts/angular-route.js",
+                      "~/Scripts/angular-ui-router.js",
                       // Angular material stuff
                       "~/Scripts/angular-animate.js",
                       "~/Scripts/angular-aria.js",
@@ -40,13 +40,17 @@ namespace DMS.Web
                       "~/app/components/about/aboutService.js",
                       "~/app/components/education/educationService.js",
                       "~/app/components/services/servicesService.js",
-                      "~/app/components/solutions/solutionsService.js",
+                      "~/app/components/solutions/gaspro/gasproService.js",
+                      "~/app/components/solutions/gastrak/gastrakService.js",
+                      "~/app/components/solutions/energypro/energyproService.js",
                       // controllers
                       "~/app/components/index/indexController.js",
                       "~/app/components/about/aboutController.js",
                       "~/app/components/education/educationController.js",
                       "~/app/components/services/servicesController.js",
-                      "~/app/components/solutions/solutionsController.js"));
+                      "~/app/components/solutions/gaspro/gasproController.js",
+                      "~/app/components/solutions/gastrak/gastrakController.js",
+                      "~/app/components/solutions/energypro/energyproController.js"));
         }
     }
 }
