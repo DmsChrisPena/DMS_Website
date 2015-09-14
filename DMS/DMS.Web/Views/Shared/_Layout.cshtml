@@ -7,9 +7,10 @@
     <base href="/">
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="navbar navbar-default navbar-fixed-top">
+    @*<div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -61,18 +62,59 @@
                 </ul>
             </div>
         </div>
+    </div>*@
+    <div class="md-topbar">
+        <div class="topbar" layout="row">
+            <ul class="left" flex="50">
+                <li><ng-md-icon icon="email" size="16" style="fill: rgba(255, 255, 255, 0.76);"></ng-md-icon></li>
+                <li><ng-md-icon icon="phone" size="16" style="fill: rgba(255, 255, 255, 0.76);"></ng-md-icon></li>
+            </ul>
+            <ul class="right" flex="50">
+                <li>Sign In</li> |
+                <li>Create Account</li>
+            </ul>
+        </div>
     </div>
-    <div class="container body-content">
+    <md-toolbar ng-controller="NavBarController as vm">
+        <div class="navbar" layout="row">
+            <ul class="left" flex="20">
+                <li>DMS</li>
+            </ul>
+            <ul class="right" flex="80">
+                <li>
+                    <md-menu md-offset="0 86">
+                        <md-button aria-label="Open about interactions menu" ng-click="vm.openMenu($mdOpenMenu, $event)">About &nbsp; <i class="fa fa-sort-desc"></i></md-button>
+                        <md-menu-content width="2">
+                            <md-menu-item>
+                                <md-button>
+                                    About Us
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                                <md-button>
+                                    Our History
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                                <md-button>
+                                    Proven
+                                </md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </li>
+
+                <li><md-button>Solutions</md-button></li>
+                <li><md-button>Services</md-button></li>
+                <li><md-button>LEARN</md-button></li>
+            </ul>
+        </div>
+    </md-toolbar>
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Data Management Solutions</p>
-        </footer>
-    </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/angular")
-    @RenderSection("scripts", required: false)
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.5.0/angular-material-icons.min.js"></script> 
 </body>
 </html>

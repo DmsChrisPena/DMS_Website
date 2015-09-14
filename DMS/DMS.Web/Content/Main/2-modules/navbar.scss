@@ -1,0 +1,78 @@
+﻿.md-topbar {
+    min-height: 30px !important;
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0,0.3);
+    box-shadow: none;
+    color: rgba(255, 255, 255, 0.76);
+    .topbar {
+        height: 30px;
+        background-color: #0D47A1;
+        font-size: 12px;
+        ul.left {
+            padding-left: 7%;
+            margin-top: 6px;
+            text-align: left;
+            li {
+                display: inline;
+                text-transform: uppercase;
+            }
+        }
+        ul.right {
+            margin-top: 6px;
+            text-align: right;
+            padding-right: 7%;
+            li {
+                display: inline;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+
+.navbar {
+    -webkit-box-shadow: 0px 1px 4px -4px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 1px 4px -4px rgba(0,0,0,0.3);
+    box-shadow: 0px 1px 4px -4px rgba(0,0,0,0.3);
+
+    background-color: #0E50B7 !important;
+    ul.left {
+        text-align: right;
+        padding-right: 7%;
+        margin: 0px;
+        li {
+            display: inline;
+            color: rgba(255, 255, 255, 0.76);
+            font-size: 18px;
+            padding: 24px;
+            text-transform: uppercase;
+        }
+    }
+    ul.right {
+        text-align: right;
+        padding-right: 7%;
+        margin: 0px;
+        li {
+            .md-menu {
+
+            }
+            .md-button {
+                padding: 0px;
+                color: rgba(255, 255, 255, 0.75);
+                margin: 0px;
+                padding: 24px 24px 17px 24px;
+                &:hover {
+                    transition-duration: 2s;
+                    transition-timing-function: linear;
+                    transition: border .2s ease;  
+                    border-bottom: 4px solid #00BCD4;
+                    color: white;
+                }
+            }
+            display: inline;
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+    }
+}

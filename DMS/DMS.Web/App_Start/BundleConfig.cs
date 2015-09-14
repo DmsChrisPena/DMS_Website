@@ -17,13 +17,11 @@ namespace DMS.Web
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
                       "~/Content/angular-material.css",
-                      "~/Content/site.css"));
+                      "~/Content/Main/main.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                       "~/Scripts/angular.js",
@@ -50,7 +48,8 @@ namespace DMS.Web
                       "~/app/components/services/servicesController.js",
                       "~/app/components/solutions/gaspro/gasproController.js",
                       "~/app/components/solutions/gastrak/gastrakController.js",
-                      "~/app/components/solutions/energypro/energyproController.js"));
+                      "~/app/components/solutions/energypro/energyproController.js",
+                      "~/app/components/navbar/navBarController.js"));
         }
     }
 }
