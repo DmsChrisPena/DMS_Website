@@ -13,19 +13,40 @@
     <div class="md-topbar">
         <div class="topbar" layout="row">
             <ul class="left" flex="50">
-                <li><ng-md-icon icon="email" size="16" style="fill: rgba(255, 255, 255, 0.76);"></ng-md-icon></li>
-                <li><ng-md-icon icon="phone" size="16" style="fill: rgba(255, 255, 255, 0.76);"></ng-md-icon></li>
+                <li>
+                    <a href="mailto:info@dmshouston.com?Subject=Hello DMS Team" target="_top">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                &nbsp;</li> | 
+                <li>&nbsp;
+                    <a>
+                        <i class="fa fa-phone"></i>
+                    </a>
+                </li>
             </ul>
             <ul class="right" flex="50">
-                <li>Sign In</li> |
-                <li>Create Account</li>
+                <li>
+                    <a>
+                        Sign In
+                    </a>
+                </li> |
+                <li>
+                    <a>
+                        Create Account
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
+
     <md-toolbar ng-controller="NavBarController as vm">
         <div class="navbar" layout="row">
             <ul class="left" flex="20">
-                <li>DMS</li>
+                <li>
+                    <md-button>
+                        <img src="~/Img/DMS_Logo_White.png" class="center-block" alt="DMS Logo" />
+                    </md-button>
+                </li>
             </ul>
             <ul class="right" flex="80">
                 <li>
