@@ -47,7 +47,8 @@
                         transition-duration: 2s;
                         transition-timing-function: linear;
                         transition: border .2s ease;  
-                        border-bottom: 2px solid #00BCD4;
+                        transition: width 0.25s, top 0.2s;
+                        border-bottom: 2px solid #1DE9B6;
                         color: white;
                     }
                 }
@@ -86,7 +87,7 @@
                 &:hover {
                     img {
                         -webkit-filter: invert(0%);
-                        height: 36px;
+                        height: 35px;
                         -webkit-transition: all .2s;
                     }
                 }
@@ -113,13 +114,13 @@
                 margin: 0px;
                 padding: 24px 24px 17px 24px;
                 /* HOVER OFF */
-                border-bottom: 0px solid transparent;
+                border-bottom: 4px solid transparent;
                 transition: border .2s ease;
                 &:hover {
                     transition-duration: 2s;
                     transition-timing-function: linear;
                     transition: border .2s ease;  
-                    border-bottom: 4px solid #00BCD4;
+                    border-bottom: 4px solid #1DE9B6;
                     color: white;
                 }
             }
@@ -129,4 +130,7 @@
             text-transform: uppercase;
         }
     }
+}
+.text-center {
+    text-align: center;
 }
