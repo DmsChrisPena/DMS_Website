@@ -236,6 +236,7 @@ section#whyUs {
 section#contactUs {
     padding-top: 90px;
     padding-bottom: 90px;
+    border-bottom: 1px solid #eeeeee;
     div {
         &:first-child {
             text-align: center;
@@ -269,8 +270,8 @@ section#contactUs {
                                     }
                                 }
                                 .md-button {
-                                        background-color: #E53935;
-                                        color: white;
+                                        color: #E53935;
+                                        font-size: 20px;
                                 }
                             }
                         }
