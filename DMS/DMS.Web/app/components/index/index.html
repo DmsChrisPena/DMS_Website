@@ -46,7 +46,7 @@
 </section>
 <section layot="row" id="ourServices" layout-wrap>
     <div flex="100">
-        <h2>Our Services</h2>
+        <h2>Our Solutions</h2>
         <h4>We have been providing software services and solutions for over 20 years.</h4>
     </div>
     <div flex="100">
@@ -104,5 +104,96 @@
                 </div>
             </md-card>
         </md-content>
+    </div>
+</section>
+<section layout="row" id="whyUs" layout-wrap>
+    <div flex="50">
+        <div class="why-us-overlay"></div>
+    </div>
+    <div flex="50">
+        <h2>Why DMS?</h2>
+        <h4 class="section-subheader text-center">We have proven that our solutions can improve any business.</h4>
+        <ul>
+            <li><h4>Experience</h4>
+                <p><i class="fa fa-university"></i> &nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing metus. elit. Quisque rutrum pellentesque imperdiet.</p>
+                
+            </li>
+            <li>
+                <h4>Quality</h4>
+                <p><i class="fa fa-trophy"></i> &nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing metus. elit. Quisque rutrum pellentesque imperdiet.</p>
+            </li>
+            <li>
+                <h4>Support</h4>
+                <p><i class="fa fa-question"></i> &nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing metus. elit. Quisque rutrum pellentesque imperdiet.</p>
+            </li>
+        </ul>
+        <div class="md-actions" layout="row" layout-align="center center">
+            <md-button class="md-raised md-primary">Contact Us</md-button>
+        </div>
+    </div>
+</section>
+<section id="contactUs" layout="row" layout-wrap>
+    <div flex="100">
+        <h2>Contact Us</h2>
+        <h4>Send us a quick message and we'll get in touch</h4>
+    </div>
+    <div flex="50">
+        <md-card>
+            <md-card-content layout-padding>
+                <form name="home-contact-us">
+                    <div class="md-actions" layout="row" layout-align="space-between center">
+                        <div>
+                             <h5>Dear DMS,</h5>
+                        </div>
+                        <div></div>
+                        <md-button class="md-fab md-mini md-raised">
+                            <md-tooltip>
+                                Clear Form
+                            </md-tooltip>
+                            <i class="fa fa-times"></i>
+                        </md-button>
+                    </div>
+                    <div layout="row">
+                        <md-input-container flex>
+                            <label>Name</label>
+                            <input ng-required="true" ng-model="user.name" type="text">
+                        </md-input-container>
+                        <md-input-container flex>
+                            <label>Topic</label>
+                            <md-select ng-model="ctrl.userTopic">
+                                <md-option value="1">Web Solution</md-option>
+                                <md-option value="2">Consulting</md-option>
+                                <md-option value="3">Education</md-option>
+                                <md-option value="4">Certification</md-option>
+                            </md-select>
+                        </md-input-container>
+                    </div>
+                    <md-input-container>
+                        <label>Email</label>
+                        <input ng-model="user.email" type="email" ng-required="true">
+                    </md-input-container>
+                    <md-input-container>
+                        <label>Message</label>
+                        <textarea  ng-required="true" ng-model="user.biography" rows="3" columns="5" md-maxlength="1000"></textarea>
+                    </md-input-container>
+                </form>
+                <div class="md-actions" layout="row" layout-align="space-between center">
+                    <div></div>
+                    <md-button class="md-fab md-primary md-raised">
+                        <md-tooltip>
+                            Send Message
+                        </md-tooltip>
+                        <i class="fa fa-paper-plane"></i>
+                    </md-button>
+                    <div>
+                        <h5>Sincerely,</h5>
+                        <h5>{{user.name}}</h5>
+                    </div>
+                </div>
+            </md-card-content>
+        </md-card>
+    </div>
+    <div flex="50">
+        <img class="img-responsive" src="../../../Img/cloud.png" alt="Cloud Solutions" />
     </div>
 </section>
