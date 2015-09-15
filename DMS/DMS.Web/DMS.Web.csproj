@@ -281,11 +281,17 @@
     <Content Include="Content\Main\0-tools\cPanel X_files\tree_styles2_optimized.css" />
     <Content Include="Content\Main\0-tools\cPanel X_files\utilities_container.js" />
     <Content Include="Content\Main\0-tools\normalize.css" />
+    <Content Include="Content\Main\0-tools\slider\layers.css" />
+    <Content Include="Content\Main\0-tools\slider\navigation.css" />
+    <Content Include="Content\Main\0-tools\slider\noneed.css" />
+    <Content Include="Content\Main\0-tools\slider\settings.css" />
     <Content Include="Content\Main\main.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="gulpfile.js" />
+    <Content Include="Img\DMS_Logo_White.png" />
+    <Content Include="Img\home-image.jpg" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />
@@ -403,6 +409,7 @@
     <Content Include="Content\Main\1-base\_vars.sass" />
     <Content Include="Content\Main\main.scss" />
     <Content Include="Content\Main\2-modules\navbar.scss" />
+    <Content Include="Content\Main\2-modules\home.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
