@@ -1,0 +1,21 @@
+﻿section#contact-form-main {
+    md-content {
+        md-card {
+            min-height: 150px;
+            max-width: 600px;
+
+            md-card-content {
+                background-color: #90A4AE;
+                min-height: 150px;
+            }
+        }
+        button {
+            border: 4px solid white;
+            min-width: 0;
+            width: 5.6rem;
+            height: 5.6rem;
+            border-radius: 50%;
+            background-color: $secondary-6;
+        }
+    }
+}

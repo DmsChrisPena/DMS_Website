@@ -6,7 +6,7 @@
     color: rgba(255, 255, 255, 0.76);
     .topbar {
         height: 30px;
-        background-color: #0D47A1;
+        background-color: $primary-8;
         font-size: 12px;
         ul.left {
             padding-left: 7%;
@@ -48,7 +48,7 @@
                         transition-timing-function: linear;
                         transition: border .2s ease;  
                         transition: width 0.25s, top 0.2s;
-                        border-bottom: 2px solid #E53935;
+                        border-bottom: 2px solid $secondary-A2;
                         color: white;
                     }
                 }
@@ -70,7 +70,7 @@
     -moz-box-shadow: 0px 1px 4px -4px rgba(0,0,0,0.3);
     box-shadow: 0px 1px 4px -4px rgba(0,0,0,0.3);
 
-    background-color: #0E50B7 !important;
+    background-color: $primary-7 !important;
     ul.left {
         text-align: right;
         padding-right: 7%;
@@ -120,7 +120,7 @@
                     transition-duration: 2s;
                     transition-timing-function: linear;
                     transition: border .2s ease;  
-                    border-bottom: 4px solid #E53935;
+                    border-bottom: 4px solid $secondary-A2;
                     color: white;
                 }
             }
