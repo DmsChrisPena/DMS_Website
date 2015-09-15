@@ -54,7 +54,7 @@
                 }
                 &:nth-child(4) {
                     .md-button {
-                        background-color: #0D47A1;
+                        background-color: #E53935;
                     }
                 }
             }
@@ -147,6 +147,8 @@ section#ourServices {
         &:nth-child(2) {
             md-content {
                 md-card {
+                    margin-left: 26px;
+                    margin-right: 26px;
                     md-card-content {
                         h2 {
                             font-size: 26px;
@@ -156,11 +158,12 @@ section#ourServices {
                         p {
                             color: #666666;
                             font-weight: 400;
+                            font-size: 14px;
                         }
                     }
                     .md-actions {
                         .md-button {
-                            background-color: #FF5252;
+                            background-color: #E53935;
                         }
                     }
                 }

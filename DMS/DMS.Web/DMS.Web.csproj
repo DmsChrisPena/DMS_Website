@@ -403,11 +403,11 @@
     <Content Include="Content\Main\0-tools\bourbon\_bourbon-deprecated-upcoming.scss" />
     <Content Include="Content\Main\0-tools\bourbon\_bourbon.scss" />
     <Content Include="Content\Main\0-tools\normalize.scss" />
-    <Content Include="Content\Main\1-base\_base.sass" />
-    <Content Include="Content\Main\1-base\_vars.sass" />
     <Content Include="Content\Main\main.scss" />
     <Content Include="Content\Main\2-modules\navbar.scss" />
     <Content Include="Content\Main\2-modules\home.scss" />
+    <Content Include="Content\Main\1-base\_base.scss" />
+    <Content Include="Content\Main\1-base\_vars.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
