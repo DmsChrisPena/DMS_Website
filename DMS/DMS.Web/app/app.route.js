@@ -17,10 +17,6 @@
                 abstract: true,
                 url: '/about',
                 template: '<ui-view/>'
-            }).state('about.contact', { 
-                url: '/contact',
-                templateUrl: 'app/components/about/views/contact.html',
-                controller: 'aboutController as vm'
             }).state('about.history', { 
                 url: '/history',
                 templateUrl: 'app/components/about/views/history.html',
@@ -33,6 +29,10 @@
                 url: '/testimonials',
                 templateUrl: 'app/components/about/views/testimonials.html',
                 controller: 'aboutController as vm'
+            }).state('contact', { // contact pages
+                url: '/contact',
+                templateUrl: 'app/components/contact/views/index.html',
+                controller: 'contactController as vm'
             }).state('education', { // education pages
                 abstract: true,
                 url: '/education',

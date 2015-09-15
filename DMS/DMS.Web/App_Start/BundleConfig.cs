@@ -36,6 +36,7 @@ namespace DMS.Web
                       // services
                       "~/app/components/index/indexService.js",
                       "~/app/components/about/aboutService.js",
+                      "~/app/components/contact/contactService.js",
                       "~/app/components/education/educationService.js",
                       "~/app/components/services/servicesService.js",
                       "~/app/components/solutions/gaspro/gasproService.js",
@@ -44,6 +45,7 @@ namespace DMS.Web
                       // controllers
                       "~/app/components/index/indexController.js",
                       "~/app/components/about/aboutController.js",
+                      "~/app/components/contact/contactController.js",
                       "~/app/components/education/educationController.js",
                       "~/app/components/services/servicesController.js",
                       "~/app/components/solutions/gaspro/gasproController.js",

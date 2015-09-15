@@ -225,11 +225,13 @@
     <Content Include="app\app.route.js" />
     <Content Include="app\components\about\aboutController.js" />
     <Content Include="app\components\about\aboutService.js" />
-    <Content Include="app\components\about\views\contact.html" />
+    <Content Include="app\components\contact\views\index.html" />
     <Content Include="app\components\about\views\founder.html" />
     <Content Include="app\components\about\views\history.html" />
     <Content Include="app\components\about\views\profile.html" />
     <Content Include="app\components\about\views\testimonials.html" />
+    <Content Include="app\components\contact\contactController.js" />
+    <Content Include="app\components\contact\contactService.js" />
     <Content Include="app\components\education\educationController.js" />
     <Content Include="app\components\education\educationService.js" />
     <Content Include="app\components\education\views\academic.html" />
