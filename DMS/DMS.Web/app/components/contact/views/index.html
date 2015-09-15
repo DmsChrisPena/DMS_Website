@@ -1,0 +1,68 @@
+﻿<div layout="row" layout-align="space-around center">
+    <section>
+
+    </section>
+    <section id="contact-form-main">
+        <md-content>
+            <md-card>
+                <md-card-content>
+                    <h2 class="md-title">Contact Us</h2>
+                    <md-content layout-padding>
+                        <form name="contact">
+                            <div layout layout-sm="column">
+                                <md-input-container flex>
+                                    <label>First name</label>
+                                    <input ng-model="vm.user.firstName">
+                                </md-input-container>
+                                <md-input-container flex>
+                                    <label>Last Name</label>
+                                    <input ng-model="vm.user.lastName">
+                                </md-input-container>
+                            </div>
+                            <div layout layout-sm="column">
+                                <md-input-container flex>
+                                    <label>Company</label>
+                                    <input ng-model="vm.user.company">
+                                </md-input-container>
+                                <md-input-container flex>
+                                    <label>Title</label>
+                                    <input ng-model="vm.user.title">
+                                </md-input-container>
+                            </div>
+                            <md-input-container flex>
+                                <label>Email</label>
+                                <input ng-model="vm.user.email" type="email">
+                            </md-input-container>
+                            <md-input-container flex>
+                                <label>Phone</label>
+                                <input ng-model="vm.user.phone">
+                            </md-input-container>
+                            <md-input-container flex>
+                                <label>How Can We Help You?</label>
+                                <textarea ng-model="vm.user.message" columns="1" md-maxlength="250"></textarea>
+                            </md-input-container>
+                        </form>
+                    </md-content>
+                </md-card-content>
+            </md-card>
+            <div layout="row" layout-align="end start">
+                <button layout="row" layout-align="center center" aria-label="Submit">
+                    <ng-md-icon icon="send" style="fill: white;" size="60"></ng-md-icon>
+                </button>
+            </div>
+        </md-content>
+    </section>
+</div>
+
+<style>
+    button {
+        border: 4px solid white;
+        padding-top: -50px;
+        z-index: 12;
+        min-width: 0;
+        width: 5.6rem;
+        height: 5.6rem;
+        border-radius: 50%;
+        background-color: red;
+    }
+</style>
