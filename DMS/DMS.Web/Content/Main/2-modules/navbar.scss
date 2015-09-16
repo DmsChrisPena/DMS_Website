@@ -1,4 +1,4 @@
-﻿.md-topbar {
+﻿/*.md-topbar {
     min-height: 30px !important;
     -webkit-box-shadow: 0px 1px 4px rgba(0,0,0,0.3);
     -moz-box-shadow: 0px 1px 4px rgba(0,0,0,0.3);
@@ -40,7 +40,6 @@
                 display: inline;
                 text-transform: uppercase;
                 a {
-                    /* HOVER OFF */
                     border-bottom: 0px solid black;
                     transition: border .2s ease;
                     &:hover {
@@ -55,7 +54,7 @@
             }
         }
     }
-}
+}*/
 
 .center-block {
   	display: block;
@@ -64,71 +63,91 @@
 }
 
 
+md-toolbar {
+    min-height: 44px;
+    background-color: transparent !important;
+}
 
 .navbar {
     -webkit-box-shadow: 0px 1px 4px -4px rgba(0,0,0,0.3);
     -moz-box-shadow: 0px 1px 4px -4px rgba(0,0,0,0.3);
     box-shadow: 0px 1px 4px -4px rgba(0,0,0,0.3);
-
-    background-color: $primary-7 !important;
-    ul.left {
-        text-align: right;
-        padding-right: 7%;
-        margin: 0px;
-        li {
-            display: inline;
-            color: rgba(255, 255, 255, 0.76);
-            font-size: 18px;
-            padding: 0px;
-            text-transform: uppercase;
-            .md-button {
-                padding: 24px 24px 17px 24px;
-                margin:0px;
-                &:hover {
-                    img {
-                        -webkit-filter: invert(0%);
-                        height: 35px;
-                        -webkit-transition: all .2s;
+    height: 44px;
+    background-color: #fff !important;
+    ul {
+        &:first-child {
+            text-align: right;
+            margin: 0px;
+            li {
+                display: inline;
+                color: rgba(255, 255, 255, 0.76);
+                font-size: 18px;
+                padding: 0px;
+                .md-button {
+                    padding: 5px 40px 5px 40px;
+                    margin:0px;
+                    &:hover {
+                        img {
+                            -webkit-filter: invert(65%);
+                            height: 30px;
+                            -webkit-transition: all .2s;
+                        }
+                        border-bottom: 2px solid #009688;
                     }
                 }
-            }
-            img {
-                height: 30px;
-                margin: 0px;
-                -webkit-filter: invert(15%);
-                -webkit-transition: all .2s;
-            }
-        }
-    }
-    ul.right {
-        text-align: right;
-        padding-right: 7%;
-        margin: 0px;
-        li {
-            .md-menu {
-
-            }
-            .md-button {
-                padding: 0px;
-                color: rgba(255, 255, 255, 0.75);
-                margin: 0px;
-                padding: 24px 24px 17px 24px;
-                /* HOVER OFF */
-                border-bottom: 4px solid transparent;
-                transition: border .2s ease;
-                &:hover {
-                    transition-duration: 2s;
-                    transition-timing-function: linear;
-                    transition: border .2s ease;  
-                    border-bottom: 4px solid $secondary-A2;
-                    color: white;
+                img {
+                    height: 26px;
+                    margin: 0px;
+                    margin-top: 2px;
+                    -webkit-filter: invert(80%);
+                    -webkit-transition: all .2s;
                 }
             }
-            display: inline;
-            color: rgba(255, 255, 255, 0.75);
-            font-size: 14px;
-            text-transform: uppercase;
         }
+
+        &:nth-child(2) {
+            margin: 0px;
+            text-align: center;
+            padding-left: 0px;
+            li {
+                .md-menu {
+
+                }
+                .md-button {
+                    padding: 0px;
+                    color: rgba(0, 0, 0, 0.75);
+                    margin: 0px;
+                    font-weight: 500;
+                    padding: 5px 24px 1px 24px;
+                    /* HOVER OFF */
+                    border-bottom: 2px solid transparent;
+                    transition: border .2s ease;
+                    &:hover {
+                        transition-duration: 2s;
+                        transition-timing-function: linear;
+                        transition: border .2s ease;  
+                        border-bottom: 2px solid #009688;
+                        color: white;
+                    }
+                }
+                display: inline;
+                color: rgba(255, 255, 255, 0.75);
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+        }
+        &:nth-child(3) {
+            margin: 0px;
+            padding: 0px;
+            li {
+                display: inline;
+                .md-button {
+                    margin: 0px;
+                    color: rgba(0, 0, 0, 0.75);
+                }
+            }
+        }
+
     }
 }
 .text-center {

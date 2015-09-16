@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="md-topbar">
+    @*<div class="md-topbar">
         <div class="topbar" layout="row">
             <ul class="left" flex="50">
                 <li>
@@ -32,26 +32,26 @@
                 </li> |
                 <li>
                     <a>
-                        Create Account
+                        Contact Us
                     </a>
                 </li>
             </ul>
         </div>
-    </div>
+    </div>*@
 
     <md-toolbar ng-controller="NavBarController as vm">
         <div class="navbar" layout="row">
-            <ul class="left" flex="20">
+            <ul flex="10">
                 <li>
-                    <md-button ui-sref="index">
+                    <md-button ui-sref="index" aria-label="Home">
                         <img src="~/Img/DMS_Logo_White.png" class="center-block" alt="DMS Logo" />
                     </md-button>
                 </li>
             </ul>
-            <ul class="right" flex="80">
+            <ul flex="80">
                 <li>
-                    <md-menu md-offset="0 90">
-                        <md-button aria-label="Open about interactions menu" ng-click="vm.openMenu($mdOpenMenu, $event)">Solutions</md-button>
+                    <md-menu md-offset="0 53">
+                        <md-button aria-label="Open about interactions menu" ng-click="vm.openMenu($mdOpenMenu, $event)">Products</md-button>
                         <md-menu-content width="2">
                             <md-menu-item>
                                 <md-button ui-sref="gaspro">
@@ -72,7 +72,7 @@
                     </md-menu>
                 </li>
                 <li>
-                    <md-menu md-offset="0 90">
+                    <md-menu md-offset="0 53">
                         <md-button aria-label="Open about interactions menu" ng-click="vm.openMenu($mdOpenMenu, $event)">Services</md-button>
                         <md-menu-content width="2">
                             <md-menu-item>
@@ -99,7 +99,7 @@
                     </md-menu>
                 </li>
                 <li>
-                    <md-menu md-offset="0 90">
+                    <md-menu md-offset="0 53">
                         <md-button aria-label="Open about interactions menu" ng-click="vm.openMenu($mdOpenMenu, $event)">Learn</md-button>
                         <md-menu-content width="2">
                             <md-menu-item>
@@ -121,7 +121,7 @@
                     </md-menu>
                 </li>
                 <li>
-                    <md-menu md-offset="0 90">
+                    <md-menu md-offset="0 53">
                         <md-button aria-label="Open about interactions menu" ng-click="vm.openMenu($mdOpenMenu, $event)">About</md-button>
                         <md-menu-content width="2">
                             <md-menu-item>
@@ -141,6 +141,11 @@
                             </md-menu-item>
                         </md-menu-content>
                     </md-menu>
+                </li>
+            </ul>
+            <ul flex="10">
+                <li>
+                    <md-button class="md-icon-button" aria-label="Contact Us"><i class="fa fa-envelope-o"></i></md-button>
                 </li>
             </ul>
         </div>
@@ -205,6 +210,8 @@
     </section>
   
     @Scripts.Render("~/bundles/jquery")
+    <script src="~/Scripts/SliderJS/jquery.themepunch.revolution.min.js"></script>
+    <script src="~/Scripts/SliderJS/jquery.themepunch.tools.min.js"></script>
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/angular")
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.5.0/angular-material-icons.min.js"></script> 
