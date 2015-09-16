@@ -411,6 +411,7 @@
     <Content Include="Content\Main\1-base\_base.scss" />
     <Content Include="Content\Main\1-base\_vars.scss" />
     <Content Include="Content\Main\2-modules\contact.scss" />
+    <Content Include="Content\Main\2-modules\footer.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

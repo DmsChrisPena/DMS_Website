@@ -28,22 +28,25 @@
                         text-align: center;
                         margin: 0px;
                         font-weight: 300;
-                        font-family: 'Droid Serif', serif !important;
                         text-transform: uppercase;
                         &:first-child {
                             &:first-letter {
                                 color: #fff;
                             }
+                            font-family: 'Playfair Display SC', serif !important;
                         }
                         &:nth-child(2) {
                             &:first-letter {
                                 color: #fff;
                             }
+                            font-family: 'Playfair Display SC', serif !important;
                         }
                         &:nth-child(3) {
                             &:first-letter {
                                 color: #fff;
                             }
+                            font-family: 'Nobile', sans-serif;
+                            font-size:120px;
                         }
                     }
                 }
@@ -238,6 +241,7 @@ section#whyUs {
 section#contactUs {
     padding-top: 90px;
     padding-bottom: 90px;
+    border-bottom: 1px solid #eeeeee;
     div {
         &:first-child {
             text-align: center;
@@ -271,8 +275,8 @@ section#contactUs {
                                     }
                                 }
                                 .md-button {
-                                        background-color: #E53935;
-                                        color: white;
+                                        color: #E53935;
+                                        font-size: 20px;
                                 }
                             }
                         }

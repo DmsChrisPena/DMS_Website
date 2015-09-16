@@ -146,11 +146,11 @@
                              <h5>Dear DMS,</h5>
                         </div>
                         <div></div>
-                        <md-button class="md-fab md-mini md-raised">
+                        <md-button class="md-icon-button md-accent">
                             <md-tooltip>
                                 Clear Form
                             </md-tooltip>
-                            <i class="fa fa-times"></i>
+                            <i class="fa fa-eraser"></i>
                         </md-button>
                     </div>
                     <div layout="row">
@@ -186,7 +186,7 @@
                         <i class="fa fa-paper-plane"></i>
                     </md-button>
                     <div>
-                        <h5>Sincerely,</h5>
+                        <h5 ng-show="user.name">Sincerely,</h5>
                         <h5>{{user.name}}</h5>
                     </div>
                 </div>

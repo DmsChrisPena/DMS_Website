@@ -1,0 +1,94 @@
+﻿section#md-footer {
+    height: 170px;
+    width: 100%;
+    background-color: #042D54;
+    div {
+        h2 {
+            @extend .section-header;
+            color: white;
+            font-size: 20px;
+            margin-bottom: 18px;
+            margin-top: 20px;
+        }
+        &:first-child {
+            padding-left: 20px;
+            padding-right: 12px;
+            p {
+                color: rgba(255, 255, 255, .80);
+                font-size: 14px;
+                margin-bottom: 12px;
+                margin-top: 12px;
+            }
+            ul {
+                margin: 0px;
+                list-style: none;
+                color: rgba(255, 255, 255, .80);
+                padding-left: 0px;
+            }
+        }
+        &:nth-child(2) {
+            h2 {
+                margin-bottom: 6px;
+            }
+            p {
+                margin-bottom: 12px;
+                margin-top: 12px;
+                width: 300px;
+                font-weight: 300;
+                color: rgba(177,177,177,1);
+            }
+            #mc_embed_signup_scroll {
+                .mc-field-group {
+                    padding: 0px;
+                }
+                padding: 0px;
+                input {
+                    padding: 12px;
+                    display: inline;
+                    border: none;
+                    background-color: #012140;
+                    color: white;
+                    &:focus {
+                        outline: none;
+                    }
+                    &:nth-child(3) {
+                        background-color: #E53935;
+                    }
+                }
+            }
+            label {
+                color: white;
+            }
+        }
+        &:nth-child(3) {
+            h2 {
+                text-align: center;
+                margin-bottom: 0px;
+            }
+            p {
+                text-align: center;
+                margin-bottom: 0px;
+                margin-top: 0px;
+                i {
+                    color: white;
+                    font-size: 26px;
+                    padding-right: 20px;
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+section#bottom-bar {
+    height: 30px;
+    background-color: #00376D;
+    p {
+        margin: 0px;
+        color: white;
+        font-size: 12px;
+        padding: 8px 8px;
+        text-align: center;
+    }
+}
