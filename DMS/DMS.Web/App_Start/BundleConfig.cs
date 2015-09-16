@@ -21,7 +21,10 @@ namespace DMS.Web
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/angular-material.css",
-                      "~/Content/Main/main.css"));
+                      "~/Content/Main/main.css",
+                      "~/Content/Slider/settings.css",
+                      "~/Content/Slider/layers.css",
+                      "~/Content/Slider/navigation.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                       "~/Scripts/angular.js",
