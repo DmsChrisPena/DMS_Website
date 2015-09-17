@@ -9,26 +9,14 @@
         $urlRouterProvider.otherwise('/');
 
         $stateProvider
-            .state('index', {
+            .state('index', { // index
                 url: '/',
                 templateUrl: 'app/components/index/index.html',
                 controller: 'indexController as vm'
-            }).state('about', {
+            }).state('about', { // about
                 url: '/about',
-                controller: "aboutController as vm",
-                templateUrl: 'app/components/about/about.html'
-            }).state('about.history', { 
-                url: '/history',
-                templateUrl: 'app/components/about/views/history.html',
-                controller: 'aboutController as vm'
-            }).state('about.profile', { 
-                url: '/profile',
-                templateUrl: 'app/components/about/views/profile.html',
-                controller: 'aboutController as vm'
-            }).state('about.testimonials', { 
-                url: '/testimonials',
-                templateUrl: 'app/components/about/views/testimonials.html',
-                controller: 'aboutController as vm'
+                templateUrl: 'app/components/about/about.html',
+                controller: "aboutController as vm"
             }).state('contact', { // contact pages
                 url: '/contact',
                 templateUrl: 'app/components/contact/views/index.html',

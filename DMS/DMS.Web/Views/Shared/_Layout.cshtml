@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div id="sticky-header" style="width: 100%; height: 0px;" layout="row">
+    <div id="sticky-header" style="width: 100%; height: 0px;" layout="row" ng-controller="NavBarController as vm">
         <ul flex="10">
             <li>
                 <md-button ui-sref="index" aria-label="Home">
@@ -20,10 +20,10 @@
         </ul>
         <ul flex="80" id="stick-ul2">
             <li>
-                <md-button>Products</md-button>
-                <md-button>Services</md-button>
-                <md-button>Learn</md-button>
-                <md-button>About</md-button>
+                <md-button ui-sref="about">Products</md-button>
+                <md-button ui-sref="about">Services</md-button>
+                <md-button ui-sref="about">Learn</md-button>
+                <md-button ui-sref="about">About</md-button>
             </li>
         </ul>
         <ul flex="10">
@@ -44,7 +44,8 @@
             </ul>
             <ul flex="80">
                 <li>
-                    <md-menu md-offset="0 53">
+                    <md-button ui-sref="services.front">Products</md-button>
+                    @*<md-menu md-offset="0 53">
                         <md-button aria-label="Open about interactions menu" ng-click="vm.openMenu($mdOpenMenu, $event)">Products</md-button>
                         <md-menu-content width="2">
                             <md-menu-item>
@@ -63,10 +64,11 @@
                                 </md-button>
                             </md-menu-item>
                         </md-menu-content>
-                    </md-menu>
+                    </md-menu>*@
                 </li>
                 <li>
-                    <md-menu md-offset="0 53">
+                    <md-button aria-label="Open Services Page" ui-sref="services">Services</md-button>
+                    @*<md-menu md-offset="0 53">
                         <md-button aria-label="Open about interactions menu" ng-click="vm.openMenu($mdOpenMenu, $event)">Services</md-button>
                         <md-menu-content width="2">
                             <md-menu-item>
@@ -90,10 +92,11 @@
                                 </md-button>
                             </md-menu-item>
                         </md-menu-content>
-                    </md-menu>
+                    </md-menu>*@
                 </li>
                 <li>
-                    <md-menu md-offset="0 53">
+                    <md-button aria-label="Open Learn Page" ui-sref="education.academic">Learn</md-button>
+                    @*<md-menu>
                         <md-button aria-label="Open about interactions menu" ng-click="vm.openMenu($mdOpenMenu, $event)">Learn</md-button>
                         <md-menu-content width="2">
                             <md-menu-item>
@@ -112,39 +115,10 @@
                                 </md-button>
                             </md-menu-item>
                         </md-menu-content>
-                    </md-menu>
+                    </md-menu>*@
                 </li>
                 <li>
-                    <md-menu md-offset="0 53">
-                        <md-button aria-label="Open about interactions menu" ng-click="vm.openMenu($mdOpenMenu, $event)">About</md-button>
-                        <md-menu-content width="2">
-                            <md-menu-item>
-                                <md-button ui-sref="about">
-                                    Our Mission
-                                </md-button>
-                            </md-menu-item>
-                            <md-menu-item>
-                                <md-button ui-sref="about.history">
-                                    History
-                                </md-button>
-                            </md-menu-item>
-                            <md-menu-item>
-                                <md-button ui-sref="about.testimonials">
-                                    The Industry
-                                </md-button>
-                            </md-menu-item>
-                            <md-menu-item>
-                                <md-button ui-sref="about.testimonials">
-                                    University
-                                </md-button>
-                            </md-menu-item>
-                            <md-menu-item>
-                                <md-button ui-sref="about.testimonials">
-                                    Contact Us
-                                </md-button>
-                            </md-menu-item>
-                        </md-menu-content>
-                    </md-menu>
+                    <md-button aria-label="Open about interactions menu" ng-click="" ui-sref="about">About</md-button>
                 </li>
             </ul>
             <ul flex="10">
