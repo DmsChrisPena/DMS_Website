@@ -1,0 +1,18 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Playfair+Display+SC:400,400italic,700italic,700|Nobile);
+
+@import "0-tools/bourbon/bourbon";
+@import "0-tools/normalize";
+
+
+@import "1-base/vars";
+@import "1-base/base";
+
+@import "2-modules/navbar";
+@import "2-modules/home.scss";
+@import "2-modules/contact.scss";
+@import "2-modules/footer.scss";
+<<<<<<< HEAD
+=======
+@import "2-modules/aboutUs.scss";
+>>>>>>> fb880024326c35240117734a9104f5602ab0bf29
