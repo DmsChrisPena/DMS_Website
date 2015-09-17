@@ -1,0 +1,99 @@
+﻿section#ourMission {
+
+}
+
+section#ourHistory {
+    border-top: 1px solid #eeeeee;
+    padding-top: 70px;
+    padding-bottom: 90px;
+    padding-right: 50px;
+    padding-left: 20px;
+    h2 {
+        @extend .section-header;
+        @extend .text-center;
+    }
+    .history-title {
+        h4 {
+            @extend .section-subheader;
+            @extend .text-center;
+        }
+    }
+    .founder-picture {
+        margin-top: 30px;
+        img {
+            @extend .center-block;
+        }
+        h2 {
+            text-align: center;
+        }
+        h4 {
+            @extend .section-subheader;
+            text-align: center;
+        }
+    }
+
+    .our-main-history {
+        padding-left: 30px;
+        h4 {
+            border-bottom: 1px solid #eeeeee;
+            margin-top: 16px;
+            margin-bottom: 16px;
+            font-weight: 400;
+            color: #444444;
+            font-size: 1.5em;
+            padding-bottom: 2px;
+            &:first-letter {
+                font-weight: 500;
+            }
+            &:first-child {
+                margin-top: 30px;
+            }
+        }
+
+        p {
+            line-height: 1.75;
+            color: #666666;
+            font-size: 16px;
+        }
+        .founding {
+
+        }
+        .founder {
+
+        }
+        .today {
+
+        }
+    }
+}
+
+section#theIndustry {
+    border-top: 1px solid #eeeeee;
+}
+
+section#university {
+
+}
+
+section#about-navbar {
+    div {
+        md-tabs {
+            md-tabs-wrapper {
+                md-tabs-canvas {
+                    md-pagination-wrapper {
+                        md-tab-item {
+                            -webkit-animation-name: animate-tabs; /* Chrome, Safari, Opera */
+                            -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+                            animation-name: animate-tabs;
+                            animation-duration: 0.5s;
+                            @keyframes animate-tabs {
+                                from{ line-height: 90px; }
+                                to { line-height: 24px; }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -5,7 +5,5 @@
 
     function indexController() {
         var vm = this;
-
     }
-
 })();
