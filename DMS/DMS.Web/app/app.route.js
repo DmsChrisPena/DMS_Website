@@ -13,10 +13,10 @@
                 url: '/',
                 templateUrl: 'app/components/index/index.html',
                 controller: 'indexController as vm'
-            }).state('about', { // about pages
-                abstract: true,
+            }).state('about', {
                 url: '/about',
-                template: '<ui-view/>'
+                controller: "aboutController as vm",
+                templateUrl: 'app/components/about/about.html'
             }).state('about.history', { 
                 url: '/history',
                 templateUrl: 'app/components/about/views/history.html',
