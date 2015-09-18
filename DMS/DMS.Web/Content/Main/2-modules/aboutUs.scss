@@ -14,38 +14,45 @@
         }
     }*/
     div {
-            h2 {
-                padding-bottom: 0px;
-                @extend .section-header;
-                font-size: 40px;
-                text-align: center;
-                padding-bottom: 2%;
-            }
-            p {
+        h2 {
+            padding-bottom: 0px;
+            @extend .section-header;
+            font-size: 40px;
+            text-align: center;
+        }
+        p {
+            margin: 0px;
+            line-height: 1.75;
+            color: #666666;
+            font-size: 16px;
+            text-align: left;
+            padding-top: 1%;
+        }
+        div {
+            padding-top: 1%;
+            div {
+                md-card-content {
                 margin: 0px;
                 line-height: 1.75;
                 color: #666666;
                 font-size: 16px;
                 text-align: left;
-                padding-top: 3%;
+                padding-top: 1%;
             }
-            div {
-                p {
-                    margin: 0px;
-                    line-height: 1.75;
-                    color: #666666;
-                    font-size: 16px;
-                    text-align: left;
-                    padding-top: 3%;
-                }
                 ul {
-                    padding-top: 2%;
                     list-style: none;
-                    margin-top: 6px;
+                    padding-right: 4%;
                     li {
-                        padding-bottom: 1px;
+                        padding-bottom: 1%;
+                        color: #666666;
                     }
                 }
             }
+            &:nth-child(3) {
+                p {
+                    color: $red;
+                }
+            }
+        }
     }
 }
