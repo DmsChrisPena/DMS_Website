@@ -54,7 +54,8 @@ namespace DMS.Web
                       "~/app/components/solutions/gaspro/gasproController.js",
                       "~/app/components/solutions/gastrak/gastrakController.js",
                       "~/app/components/solutions/energypro/energyproController.js",
-                      "~/app/components/navbar/navBarController.js"));
+                      "~/app/components/navbar/navBarController.js",
+                      "~/Scripts/smoothScroll.js"));
         }
     }
 }
