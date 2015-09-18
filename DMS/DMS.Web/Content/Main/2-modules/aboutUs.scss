@@ -116,7 +116,37 @@ section#ourHistory {
 }
 
 section#theIndustry {
+    padding-bottom: 90px;
     border-top: 1px solid #eeeeee;
+    .industry-parallax {
+        background-image: url(http://www.commendusa.com/uploads/media/oil-gas-industry_01.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        height: 300px;
+        .industry-overlay {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(#424242, .65);
+            p {
+                color: #fff;
+                line-height: 2;
+                font-weight: 300;
+                font-size: 24px;
+                padding-left: 20%;
+                padding-right: 20%;
+                padding-top: 80px;
+                margin-top: 0px;
+                text-align: center;
+            }
+        }
+    }
+    h2 {
+        padding-top: 90px;
+        @extend .section-header;
+        @extend .text-center;
+    }
 }
 
 section#university {
