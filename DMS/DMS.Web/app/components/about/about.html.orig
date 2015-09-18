@@ -18,8 +18,6 @@
 <section layout="row" id="ourMission" layout-wrap>
     <div flex="100">
         <h2>Our Mission</h2>
-<<<<<<< HEAD
-=======
         <div layout="row">
             <div flex="10"></div>
             <p flex="80">
@@ -27,50 +25,60 @@
             </p>
             <div flex="10"></div>
         </div>
-        <div layout="row">
+        <div layout="row" layout-align="center center">
             <div flex="10"></div>
-            <p flex="80">
-                Our mission here at DMS is simple.
-                <i>We are here to provide effective and easy-to-implement solutions that close this gap, without costing millions of dollars.</i>
-            </p>
+            <div flex="35">
+                <div layout="row">
+                    <p>Our mission here at DMS is simple.</p>
+                </div>
+                <div layout="row">
+                    <img class="center-block img-responsive" style="height: 460px;" src="../../../Img/Bridge_StudyInTeal_Small.png" alt="Alternate Text" />
+                </div>
+                <div layout="row">
+                    <h3><i>We are here to provide effective and easy-to-implement solutions that bridge this gap, without costing millions of dollars.</i></h3>
+                </div>
+            </div>
             <div flex="10"></div>
-        </div>
-        <div layout="row">
-            <div flex="10"></div>
-            <div flex="80">
-                <md-card>
-                    <md-card-content>
-                        The ever-increasing gap between demand and supply for expert personnel must be met, and we meet it head-on:
-                    </md-card-content>
-                    <ul>
-                        <li>Our products automate your processes, filling the need for additional personnel as you significantly increase your production</li>
-                        <li>Our services save you time, eliminating the need for in-house brute-force accounting, scheduling, consulting and training</li>
-                        <li>Our Learn(tm) programs boost your personnel's knowledge, keeping your organization continually ahead of the curve</li>
-                    </ul>
-                </md-card>
+            <div flex="35">
+                <div layout="row">
+                    <p>The ever-increasing gap between demand and supply for expert personnel must be met, and we meet it head-on:</p>
+                </div>
+                <div layout="row">
+                    <md-card>
+                        <ul>
+                            <li>Our products automate your processes, filling the need for additional personnel as you significantly increase your production</li>
+                            <li></li>
+                            <li>Our services save you time, eliminating the need for in-house brute-force accounting, scheduling, consulting and training</li>
+                            <li></li>
+                            <li>Our Learn&trade; programs boost your personnel's knowledge, keeping your organization continually ahead of the curve</li>
+                        </ul>
+                    </md-card>
+                </div>
             </div>
             <div flex="10"></div>
         </div>
         <div layout="row">
             <div flex="10"></div>
-            <p flex="80">
+            <h3 flex="80">
                 DMS is setting a new idustry standard.
                 Our solutions are as simple as you want and as complex as you need.
-            </p>
+            </h3>
             <div flex="10"></div>
         </div>
->>>>>>> 0bd958992cc49b70dc44549c2590075cd0141add
     </div>
 </section>
 
 <section layout="row" id="parallax-spacer" layout-wrap>
-     <div layout="row">
         <div class="parallax-spacing" flex="100">
             <div class="parallax-overlay">
                 <p>Since 1993, many of the biggest industry players have trusted us to handle their critical tasks.</p>
             </div>
         </div>
+<<<<<<< HEAD
+=======
     </div>
+
+>>>>>>> a951d7613f678e61982956bad2e9db669fb6727b
 </section>
 
 <section layout="row" id="ourHistory" layout-wrap>
@@ -126,13 +134,28 @@
         </div>
     </div>
     <h2 flex="100">The Industry</h2>
-    <div flex="50" class="how-others-do-it">
-        <h2>How Others Do It</h2>
-        <ul>
-            <li>Costs millions of dollars upfront</li>
-            <li>Requires teams of consultants years to implement</li>
-            <li>Poorly integrates re-hashed systems, resulting in a kludge of a solution</li>
-            <li>"Includes" a 10+ person IT team to simply maintain functionality of the system</li>
+    <div flex="100" class="history-title">
+        <h4>Different. From top to bottom.</h4>
+    </div>
+    <div flex="50" class="how-others-do-it" layout="row" layout-wrap>
+        <h2 flex="100">How Others Do It</h2>
+        <ul flex="100">
+            <li layout="row">
+                <i flex="10" class="fa fa-money"></i>
+                <p flex="90">Costs millions of dollars upfront</p>
+            </li>
+            <li layout="row">
+                <i flex="10" class="fa fa-clock-o"></i>
+                <p flex="90"> Requires teams of consultants years to implement</p>
+            </li>
+            <li layout="row">
+                <i flex="10" class="fa fa-line-chart"></i>
+                <p flex="90">Poorly integrates re-hashed systems, resulting in a kludge of a solution</p>
+            </li>
+            <li layout="row">
+                <i flex="10" class="fa fa-user"></i>
+                <p flex="90">"Includes" a 10+ person IT team to simply maintain functionality of the system</p>
+            </li>
         </ul>
     </div>
     <div flex="50" class="how-we-do-it" layout="row" layout-wrap>
@@ -158,7 +181,95 @@
     </div>
 </section>
 
+<<<<<<< HEAD
 <section id="university"></section>
+=======
+<section id="university" layout="row" layout-wrap>
+
+   <h2 flex="100" class="UniversityHeader">University</h2>
+
+    <div flex="100" layout="row" class="sentence1">
+        <div flex="20"></div>
+        <h4 flex="60">
+            One of our passions and biggest sources of pride is our affiliation with the University of Houston.
+        </h4>
+        <div flex="20"></div>
+    </div>
+
+    <div layout="row" flex="100" class="sentence2">
+        <div flex="10"></div>
+        <p flex="80">
+            That's why Frank Pena, CEO of DMS, has taught an upper-level course dedicated to Energy Trading Systems at UH since 2010. He has reached Supply Chain, Finance, MIS and Accounting majors as well as MIS graduate students.
+        </p>
+        <div flex="10"></div>
+    </div>
+
+
+    
+    <div flex="70" class="content">
+
+        <div layout="row" flex="100">
+            <div flex="10"></div>
+            <div flex="80">
+                <div class="course">
+                    <h4>The Course</h4>
+                    <ul>
+                        <li>Knowledge: In one semester, students are exposed to 16 weeks of hard-hitting lectures. We discuss the nitty-gritty details of the gas industry, telling the whole story of a unit of gas as it travels from wellhead to end-user.</li>
+                        <li>Practice: The class is as much hands-on as it is lecture-oriented. All students are provided with their own licenses of our ETRM systems, GasPro and GasTrak and have labs that accomopany the lectures. They input their own source information, trade buy/sells, schedule including single- and multi-leg transactions, as well as pool, store and transfer gas.</li>
+                    </ul>
+                </div>
+            </div>
+            <div flex="10"></div>
+        </div>
+
+        <div layout="row"  flex="100">
+            <div flex="10"></div>
+            <div flex="80">
+                <div class="success">
+                    <h4>The Success</h4>
+                    <ul>
+                        <li>Since 2010, course enrollment has grown from 16 to 185+ students.</li>
+                        <li>Students have reported that in interviews with big-name Oil & Gas companies in Houston, they had been asked, "Have you taken the Energy Trading Systems course taught by Frank Pena at UH?"</li>
+                        <li>We continually receive notes from students how much of an impact the course has made in jump-starting their careers.</li>
+                    </ul>
+                </div>
+            </div>
+            <div flex="10"></div>
+        </div>
+
+        <div layout="row"  flex="100">
+            <div flex="10"></div>
+            <div flex="80">
+                <div class="value">
+                    <h4>The Value</h4>
+                    <ul>
+                        <li>Students value us.</li>
+                        <li>Employers value us.</li>
+                        <li>The Univeristy values us.</li>
+                    </ul>
+                </div>
+            </div>
+            <div flex="10"></div>
+        </div>
+
+    </div>
+
+    <div flex="20" class="picture">
+        <md-card>
+            <md-card-content>
+                <img src="../../../Img/University.png" height="500" />
+            </md-card-content>
+        </md-card>
+    </div>
+
+    <div flex="10"></div>
+
+</section>
+
+<section id="testimonials">
+
+</section>
+>>>>>>> a951d7613f678e61982956bad2e9db669fb6727b
 
 <section id="testimonials"></section>
 
