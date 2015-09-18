@@ -1,21 +1,149 @@
-﻿<section id="about-navbar" layout="row">
-    <div flex="100">
-        <md-tabs md-dynamic-height md-selected="selectedIndex" md-center-tabs md-border-bottom style="background-color: rgba(242,242,242,0.6);">
-            <md-tab label="Overview">
-            </md-tab>
-            <md-tab label="Our Mission">
-            </md-tab>
-            <md-tab label="History">
-            </md-tab>
-            <md-tab label="University">
-            </md-tab>
-            <md-tab label="Contact Us">
-            </md-tab>
-        </md-tabs>
-    </div>
-</section>
+﻿<div layout="column">
+    <section id="about-navbar" layout="row">
+        <div flex="100">
+            <md-tabs md-dynamic-height md-selected="selectedIndex" md-center-tabs md-border-bottom style="background-color: rgba(242,242,242,0.6);" md-stretch-tabs="yes">
+                <md-tab label="Our Mission">
+                    <md-content flex>
+                        <section layout="row" id="ourMission" layout-wrap>
+                            <div flex="100">
+                                <h2>Our Mission</h2>
+                                <h5 class="section-subheader text-center">Bacon ipsum dolor amet swine cow ground round turkey boudin kielbasa turducken meatloaf.</h5>
+                                <div layout="row">
+                                    <div flex="10"></div>
+                                    <p flex="80">
+                                        Our industry has always been fazed with a gap between industry positions and skilled labor force; we see this gap as increasing in the future. The gas industry is on the course to rapidly grow particularly due to recent developments in fracking and LNG technology. The primary problem is that companies still try, buy and implement solutions like they did in the 80's.
+                                    </p>
+                                    <div flex="10"></div>
+                                </div>
+                                <div layout="row">
+                                    <div flex="10"></div>
+                                    <p flex="80">
+                                        Our mission here at DMS is simple.
+                                        We are here to provide effective and easy-to-implement solutions that close this gap, without costing millions of dollars.
+                                    </p>
+                                    <div flex="10"></div>
+                                </div>
+                                <div layout="row">
+                                    <div flex="10"></div>
+                                    <div flex="80">
+                                        <p>
+                                            The ever-increasing gap between demand and supply for expert personnel must be met, and we meet it head-on:
+                                        </p>
+                                        <ul>
+                                            <li>Our products automate your processes, filling the need for additional personnel as you significantly increase your production</li>
+                                            <li>Our services save you time, eliminating the need for in-house brute-force accounting, scheduling, consulting and training</li>
+                                            <li>Our Learn(tm) programs boost your personnel's knowledge, keeping your organization continually ahead of the curve</li>
+                                        </ul>
+                                    </div>
+                                    <div flex="10"></div>
+                                </div>
+                                <div layout="row">
+                                    <div flex="10"></div>
+                                    <p flex="80">
+                                        DMS is setting a new idustry standard.
+                                        Our solutions are as simple as you want and as complex as you need.
+                                    </p>
+                                    <div flex="10"></div>
+                                </div>
+                            </div>
+                        </section>
+                    </md-content>
+                </md-tab>
+                <md-tab label="History">
+                    <md-content flex>
+                        <section layout="row" id="ourHistory" layout-wrap>
+                            <div flex offset="33"></div>
+                            <div flex="66" class="history-title">
+                                <h2>Our History</h2>
+                                <h4>Since 1993, many of the biggest industry players have trusted us to handle their critical tasks.</h4>
+                            </div>
+                            <div flex="33" class="founder-picture">
+                                <md-card>
+                                    <md-card-content>
+                                        <img src="../../../img/frankpena.jpg" class="img-responsive img-circle" alt="Founder Picture" />
+                                        <h2 class="text-center">Frank Peña</h2>
+                                        <h4>CEO of DMS and GasPro ETRM CEO</h4>
+                                    </md-card-content>
+                                </md-card>
 
-<section layout="row" id="ourMission" layout-wrap>
+                            </div>
+                            <div flex="66" layout="column" class="our-main-history">
+                                <div class="founding">
+                                    <h4>Founding</h4>
+                                    <p>In 1993, a group of pipeline, accounting and mathematic experts gathered to create a better and seamless way to manage the business functions of companies operating in this emerging sector. This group formed Data Management Solutions.</p>
+                                </div>
+                                <div class="founder">
+                                    <h4>Founder</h4>
+                                    <p>Frank Peña, C.P.A. and CEO of DMS, has been in the gas industry for over 30 years. Prior to forming DMS, he:</p>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                Co-chaired the Southern Gas Association, representing United Gas Pipeline (now Koch Industires) and also Northern Natural Gas PipelineTestified before FERC as an expert witness on gas accounting and PGA issues
+                                            </p>
+
+                                        </li>
+                                        <li>
+                                            <p>
+                                                Created, structured and managed previously non-existent control groups at NNG, in areas such as finance, transportation imbalances, storage, fuel consumption and regulatory reporting requirements
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="today">
+                                    <h4>Today</h4>
+                                    <p>Our organization is a blend of people who have been here from the beginning and young, new ambitious people. Our team boasts a broad yet rich background, with education and experience including forensic and gas accounting, computer science, economics, finance, marketing, supply-chain and advanced mathematics.</p>
+                                    <p>We pool our resources together solely to provide you with the most effective and comprehensive solutions currently available to the industry.  </p>
+                                </div>
+                            </div>
+                        </section>
+                    </md-content>
+                </md-tab>
+                <md-tab label="The Industry">
+                    <md-content flex>
+                        <section id="theIndustry" layout="row" layout-wrap>
+                            <div class="industry-parallax" flex="100">
+                                <div class="industry-overlay">
+                                    <p>"The gas industry and the solutions providers who serve it are at a critical time. Solutions providers have not changed they way they do business in the last 50 years."</p>
+                                </div>
+                            </div>
+                            <h2 flex="100">The Industry</h2>
+                            <div flex="50" class="how-others-do-it">
+                                <ul>
+                                    <li>Costs millions of dollars upfront</li>
+                                    <li>Requires teams of consultants years to implement</li>
+                                    <li>Poorly integrates re-hashed systems, resulting in a kludge of a solution</li>
+                                    <li>"Includes" a 10+ person IT team to simply maintain functionality of the system</li>
+                                </ul>
+                            </div>
+                            <div flex="50" class="how-we-do-it">
+                                <ul>
+                                    <li>No up-front licensing charge pricing</li>
+                                    <li>Can implement in months without a pricey consulting army (100% implementation success rate)</li>
+                                    <li>A seamless solution from trades to reporting</li>
+                                    <li>Our systems work; no reason to staff multitudes of IT personnel to keep it functioning</li>
+                                </ul>
+                            </div>
+                        </section>
+                    </md-content>
+                </md-tab>
+                <md-tab label="University">
+                    <md-content flex>
+                        <section id="university">
+
+                        </section>
+                    </md-content>
+                </md-tab>
+                <md-tab label="Contact Us">
+                    <md-content flex>
+                        <div ng-include="'/app/components/contact/inPageContactUs.html'"></div>
+                    </md-content>
+                </md-tab>
+            </md-tabs>
+        </div>
+    </section>
+</div>
+
+<!--<section layout="row" id="ourMission" layout-wrap>
     <div flex="100">
         <h2>Our Mission</h2>
         <h5 class="section-subheader text-center">Bacon ipsum dolor amet swine cow ground round turkey boudin kielbasa turducken meatloaf.</h5>
@@ -58,7 +186,6 @@
         </div>
     </div>
 </section>
-
 
 <section layout="row" id="ourHistory" layout-wrap>
     <div flex offset="33"></div>
@@ -139,6 +266,4 @@
 
 </section>
 
-<section id="contactUs">
-
-</section>
+<div ng-include="'/app/components/contact/inPageContactUs.html'"></div>-->

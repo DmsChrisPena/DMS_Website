@@ -1,0 +1,73 @@
+﻿<section id="contactUs" layout="row" layout-wrap ng-controller="contactController as vm">
+    <div flex="100">
+        <h2>Contact Us</h2>
+        <h4>Send us a quick message and we'll get in touch</h4>
+    </div>
+    <div flex="33">
+        <div layout="column">
+            <div flex="100">
+                <img class="img-responsive" src="../../../Img/cloud.png" alt="Cloud Solutions" />
+            </div>
+            <div flex="100">
+                <p>Don't hesitate to contact us for any questions or requests for demos. This goes straight to humans and we will reach out to you upon receipt shortly.</p>
+            </div>
+        </div>
+    </div>
+    <div flex="66">
+        <md-card>
+            <md-card-content layout-padding>
+                <form name="home-contact-us">
+                    <div class="md-actions" layout="row" layout-align="space-between center">
+                        <div>
+                            <h5>Dear DMS,</h5>
+                        </div>
+                        <div></div>
+                        <md-button class="md-icon-button md-accent">
+                            <md-tooltip>
+                                Clear Form
+                            </md-tooltip>
+                            <i class="fa fa-eraser"></i>
+                        </md-button>
+                    </div>
+                    <div layout="row">
+                        <md-input-container flex>
+                            <label>Name</label>
+                            <input ng-required="true" ng-model="user.name" type="text">
+                        </md-input-container>
+                        <md-input-container flex>
+                            <label>Topic</label>
+                            <md-select ng-model="ctrl.userTopic">
+                                <md-option value="1">Web Solution</md-option>
+                                <md-option value="2">Consulting</md-option>
+                                <md-option value="3">Education</md-option>
+                                <md-option value="4">Certification</md-option>
+                            </md-select>
+                        </md-input-container>
+                    </div>
+                    <md-input-container>
+                        <label>Email</label>
+                        <input ng-model="user.email" type="email" ng-required="true">
+                    </md-input-container>
+                    <md-input-container>
+                        <label>Message</label>
+                        <textarea ng-required="true" ng-model="user.biography" rows="3" columns="5" md-maxlength="1000"></textarea>
+                    </md-input-container>
+                </form>
+                <div class="md-actions" layout="row" layout-align="space-between center">
+                    <div></div>
+                    <md-button class="md-fab md-primary md-raised">
+                        <md-tooltip>
+                            Send Message
+                        </md-tooltip>
+                        <i class="fa fa-paper-plane"></i>
+                    </md-button>
+                    <div>
+                        <h5 ng-show="user.name">Sincerely,</h5>
+                        <h5>{{user.name}}</h5>
+                    </div>
+                </div>
+            </md-card-content>
+        </md-card>
+    </div>
+
+</section>
