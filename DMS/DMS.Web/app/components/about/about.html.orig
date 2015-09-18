@@ -18,6 +18,8 @@
 <section layout="row" id="ourMission" layout-wrap>
     <div flex="100">
         <h2>Our Mission</h2>
+<<<<<<< HEAD
+=======
         <div layout="row">
             <div flex="10"></div>
             <p flex="80">
@@ -25,55 +27,50 @@
             </p>
             <div flex="10"></div>
         </div>
-        <div layout="row" layout-align="center center">
+        <div layout="row">
             <div flex="10"></div>
-            <div flex="35">
-                <div layout="row">
-                    <p>Our mission here at DMS is simple.</p>
-                </div>
-                <div layout="row">
-                    <img class="center-block img-responsive" style="height: 460px;" src="../../../Img/Bridge_StudyInTeal_Small.png" alt="Alternate Text" />
-                </div>
-                <div layout="row">
-                    <h3><i>We are here to provide effective and easy-to-implement solutions that bridge this gap, without costing millions of dollars.</i></h3>
-                </div>
-            </div>
+            <p flex="80">
+                Our mission here at DMS is simple.
+                <i>We are here to provide effective and easy-to-implement solutions that close this gap, without costing millions of dollars.</i>
+            </p>
             <div flex="10"></div>
-            <div flex="35">
-                <div layout="row">
-                    <p>The ever-increasing gap between demand and supply for expert personnel must be met, and we meet it head-on:</p>
-                </div>
-                <div layout="row">
-                    <md-card>
-                        <ul>
-                            <li>Our products automate your processes, filling the need for additional personnel as you significantly increase your production</li>
-                            <li></li>
-                            <li>Our services save you time, eliminating the need for in-house brute-force accounting, scheduling, consulting and training</li>
-                            <li></li>
-                            <li>Our Learn&trade; programs boost your personnel's knowledge, keeping your organization continually ahead of the curve</li>
-                        </ul>
-                    </md-card>
-                </div>
+        </div>
+        <div layout="row">
+            <div flex="10"></div>
+            <div flex="80">
+                <md-card>
+                    <md-card-content>
+                        The ever-increasing gap between demand and supply for expert personnel must be met, and we meet it head-on:
+                    </md-card-content>
+                    <ul>
+                        <li>Our products automate your processes, filling the need for additional personnel as you significantly increase your production</li>
+                        <li>Our services save you time, eliminating the need for in-house brute-force accounting, scheduling, consulting and training</li>
+                        <li>Our Learn(tm) programs boost your personnel's knowledge, keeping your organization continually ahead of the curve</li>
+                    </ul>
+                </md-card>
             </div>
             <div flex="10"></div>
         </div>
         <div layout="row">
             <div flex="10"></div>
-            <h3 flex="80">
+            <p flex="80">
                 DMS is setting a new idustry standard.
                 Our solutions are as simple as you want and as complex as you need.
-            </h3>
+            </p>
             <div flex="10"></div>
         </div>
+>>>>>>> 0bd958992cc49b70dc44549c2590075cd0141add
     </div>
 </section>
 
 <section layout="row" id="parallax-spacer" layout-wrap>
+     <div layout="row">
         <div class="parallax-spacing" flex="100">
             <div class="parallax-overlay">
                 <p>Since 1993, many of the biggest industry players have trusted us to handle their critical tasks.</p>
             </div>
         </div>
+    </div>
 </section>
 
 <section layout="row" id="ourHistory" layout-wrap>
@@ -129,28 +126,13 @@
         </div>
     </div>
     <h2 flex="100">The Industry</h2>
-    <div flex="100" class="history-title">
-        <h4>Different. From top to bottom.</h4>
-    </div>
-    <div flex="50" class="how-others-do-it" layout="row" layout-wrap>
-        <h2 flex="100">How Others Do It</h2>
-        <ul flex="100">
-            <li layout="row">
-                <i flex="10" class="fa fa-money"></i>
-                <p flex="90">Costs millions of dollars upfront</p>
-            </li>
-            <li layout="row">
-                <i flex="10" class="fa fa-clock-o"></i>
-                <p flex="90"> Requires teams of consultants years to implement</p>
-            </li>
-            <li layout="row">
-                <i flex="10" class="fa fa-line-chart"></i>
-                <p flex="90">Poorly integrates re-hashed systems, resulting in a kludge of a solution</p>
-            </li>
-            <li layout="row">
-                <i flex="10" class="fa fa-user"></i>
-                <p flex="90">"Includes" a 10+ person IT team to simply maintain functionality of the system</p>
-            </li>
+    <div flex="50" class="how-others-do-it">
+        <h2>How Others Do It</h2>
+        <ul>
+            <li>Costs millions of dollars upfront</li>
+            <li>Requires teams of consultants years to implement</li>
+            <li>Poorly integrates re-hashed systems, resulting in a kludge of a solution</li>
+            <li>"Includes" a 10+ person IT team to simply maintain functionality of the system</li>
         </ul>
     </div>
     <div flex="50" class="how-we-do-it" layout="row" layout-wrap>
