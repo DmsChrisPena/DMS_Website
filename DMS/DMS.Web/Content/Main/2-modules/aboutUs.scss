@@ -97,11 +97,12 @@ section#theIndustry {
     h2 {
         &:nth-child(2) {
             padding-top: 90px;
-            padding-bottom: 30px;
             @extend .section-header;
             @extend .text-center;
         }
         &:nth-child(1) {
+            padding-left: 15%;
+            padding-right: 15%;
             @extend .section-subheader;
             font-weight: 500;
             font-size: 28px;
@@ -112,86 +113,16 @@ section#theIndustry {
     }
     ul {
         padding: 0px;
-        padding-right: 100px;
+        padding-right: 15%;
+        padding-left: 15%;
         &:nth-child(2) {
             li {
-                &:nth-child(1) {
-                    i {
-                        background-color: #3F51B5;
-                        -webkit-box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.75);
-                        -moz-box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.75);
-                        box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
-                        &:hover {
-                            -webkit-animation-name: hover-dots; /* Chrome, Safari, Opera */
-                            -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
-                            animation-name: hover-dots;
-                            animation-duration: 0.5s;
-                            @keyframes hover-dots {
-                                from{ box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75); }
-                                to { box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.75); }
-                            }
-                        }
-                    }
-                }
-                &:nth-child(2) {
-                    i {
-                        background-color: #F44336;
-                        -webkit-box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.75);
-                        -moz-box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.75);
-                        box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
-                        &:hover {
-                            -webkit-animation-name: hover-dots; /* Chrome, Safari, Opera */
-                            -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
-                            animation-name: hover-dots;
-                            animation-duration: 0.5s;
-                            @keyframes hover-dots {
-                                from{ box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75); }
-                                to { box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.75); }
-                            }
-                        }
-                    }
-                }
-                &:nth-child(3) {
-                    i {
-                        background-color: #009688;
-                        -webkit-box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.75);
-                        -moz-box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.75);
-                        box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
-                        &:hover {
-                            -webkit-animation-name: hover-dots; /* Chrome, Safari, Opera */
-                            -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
-                            animation-name: hover-dots;
-                            animation-duration: 0.5s;
-                            @keyframes hover-dots {
-                                from{ box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75); }
-                                to { box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.75); }
-                            }
-                        }
-                    }
-                }
-                &:nth-child(4) {
-                    i {
-                        background-color: #3F51B5;
-                        -webkit-box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.75);
-                        -moz-box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.75);
-                        box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
-                        &:hover {
-                            -webkit-animation-name: hover-dots; /* Chrome, Safari, Opera */
-                            -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
-                            animation-name: hover-dots;
-                            animation-duration: 0.5s;
-                            @keyframes hover-dots {
-                                from{ box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75); }
-                                to { box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.75); }
-                            }
-                        }
-                    }
-                }
                 i {
-                color: white;
-                border-radius: 50%;
-                padding: 10px;
-                margin: 6px 0px;
+                color: #3F51B5;
+                font-size: 20px;
+                margin: 10px 0px;
+                padding: 4px 0px;
+                @extend .text-center;
                 }
             }
         }
@@ -203,6 +134,7 @@ section#theIndustry {
             p {
                 line-height: 1.75;
                 margin: 10px 0px;
+                font-weight: 400;
                 font-size: 16px;
                 color: #666666;
             }
