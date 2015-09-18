@@ -1,6 +1,7 @@
 ﻿section#ourMission {
+<<<<<<< HEAD
     padding-top: 3%;
-    padding-bottom: 4%;
+    padding-bottom: 3%;
     background-color: #f5f5f5;
         /*.background-right {
         background-image: url("https://images.unsplash.com/photo-1427751840561-9852520f8ce8?q=80&fm=jpg&s=ee073e336649f68d3caa9ffa6e262cf8");
@@ -51,43 +52,13 @@
             &:nth-child(3) {
                 p {
                     color: $red;
-                }
-            }
-        }
-    }
-}
+=======
 
-section#parallax-spacer {
-    padding-bottom: 40px;
-    border-top: 1px solid #eeeeee;
-    .parallax-spacing {
-        background-image: url("../../../Img/parallaxholder.jpg");
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        height: 300px;
-        .parallax-overlay {
-            height: 100%;
-            width: 100%;
-            background-color: rgba(#424242, .65);
-            p {
-                color: #fff;
-                line-height: 2;
-                font-weight: 300;
-                font-size: 24px;
-                padding-left: 20%;
-                padding-right: 20%;
-                padding-top: 80px;
-                margin-top: 0px;
-                text-align: center;
-            }
-        }
-    }
 }
 
 section#ourHistory {
-    padding-top: 30px;
+    border-top: 1px solid #eeeeee;
+    padding-top: 70px;
     padding-bottom: 90px;
     padding-right: 50px;
     padding-left: 20px;
@@ -314,6 +285,7 @@ section#about-navbar {
                             }
                         }
                     }
+>>>>>>> e220fd3fc766bcba3611c7efb23d5cb43feb9bba
                 }
             }
         }
