@@ -21,7 +21,7 @@
                     <md-button ui-sref="products">Products</md-button>
                     <md-button aria-label="Open Services Page" ui-sref="services">Services</md-button>
                     <md-button aria-label="Open Learn Page" ui-sref="education.academic">Education</md-button>
-                    <md-button aria-label="Open about interactions menu" ng-click="" ui-sref="about">Testimonials</md-button>
+                    <md-button aria-label="Open about interactions menu" ng-click="" ui-sref="testimonials">Testimonials</md-button>
                     <md-button aria-label="Open about interactions menu" ng-click="" ui-sref="about">About</md-button>
                     <md-button aria-label="Contact Us" ng-click="" ui-sref="about"><i class="fa fa-envelope-o"></i></md-button>
                 </li>
@@ -135,24 +135,6 @@
     @Scripts.Render("~/bundles/angular")
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.5.0/angular-material-icons.min.js"></script> 
 
-    
-    <script>
-        $("#stick-ul1").hide();
-        $("#stick-ul2").hide();
-        $("#stick-ul3").hide();
-        $(window).bind('scroll', function () {
-            if ($(window).scrollTop() > 100) {
-                $("#sticky-header").addClass("remove-display");
-                $("#stick-ul1").show();
-                $("#stick-ul2").show();
-                $("#stick-ul3").show();
-            } else {
-                $("#sticky-header").removeClass("remove-display");
-                $("#stick-ul1").hide();
-                $("#stick-ul2").hide();
-                $("#stick-ul3").hide();
-            }
-        });
-    </script>
+   
 </body>
 </html>
