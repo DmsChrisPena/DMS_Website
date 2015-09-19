@@ -89,8 +89,8 @@ md-toolbar {
         margin: 0px;
         padding: 0px;
         text-align: center;
-        &:first-child {
-            text-align: right;
+        &:nth-child(1) {
+            text-align: center;
             margin: 0px;
             li {
                 display: inline;
@@ -118,7 +118,7 @@ md-toolbar {
                 }
             }
         }
-        &:nth-child(2) {
+        &:nth-child(1) {
             li {
                 display: inline;
                 .md-button {
@@ -140,7 +140,7 @@ md-toolbar {
                 }
             }
         }
-        &:nth-child(3) {
+        &:nth-child(1) {
             margin: 0px;
             padding: 0px;
             li {
@@ -161,16 +161,16 @@ md-toolbar {
 }
 
 .navbar {
-    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
-    height: 44px;
-    background-color: #fff !important;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75); 
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75); 
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
     ul {
-        &:first-child {
-            text-align: right;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        &:nth-child(1) {
+            text-align: center;
             margin: 0px;
-            padding-left: 0px;
             li {
                 display: inline;
                 color: rgba(255, 255, 255, 0.76);
@@ -197,20 +197,14 @@ md-toolbar {
                 }
             }
         }
-
-        &:nth-child(2) {
-            margin: 0px;
-            text-align: center;
-            padding-left: 0px;
+        &:nth-child(1) {
             li {
-                .md-menu {
-
-                }
+                display: inline;
                 .md-button {
-                    padding: 0px;
                     color: rgba(0, 0, 0, 0.75);
                     margin: 0px;
                     font-weight: 500;
+                    height: 44px;
                     padding: 5px 24px 1px 24px;
                     /* HOVER OFF */
                     border-bottom: 3px solid transparent;
@@ -223,16 +217,11 @@ md-toolbar {
                         color: black;
                     }
                 }
-                display: inline;
-                color: rgba(255, 255, 255, 0.75);
-                font-size: 14px;
-                text-transform: uppercase;
             }
         }
-        &:nth-child(3) {
+        &:nth-child(1) {
             margin: 0px;
             padding: 0px;
-            padding-left: 38px;
             li {
                 display: inline;
                 .md-button {
@@ -247,7 +236,6 @@ md-toolbar {
                 }
             }
         }
-
     }
 }
 .text-center {
