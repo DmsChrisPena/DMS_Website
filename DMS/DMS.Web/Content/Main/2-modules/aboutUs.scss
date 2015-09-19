@@ -377,14 +377,37 @@ section#university {
 }
 
 section#about-navbar {
+    padding-right: 23%;
+    height: 30px;
+    background-color: #F7F7F7;
+    text-align: right;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+    .md-button {
+        line-height: 20px;
+        min-height: 10px;
+        font-size: 10px;
+        font-weight: 400;
+        color: #333;
+        margin-left: 0px;
+        margin-right: 0px;
+        &:first-child {
+            float: left !important;
+            font-size: 14px;
+            font-weight: 500;
+            margin-left: 28%;
+        }
+    }
+}
+
+/*section#about-navbar {
     div {
         md-tabs {
             md-tabs-wrapper {
                 md-tabs-canvas {
                     md-pagination-wrapper {
                         md-tab-item {
-                            -webkit-animation-name: animate-tabs; /* Chrome, Safari, Opera */
-                            -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+                            -webkit-animation-name: animate-tabs;
+                            -webkit-animation-duration: 0.5s;
                             animation-name: animate-tabs;
                             animation-duration: 0.4s;
                             @keyframes animate-tabs {
@@ -397,4 +420,4 @@ section#about-navbar {
             }
         }
     }
-}
+}*/

@@ -24,7 +24,10 @@
             }).state('education', { // education pages
                 abstract: true,
                 url: '/education',
-                template: '<ui-view/>'
+                template: '<ui-view/>',
+            }).state('products', { // products pages
+                url: '/products',
+                templateUrl: 'app/components/solutions/products.html'
             }).state('education.academic', { 
                 url: '/academic',
                 templateUrl: 'app/components/education/views/academic.html',
