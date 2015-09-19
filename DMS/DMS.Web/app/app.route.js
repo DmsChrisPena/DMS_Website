@@ -41,9 +41,8 @@
                 templateUrl: 'app/components/education/views/publications.html',
                 controller: 'educationController as vm'
             }).state('services', { // services pages
-                abstract: true,
                 url: '/services',
-                template: '<ui-view/>'
+                templateUrl: 'app/components/services/services.html'
             }).state('services.consulting', { 
                 url: '/consulting',
                 templateUrl: 'app/components/services/views/consulting.html',
