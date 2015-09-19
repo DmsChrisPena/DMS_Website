@@ -55,9 +55,7 @@
         }
     }
 }*/
-.test {
-    color: red;
-}
+
 .center-block {
   	display: block;
   	margin-right: auto;
@@ -148,13 +146,15 @@ md-toolbar {
             li {
                 display: inline;
                 .md-button {
-                    margin: 0px;
-                    color: rgba(0, 0, 0, 0.75);
-                    transition: all .2s ease;
-                    &:hover {
-                        font-size: 24px;
-                        color: black;
-                        transition: font-size .2s ease;
+                    &:last-child {
+                        margin: 0px;
+                        color: rgba(0, 0, 0, 0.75);
+                        transition: all .2s ease;
+                        &:hover {
+                            font-size: 24px;
+                            color: black;
+                            transition: font-size .2s ease;
+                        }
                     }
                 }
             }
@@ -163,9 +163,10 @@ md-toolbar {
 }
 
 .navbar {
-    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75); 
-    -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75); 
-    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75) !important;
+    -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75) !important;
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75) !important;
+    height: 44px;
     ul {
         margin: 0px;
         padding: 0px;
@@ -227,13 +228,15 @@ md-toolbar {
             li {
                 display: inline;
                 .md-button {
-                    margin: 0px;
-                    color: rgba(0, 0, 0, 0.75);
-                    transition: all .2s ease;
-                    &:hover {
-                        font-size: 24px;
-                        color: black;
-                        transition: font-size .2s ease;
+                    &:last-child {
+                        margin: 0px;
+                        color: rgba(0, 0, 0, 0.75);
+                        transition: all .2s ease;
+                        &:hover {
+                            font-size: 24px;
+                            color: black;
+                            transition: font-size .2s ease;
+                        }
                     }
                 }
             }
