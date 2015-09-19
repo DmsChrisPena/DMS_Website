@@ -1,12 +1,14 @@
 ﻿<section id="about-navbar" layout="row">
-    <div flex="100">
-        <md-button class="about-header" ui-sref="about">About</md-button>
-        <md-button ui-sref="about">Our Mission</md-button>
-        <md-button ui-sref="about">History</md-button>
-        <md-button ui-sref="about">The Industry</md-button>
-        <md-button ui-sref="about">University</md-button>
-        <md-button ui-sref="about">Contact Us</md-button>
-    </div>
+    <ul flex="100">
+        <li>
+            <md-button class="about-header" ui-sref="about">About</md-button>
+            <md-button ui-sref="about">Our Mission</md-button>
+            <md-button ui-sref="about">History</md-button>
+            <md-button ui-sref="about">The Industry</md-button>
+            <md-button ui-sref="about">University</md-button>
+            <md-button ui-sref="about">Contact Us</md-button>
+        </li>
+    </ul>
 </section>
 
 <section layout="row" id="ourMission" layout-wrap>
@@ -252,6 +254,16 @@
     <div flex="10"></div>
 
 
-<section id="testimonials"></section>
+<script>
+    $(window).bind('scroll', function () {
+        if ($(window).scrollTop() > 100) {
+            $("#about-navbar").addClass("fix-the-navbar");
+        } else {
+            $("#about-navbar").removeClass("fix-the-navbar");
+        }
+    });
+</script>
+
+
 
 <div ng-include="'/app/components/contact/inPageContactUs.html'"></div>
