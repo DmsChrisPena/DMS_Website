@@ -12,7 +12,7 @@
         .slider-container {
             position: absolute;
             top: 230px;
-            width: 100%;
+            width: 100%; 
             height: 300px;
             div {
                 p {
@@ -71,7 +71,23 @@
     margin: 0px !important;
 }
 
+.container {
+  padding-right: 7%;
+  padding-left: 7%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 section#dmsHelp {
+    @extend .container;
+    @media(max-width: 1000px) {
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+    @media (min-width: 1550px) {
+        padding-left: 10%;
+        padding-right: 15%;
+    }
     padding-top: 45px;
     padding-bottom: 90px;
     border-bottom: 1px solid #eeeeee;
@@ -87,12 +103,19 @@ section#dmsHelp {
             }
         }
         &:nth-child(2) {
-            padding-left: 60px;
+            @media(max-width: 1000px) {
+                padding-right: 3%;
+            }
+            padding-right: 50px;
+            padding-bottom: 50px;
             h3 {
                 color: #4a6781;
                 font-weight: 300;
                 font-size: 26px;
                 margin: 0px;
+                @media(max-width: 1000px) {
+                    @extend .text-center;
+                }
             }
             p {
                 line-height: 1.5;
@@ -125,6 +148,8 @@ section#dmsHelp {
         &:nth-child(3) {
             img {
                 margin-top: 16px;
+                width: 500px;
+                @extend .center-block;
             }
             p {
                 font-weight: 300;
@@ -136,6 +161,11 @@ section#dmsHelp {
 }
 
 section#ourServices {
+    @extend .container;
+    @media (min-width: 1600px) {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
     padding-top: 70px;
     padding-bottom: 90px;
     background-color: #fff;
@@ -151,29 +181,33 @@ section#ourServices {
                 @extend .section-subheader;
             }
         }
-
-        &:nth-child(2) {
+        md-card {
             md-content {
-                md-card {
-                    margin-left: 26px;
-                    margin-right: 26px;
-                    md-card-content {
-                        h2 {
-                            font-size: 26px;
-                            color: #444444;
-                            font-weight: 400;
-                        }
-                        p {
-                            color: #666666;
-                            font-weight: 400;
-                            font-size: 14px;
-                            line-height: 1.5;
-                        }
+                ng-md-icon {
+                    @extend .center-block;
+                }
+            }
+        }
+        md-content {
+            md-card {
+                margin-left: 26px;
+                margin-right: 26px;
+                md-card-content {
+                    h2 {
+                        font-size: 26px;
+                        color: #444444;
+                        font-weight: 400;
                     }
-                    .md-actions {
-                        .md-button {
-                            background-color: #3F51B5;
-                        }
+                    p {
+                        color: #666666;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 1.5;
+                    }
+                }
+                .md-actions {
+                    .md-button {
+                        background-color: #3F51B5;
                     }
                 }
             }
