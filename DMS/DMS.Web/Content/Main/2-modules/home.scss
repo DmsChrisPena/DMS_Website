@@ -12,7 +12,7 @@
         .slider-container {
             position: absolute;
             top: 230px;
-            width: 100%;
+            width: 100%; 
             height: 300px;
             div {
                 p {
@@ -71,8 +71,38 @@
     margin: 0px !important;
 }
 
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 section#dmsHelp {
-    padding-top: 90px;
+    @extend .container;
+    padding-top: 45px;
     padding-bottom: 90px;
     border-bottom: 1px solid #eeeeee;
     div {
@@ -87,12 +117,19 @@ section#dmsHelp {
             }
         }
         &:nth-child(2) {
-            padding-left: 60px;
+            @media(max-width: 1000px) {
+                padding-right: 3%;
+            }
+            padding-right: 50px;
+            padding-bottom: 50px;
             h3 {
                 color: #4a6781;
                 font-weight: 300;
                 font-size: 26px;
                 margin: 0px;
+                @media(max-width: 1000px) {
+                    @extend .text-center;
+                }
             }
             p {
                 line-height: 1.5;
@@ -125,6 +162,8 @@ section#dmsHelp {
         &:nth-child(3) {
             img {
                 margin-top: 16px;
+                width: 500px;
+                @extend .center-block;
             }
             p {
                 font-weight: 300;
@@ -136,10 +175,36 @@ section#dmsHelp {
 }
 
 section#ourServices {
+    @extend .container;
+    @media (min-width: 1600px) {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
     padding-top: 70px;
     padding-bottom: 90px;
     background-color: #fff;
     border-bottom: 1px solid #eeeeee;
+    md-card {
+        @media (max-width: 950px) {
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 30px;
+        }
+        md-card-content {
+            @extend .text-center;
+            h2 {
+                color: #444444;
+                font-size: 26px;
+                font-weight: 400;
+            }
+            p {
+                color: #666666;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.5;
+            }
+        }
+    }
     div {
         padding-bottom: 36px;
         @extend .text-center;
@@ -151,29 +216,26 @@ section#ourServices {
                 @extend .section-subheader;
             }
         }
-
-        &:nth-child(2) {
-            md-content {
-                md-card {
-                    margin-left: 26px;
-                    margin-right: 26px;
-                    md-card-content {
-                        h2 {
-                            font-size: 26px;
-                            color: #444444;
-                            font-weight: 400;
-                        }
-                        p {
-                            color: #666666;
-                            font-weight: 400;
-                            font-size: 14px;
-                            line-height: 1.5;
-                        }
+        md-content {
+            md-card {
+                margin-left: 26px;
+                margin-right: 26px;
+                md-card-content {
+                    h2 {
+                        font-size: 26px;
+                        color: #444444;
+                        font-weight: 400;
                     }
-                    .md-actions {
-                        .md-button {
-                            background-color: #3F51B5;
-                        }
+                    p {
+                        color: #666666;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 1.5;
+                    }
+                }
+                .md-actions {
+                    .md-button {
+                        background-color: #3F51B5;
                     }
                 }
             }
@@ -183,11 +245,10 @@ section#ourServices {
 
 section#whyUs {
     border-bottom: 1px solid #eeeeee;
-    height: 650px;
+    height: auto;
     background-color: #f5f5f5;
     .background-right {
         background-image: url(http://bootstraplovers.com/templates/assan-v1.8/img/showcase-2.jpg);
-        background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: 55% 50%;
         background-size: cover;
@@ -251,6 +312,7 @@ section#whyUs {
 }
 
 section#contactUs {
+    @extend .container;
     padding-top: 90px;
     padding-bottom: 90px;
     border-bottom: 1px solid #eeeeee;
@@ -267,7 +329,7 @@ section#contactUs {
         }
         &:nth-child(2) {
             img {
-                margin-top: 40px;
+                margin-top: 0px;
                 height: 350px;
                 @extend .center-block;
                 @extend .img-responsive;
@@ -324,6 +386,21 @@ section#contactUs {
     }
 }
 
+section#cta-home {
+    -webkit-box-shadow: 0px -2px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -2px 4px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px -2px 4px 0px rgba(0,0,0,0.75);
+    height: 50px;
+    background-color: #333;
+    p {
+        @extend .text-center;
+        color: #fff;
+        font-weight: 300;
+        font-size: 14px;
+        margin: 0px;
+        padding-top: 14px;
+    }
+}
 /* Home Variables */
 
 .section-header {

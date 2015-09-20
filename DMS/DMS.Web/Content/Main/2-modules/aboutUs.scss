@@ -1,7 +1,7 @@
 ﻿section#ourMission {
-    padding-top: 3%;
-    padding-bottom: 4%;
-    background-color: #f5f5f5;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: #fff;
         /*.background-right {
         background-image: url("https://images.unsplash.com/photo-1427751840561-9852520f8ce8?q=80&fm=jpg&s=ee073e336649f68d3caa9ffa6e262cf8");
         background-repeat: no-repeat;
@@ -177,10 +177,12 @@ section#ourHistory {
 section#theIndustry {
     padding-bottom: 90px;
     border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
     .industry-parallax {
         background-image: url(http://www.commendusa.com/uploads/media/oil-gas-industry_01.jpg);
         background-size: cover;
-        background-attachment: fixed;
+        background-position: 40% 46%;
+        /*background-attachment: fixed;*/
         background-repeat: no-repeat;
         height: 300px;
         .industry-overlay {
@@ -382,14 +384,69 @@ section#university {
 }
 
 section#about-navbar {
+    padding-right: 23%;
+    height: 40px;
+    background-color: rgba(8, 53, 123, 0.8);
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+    ul {
+        margin: 0px;
+        li {
+            margin-left: 25%;
+            display: inline;
+            list-style-type: none;
+            @media(min-width: 1450px) {
+                margin-left: 23%;
+            }
+            @media(min-width: 1630px) {
+                margin-left: 20%;
+            }
+            @media(min-width: 1630px) {
+                margin-left: 15%;
+            }
+            @media(min-width: 1630px) {
+                margin-left: 10%;
+            }
+        }
+    }
+    .md-button {
+        line-height: 30px;
+        min-height: 10px;
+        font-size: 11px;
+        font-weight: 400;
+        color: #fff;
+        margin-left: 0px;
+        margin-right: 0px;
+        &:first-child {
+            @media(min-width: 1450px) {
+                margin-left: 25%;
+            }
+            @media(min-width: 1630px) {
+                margin-left: 30%;
+            }
+            @media(min-width: 1850px) {
+                margin-left: 35%;
+            }
+            @media(min-width: 1850px) {
+                margin-left: 40%;
+            }
+            float: left !important;
+            font-size: 14px;
+            font-weight: 500;
+            margin-left: 20%;
+        }
+    }
+}
+
+/*section#about-navbar {
     div {
         md-tabs {
             md-tabs-wrapper {
                 md-tabs-canvas {
                     md-pagination-wrapper {
                         md-tab-item {
-                            -webkit-animation-name: animate-tabs; /* Chrome, Safari, Opera */
-                            -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+                            -webkit-animation-name: animate-tabs;
+                            -webkit-animation-duration: 0.5s;
                             animation-name: animate-tabs;
                             animation-duration: 0.4s;
                             @keyframes animate-tabs {
@@ -402,10 +459,9 @@ section#about-navbar {
             }
         }
     }
-}
+}*/
 
 .card-shadow {
     -webkit-box-shadow: 2px 2px 15px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 2px 15px 1px rgba(0,0,0,0.75);
     box-shadow: 2px 2px 15px 1px rgba(0,0,0,0.75);
-}

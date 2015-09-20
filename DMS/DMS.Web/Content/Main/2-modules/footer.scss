@@ -1,6 +1,5 @@
 ﻿section#md-footer {
-    height: 300px;
-    width: 100%;
+    height: auto;
     background-image: url(../../../Img/bgfooter.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -113,7 +112,10 @@
         font-size: 14px;
     }
     input {
-        margin-top: 10px;
+        @media (max-width: 616px) {
+            margin-top: 10px;
+        }
+        margin-top: 0px;
         padding: 2px;
         background-color: #333;
         font-size: 14px;

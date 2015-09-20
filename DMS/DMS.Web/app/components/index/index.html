@@ -4,16 +4,16 @@
         <ul>
             <li data-transition="fade">
                 <!-- MAIN IMAGE -->
-                <img src="http://theme.stepofweb.com/Smarty/v1.1.0/HTML/assets/images/demo/wall2.jpg" alt="" width="1920" height="1280">
+                <img src="../../../Img/dms_home_slider_background.png" alt="" width="1920" height="1280">
                 <!-- LAYER NR. 1 -->
                 <div class="tp-caption News-Title"
-                        data-x="left" data-hoffset="340"
-                        data-y="top" data-voffset="-90"
+                        data-x="left" data-hoffset="0"
+                        data-y="top" data-voffset="0"
                         data-whitespace="normal"
-                        data-transform_idle="o:1;"
+                        data-transform_idle="o:1;"http://localhost:51829/Img/dms_home_slider_text___card.png
                         data-transform_in="o:0"
                         data-transform_out="o:0"
-                        data-start="500"><img style="height: 600px;" src="../../../Img/dmstextlogowithline.png" /></div>
+                        data-start="500"><img height="535" width="1440" src="../../../Img/dms_home_slider_text___card.png" /></div>
             </li>
 
             <li data-transition="fade">
@@ -42,17 +42,20 @@ jQuery(document).ready(function() {
           arrows:{enable:true}
       },
       gridwidth:1440,
-      gridheight:435
+      gridheight:535
     });
 });
 </script>
 
+<section id="cta-home">
+    <p>Explain one of your product benefits here. Let users know how they can benefit using your product.</p>
+</section>
 <section layout="row" id="dmsHelp" layout-wrap>
     <div flex="100">
         <h2>How Can DMS Help?</h2>
         <h4>The New and Revolutionary Approach of Providing a Proven and Affordable ETRM Solution.</h4>
     </div>
-    <div flex="33">
+    <div flex="50" flex-md="100" flex-sm="100">
         <h3>Here's our Solution</h3>
         <p>Explain one of your product benefits here. Let users know how they can benefit using your product. It’s also a good idea to back it up with a testimonial or tweet from your users.</p>
         <p>The original PSD of the graphic is included in the package. You can easily customise the PSD to meet your needs.</p>
@@ -65,8 +68,8 @@ jQuery(document).ready(function() {
         </div>
 
     </div>
-    <div flex="66">
-        <img class="center-block img-responsive" style="height: 460px;" src="../../../Img/BridgeTheGap_Final.png" alt="Alternate Text" />
+    <div flex="50" flex-md="100" flex-sm="100">
+        <img class="center-block img-responsive" src="../../../Img/BridgeTheGap_LessBusy.png" alt="Alternate Text" />
         <!--<p class="text-center">Above is a screenshot of our upcoming product EnergyPro</p>-->
     </div>
 
@@ -76,9 +79,48 @@ jQuery(document).ready(function() {
         <h2>Our Solutions</h2>
         <h4>We have been providing software services and solutions for over 20 years.</h4>
     </div>
+    <md-card hide-gt-md>
+        <md-card-content>
+            <ng-md-icon icon="supervisor_account" size="72" style="fill: #3F51B5;"></ng-md-icon>
+            <h2 class="md-title">Products</h2>
+            <p>
+                The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+                two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+            </p>
+        </md-card-content>
+        <div class="md-actions" layout="row" layout-align="center center">
+            <md-button class="md-raised md-primary">Learn More</md-button>
+        </div>
+    </md-card>
+    <md-card hide-gt-md>
+        <md-card-content>
+            <ng-md-icon icon="wallet_membership" size="72" style="fill: #3F51B5;"></ng-md-icon>
+            <h2 class="md-title">Services</h2>
+            <p>
+                The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+                two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+            </p>
+        </md-card-content>
+        <div class="md-actions" layout="row" layout-align="center center">
+            <md-button class="md-raised md-primary">Learn More</md-button>
+        </div>
+    </md-card>
+    <md-card hide-gt-md>
+        <md-card-content>
+            <ng-md-icon icon="assignment" size="72" style="fill: #3F51B5;"></ng-md-icon>
+            <h2 class="md-title">Learn</h2>
+            <p>
+                The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+                two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+            </p>
+        </md-card-content>
+        <div class="md-actions" layout="row" layout-align="center center">
+            <md-button class="md-raised md-primary">Learn More</md-button>
+        </div>
+    </md-card>    
     <div flex="100">
         <md-content layout="row">
-            <md-card flex>
+            <md-card hide-md hide-sm>
                 <md-card-content>
                     <ng-md-icon icon="supervisor_account" size="72" style="fill: #3F51B5;"></ng-md-icon>
                     <h2 class="md-title">Products</h2>
@@ -91,7 +133,7 @@ jQuery(document).ready(function() {
                     <md-button class="md-raised md-primary">Learn More</md-button>
                 </div>
             </md-card>
-            <md-card flex>
+            <md-card hide-md hide-sm>
                 <md-card-content>
                     <ng-md-icon icon="wallet_membership" size="72" style="fill: #3F51B5;"></ng-md-icon>
                     <h2 class="md-title">Services</h2>
@@ -104,7 +146,7 @@ jQuery(document).ready(function() {
                     <md-button class="md-raised md-primary">Learn More</md-button>
                 </div>
             </md-card>
-            <md-card flex>
+            <md-card hide-md hide-sm>
                 <md-card-content>
                     <ng-md-icon icon="assignment" size="72" style="fill: #3F51B5;"></ng-md-icon>
                     <h2 class="md-title">Learn</h2>
@@ -120,8 +162,8 @@ jQuery(document).ready(function() {
         </md-content>
     </div>
 </section>
-<section layout="row" id="whyUs" layout-wrap>
-    <div flex="50">
+<section class="container-fluid" style="padding-right: 0px;" layout="row" id="whyUs" layout-wrap>
+    <div flex="50" flex-md="100" flex-sm="100">
         <h2>Why DMS?</h2>
         <h4 class="section-subheader text-center">We have proven that our solutions can improve any business.</h4>
         <ul>
@@ -157,9 +199,44 @@ jQuery(document).ready(function() {
             <md-button class="md-raised md-primary">Learn More</md-button>
         </div>
     </div>
-    <div flex="50" class="background-right">
+    <div hide-md hide-sm flex="50" class="background-right">
         <div class="why-us-overlay"></div>
     </div>
 </section>
 
 <div ng-include="'/app/components/contact/inPageContactUs.html'"></div>
+
+<div id="sticky-header" style="width: 100%; height: 0px;" layout="row" ng-controller="NavBarController as vm">
+    <ul flex="100" id="stick-ul2">
+        <li>
+            <md-button ui-sref="index" aria-label="Home">
+                <img src="../../../Img/shadowdmslogo_small2.png" class="center-block" alt="DMS Logo" />
+            </md-button>
+            <md-button ui-sref="products">Products</md-button>
+            <md-button ui-sref="about">Services</md-button>
+            <md-button ui-sref="about">Education</md-button>
+            <md-button ui-sref="about">Testimonials</md-button>
+            <md-button ui-sref="about">About</md-button>
+            <md-button aria-label="Contact Us" ui-sref="about"><i class="fa fa-envelope-o"></i></md-button>
+        </li>
+    </ul>
+</div>
+
+<script>
+        $("#stick-ul1").hide();
+        $("#stick-ul2").hide();
+        $("#stick-ul3").hide();
+        $(window).bind('scroll', function () {
+            if ($(window).scrollTop() > 100) {
+                $("#sticky-header").addClass("remove-display");
+                $("#stick-ul1").show();
+                $("#stick-ul2").show();
+                $("#stick-ul3").show();
+            } else {
+                $("#sticky-header").removeClass("remove-display");
+                $("#stick-ul1").hide();
+                $("#stick-ul2").hide();
+                $("#stick-ul3").hide();
+            }
+        });
+</script>

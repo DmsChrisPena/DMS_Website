@@ -24,7 +24,10 @@
             }).state('education', { // education pages
                 abstract: true,
                 url: '/education',
-                template: '<ui-view/>'
+                template: '<ui-view/>',
+            }).state('products', { // products pages
+                url: '/products',
+                templateUrl: 'app/components/solutions/products.html'
             }).state('education.academic', { 
                 url: '/academic',
                 templateUrl: 'app/components/education/views/academic.html',
@@ -38,9 +41,8 @@
                 templateUrl: 'app/components/education/views/publications.html',
                 controller: 'educationController as vm'
             }).state('services', { // services pages
-                abstract: true,
                 url: '/services',
-                template: '<ui-view/>'
+                templateUrl: 'app/components/services/services.html'
             }).state('services.consulting', { 
                 url: '/consulting',
                 templateUrl: 'app/components/services/views/consulting.html',
@@ -69,6 +71,9 @@
                 url: '/energypro',
                 templateUrl: 'app/components/solutions/energypro/energypro.html',
                 controller: 'energyproController as vm'
+            }).state('testimonials', { // testimonials pages
+                url: '/testimonials',
+                templateUrl: 'app/components/testimonials/testimonials.html'
             });
     }
 
