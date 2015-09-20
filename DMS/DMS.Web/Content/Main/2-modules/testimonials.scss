@@ -1,1 +1,58 @@
-﻿
+﻿section#main-testimonials {
+
+    padding-top: 30px;
+    h2 {
+        @extend .section-header;
+        @extend .text-center;
+        margin-top: 30px;
+    }
+
+    h4 {
+        @extend .section-subheader;
+        @extend .text-center;
+        border-bottom: 1px solid #eeeeee;
+        font-size: 16px;
+        padding-bottom: 12px;
+    }
+    .testimonials-slider {
+        md-tabs {
+        }
+        md-content {
+            height: 700px;
+            md-card {
+                width: 500px;
+                height: 210px;
+                p {
+                    padding-top: 10px;
+                    margin-top: 16px;
+                    color: #666666;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 1.5;
+                    font-style: italic;
+                }
+                md-card-content {
+                    padding-top: 0px;
+                    p {
+                        &:nth-child(2) {
+                            padding-top: 0px;
+                        }
+                        margin: 0px;
+                        padding-left: 5%;
+                    }
+                }
+            }
+            img {
+                max-width: none;
+                max-height: none;
+                min-height: 0px;
+                min-width: 0px;
+                height: 80px;
+                float: left;
+                width: 80px;
+                margin-top: 20px;
+                padding-left: 8px;
+            }
+        }
+    }
+}
