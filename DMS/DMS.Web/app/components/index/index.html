@@ -120,7 +120,7 @@ jQuery(document).ready(function() {
     </md-card>    
     <div flex="100">
         <md-content layout="row">
-            <md-card hide-md>
+            <md-card hide-md hide-sm>
                 <md-card-content>
                     <ng-md-icon icon="supervisor_account" size="72" style="fill: #3F51B5;"></ng-md-icon>
                     <h2 class="md-title">Products</h2>
@@ -133,7 +133,7 @@ jQuery(document).ready(function() {
                     <md-button class="md-raised md-primary">Learn More</md-button>
                 </div>
             </md-card>
-            <md-card hide-md>
+            <md-card hide-md hide-sm>
                 <md-card-content>
                     <ng-md-icon icon="wallet_membership" size="72" style="fill: #3F51B5;"></ng-md-icon>
                     <h2 class="md-title">Services</h2>
@@ -146,7 +146,7 @@ jQuery(document).ready(function() {
                     <md-button class="md-raised md-primary">Learn More</md-button>
                 </div>
             </md-card>
-            <md-card hide-md>
+            <md-card hide-md hide-sm>
                 <md-card-content>
                     <ng-md-icon icon="assignment" size="72" style="fill: #3F51B5;"></ng-md-icon>
                     <h2 class="md-title">Learn</h2>
@@ -162,8 +162,8 @@ jQuery(document).ready(function() {
         </md-content>
     </div>
 </section>
-<section layout="row" id="whyUs" layout-wrap>
-    <div flex="50">
+<section class="container-fluid" style="padding-right: 0px;" layout="row" id="whyUs" layout-wrap>
+    <div flex="50" flex-md="100" flex-sm="100">
         <h2>Why DMS?</h2>
         <h4 class="section-subheader text-center">We have proven that our solutions can improve any business.</h4>
         <ul>
@@ -208,7 +208,7 @@ jQuery(document).ready(function() {
             <md-button class="md-raised md-primary">Learn More</md-button>
         </div>
     </div>
-    <div flex="50" class="background-right">
+    <div hide-md hide-sm flex="50" class="background-right">
         <div class="why-us-overlay"></div>
     </div>
 </section>
