@@ -31,13 +31,19 @@
         div {
             padding-top: 1%;
             div {
-                md-card-content {
-                margin: 0px;
-                line-height: 1.75;
-                color: #666666;
-                font-size: 16px;
-                text-align: left;
-            }
+                md-card {
+                    background-color: $teal;
+                    @extend .card-shadow;
+                    ul {
+                        li {
+                            margin: 0px;
+                            color: white;
+                            font-size: 16px;
+                            text-align: left;
+                        }
+                    }
+                }
+
                 ul {
                     list-style: none;
                     padding-right: 4%;
@@ -396,4 +402,10 @@ section#about-navbar {
             }
         }
     }
+}
+
+.card-shadow {
+    -webkit-box-shadow: 2px 2px 15px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 15px 1px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 15px 1px rgba(0,0,0,0.75);
 }
