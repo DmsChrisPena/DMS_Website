@@ -1,6 +1,8 @@
 DMS Team,<br/>
-We have a new contact! Please respond to the message below. Remember NOT to hit reply to this message. Instead create a new message to the email address provided below.<br/>
+<br/>
+We have a new contact! Please respond to the message below. Remember <b>NOT</b> to hit reply to this message. Instead create a new message to the email address provided below.<br/>
 Thanks,<br/>
+<br/>
 DMS Online<br/>
 <br/>
 Topic: {{topic}}<br/>
