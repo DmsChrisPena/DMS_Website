@@ -1,7 +1,7 @@
 ﻿<section id="about-navbar" layout="row">
-    <ul flex="100">
+    <ul flex="100" class="container">
         <li>
-            <md-button class="about-header" ui-sref="about">About</md-button>
+            <md-button hide-sm hide-md class="about-header" ui-sref="about">About</md-button>
             <md-button ui-sref="about">Our Mission</md-button>
             <md-button ui-sref="about">History</md-button>
             <md-button ui-sref="about">The Industry</md-button>
@@ -11,7 +11,7 @@
     </ul>
 </section>
 
-<section layout="row" id="ourMission" layout-wrap>
+<section class="container" layout="row" id="ourMission" layout-wrap>
     <div flex="100">
         <h2>Our Mission</h2>
         <div layout="row">
@@ -73,7 +73,7 @@
 
 </section>-->
 
-<section layout="row" id="ourHistory" layout-wrap>
+<section class="container" layout="row" id="ourHistory" layout-wrap>
     <div flex offset="33"></div>
     <div flex="66" class="history-title">
         <h2>Our History</h2>
@@ -119,13 +119,13 @@
     </div>
 </section>
 
-<section id="theIndustry" layout="row" layout-wrap>
-    <div class="industry-parallax" flex="100">
-        <div class="industry-overlay">
-            <p>"The gas industry and the solutions providers who serve it are at a critical time. Solutions providers have not changed they way they do business in the last 50 years."</p>
-        </div>
+<div class="industry-parallax" flex="100">
+    <div class="industry-overlay">
+        <p>"The gas industry and the solutions providers who serve it are at a critical time. Solutions providers have not changed they way they do business in the last 50 years."</p>
     </div>
-    <h2 flex="100">The Industry</h2>
+</div>
+<section class="container" id="theIndustry" layout="row" layout-wrap>
+    <h5 flex="100">The Industry</h5>
     <div flex="100" class="history-title">
         <h4>Different. From top to bottom.</h4>
     </div>
