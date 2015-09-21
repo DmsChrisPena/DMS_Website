@@ -130,7 +130,7 @@ namespace DMS.Data.Respositories
             //myMessage.AddAttachment(@"C:\file1.txt");
 
             // Create credentials, specifying your user name and password.
-            NetworkCredential credentials = new NetworkCredential("udmschrispena", "1q0p2w9o");
+            NetworkCredential credentials = new NetworkCredential("dmshouston", "$tr0ngB4d3mail");
 
             // Create an Web transport for sending email.
             SendGrid.Web transportWeb = new SendGrid.Web("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");
