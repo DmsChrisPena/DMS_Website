@@ -1,4 +1,160 @@
-﻿section#contact-form-main {
+﻿section#contactUs {
+    @extend .container;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    border-bottom: 1px solid #eeeeee;
+    div {
+        &:first-child {
+            text-align: center;
+            padding-bottom: 30px;
+            h2 {
+                @extend .section-header;
+            }
+            h4 {
+                @extend .section-subheader;
+            }
+        }
+        &:nth-child(2) {
+            img {
+                margin-top: 0px;
+                height: 350px;
+                @extend .center-block;
+                @extend .img-responsive;
+            }
+            p {
+                @extend .section-subheader;
+                line-height: 2.0;
+            }
+        }
+        &:nth-child(3) {
+            md-card {
+                margin-top: 70px;
+                margin-left: 30px;
+                margin-right: 30px;
+                md-card-content {
+                    form {
+                        .md-actions {
+                            &:first-child {
+                                div {
+                                    &:nth-child(1) {
+                                        h5 {
+                                            padding-top: 20px;
+                                            padding-left: 10px;
+                                            font-size: 16px;
+                                            font-weight: 300;
+                                            color: #999999;
+                                            margin: 0px;
+                                        }
+                                    }
+                                }
+                                .md-button {
+                                        color: #E53935;
+                                        font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                    .md-actions {
+                        &:nth-child(2) {
+                            h5 {
+                            padding-top: 0px;
+                            padding-left: 10px;
+                            font-size: 16px;
+                            font-weight: 300;
+                            color: #999999;
+                            margin: 0px;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+md-sidenav {
+    min-width: 800px;
+    padding: 40px;
+}
+
+section#contactUs-sidenav {
+    @extend .container;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding: 40px;
+    div {
+        &:first-child {
+            img {
+                margin-top: 0px;
+                height: 350px;
+                @extend .center-block;
+                @extend .img-responsive;
+            }
+        }
+        &:nth-child(2) {
+            text-align: center;
+            padding-bottom: 30px;
+            padding-left: 40px;
+            h2 {
+                @extend .section-header;
+            }
+            h4 {
+                @extend .section-subheader;
+            }
+            p {
+                @extend .section-subheader;
+                line-height: 2.0;
+            }
+        }
+        &:nth-child(3) {
+            md-card {
+                margin-top: 70px;
+                margin-left: 30px;
+                margin-right: 30px;
+                md-card-content {
+                    form {
+                        .md-actions {
+                            &:first-child {
+                                div {
+                                    &:nth-child(1) {
+                                        h5 {
+                                            padding-top: 20px;
+                                            padding-left: 10px;
+                                            font-size: 16px;
+                                            font-weight: 300;
+                                            color: #999999;
+                                            margin: 0px;
+                                        }
+                                    }
+                                }
+                                .md-button {
+                                        color: #E53935;
+                                        font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                    .md-actions {
+                        &:nth-child(2) {
+                            h5 {
+                            padding-top: 0px;
+                            padding-left: 10px;
+                            font-size: 16px;
+                            font-weight: 300;
+                            color: #999999;
+                            margin: 0px;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+section#contact-form-main {
     md-content {
         md-card {
             min-height: 150px;
@@ -18,4 +174,8 @@
             background-color: $secondary-6;
         }
     }
+}
+
+#contactUs-sidenav > div.flex.flex-100.flex-gt-md.flex-gt-md-66 > h2 {
+    @extend .section-header;
 }

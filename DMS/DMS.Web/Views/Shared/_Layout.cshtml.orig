@@ -10,29 +10,50 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
+<<<<<<< HEAD
+    <div id="sticky-header" style="width: 100%; height: 0px;" layout="row" ng-controller="NavBarController as vm">
+        <ul flex="10">
+            <li>
+                <md-button ui-sref="index" aria-label="Home">
+                    <img src="~/Img/shadowDMSLogo_indigoSmall.png" class="center-block" alt="DMS Logo" />
+                </md-button>
+            </li>
+        </ul>
+        <ul flex="80" id="stick-ul2">
+            <li>
+                <md-button ui-sref="about">Products</md-button>
+                <md-button ui-sref="about">Services</md-button>
+                <md-button ui-sref="about">Education</md-button>
+                <md-button ui-sref="about">Testimonials</md-button>
+                <md-button ui-sref="about">About</md-button>
+            </li>
+        </ul>
+        <ul flex="10">
+            <li>
+                <md-button class="md-icon-button" aria-label="Contact Us"><i class="fa fa-envelope-o"></i></md-button>
+            </li>
+        </ul>
+    </div>
+=======
+>>>>>>> 4789063e57d98dad0ddc0d33962df9693446cd1b
 
     <md-toolbar ng-controller="NavBarController as vm">
         <div class="navbar" layout="row">
             <ul flex="100">
                 <li>
                     <md-button ui-sref="index" aria-label="Home">
-                        <img src="~/Img/shadowdmslogo_small2.png" class="center-block" alt="DMS Logo" />
+                        <img src="~/Img/shadowDMSLogo_indigoSmall.png" class="center-block" alt="DMS Logo" />
                     </md-button>
                     <md-button ui-sref="products">Products</md-button>
                     <md-button aria-label="Open Services Page" ui-sref="services">Services</md-button>
                     <md-button aria-label="Open Learn Page" ui-sref="education.academic">Education</md-button>
                     <md-button aria-label="Open about interactions menu" ng-click="" ui-sref="testimonials">Testimonials</md-button>
                     <md-button aria-label="Open about interactions menu" ng-click="" ui-sref="about">About</md-button>
-                    <md-button aria-label="Home" ng-click="vm.openContactUs();">
-                        <img src="~/Img/email-outline.svg" class="center-block" alt="Contact Us" />
-                    </md-button>
-                    @*<md-button aria-label="Contact Us" ng-click="" ui-sref="about"><i class="fa fa-envelope-o"></i></md-button>*@
+                    <md-button aria-label="Contact Us" ng-click="" ui-sref="about"><i class="fa fa-envelope-o"></i></md-button>
                 </li>
             </ul>
         </div>
     </md-toolbar>
-
-    <div ng-include="'/app/components/contact/sidenavContactUs.html'"></div>
 
         @RenderBody()
 

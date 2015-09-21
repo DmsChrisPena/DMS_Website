@@ -288,15 +288,8 @@ section#whyUs {
                         font-size: 16px;
                         padding-right: 24px;
                     }
-                    i {
-                        color: white;
-                        width: 50px;
-                        height: 50px;
-                        font-size: 17px;
-                        line-height: 50px;
-                        text-align: center;
-                        background-color: #009688;
-                        border-radius: 50%;
+                    img {
+                        padding-bottom:40px;
                     }
                     div {
                         &:first-child {
@@ -313,81 +306,6 @@ section#whyUs {
             .md-button {
                 margin-top: 26px;
                 background-color: #009688;
-            }
-        }
-    }
-}
-
-section#contactUs {
-    @extend .container;
-    padding-top: 90px;
-    padding-bottom: 90px;
-    border-bottom: 1px solid #eeeeee;
-    div {
-        &:first-child {
-            text-align: center;
-            padding-bottom: 30px;
-            h2 {
-                @extend .section-header;
-            }
-            h4 {
-                @extend .section-subheader;
-            }
-        }
-        &:nth-child(2) {
-            img {
-                margin-top: 0px;
-                height: 350px;
-                @extend .center-block;
-                @extend .img-responsive;
-            }
-            p {
-                @extend .section-subheader;
-                line-height: 2.0;
-            }
-        }
-        &:nth-child(3) {
-            md-card {
-                margin-top: 70px;
-                margin-left: 30px;
-                margin-right: 30px;
-                md-card-content {
-                    form {
-                        .md-actions {
-                            &:first-child {
-                                div {
-                                    &:nth-child(1) {
-                                        h5 {
-                                            padding-top: 20px;
-                                            padding-left: 10px;
-                                            font-size: 16px;
-                                            font-weight: 300;
-                                            color: #999999;
-                                            margin: 0px;
-                                        }
-                                    }
-                                }
-                                .md-button {
-                                        color: #E53935;
-                                        font-size: 20px;
-                                }
-                            }
-                        }
-                    }
-                    .md-actions {
-                        &:nth-child(2) {
-                            h5 {
-                            padding-top: 0px;
-                            padding-left: 10px;
-                            font-size: 16px;
-                            font-weight: 300;
-                            color: #999999;
-                            margin: 0px;
-                            }
-
-                        }
-                    }
-                }
             }
         }
     }

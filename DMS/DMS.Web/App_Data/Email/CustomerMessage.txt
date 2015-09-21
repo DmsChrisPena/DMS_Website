@@ -1,0 +1,5 @@
+Dear {{name}},<br/>
+<br/>
+Thank you for your interest in DMS {{topic}}! We have received your inquiry and will respond as soon as possible.<br/>
+<br/>
+The DMS Team

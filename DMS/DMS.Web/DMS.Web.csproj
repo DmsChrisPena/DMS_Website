@@ -208,6 +208,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\api\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -227,6 +228,7 @@
     <Content Include="app\components\about\aboutController.js" />
     <Content Include="app\components\about\aboutService.js" />
     <Content Include="app\components\contact\inPageContactUs.html" />
+    <Content Include="app\components\contact\sidenavContactUs.html" />
     <Content Include="app\components\contact\views\index.html" />
     <Content Include="app\components\contact\contactController.js" />
     <Content Include="app\components\contact\contactService.js" />
