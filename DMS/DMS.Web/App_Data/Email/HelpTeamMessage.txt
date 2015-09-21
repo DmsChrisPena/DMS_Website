@@ -1,0 +1,9 @@
+DMS Team,
+We have a new contact! Please respond to the message below. Remember NOT to hit reply to this message. Instead create a new message to the email address provided below.
+Thanks,
+DMS Online
+
+Topic: {{topic}}
+Name: {{name}}
+Email: {{email}}
+Message: {{message}}

@@ -32,25 +32,20 @@
                     <div layout="row">
                         <md-input-container flex>
                             <label>Name</label>
-                            <input ng-required="true" ng-model="user.name" type="text">
+                            <input ng-required="true" ng-model="vm.requestInfo.name" type="text">
                         </md-input-container>
                         <md-input-container flex>
                             <label>Topic</label>
-                            <md-select ng-model="ctrl.userTopic">
-                                <md-option value="1">Web Solution</md-option>
-                                <md-option value="2">Consulting</md-option>
-                                <md-option value="3">Education</md-option>
-                                <md-option value="4">Certification</md-option>
-                            </md-select>
+                            <select ng-model="vm.requestInfo.topicId" ng-options="topic.id as topic.topic for topic in vm.topics"><option value='' disabled>Choose Topic</option></select>
                         </md-input-container>
                     </div>
                     <md-input-container>
                         <label>Email</label>
-                        <input ng-model="user.email" type="email" ng-required="true">
+                        <input ng-model="vm.requestInfo.email" type="email" ng-required="true">
                     </md-input-container>
                     <md-input-container>
                         <label>Message</label>
-                        <textarea ng-required="true" ng-model="user.biography" rows="3" columns="5" md-maxlength="1000"></textarea>
+                        <textarea ng-required="true" ng-model="vm.requestInfo.message" rows="3" columns="5" md-maxlength="1000"></textarea>
                     </md-input-container>
                 </form>
                 <div class="md-actions" layout="row" layout-align="space-between center">
@@ -59,12 +54,12 @@
                         <md-tooltip>
                             Send Message
                         </md-tooltip>
-                        <img class="center-block img-responsive" style="height: 65px;" src="../../../Img/send.png" alt="Alternate Text" />
+                        <img ng-click="vm.sendRequest();" class="center-block img-responsive" style="height: 65px;" src="../../../Img/send.png" alt="Alternate Text" />
                         <!--<i class="fa fa-paper-plane"></i>-->
                     </md-button>
                     <div>
-                        <h5 ng-show="user.name">Sincerely,</h5>
-                        <h5>{{user.name}}</h5>
+                        <h5 ng-show="vm.requestInfo.name">Sincerely,</h5>
+                        <h5>{{vm.requestInfo.name}}</h5>
                     </div>
                 </div>
             </md-card-content>
