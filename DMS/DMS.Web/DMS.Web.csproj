@@ -228,6 +228,7 @@
     <Content Include="app\components\about\aboutController.js" />
     <Content Include="app\components\about\aboutService.js" />
     <Content Include="app\components\contact\inPageContactUs.html" />
+    <Content Include="app\components\contact\sidenavContactUs.html" />
     <Content Include="app\components\contact\views\index.html" />
     <Content Include="app\components\contact\contactController.js" />
     <Content Include="app\components\contact\contactService.js" />

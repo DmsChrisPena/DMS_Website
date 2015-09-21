@@ -23,7 +23,7 @@
                     <md-button aria-label="Open Learn Page" ui-sref="education.academic">Education</md-button>
                     <md-button aria-label="Open about interactions menu" ng-click="" ui-sref="testimonials">Testimonials</md-button>
                     <md-button aria-label="Open about interactions menu" ng-click="" ui-sref="about">About</md-button>
-                    <md-button ui-sref="index" aria-label="Home">
+                    <md-button aria-label="Home" ng-click="vm.openContactUs();">
                         <img src="~/Img/email-outline.svg" class="center-block" alt="Contact Us" />
                     </md-button>
                     @*<md-button aria-label="Contact Us" ng-click="" ui-sref="about"><i class="fa fa-envelope-o"></i></md-button>*@
@@ -31,6 +31,8 @@
             </ul>
         </div>
     </md-toolbar>
+
+    <div ng-include="'/app/components/contact/sidenavContactUs.html'"></div>
 
         @RenderBody()
 

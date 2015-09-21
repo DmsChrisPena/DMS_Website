@@ -17,10 +17,6 @@
                 url: '/about',
                 templateUrl: 'app/components/about/about.html',
                 controller: "aboutController as vm"
-            }).state('contact', { // contact pages
-                url: '/contact',
-                templateUrl: 'app/components/contact/views/index.html',
-                controller: 'contactController as vm'
             }).state('education', { // education pages
                 abstract: true,
                 url: '/education',

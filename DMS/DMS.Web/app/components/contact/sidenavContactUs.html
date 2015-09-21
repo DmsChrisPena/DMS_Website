@@ -1,0 +1,69 @@
+﻿<md-sidenav md-component-id="right" class="md-sidenav-right" style="min-width: 800px; padding: 40px;">
+    <section id="contactUs-sidenav" layout="row" layout-wrap ng-controller="contactController as vm">
+        <div flex="100" flex-gt-md="33">
+            <div layout="column">
+                <div flex="100">
+                    <img class="img-responsive" src="../../../Img/cloud.png" alt="Cloud Solutions" />
+                </div>
+            </div>
+        </div>
+        <div flex="100" flex-gt-md="66">
+            <h2>Contact Us</h2>
+            <h4>Send us a quick message and we'll get in touch</h4>
+            <p>Don't hesitate to contact us for any questions or requests for demos. This goes straight to humans and we will reach out to you upon receipt shortly.</p>
+        </div>
+        <div flex="100">
+            <md-card>
+                <md-card-content layout-padding>
+                    <form name="home-contact-us">
+                        <div class="md-actions" layout="row" layout-align="space-between center">
+                            <div>
+                                <h5>Dear DMS,</h5>
+                            </div>
+                            <div></div>
+                            <md-button class="md-icon-button md-accent">
+                                <md-tooltip>
+                                    Clear Form
+                                </md-tooltip>
+                                <i class="fa fa-eraser"></i>
+                            </md-button>
+                        </div>
+                        <div layout="row">
+                            <md-input-container flex>
+                                <label>Name</label>
+                                <input ng-required="true" ng-model="vm.requestInfo.name" type="text">
+                            </md-input-container>
+                            <md-input-container flex>
+                                <label>Topic</label>
+                                <select ng-model="vm.requestInfo.topicId" ng-options="topic.id as topic.topic for topic in vm.topics"><option value='' disabled>Choose Topic</option></select>
+                            </md-input-container>
+                        </div>
+                        <md-input-container>
+                            <label>Email</label>
+                            <input ng-model="vm.requestInfo.email" type="email" ng-required="true">
+                        </md-input-container>
+                        <md-input-container>
+                            <label>Message</label>
+                            <textarea ng-required="true" ng-model="vm.requestInfo.message" rows="3" columns="5" md-maxlength="1000"></textarea>
+                        </md-input-container>
+                    </form>
+                    <div class="md-actions" layout="row" layout-align="space-between center">
+                        <div></div>
+                        <md-button>
+                            <md-tooltip>
+                                Send Message
+                            </md-tooltip>
+                            <img ng-click="vm.sendRequest();" class="center-block img-responsive" style="height: 65px;" src="../../../Img/send.png" alt="Alternate Text" />
+                            <!--<i class="fa fa-paper-plane"></i>-->
+                        </md-button>
+                        <div>
+                            <h5 ng-show="vm.requestInfo.name">Sincerely,</h5>
+                            <h5>{{vm.requestInfo.name}}</h5>
+                        </div>
+                    </div>
+                </md-card-content>
+            </md-card>
+        </div>
+
+    </section>
+</md-sidenav>

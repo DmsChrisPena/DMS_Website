@@ -251,8 +251,7 @@ jQuery(document).ready(function() {
     </div>
 </section>
 
-<div ng-include="'/app/components/contact/inPageContactUs.html'">
-</div>
+<div ng-include="'/app/components/contact/inPageContactUs.html'"></div>
 
 <div id="sticky-header" style="width: 100%; height: 0px;" layout="row" ng-controller="NavBarController as vm">
     <ul flex="100" id="stick-ul2">
@@ -265,7 +264,9 @@ jQuery(document).ready(function() {
             <md-button ui-sref="about">Education</md-button>
             <md-button ui-sref="about">Testimonials</md-button>
             <md-button ui-sref="about">About</md-button>
-            <md-button aria-label="Contact Us" ui-sref="about"><i class="fa fa-envelope-o"></i></md-button>
+            <md-button aria-label="Home" ng-click="vm.openContactUs();">
+                <img src="~/Img/email-outline.svg" class="center-block" alt="Contact Us" />
+            </md-button>
         </li>
     </ul>
 </div>
