@@ -35,31 +35,31 @@ namespace DMS.Data.Respositories
 
         public void RequestInfo(ContactRequestVM vm)
         {
-            string topic = _db.ContactTopics.Where(t => t.Id == vm.TopicId).FirstOrDefault().Topic;
+            ContactTopic topic = _db.ContactTopics.Where(t => t.Topic == vm.Topic).FirstOrDefault();
 
             if (topic != null)
             {
-                SaveContactRequest(vm);
-                SendCustomerEmail(vm, topic);
-                SendHelpTeamEmail(vm, topic);
+                SaveContactRequest(vm, topic);
+                SendCustomerEmail(vm);
+                SendHelpTeamEmail(vm);
             }
         }
 
-        private void SaveContactRequest(ContactRequestVM vm)
+        private void SaveContactRequest(ContactRequestVM vm, ContactTopic topic)
         {
             ContactRequest request = new ContactRequest
             {
                 Name = vm.Name,
                 Email = vm.Email,
                 Message = vm.Message,
-                TopicId = vm.TopicId
+                Topic = topic
             };
 
             _db.ContactRequests.Add(request);
             _db.SaveChanges();
         }
 
-        private void SendCustomerEmail(ContactRequestVM vm, string topic)
+        private void SendCustomerEmail(ContactRequestVM vm)
         {
             // Create the email object first, then add the properties.
             SendGridMessage myMessage = new SendGridMessage();
@@ -71,7 +71,7 @@ namespace DMS.Data.Respositories
             myMessage.Subject = "Thank You for Your Inquiry";
 
             //Add the HTML and Text bodies
-            myMessage.Html = GetCustomerMessage(vm, topic);
+            myMessage.Html = GetCustomerMessage(vm);
             //myMessage.Text = "Hello World plain text!";
             //myMessage.AddAttachment(@"C:\file1.txt");
 
@@ -86,7 +86,7 @@ namespace DMS.Data.Respositories
             transportWeb.DeliverAsync(myMessage);
         }
 
-        private string GetCustomerMessage(ContactRequestVM vm, string topic)
+        private string GetCustomerMessage(ContactRequestVM vm)
         {
             string message = null;
 
@@ -100,12 +100,12 @@ namespace DMS.Data.Respositories
             }
 
             message = message.Replace("{{name}}", vm.Name);
-            message = message.Replace("{{topic}}", topic);
+            message = message.Replace("{{topic}}", vm.Topic);
 
             return message;
         }
 
-        private void SendHelpTeamEmail(ContactRequestVM vm, string topic)
+        private void SendHelpTeamEmail(ContactRequestVM vm)
         {
             // Create the email object first, then add the properties.
             SendGridMessage myMessage = new SendGridMessage();
@@ -118,7 +118,7 @@ namespace DMS.Data.Respositories
             myMessage.Subject = "New Online Request";
 
             //Add the HTML and Text bodies
-            myMessage.Html = GetHelpTeamMessage(vm, topic);
+            myMessage.Html = GetHelpTeamMessage(vm);
             //myMessage.Text = "Hello World plain text!";
             //myMessage.AddAttachment(@"C:\file1.txt");
 
@@ -133,7 +133,7 @@ namespace DMS.Data.Respositories
             transportWeb.DeliverAsync(myMessage);
         }
 
-        private string GetHelpTeamMessage(ContactRequestVM vm, string topic)
+        private string GetHelpTeamMessage(ContactRequestVM vm)
         {
             string message = null;
 
@@ -146,7 +146,7 @@ namespace DMS.Data.Respositories
                 return ex.Message;
             }
 
-            message = message.Replace("{{topic}}", topic);
+            message = message.Replace("{{topic}}", vm.Topic);
             message = message.Replace("{{name}}", vm.Name);
             message = message.Replace("{{email}}", vm.Email);
             message = message.Replace("{{message}}", vm.Message);
