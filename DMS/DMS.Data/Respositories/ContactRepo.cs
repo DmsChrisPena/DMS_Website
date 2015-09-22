@@ -92,11 +92,7 @@ namespace DMS.Data.Respositories
 
             try
             {
-                //StreamReader messageSR = new StreamReader("~/App_Data/Email/CustomerMessage.txt");
-                //messageSR = File.OpenText("~/App_Data/Email/CustomerMessage.txt");
-                string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"/DMS_Website/DMS/DMS.Web/App_Data/Email/CustomerMessage.txt");
-                message = File.ReadAllText(path);
-                //messageSR.Close();
+                message = File.ReadAllText("/DMS_Website/DMS/DMS.Web/App_Data/Email/CustomerMessage.txt");
             }
             catch (Exception ex)
             {
@@ -105,9 +101,6 @@ namespace DMS.Data.Respositories
 
             message = message.Replace("{{name}}", vm.Name);
             message = message.Replace("{{topic}}", topic);
-
-            //message = message.Replace("\r\n\t", "");
-            //message = message.Replace("\r\n", "");
 
             return message;
         }
@@ -146,11 +139,7 @@ namespace DMS.Data.Respositories
 
             try
             {
-                //StreamReader messageSR = new StreamReader("../App_Data/Email/HelpTeamMessage.txt");
-                //messageSR = File.OpenText("../App_Data/Email/HelpTeamMessage.txt");
-                string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"/DMS_Website/DMS/DMS.Web/App_Data/Email/HelpTeamMessage.txt");
-                message = File.ReadAllText(path);
-                //messageSR.Close();
+                message = File.ReadAllText("/DMS_Website/DMS/DMS.Web/App_Data/Email/HelpTeamMessage.txt");
             }
             catch (Exception ex)
             {
@@ -161,9 +150,6 @@ namespace DMS.Data.Respositories
             message = message.Replace("{{name}}", vm.Name);
             message = message.Replace("{{email}}", vm.Email);
             message = message.Replace("{{message}}", vm.Message);
-
-            //message = message.Replace("\r\n\t", "");
-            //message = message.Replace("\r\n", "");
 
             return message;
         }
