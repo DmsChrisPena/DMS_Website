@@ -94,8 +94,8 @@ namespace DMS.Data.Respositories
             {
                 //StreamReader messageSR = new StreamReader("~/App_Data/Email/CustomerMessage.txt");
                 //messageSR = File.OpenText("~/App_Data/Email/CustomerMessage.txt");
-                string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"/DMS_Website/DMS/DMS.Web/App_Data/Email/CustomerMessage.txt");
-                message = File.ReadAllText(path);
+                //string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"/DMS_Website/DMS/DMS.Web/App_Data/Email/CustomerMessage.txt");
+                message = File.ReadAllText("/Users/cpena1/documents/DMS_Website/DMS/DMS.Web/App_Data/Email/CustomerMessage.txt");
                 //messageSR.Close();
             }
             catch (Exception ex)
@@ -148,8 +148,8 @@ namespace DMS.Data.Respositories
             {
                 //StreamReader messageSR = new StreamReader("../App_Data/Email/HelpTeamMessage.txt");
                 //messageSR = File.OpenText("../App_Data/Email/HelpTeamMessage.txt");
-                string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"/DMS_Website/DMS/DMS.Web/App_Data/Email/HelpTeamMessage.txt");
-                message = File.ReadAllText(path);
+                //string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"/DMS_Website/DMS/DMS.Web/App_Data/Email/HelpTeamMessage.txt");
+                message = File.ReadAllText("/Users/cpena1/documents/DMS_Website/DMS/DMS.Web/App_Data/Email/HelpTeamMessage.txt");
                 //messageSR.Close();
             }
             catch (Exception ex)

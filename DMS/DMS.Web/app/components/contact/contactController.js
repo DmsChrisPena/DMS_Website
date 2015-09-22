@@ -1,26 +1,22 @@
 ﻿(function () {
     angular
         .module("DMSApp")
-        .controller("contactController", ['contactService', contactController]);
+        .controller("contactController", ['contactService', '$mdSidenav', contactController]);
 
-    function contactController(contactService) {
+    function contactController(contactService, $mdSidenav) {
         var vm = this;
         vm.topics = {};
         vm.requestInfo = {};
         
+        vm.closeSideNav = closeSideNav;
         vm.sendRequest = sendRequest;
-        contactService.getTopics().then(successGetTopics, failGetTopics);
+
+        function closeSideNav() {
+            $mdSidenav('right').toggle();
+        }
 
         function sendRequest() {
             contactService.postRequest(vm.requestInfo).then(successRequest, failRequest);
-        }
-
-        function successGetTopics(data) {
-            vm.topics = data;
-            console.log(data);
-        }
-        function failGetTopics(data) {
-
         }
 
         function successRequest(data) {

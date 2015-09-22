@@ -259,6 +259,8 @@
     <Content Include="app\components\solutions\gastrak\gastrak.html" />
     <Content Include="app\components\solutions\products.html" />
     <Content Include="app\components\testimonials\testimonials.html" />
+    <Content Include="App_Data\Email\CustomerMessage.txt" />
+    <Content Include="App_Data\Email\HelpTeamMessage.txt" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\angular-material.css" />
     <Content Include="Content\angular-material.min.css" />
@@ -448,7 +450,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Content\Main\3-layouts\" />
   </ItemGroup>
   <ItemGroup>

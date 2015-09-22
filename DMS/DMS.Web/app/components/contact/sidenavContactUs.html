@@ -1,24 +1,23 @@
-﻿<md-sidenav md-component-id="right" class="md-sidenav-right" style="min-width: 800px; padding: 40px;">
-    <section id="contactUs-sidenav" layout="row" layout-wrap ng-controller="contactController as vm">
-        <div flex="100" flex-gt-md="33">
-            <div layout="column">
-                <div flex="100">
-                    <img class="img-responsive" src="../../../Img/cloud.png" alt="Cloud Solutions" />
-                </div>
-            </div>
-        </div>
-        <div flex="100" flex-gt-md="66">
-            <h2>Contact Us</h2>
-            <h4>Send us a quick message and we'll get in touch</h4>
-            <p>Don't hesitate to contact us for any questions or requests for demos. This goes straight to humans and we will reach out to you upon receipt shortly.</p>
-        </div>
+﻿<style>
+    md-backdrop {
+        position: fixed;
+    }
+</style>
+<md-sidenav md-component-id="right" class="md-sidenav-right" style="padding: 40px; position: fixed;">
+    <section style="width: 100%; padding: 0px;" id="contactUs-sidenav" layout="row" layout-wrap ng-controller="contactController as vm">
         <div flex="100">
-            <md-card>
+            <h2 class="section-header text-center">Contact Us</h2>
+        </div>
+        <div flex="100" style="padding: 0px;">
+            <md-button class="md-primary md-raised" ng-click="vm.closeSideNav();">Close&nbsp; <i class="fa fa-times-circle"></i></md-button>
+        </div>
+        <div flex="100" style="padding: 0px;">
+            <md-card style="margin-top: 20px;">
                 <md-card-content layout-padding>
                     <form name="home-contact-us">
                         <div class="md-actions" layout="row" layout-align="space-between center">
                             <div>
-                                <h5>Dear DMS,</h5>
+                                <h5 style="padding-top: 20px; padding-left: 10px; font-size: 16px; font-weight: 300; color: #999999; margin: 0px;">Dear DMS,</h5>
                             </div>
                             <div></div>
                             <md-button class="md-icon-button md-accent">
@@ -28,21 +27,27 @@
                                 <i class="fa fa-eraser"></i>
                             </md-button>
                         </div>
-                        <div layout="row">
+                        <div layout="row" style="padding: 0px; text-align: left;">
                             <md-input-container flex>
                                 <label>Name</label>
-                                <input ng-required="true" ng-model="vm.requestInfo.name" type="text">
+                                <input ng-required="true" ng-model="vm.requestInfo.name" type="text" md-sidenav-focus>
                             </md-input-container>
                             <md-input-container flex>
                                 <label>Topic</label>
-                                <select ng-model="vm.requestInfo.topicId" ng-options="topic.id as topic.topic for topic in vm.topics"><option value='' disabled>Choose Topic</option></select>
+                                <md-select ng-model="vm.requestInfo.topicId">
+                                    <md-option value="Products">Products</md-option>
+                                    <md-option value="Services">Services</md-option>
+                                    <md-option value="Education">Education</md-option>
+                                    <md-option value="Demos">Demos</md-option>
+                                    <md-option value="Others">Others</md-option>
+                                </md-select>
                             </md-input-container>
                         </div>
-                        <md-input-container>
+                        <md-input-container style="text-align: left;">
                             <label>Email</label>
                             <input ng-model="vm.requestInfo.email" type="email" ng-required="true">
                         </md-input-container>
-                        <md-input-container>
+                        <md-input-container style="text-align: left;">
                             <label>Message</label>
                             <textarea ng-required="true" ng-model="vm.requestInfo.message" rows="3" columns="5" md-maxlength="1000"></textarea>
                         </md-input-container>
@@ -57,8 +62,8 @@
                             <!--<i class="fa fa-paper-plane"></i>-->
                         </md-button>
                         <div>
-                            <h5 ng-show="vm.requestInfo.name">Sincerely,</h5>
-                            <h5>{{vm.requestInfo.name}}</h5>
+                            <h5 style="padding-top: 20px; padding-left: 10px; font-size: 16px; font-weight: 300; color: #999999; margin: 0px;" ng-show="vm.requestInfo.name">Sincerely,</h5>
+                            <h5 style="padding-top: 4px; padding-left: 10px; font-size: 16px; font-weight: 300; color: #999999; margin: 0px;">{{vm.requestInfo.name}}</h5>
                         </div>
                     </div>
                 </md-card-content>
