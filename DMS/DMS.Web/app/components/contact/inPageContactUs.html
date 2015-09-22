@@ -36,7 +36,13 @@
                         </md-input-container>
                         <md-input-container flex>
                             <label>Topic</label>
-                            <select ng-model="vm.requestInfo.topicId" ng-options="topic.id as topic.topic for topic in vm.topics"><option value='' disabled>Choose Topic</option></select>
+                            <md-select ng-model="vm.requestInfo.topicId">
+                                <md-option value="Products">Products</md-option>
+                                <md-option value="Services">Services</md-option>
+                                <md-option value="Education">Education</md-option>
+                                <md-option value="Demos">Demos</md-option>
+                                <md-option value="Others">Others</md-option>
+                            </md-select>
                         </md-input-container>
                     </div>
                     <md-input-container>
