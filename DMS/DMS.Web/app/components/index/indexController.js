@@ -1,9 +1,13 @@
 ﻿(function () {
     angular
         .module("DMSApp")
-        .controller("indexController", [indexController]);
+        .controller("indexController", ['$mdSidenav', indexController]);
 
-    function indexController() {
+    function indexController($mdSidenav) {
         var vm = this;
+
+        vm.openContactUs = function () {
+            $mdSidenav('right').toggle();
+        };
     }
 })();

@@ -18,8 +18,7 @@ namespace DMS.Models.ViewModels
         public string Message { get; set; }
 
         [Required]
-        [Range(1, 100)]
-        public int TopicId { get; set; }
+        public string Topic { get; set; }
     }
 
     public class ContactTopicVM
