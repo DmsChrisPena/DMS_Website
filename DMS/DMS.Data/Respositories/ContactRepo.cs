@@ -92,9 +92,9 @@ namespace DMS.Data.Respositories
 
             try
             {
-                message = File.ReadAllText("/DMS_Website/DMS/DMS.Web/App_Data/Email/CustomerMessage.txt");
-                //string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"/DMS_Website/DMS/DMS.Web/App_Data/Email/CustomerMessage.txt");
                 message = File.ReadAllText("/Users/cpena1/documents/DMS_Website/DMS/DMS.Web/App_Data/Email/CustomerMessage.txt");
+
+                //message = File.ReadAllText("/DMS_Website/DMS/DMS.Web/App_Data/Email/CustomerMessage.txt");
             }
             catch (Exception ex)
             {
@@ -141,9 +141,8 @@ namespace DMS.Data.Respositories
 
             try
             {
-                message = File.ReadAllText("/DMS_Website/DMS/DMS.Web/App_Data/Email/HelpTeamMessage.txt");
-                //string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"/DMS_Website/DMS/DMS.Web/App_Data/Email/HelpTeamMessage.txt");
                 message = File.ReadAllText("/Users/cpena1/documents/DMS_Website/DMS/DMS.Web/App_Data/Email/HelpTeamMessage.txt");
+                //message = File.ReadAllText("/DMS_Website/DMS/DMS.Web/App_Data/Email/HelpTeamMessage.txt");
             }
             catch (Exception ex)
             {

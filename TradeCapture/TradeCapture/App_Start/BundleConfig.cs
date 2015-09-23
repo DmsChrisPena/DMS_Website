@@ -18,11 +18,21 @@ namespace TradeCapture
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                      "~/Scripts/respond.js",
+                      "~/Scripts/xml2json.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/ct-paper.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/angular").Include(
+                      "~/Scripts/angular.js",
+                      "~/Scripts/angular-route.js",
+                      "~/App/app.module.js",
+                      "~/App/app.routes.js",
+                      "~/App/Components/Home/homeController.js",
+                      "~/App/Components/Home/homeService.js"));
         }
     }
 }

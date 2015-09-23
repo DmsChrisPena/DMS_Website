@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 20px;
 }
 
@@ -15,3 +15,9 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.lessSuccess {
+    background-color: #A1BD8A !important; 
+    border-color: #A1BD8A !important;
+}
+
