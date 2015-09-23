@@ -5,31 +5,34 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Xml;
+using TradeCapture.Models;
 using TradeCapture.Repositories;
 
 namespace TradeCapture.Controllers.api
 {
-    public class XMLController : ApiController
+    public class XmlController : ApiController
     {
         private XMLRepo _repo { get; set; }
 
-        public XMLController()
+        public XmlController()
         {
             _repo = new XMLRepo();
         }
 
         [ActionName("trades")]
-        public IHttpActionResult PostTrades(string trades)
+        [HttpPost]
+        public IHttpActionResult PostTrades(TradeVM data)
         {
-            XmlDocument vm = _repo.ConvertJsonToXml(trades);
+            XmlDocument vm = _repo.ConvertJsonToXml(data.Trades);
 
             return Ok(vm);
         }
 
         [ActionName("markets")]
-        public IHttpActionResult PostMarkets(string markets)
+        [HttpPost]
+        public IHttpActionResult PostMarkets(MarketVM data)
         {
-            XmlDocument vm = _repo.ConvertJsonToXml(markets);
+            XmlDocument vm = _repo.ConvertJsonToXml(data.Markets);
 
             return Ok(vm);
         }
