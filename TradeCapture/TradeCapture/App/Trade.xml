@@ -1,0 +1,330 @@
+<TradeCaptureReport>
+  <Trade>
+    <TradeReportID>0</TradeReportID>
+    <TradeReportTransType>0</TradeReportTransType>
+    <TradeReportType>0</TradeReportType>
+    <TradeRequestID>0</TradeRequestID>
+    <ExchangeDealID>2692117</ExchangeDealID>
+    <OrigTradeID>
+    </OrigTradeID>
+    <PreviouslyReported>N</PreviouslyReported>
+    <MarketId>2016735</MarketId>
+    <SecurityID>????SAU2215.U2215</SecurityID>
+    <SecurityIDSource>8</SecurityIDSource>
+    <CFICode>FXXXXX</CFICode>
+    <StartDate>20150922</StartDate>
+    <EndDate>20150922</EndDate>
+    <LastQty>5000</LastQty>
+    <LastPrice>1.1500</LastPrice>
+    <NumOfLots>50</NumOfLots>
+    <NumOfCycles>1</NumOfCycles>
+    <TransactTime>20150922-18:29:57.948</TransactTime>
+    <NoSide>1</NoSide>
+    <Side>Buy</Side>
+    <OrderID>50024624</OrderID>
+    <ClientOrderID>391130650</ClientOrderID>
+    <NoPartyIDs>7</NoPartyIDs>
+    <partyId1>jalford5</partyId1>
+    <partyId2>Washington Gas Light Company</partyId2>
+    <partyId3>1537</partyId3>
+    <partyId4>slazzer2</partyId4>
+    <partyId5>J. Aron &amp; Company</partyId5>
+    <partyId6>1</partyId6>
+    <partyId7>1537</partyId7>
+    <partySource1>D</partySource1>
+    <partySource2>D</partySource2>
+    <partySource3>D</partySource3>
+    <partySource4>D</partySource4>
+    <partySource5>D</partySource5>
+    <partySource6>D</partySource6>
+    <partySource7>D</partySource7>
+    <partyRole1>11</partyRole1>
+    <partyRole2>13</partyRole2>
+    <partyRole3>56</partyRole3>
+    <partyRole4>37</partyRole4>
+    <partyRole5>17</partyRole5>
+    <partyRole6>50</partyRole6>
+    <partyRole7>35</partyRole7>
+    <Memo>
+    </Memo>
+    <ProductId>61</ProductId>
+    <ProductName>NG Firm Phys, FP</ProductName>
+    <IncrementPrice>0.0025</IncrementPrice>
+    <IncrementQty>100.0</IncrementQty>
+    <LotSize>100</LotSize>
+    <PriceDenomination>USD</PriceDenomination>
+    <PriceUnit>USD / MMBtu</PriceUnit>
+    <HubName>Leidy-Transco - Leidy production point to station 505, receipt points</HubName>
+    <HubAlias>Leidy-Transco</HubAlias>
+    <StripName>Same Day</StripName>
+    <StripType>Same Day</StripType>
+    <Name>Physical Gas</Name>
+  </Trade>
+  <Trade>
+    <TradeReportID>0</TradeReportID>
+    <TradeReportTransType>0</TradeReportTransType>
+    <TradeReportType>0</TradeReportType>
+    <TradeRequestID>0</TradeRequestID>
+    <ExchangeDealID>1564530</ExchangeDealID>
+    <OrigTradeID>
+    </OrigTradeID>
+    <PreviouslyReported>N</PreviouslyReported>
+    <MarketId>2537896</MarketId>
+    <SecurityID>TPB SVX0015.H0016</SecurityID>
+    <SecurityIDSource>8</SecurityIDSource>
+    <CFICode>FXXXXX</CFICode>
+    <StartDate>20151101</StartDate>
+    <EndDate>20160331</EndDate>
+    <LastQty>2500</LastQty>
+    <LastPrice>1.5700</LastPrice>
+    <NumOfLots>152</NumOfLots>
+    <NumOfCycles>152</NumOfCycles>
+    <TransactTime>20150922-18:57:00.264</TransactTime>
+    <NoSide>1</NoSide>
+    <Side>Sell</Side>
+    <OrderID>1564529</OrderID>
+    <ClientOrderID>1564529</ClientOrderID>
+    <NoPartyIDs>11</NoPartyIDs>
+    <partyId1>nhirai1</partyId1>
+    <partyId2>Washington Gas Light Company</partyId2>
+    <partyId3>1537</partyId3>
+    <partyId4>FuelX Energy, LLC-Broker</partyId4>
+    <partyId5>8001</partyId5>
+    <partyId6>meagle-fex</partyId6>
+    <partyId7>8183</partyId7>
+    <partyId8>11132735</partyId8>
+    <partyId9>SG Americas Securities, LLC (FIU)</partyId9>
+    <partyId10>FIU</partyId10>
+    <partyId11>W</partyId11>
+    <partySource1>D</partySource1>
+    <partySource2>D</partySource2>
+    <partySource3>D</partySource3>
+    <partySource4>D</partySource4>
+    <partySource5>D</partySource5>
+    <partySource6>D</partySource6>
+    <partySource7>D</partySource7>
+    <partySource8>D</partySource8>
+    <partySource9>D</partySource9>
+    <partySource10>D</partySource10>
+    <partySource11>D</partySource11>
+    <partyRole1>11</partyRole1>
+    <partyRole2>13</partyRole2>
+    <partyRole3>56</partyRole3>
+    <partyRole4>1</partyRole4>
+    <partyRole5>61</partyRole5>
+    <partyRole6>12</partyRole6>
+    <partyRole7>4</partyRole7>
+    <partyRole8>51</partyRole8>
+    <partyRole9>60</partyRole9>
+    <partyRole10>63</partyRole10>
+    <partyRole11>54</partyRole11>
+    <Memo>
+    </Memo>
+    <ProductId>3027</ProductId>
+    <ProductName>NG Basis LD1 for IF Futures</ProductName>
+    <IncrementPrice>0.0005</IncrementPrice>
+    <IncrementQty>2500.0</IncrementQty>
+    <LotSize>2500</LotSize>
+    <PriceDenomination>USD</PriceDenomination>
+    <PriceUnit>USD / MMBtu</PriceUnit>
+    <HubName>Transcontinental Gas Pipeline Corp. - Zone 6  (non-NY)</HubName>
+    <HubAlias>Transco-Z6  (non-NY)</HubAlias>
+    <StripName>Nov15-Mar16</StripName>
+    <StripType>Period</StripType>
+    <Name>
+    </Name>
+  </Trade>
+  <Trade>
+    <TradeReportID>0</TradeReportID>
+    <TradeReportTransType>0</TradeReportTransType>
+    <TradeReportType>0</TradeReportType>
+    <TradeRequestID>0</TradeRequestID>
+    <ExchangeDealID>1564869</ExchangeDealID>
+    <OrigTradeID>
+    </OrigTradeID>
+    <PreviouslyReported>N</PreviouslyReported>
+    <MarketId>1703060</MarketId>
+    <SecurityID>TMT SVX0015.H0016</SecurityID>
+    <SecurityIDSource>8</SecurityIDSource>
+    <CFICode>FXXXXX</CFICode>
+    <StartDate>20151101</StartDate>
+    <EndDate>20160331</EndDate>
+    <LastQty>2500</LastQty>
+    <LastPrice>0.8500</LastPrice>
+    <NumOfLots>152</NumOfLots>
+    <NumOfCycles>152</NumOfCycles>
+    <TransactTime>20150922-18:57:00.802</TransactTime>
+    <NoSide>1</NoSide>
+    <Side>Buy</Side>
+    <OrderID>1564867</OrderID>
+    <ClientOrderID>1564867</ClientOrderID>
+    <NoPartyIDs>12</NoPartyIDs>
+    <partyId1>nhirai1</partyId1>
+    <partyId2>Washington Gas Light Company</partyId2>
+    <partyId3>1537</partyId3>
+    <partyId4>FuelX Energy, LLC-Broker</partyId4>
+    <partyId5>8001</partyId5>
+    <partyId6>pkline-fex</partyId6>
+    <partyId7>1537</partyId7>
+    <partyId8>8183</partyId8>
+    <partyId9>11132735</partyId9>
+    <partyId10>SG Americas Securities, LLC (FIU)</partyId10>
+    <partyId11>FIU</partyId11>
+    <partyId12>W</partyId12>
+    <partySource1>D</partySource1>
+    <partySource2>D</partySource2>
+    <partySource3>D</partySource3>
+    <partySource4>D</partySource4>
+    <partySource5>D</partySource5>
+    <partySource6>D</partySource6>
+    <partySource7>D</partySource7>
+    <partySource8>D</partySource8>
+    <partySource9>D</partySource9>
+    <partySource10>D</partySource10>
+    <partySource11>D</partySource11>
+    <partySource12>D</partySource12>
+    <partyRole1>11</partyRole1>
+    <partyRole2>13</partyRole2>
+    <partyRole3>56</partyRole3>
+    <partyRole4>1</partyRole4>
+    <partyRole5>61</partyRole5>
+    <partyRole6>12</partyRole6>
+    <partyRole7>35</partyRole7>
+    <partyRole8>4</partyRole8>
+    <partyRole9>51</partyRole9>
+    <partyRole10>60</partyRole10>
+    <partyRole11>63</partyRole11>
+    <partyRole12>54</partyRole12>
+    <Memo>
+    </Memo>
+    <ProductId>489</ProductId>
+    <ProductName>NG Basis LD1 for IF Futures</ProductName>
+    <IncrementPrice>0.0005</IncrementPrice>
+    <IncrementQty>2500.0</IncrementQty>
+    <LotSize>2500</LotSize>
+    <PriceDenomination>USD</PriceDenomination>
+    <PriceUnit>USD / MMBtu</PriceUnit>
+    <HubName>Texas Eastern Transmission Corp. - M3 Zone (delivered)</HubName>
+    <HubAlias>TETCO-M3</HubAlias>
+    <StripName>Nov15-Mar16</StripName>
+    <StripType>Period</StripType>
+    <Name>
+    </Name>
+  </Trade>
+  <Trade>
+    <TradeReportID>0</TradeReportID>
+    <TradeReportTransType>0</TradeReportTransType>
+    <TradeReportType>0</TradeReportType>
+    <TradeRequestID>0</TradeRequestID>
+    <ExchangeDealID>2692150</ExchangeDealID>
+    <OrigTradeID>
+    </OrigTradeID>
+    <PreviouslyReported>N</PreviouslyReported>
+    <MarketId>58359</MarketId>
+    <SecurityID>????SAU2215.U2215</SecurityID>
+    <SecurityIDSource>8</SecurityIDSource>
+    <CFICode>FXXXXX</CFICode>
+    <StartDate>20150922</StartDate>
+    <EndDate>20150922</EndDate>
+    <LastQty>1700</LastQty>
+    <LastPrice>1.2300</LastPrice>
+    <NumOfLots>17</NumOfLots>
+    <NumOfCycles>1</NumOfCycles>
+    <TransactTime>20150922-18:42:56.580</TransactTime>
+    <NoSide>1</NoSide>
+    <Side>Sell</Side>
+    <OrderID>50032594</OrderID>
+    <ClientOrderID>50032594</ClientOrderID>
+    <NoPartyIDs>6</NoPartyIDs>
+    <partyId1>jalford5</partyId1>
+    <partyId2>Washington Gas Light Company</partyId2>
+    <partyId3>1537</partyId3>
+    <partyId4>slazzer2</partyId4>
+    <partyId5>J. Aron &amp; Company</partyId5>
+    <partyId6>1</partyId6>
+    <partySource1>D</partySource1>
+    <partySource2>D</partySource2>
+    <partySource3>D</partySource3>
+    <partySource4>D</partySource4>
+    <partySource5>D</partySource5>
+    <partySource6>D</partySource6>
+    <partyRole1>11</partyRole1>
+    <partyRole2>13</partyRole2>
+    <partyRole3>56</partyRole3>
+    <partyRole4>37</partyRole4>
+    <partyRole5>17</partyRole5>
+    <partyRole6>50</partyRole6>
+    <Memo>
+    </Memo>
+    <ProductId>61</ProductId>
+    <ProductName>NG Firm Phys, FP</ProductName>
+    <IncrementPrice>0.0025</IncrementPrice>
+    <IncrementQty>100.0</IncrementQty>
+    <LotSize>100</LotSize>
+    <PriceDenomination>USD</PriceDenomination>
+    <PriceUnit>USD / MMBtu</PriceUnit>
+    <HubName>Dominion - South Point</HubName>
+    <HubAlias>Dominion-South</HubAlias>
+    <StripName>Same Day</StripName>
+    <StripType>Same Day</StripType>
+    <Name>Physical Gas</Name>
+  </Trade>
+  <Trade>
+    <TradeReportID>0</TradeReportID>
+    <TradeReportTransType>0</TradeReportTransType>
+    <TradeReportType>0</TradeReportType>
+    <TradeRequestID>0</TradeRequestID>
+    <ExchangeDealID>2692149</ExchangeDealID>
+    <OrigTradeID>
+    </OrigTradeID>
+    <PreviouslyReported>N</PreviouslyReported>
+    <MarketId>58359</MarketId>
+    <SecurityID>????SAU2215.U2215</SecurityID>
+    <SecurityIDSource>8</SecurityIDSource>
+    <CFICode>FXXXXX</CFICode>
+    <StartDate>20150922</StartDate>
+    <EndDate>20150922</EndDate>
+    <LastQty>5000</LastQty>
+    <LastPrice>1.2300</LastPrice>
+    <NumOfLots>50</NumOfLots>
+    <NumOfCycles>1</NumOfCycles>
+    <TransactTime>20150922-18:42:56.579</TransactTime>
+    <NoSide>1</NoSide>
+    <Side>Sell</Side>
+    <OrderID>50032594</OrderID>
+    <ClientOrderID>50032594</ClientOrderID>
+    <NoPartyIDs>6</NoPartyIDs>
+    <partyId1>jalford5</partyId1>
+    <partyId2>Washington Gas Light Company</partyId2>
+    <partyId3>1537</partyId3>
+    <partyId4>bbinkley1</partyId4>
+    <partyId5>Macquarie Energy LLC</partyId5>
+    <partyId6>263</partyId6>
+    <partySource1>D</partySource1>
+    <partySource2>D</partySource2>
+    <partySource3>D</partySource3>
+    <partySource4>D</partySource4>
+    <partySource5>D</partySource5>
+    <partySource6>D</partySource6>
+    <partyRole1>11</partyRole1>
+    <partyRole2>13</partyRole2>
+    <partyRole3>56</partyRole3>
+    <partyRole4>37</partyRole4>
+    <partyRole5>17</partyRole5>
+    <partyRole6>50</partyRole6>
+    <Memo>
+    </Memo>
+    <ProductId>61</ProductId>
+    <ProductName>NG Firm Phys, FP</ProductName>
+    <IncrementPrice>0.0025</IncrementPrice>
+    <IncrementQty>100.0</IncrementQty>
+    <LotSize>100</LotSize>
+    <PriceDenomination>USD</PriceDenomination>
+    <PriceUnit>USD / MMBtu</PriceUnit>
+    <HubName>Dominion - South Point</HubName>
+    <HubAlias>Dominion-South</HubAlias>
+    <StripName>Same Day</StripName>
+    <StripType>Same Day</StripType>
+    <Name>Physical Gas</Name>
+  </Trade>
+</TradeCaptureReport>
