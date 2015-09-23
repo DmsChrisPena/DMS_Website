@@ -54,7 +54,7 @@
             $http({
                 url: "/api/xml/trades",
                 method: "POST",
-                data: { data: JSON.stringify(tradeData) }
+                data: { Trades: JSON.stringify(tradeData) }
             }).success(function (data) {
                 deferred.resolve(data);
             }).error(function (data) {
