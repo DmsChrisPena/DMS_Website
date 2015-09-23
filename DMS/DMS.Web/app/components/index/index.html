@@ -103,7 +103,7 @@ jQuery(document).ready(function() {
 });
 </script>
 
-<section class=" animated slideInUp" id="cta-home">
+<section class="animated slideInUp" id="cta-home">
     <p>Explain one of your product benefits here. Let users know how they can benefit using your product.</p>
 </section>
 <section layout="row" id="dmsHelp" layout-wrap>
@@ -125,17 +125,23 @@ jQuery(document).ready(function() {
         <img class="center-block img-responsive" src="../../../Img/BridgeTheGap_Final.png" alt="Alternate Text" />
         <!--<p class="text-center">Above is a screenshot of our upcoming product EnergyPro</p>-->
     </div>
-    <div flex="100">
+    <!--<div flex="100">
         <div class="testimonials">
             <p>
-                “Yes, I do support and endorse GasPro openly. I’ll show prospects what the system does for us. When DMS grows, that’s good for us too.”
+                “We are streamlined.
+DMS has allowed us to increase our volume of transactions without having to increase our staff. We can have scalability without increasing hires. It allows us to put our attention and effort on other aspects of our business.”
             </p>
-            <p>- Midstream marketer</p>
+            <p>- Midstream marketer - 1.9 billion annual cost</p>
         </div>
-    </div>
-
+    </div>-->
 </section>
-<section layot="row" id="ourServices" layout-wrap>
+<div class="industry-parallax" data-stellar-ratio="2" flex="100">
+    <div class="industry-overlay">
+        <p>"The gas industry and the solutions providers who serve it are at a critical time. Solutions providers have not changed they way they do business in the last 50 years."</p>
+    </div>
+</div>
+
+<section layot="row" id="ourServices" style="padding-right: 0px;" layout-wrap>
     <div flex="100">
         <h2>Our Solutions</h2>
         <h4>We have been providing software services and solutions for over 20 years.</h4>
@@ -145,8 +151,11 @@ jQuery(document).ready(function() {
             <ng-md-icon icon="supervisor_account" size="72" style="fill: #3F51B5;"></ng-md-icon>
             <h2 class="md-title">Products</h2>
             <p>
-                The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-                two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+                Trading. Logistics. Settlement. Connectivity. <br />
+                A complete gas management solution.
+            </p>
+            <p>
+                From two-user LDCs to 100+ user enterprise engagements, DMS provides all of our business partners with ETRM systems that fit their specific needs in seamless and robust ways.
             </p>
         </md-card-content>
         <div class="md-actions" layout="row" layout-align="center center">
@@ -157,9 +166,12 @@ jQuery(document).ready(function() {
         <md-card-content>
             <ng-md-icon icon="wallet_membership" size="72" style="fill: #3F51B5;"></ng-md-icon>
             <h2 class="md-title">Services</h2>
-            <p>Trading. Logistics. Settlement. Connectivity.
+            <p>
+                Looking to expand the reach of your business without expanding your in-house staff?
             </p>
-            <p>Trading. Logistics. Settlement. Connectivity.</p>
+            <p>
+                DMS provides consulting, implementation and back-office services that allow you to minimize your liabilities and rapidly expand and maintain your business.
+            </p>
         </md-card-content>
         <div class="md-actions" layout="row" layout-align="center center">
             <md-button class="md-raised md-primary">Learn More</md-button>
@@ -170,8 +182,10 @@ jQuery(document).ready(function() {
             <ng-md-icon icon="assignment" size="72" style="fill: #3F51B5;"></ng-md-icon>
             <h2 class="md-title">Learn</h2>
             <p>
-                The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-                two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+                DMS staff have taught thousands of students at the undergraduate and graduate level the ins and outs of the industry while using our systems.
+            </p>
+            <p>
+                Our onsite seminars, regional conferences and online certification courses add value to your current personnel.
             </p>
         </md-card-content>
         <div class="md-actions" layout="row" layout-align="center center">
@@ -181,12 +195,15 @@ jQuery(document).ready(function() {
     <div flex="100">
         <md-content layout="row">
             <md-card hide-md hide-sm>
-                <md-card-content>
+                <md-card-content class="solutions-card">
                     <ng-md-icon icon="supervisor_account" size="72" style="fill: #3F51B5;"></ng-md-icon>
                     <h2 class="md-title">Products</h2>
                     <p>
-                        The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-                        two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+                        Trading. Logistics. Settlement. Connectivity. <br/>
+                        A complete gas management solution.
+                    </p>
+                    <p>
+                        From two-user LDCs to 100+ user enterprise engagements, DMS provides all of our business partners with ETRM systems that fit their specific needs in seamless and robust ways.
                     </p>
                 </md-card-content>
                 <div class="md-actions" layout="row" layout-align="center center">
@@ -194,12 +211,14 @@ jQuery(document).ready(function() {
                 </div>
             </md-card>
             <md-card hide-md hide-sm>
-                <md-card-content>
+                <md-card-content class="solutions-card">
                     <ng-md-icon icon="wallet_membership" size="72" style="fill: #3F51B5;"></ng-md-icon>
                     <h2 class="md-title">Services</h2>
                     <p>
-                        The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-                        two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+                        Looking to expand the reach of your business without expanding your in-house staff?
+                    </p>
+                    <p>
+                        DMS provides consulting, implementation and back-office services that allow you to minimize your liabilities and rapidly expand and maintain your business.
                     </p>
                 </md-card-content>
                 <div class="md-actions" layout="row" layout-align="center center">
@@ -207,12 +226,14 @@ jQuery(document).ready(function() {
                 </div>
             </md-card>
             <md-card hide-md hide-sm>
-                <md-card-content>
+                <md-card-content class="solutions-card">
                     <ng-md-icon icon="assignment" size="72" style="fill: #3F51B5;"></ng-md-icon>
                     <h2 class="md-title">Learn</h2>
                     <p>
-                        The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-                        two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+                        DMS staff have taught thousands of students at the undergraduate and graduate level the ins and outs of the industry while using our systems.
+                    </p>
+                    <p>
+                        Our onsite seminars, regional conferences and online certification courses add value to your current personnel.
                     </p>
                 </md-card-content>
                 <div class="md-actions" layout="row" layout-align="center center">
@@ -222,7 +243,7 @@ jQuery(document).ready(function() {
         </md-content>
     </div>
 </section>
-<section class="container-fluid" style="padding-right: 0px;" layout="row" id="whyUs" layout-wrap>
+<section class="container-fluid" layout="row" id="whyUs" layout-wrap>
     <div flex="50" flex-md="100" flex-sm="100">
         <h2>Why DMS?</h2>
         <h4 class="section-subheader text-center">We have proven that our solutions can improve any business.</h4>

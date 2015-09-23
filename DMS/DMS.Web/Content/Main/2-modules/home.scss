@@ -415,3 +415,12 @@ section#cta-home {
     color: #999999;
 }
 
+.solutions-card {
+    width: 310px;
+    @media (max-width: 1215px) {
+        width: 225px;
+    }
+    @media (max-width: 1008px) {
+        width: 170px;
+    }
+}
