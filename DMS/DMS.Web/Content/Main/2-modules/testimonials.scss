@@ -18,10 +18,10 @@
         md-tabs {
         }
         md-content {
-            height: 700px;
+            min-height: 700px;
             md-card {
                 width: 500px;
-                height: 210px;
+                min-height: 210px;
                 p {
                     padding-top: 10px;
                     margin-top: 16px;

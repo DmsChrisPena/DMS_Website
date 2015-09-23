@@ -34,6 +34,7 @@ namespace DMS.Web
                       "~/Scripts/angular-animate.js",
                       "~/Scripts/angular-aria.js",
                       "~/Scripts/angular-material.js",
+                      "~/Scripts/angular-isotope.js",
                       // app files
                       "~/app/app.module.js",
                       "~/app/app.route.js",
