@@ -235,16 +235,9 @@ section#theIndustry {
         padding-left: 15%;
         &:nth-child(2) {
             li {
-                i {
-                    color: white;
+                img {
                     width: 50px;
-                    height: 50px;
-                    font-size: 17px;
-                    line-height: 50px;
-                    text-align: center;
-                    background-color: #F44336;
-                    border-radius: 50%;
-                    margin: 5px;
+                    padding: 8px;
                 }
             }
         }
