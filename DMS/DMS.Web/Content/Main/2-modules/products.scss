@@ -1,5 +1,5 @@
 ﻿section#sub-navbar-overview {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     background-color: rgba(242,242,242,0.6);
     height: 80px;
     text-align: center;
@@ -28,3 +28,33 @@
     top: 0px;
     min-width: 100%;
 }
+
+section#product-overview {
+    height: auto;
+    padding-bottom: 60px;
+    img {
+        height: auto;
+        width: 200px;
+        @extend .center-block;
+    }
+    h2 {
+        @extend .section-header;
+        font-size: 28px;
+        @extend .text-center;
+    }
+    .gaspro-card {
+        .md-button {
+
+        }
+    }
+
+    .gastrak-card {
+    }
+
+    .energypro-card {
+    }
+
+    .executiveView-card {
+    }
+}
+
