@@ -1,11 +1,14 @@
 ﻿(function () {
     angular
         .module("DMSApp")
-        .controller("gasproController", [gasproController]);
+        .controller("gasproController", ['$mdSidenav', gasproController]);
 
-    function gasproController() {
+    function gasproController($mdSidenav) {
         var vm = this;
 
+        vm.openContactUs = function () {
+            $mdSidenav('right').toggle();
+        };
     }
 
 })();
