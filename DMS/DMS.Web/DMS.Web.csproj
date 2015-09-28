@@ -424,6 +424,7 @@
     <Content Include="Content\Main\2-modules\products.scss" />
     <Content Include="Content\Main\2-modules\testimonials.scss" />
     <Content Include="Content\Main\2-modules\gaspro.scss" />
+    <Content Include="Content\Main\2-modules\services.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

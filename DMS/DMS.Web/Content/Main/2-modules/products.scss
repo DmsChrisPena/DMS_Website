@@ -4,6 +4,9 @@
     height: 80px;
     text-align: center;
     border-bottom: 1px solid rgba(0,0,0,0.12);
+    @media (max-width: 490px) {
+        height: 175px;
+    }
     .md-button {
         margin-top: 2px;
         margin-left: 12px;
@@ -42,10 +45,19 @@ section#product-overview {
         font-size: 28px;
         @extend .text-center;
     }
-    .gaspro-card {
-        .md-button {
+    .md-button {
+        margin-bottom: 16px;
+    }
 
-        }
+    p {
+        line-height: 1.50;
+        color: #666666;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 4px;
+    }
+    .gaspro-card {
+
     }
 
     .gastrak-card {
