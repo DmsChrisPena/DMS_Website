@@ -10,7 +10,9 @@ namespace DMS.Web
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js",
-                        "~/Scripts/jquery.stellar.js"));
+                        "~/Scripts/jquery.stellar.js",
+                        "~/Content/masterslider/jquery.easing.min.js",
+                        "~/Content/masterslider/masterslider.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
@@ -26,7 +28,9 @@ namespace DMS.Web
                       "~/Content/Slider/settings.css",
                       "~/Content/Slider/layers.css",
                       "~/Content/Slider/navigation.css",
-                      "~/Content/animate.css"));
+                      "~/Content/animate.css",
+                      "~/Content/masterslider/style/masterslider.css",
+                      "~/Content/masterslider/skins/default/style.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                       "~/Scripts/angular.js",
