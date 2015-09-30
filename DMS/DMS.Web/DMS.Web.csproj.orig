@@ -208,6 +208,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\api\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -223,13 +224,14 @@
   <ItemGroup>
     <Content Include="app\app.module.js" />
     <Content Include="app\app.route.js" />
+    <Content Include="app\components\about\about.html" />
     <Content Include="app\components\about\aboutController.js" />
     <Content Include="app\components\about\aboutService.js" />
-    <Content Include="app\components\about\views\contact.html" />
-    <Content Include="app\components\about\views\founder.html" />
-    <Content Include="app\components\about\views\history.html" />
-    <Content Include="app\components\about\views\profile.html" />
-    <Content Include="app\components\about\views\testimonials.html" />
+    <Content Include="app\components\contact\inPageContactUs.html" />
+    <Content Include="app\components\contact\sidenavContactUs.html" />
+    <Content Include="app\components\contact\views\index.html" />
+    <Content Include="app\components\contact\contactController.js" />
+    <Content Include="app\components\contact\contactService.js" />
     <Content Include="app\components\education\educationController.js" />
     <Content Include="app\components\education\educationService.js" />
     <Content Include="app\components\education\views\academic.html" />
@@ -237,12 +239,9 @@
     <Content Include="app\components\education\views\publications.html" />
     <Content Include="app\components\index\indexController.js" />
     <Content Include="app\components\index\indexService.js" />
-<<<<<<< HEAD
     <Content Include="app\components\index\index.html" />
-=======
-    <Content Include="app\components\index\indexView.html" />
     <Content Include="app\components\navbar\navBarController.js" />
->>>>>>> bea7899619f3785274dd1ab280b56847a7b5648d
+    <Content Include="app\components\services\services.html" />
     <Content Include="app\components\services\servicesController.js" />
     <Content Include="app\components\services\servicesService.js" />
     <Content Include="app\components\services\views\back.html" />
@@ -258,9 +257,14 @@
     <Content Include="app\components\solutions\gastrak\gastrakController.js" />
     <Content Include="app\components\solutions\gastrak\gastrakService.js" />
     <Content Include="app\components\solutions\gastrak\gastrak.html" />
+    <Content Include="app\components\solutions\products.html" />
+    <Content Include="app\components\testimonials\testimonials.html" />
+    <Content Include="App_Data\Email\CustomerMessage.txt" />
+    <Content Include="App_Data\Email\HelpTeamMessage.txt" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\angular-material.css" />
     <Content Include="Content\angular-material.min.css" />
+    <Content Include="Content\animate.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Main\0-tools\cPanel X.html" />
@@ -283,15 +287,23 @@
     <Content Include="Content\Main\0-tools\cPanel X_files\tree_styles2_optimized.css" />
     <Content Include="Content\Main\0-tools\cPanel X_files\utilities_container.js" />
     <Content Include="Content\Main\0-tools\normalize.css" />
+    <Content Include="Content\Main\0-tools\slider\layers.css" />
+    <Content Include="Content\Main\0-tools\slider\navigation.css" />
+    <Content Include="Content\Main\0-tools\slider\noneed.css" />
+    <Content Include="Content\Main\0-tools\slider\settings.css" />
     <Content Include="Content\Main\main.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="gulpfile.js" />
+    <Content Include="Img\DMS_Logo_White.png" />
+    <Content Include="Img\home-image.jpg" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />
     <Content Include="Scripts\angular-aria.min.js" />
+    <Content Include="Scripts\angular-isotope.js" />
+    <Content Include="Scripts\angular-isotope.min.js" />
     <Content Include="Scripts\angular-material.js" />
     <Content Include="Scripts\angular-material.min.js" />
     <Content Include="Scripts\angular-mocks.js" />
@@ -401,14 +413,26 @@
     <Content Include="Content\Main\0-tools\bourbon\_bourbon-deprecated-upcoming.scss" />
     <Content Include="Content\Main\0-tools\bourbon\_bourbon.scss" />
     <Content Include="Content\Main\0-tools\normalize.scss" />
-    <Content Include="Content\Main\1-base\_base.sass" />
-    <Content Include="Content\Main\1-base\_vars.sass" />
     <Content Include="Content\Main\main.scss" />
     <Content Include="Content\Main\2-modules\navbar.scss" />
+    <Content Include="Content\Main\2-modules\home.scss" />
+    <Content Include="Content\Main\1-base\_base.scss" />
+    <Content Include="Content\Main\1-base\_vars.scss" />
+    <Content Include="Content\Main\2-modules\contact.scss" />
+    <Content Include="Content\Main\2-modules\footer.scss" />
+    <Content Include="Content\Main\2-modules\aboutUs.scss" />
+    <Content Include="Content\Main\2-modules\products.scss" />
+    <Content Include="Content\Main\2-modules\testimonials.scss" />
+<<<<<<< HEAD
+    <Content Include="Content\Main\2-modules\gaspro.scss" />
+=======
+    <Content Include="Content\Main\2-modules\services.scss" />
+>>>>>>> b105e68f00013e853f31f2e0c4da1cf89aa7744d
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.stellar.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -416,6 +440,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\smoothScroll.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -433,7 +458,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Content\Main\3-layouts\" />
   </ItemGroup>
   <ItemGroup>

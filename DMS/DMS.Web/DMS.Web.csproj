@@ -338,6 +338,8 @@
     <Content Include="Content\masterslider\style\loading-2-light.gif" />
     <Content Include="Content\masterslider\style\loading-2.gif" />
     <Content Include="Content\masterslider\style\masterslider.css" />
+    <Content Include="Content\masterslider\style\ms-laptop-style.css" />
+    <Content Include="Content\masterslider\style\skin.png" />
     <Content Include="Content\masterslider\style\video-close-btn.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />

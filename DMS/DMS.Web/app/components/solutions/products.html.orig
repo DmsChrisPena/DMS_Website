@@ -1,0 +1,98 @@
+﻿<section id="sub-navbar-overview">
+<<<<<<< HEAD
+    <md-button ui-sref="gaspro">
+        <img src="../../../Img/gaspro.png" alt="GasPro" style="max-width: 60px; max-height: 60px;" />
+        <p>GasPro</p>
+    </md-button>
+    <md-button ui-sref="gaspro">
+        <img src="../../../Img/gtocloud.png" alt="GasTrak" />
+        <p>GasTrak</p>
+    </md-button>
+    <md-button ui-sref="gaspro">
+        <img src="http://demo.fifothemes.com/gallaxy/img/icons/corporate-solutions.png" alt="EnergyPro" />
+        <p>EnergyPro</p>
+    </md-button>
+    <md-button ui-sref="gaspro">
+=======
+    <md-button class="animated fadeIn" ui-sref="gastrak">
+        <img src="http://demo.fifothemes.com/gallaxy/img/icons/web-design.png" alt="GasPro" />
+        <p>GasPro</p>
+    </md-button>
+    <md-button class="animated fadeIn" ui-sref="gastrak">
+        <img src="../../../Img/gtocloud.png" alt="GasTrak" />
+        <p>GasTrak</p>
+    </md-button>
+    <md-button class="animated fadeIn" ui-sref="gastrak">
+        <img src="http://demo.fifothemes.com/gallaxy/img/icons/corporate-solutions.png" alt="EnergyPro" />
+        <p>EnergyPro</p>
+    </md-button>
+    <md-button class="animated fadeIn" ui-sref="gastrak">
+>>>>>>> b105e68f00013e853f31f2e0c4da1cf89aa7744d
+        <img src="http://demo.fifothemes.com/gallaxy/img/icons/email-marketing.png" alt="EnergyPro" />
+        <p>Executive View</p>
+    </md-button>
+</section>
+
+
+<section id="product-overview" class="container" layout="row" layout-wrap>
+    <div flex="25" flex-md="50" flex-sm="100" class="gaspro-card animated slideInRight">
+        <md-card>
+            <img class="img-responsive animated fadeIn" src="http://themes.djavaui.com/blankon-fullpack-admin-theme/img/version/angularjs-version.png" alt="Alternate Text" />
+            <md-card-content>
+                <h2 class="md-title">GasPro</h2>
+                <p>
+                    The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+                    two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+                </p>
+            </md-card-content>
+            <div class="md-actions" layout="row" layout-align="center center">
+                <md-button class="md-raised md-primary">Learn More</md-button>
+            </div>
+        </md-card>
+    </div>
+    <div flex="25" flex-md="50" flex-sm="100" class="gastrak-card animated slideInRight">
+        <md-card>
+            <img class="img-responsive animated fadeIn" src="http://themes.djavaui.com/blankon-fullpack-admin-theme/img/version/html-version.png" alt="Alternate Text" />
+            <md-card-content>
+                <h2 class="md-title">GasTrak</h2>
+                <p>
+                    The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+                    two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+                </p>
+            </md-card-content>
+            <div class="md-actions" layout="row" layout-align="center center">
+                <md-button class="md-raised md-primary">Learn More</md-button>
+            </div>
+        </md-card>
+    </div>
+    <div flex="25" flex-md="50" flex-sm="100" class="energypro-card animated slideInLeft">
+        <md-card>
+            <img class="img-responsive animated fadeIn" src="http://themes.djavaui.com/blankon-fullpack-admin-theme/img/version/yeoman-version.png" alt="Alternate Text" />
+            <md-card-content>
+                <h2 class="md-title">EnergyPro</h2>
+                <p>
+                    The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+                    two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+                </p>
+            </md-card-content>
+            <div class="md-actions" layout="row" layout-align="center center">
+                <md-button class="md-raised md-primary">Learn More</md-button>
+            </div>
+        </md-card>
+    </div>
+    <div flex="25" flex-md="50" flex-sm="100" class="executiveView-card animated slideInLeft">
+        <md-card>
+            <img class="img-responsive animated fadeIn" src="http://themes.djavaui.com/blankon-fullpack-admin-theme/img/version/yii-version.png" alt="Alternate Text" />
+            <md-card-content>
+                <h2 class="md-title">Executive View</h2>
+                <p>
+                    The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+                    two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+                </p>
+            </md-card-content>
+            <div class="md-actions" layout="row" layout-align="center center">
+                <md-button class="md-raised md-primary">Learn More</md-button>
+            </div>
+        </md-card>
+    </div>
+</section>

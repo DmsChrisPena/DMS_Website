@@ -11,6 +11,7 @@ namespace DMS.Web
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js",
                         "~/Scripts/jquery.stellar.js",
+                        "~/Content/masterslider/jquery.min.js",
                         "~/Content/masterslider/jquery.easing.min.js",
                         "~/Content/masterslider/masterslider.js"));
 
@@ -30,7 +31,9 @@ namespace DMS.Web
                       "~/Content/Slider/navigation.css",
                       "~/Content/animate.css",
                       "~/Content/masterslider/style/masterslider.css",
-                      "~/Content/masterslider/skins/default/style.css"));
+                      "~/Content/masterslider/style/ms-laptop-style.css",
+                      "~/Content/masterslider/skins/default/style.css",
+                      "~/Content/masterslider/skins/black-2/style.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                       "~/Scripts/angular.js",

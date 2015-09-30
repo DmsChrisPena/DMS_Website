@@ -12,7 +12,12 @@
 @import "2-modules/home.scss";
 @import "2-modules/contact.scss";
 @import "2-modules/footer.scss";
-<<<<<<< HEAD
-=======
 @import "2-modules/aboutUs.scss";
->>>>>>> fb880024326c35240117734a9104f5602ab0bf29
+@import "2-modules/products.scss";
+@import "2-modules/testimonials.scss";
+<<<<<<< HEAD
+@import "2-modules/gaspro.scss";
+=======
+@import "2-modules/services.scss";
+@import "2-modules/gastrak.scss";
+>>>>>>> b105e68f00013e853f31f2e0c4da1cf89aa7744d
