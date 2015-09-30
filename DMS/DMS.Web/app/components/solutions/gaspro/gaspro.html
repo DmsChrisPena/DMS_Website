@@ -5,10 +5,10 @@
     </div>
 </section>
 
-<section id="gaspro-navbar" layout="row">
+<section id="gaspro-navbar" class="animated flipInY" layout="row">
     <ul flex="100" class="container">
         <li>
-            <md-button hide-sm hide-md class="gaspro-header" ui-sref="gaspro"><img src="../../../Img/gaspro_white.png" alt="GasPro" style="max-width: 60px; max-height: 25px;" />  GasPro</md-button>
+            <md-button hide-sm hide-md class="gaspro-header" ui-sref="gaspro"><img src="../../../Img/gaspro_white.png" alt="GasPro" style="max-width: 80px; max-height: 25px;" />  GasPro</md-button>
             <md-button href="#gaspro-features">Features</md-button>
             <md-button href="#gaspro-customization">Customization</md-button>
             <md-button href="" ng-click="vm.openContactUs();">Contact Us</md-button>
@@ -17,53 +17,55 @@
 </section>
 
 <section class="container" id="gaspro-overview" layout="row" layout-wrap>
-    <div flex="100" style="min-height: 60px;"></div>
+    <div flex="100" style="min-height: 10px;"></div>
     <div flex="30">
         <div flex="100" style="min-height: 60px;"></div>
         <p>For over 16 years, GasPro systems have been successfully implemented on time and within budget. Data Management Solutions (DMS) is proud of their 100% successful implementation record that they have been able to maintain, and is one of the few, if not the only, solution provider that can make this claim.</p>
         <div flex="100" style="min-height: 30px;"></div>
         <p>The GasPro implementation process is quick, easy and takes approximately 150 days. DMS is ready, willing, and able to provide as much assistance as needed to ensure success.</p>
     </div>
-    <div flex="70">
-        <div class="rev_slider_wrapper">
-            <!-- START REVOLUTION SLIDER 5.0 -->
-            <div id="slider1" class="rev_slider" data-version="5.0" style="min-height: 500px;">
-                <!-- START REVOLUTION SLIDER -->
-                <ul>
-                    <li data-transition="fade">
-                        <!-- MAIN IMAGE -->
-                        <img src="../../../Img/gaspro_slider01.png" alt="">
-                    </li>
-                    <li data-transition="fade">
-                        <!-- MAIN IMAGE -->
-                        <img src="../../../Img/gaspro_slider02.png" alt="">
-                    </li>
-                    <li data-transition="fade">
-                        <!-- MAIN IMAGE -->
-                        <img src="../../../Img/gaspro_slider03.png" alt="">
-                    </li>
-                    <li data-transition="fade">
-                        <!-- MAIN IMAGE -->
-                        <img src="../../../Img/gaspro_slider04.png" alt="">
-                    </li>
-                </ul>
-            </div><!-- END REVOLUTION SLIDER -->
-        </div><!-- END OF SLIDER WRAPPER -->
-        <script>
-            //jQuery(document).ready(function() {
-            //   jQuery("#slider1").revolution({
-            //      sliderType:"slider",
-            //      sliderLayout:"auto",
-            //      delay:9000,
-            //      navigation: {
-            //          arrows:{enable:true}
-            //      },
-            //      gridwidth:1440,
-            //      gridheight:700
-            //    });
-            //});
+    <div flex="10"></div>
+    <div flex="60">
+        <!-- template -->
+        <div class="ms-laptop-template">
+            <div class="ms-laptop-cont">
+                <img src="../../../Img/gaspro/gaspro-slider/style/laptop.png" class="ms-laptop-bg" />
+                <div class="ms-lt-slider-cont">
+                    <!-- masterslider -->
+                    <div class="master-slider ms-skin-black-2" id="masterslider">
+                        <div class="ms-slide">
+                            <img src="../../../Img/gaspro/masterslider/style/blank.gif" data-src="../../../Img/gaspro/gaspro-slider/img/gaspro1.png" alt="lorem ipsum dolor sit" />
+                        </div>
+                        <div class="ms-slide">
+                            <img src="../../../Img/gaspro/masterslider/style/blank.gif" data-src="../../../Img/gaspro/gaspro-slider/img/gaspro2.png" alt="lorem ipsum dolor sit" />
+                        </div>
+                        <div class="ms-slide">
+                            <img src="../../../Img/gaspro/masterslider/style/blank.gif" data-src="../../../Img/gaspro/gaspro-slider/img/gaspro3.png" alt="lorem ipsum dolor sit" />
+                        </div>
+                        <div class="ms-slide">
+                            <img src="../../../Img/gaspro/masterslider/style/blank.gif" data-src="../../../Img/gaspro/gaspro-slider/img/gaspro4.png" alt="lorem ipsum dolor sit" />
+                        </div>
+                    </div>
+                    <!-- end of masterslider -->
+                </div>
+            </div>
+        </div>
+        <!-- end of template -->
+        <script type="text/javascript">
+            var slider = new MasterSlider();
+            slider.setup('masterslider' , {
+                width:492,
+                height:309,
+                speed:20,
+                preload:0,
+                space:2,
+                view:'mask'
+            });
+            slider.control('arrows');
+            slider.control('bullets',{autohide:false});
         </script>
     </div>
+    <div flex="100" style="min-height: 10px;"></div>
 </section>
 
 <section class="animated slideInUp" id="gaspro-cta">
