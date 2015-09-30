@@ -5,5 +5,9 @@
 }
 
 .ms-tabs-slider .ms-view {
-    background-color: #fff;
+    background: #fff;
+}
+
+#masterslider > div > div > div.ms-view.ms-stack-view {
+    background: #fff;
 }
