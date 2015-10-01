@@ -482,6 +482,7 @@
     <Content Include="Content\Main\2-modules\services.scss" />
     <Content Include="Content\Main\2-modules\gastrak.scss" />
     <Content Include="Content\masterslider\masterslider.min.js.map" />
+    <Content Include="Content\Main\2-modules\gaspro.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

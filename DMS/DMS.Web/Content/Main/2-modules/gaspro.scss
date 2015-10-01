@@ -28,6 +28,7 @@
 
 section#gaspro-navbar {
     padding-right: 23%;
+    z-index: 999;
     @media (max-width: 955px) {
         padding-right: 0px
     }
