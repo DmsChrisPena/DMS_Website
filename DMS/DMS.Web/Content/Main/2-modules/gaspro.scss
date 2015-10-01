@@ -126,7 +126,7 @@ section#gaspro-cta {
 }
 
 section#gaspro-features {
-
+    padding-bottom: 60px;
     padding-top: 30px;
     h2 {
         @extend .section-header;
@@ -164,5 +164,61 @@ section#gaspro-features {
         font-size: 18px;
         font-weight: 400;
         color:#444444;
+    }
+}
+
+.industry-parallax {
+    background-image: url(http://www.commendusa.com/uploads/media/oil-gas-industry_01.jpg);
+    background-size: cover;
+    background-position: 40% 46%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100%;
+    .industry-overlay {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(#424242, .65);
+        h2 {
+            @extend .section-header;
+            @extend .text-center;
+            padding-top: 60px;
+            color: white;
+        }
+        h5 {
+            @extend .section-subheader;
+            @extend .text-center;
+            font-size: 16px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            color: white;
+        }
+        p {
+            color: #fff;
+            line-height: 2;
+            font-weight: 300;
+            font-size: 24px;
+            padding-left: 20%;
+            padding-right: 20%;
+            padding-top: 80px;
+            margin-top: 0px;
+            text-align: center;
+            @media (max-width: 990px) {
+                padding-top: 50px;
+            }
+            @media (max-width: 770px) {
+                padding-top: 30px;
+            }
+            @media (max-width: 633px) {
+                padding-top: 50px;
+                font-size: 20px;
+            }
+            @media (max-width: 529px) {
+                padding-top: 30px;
+            }
+            @media (max-width: 447px) {
+                padding-top: 50px;
+                font-size: 16px;
+            }
+        }
     }
 }
