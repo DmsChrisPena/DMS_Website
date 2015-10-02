@@ -471,16 +471,39 @@ section#cta-home {
 
 .dms-slider-1 {
     color: white !important;
-    left: 80px;
-    top: 50px;
+    left: 120px;
+    top: 60px;
     padding: 6px;
-    font-size: 52px;
+    font-size: 58px;
     font-weight: 400;
+    font-family: Roboto !important;
     background-color: rgba(#3F51B5, .7);
 }
 
 .dms-slider-2 {
-    left: 80px;
-    top: 200px;
-    width: 660px;
+    font-weight: 400;
+    left: 120px;
+    top: 150px;
+    line-height: 1.5;
+    font-size: 40px;
+    padding: 6px;
+    width: 32%;
+    font-family: Roboto !important;
+    color: white;
+    background-color: rgba(#F44336, .7);
+}
+
+.dms-slider-3 {
+    right:560px; 
+    font-family: Roboto !important;
+    top:600px;
+    font-size: 24px;
+    width: 30%;
+    @extend .text-center;
+}
+
+.dms-slider-4 {
+    top: 140px;
+    @extend .img-responsive;
+    left: 800px;
 }
