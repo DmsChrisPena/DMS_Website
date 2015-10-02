@@ -1,1 +1,40 @@
-﻿<p>Executive View</p>
+﻿<md-dialog aria-label="Coming Soon" ng-cloak ng-controller="productsController as vm">
+    <div style="background-color: rgb(63,81,181); height: auto;">
+        <p class="section-header text-center" style="color: white; font-size: 22px;">Executive View Coming Soon</p>
+    </div>
+    <md-dialog-content style="max-width:400px;max-height:610px; ">
+        <div>
+            <p>
+                The mango is a juicy stone fruit belonging to the genus Mangifera, consisting of numerous tropical fruiting trees, cultivated mostly for edible fruit. The majority of these species are found in nature as wild mangoes. They all belong to the flowering plant family Anacardiaceae. The mango is native to South and Southeast Asia, from where it has been distributed worldwide to become one of the most cultivated fruits in the tropics.
+            </p>
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup">
+                <form action="//Cougrammers.us10.list-manage.com/subscribe/post?u=864faf817a8c73031b9b4c83a&amp;id=20c1c0c569" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <div class="mc-field-group">
+                            <md-input-container>
+                                <label for="mce-EMAIL">
+                                    Email Address
+                                </label>
+                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                            </md-input-container>
+                        </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_864faf817a8c73031b9b4c83a_20c1c0c569" tabindex="-1" value=""></div>
+                        <div class="md-actions" layout="row" layout-align="center center">
+                            <div class="clear"><input ng-click="vm.closeModal()" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button md-button md-raised md-primary"></div>
+                            <div></div>
+                            <md-button ng-click="vm.closeModal($event)" class="md-raised">Close</md-button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <!--End mc_embed_signup-->
+        </div>
+    </md-dialog-content>
+</md-dialog>
