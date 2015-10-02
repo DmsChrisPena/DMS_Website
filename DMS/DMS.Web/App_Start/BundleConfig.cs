@@ -62,6 +62,7 @@ namespace DMS.Web
                       "~/app/components/education/educationController.js",
                       "~/app/components/services/servicesController.js",
                       "~/app/components/solutions/gaspro/gasproController.js",
+                      "~/app/components/solutions/productsController.js",
                       "~/app/components/solutions/gastrak/gastrakController.js",
                       "~/app/components/solutions/energypro/energyproController.js",
                       "~/app/components/navbar/navBarController.js",
