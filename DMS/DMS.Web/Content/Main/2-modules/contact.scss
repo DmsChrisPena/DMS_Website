@@ -1,7 +1,7 @@
 ﻿section#contactUs {
     @extend .container;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     border-bottom: 1px solid #eeeeee;
     div {
         &:first-child {
@@ -17,7 +17,7 @@
         &:nth-child(2) {
             img {
                 margin-top: 0px;
-                height: 350px;
+                height: 275px;
                 @extend .center-block;
                 @extend .img-responsive;
             }
@@ -74,10 +74,18 @@
 }
 
 md-sidenav {
-    min-width: 800px;
+    min-width: 600px;
     padding: 40px;
+    background-color: #f5f5f5;
 }
-
+.sincerely {
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #999999;
+    margin: 0px;
+}
 section#contactUs-sidenav {
     @extend .container;
     padding-top: 90px;

@@ -5,16 +5,21 @@
 </style>
 <md-sidenav md-component-id="right" class="md-sidenav-right" style="padding: 40px; position: fixed;">
     <section style="width: 100%; padding: 0px;" id="contactUs-sidenav" layout="row" layout-wrap ng-controller="contactController as vm">
-        <div flex="100">
-            <h2 class="section-header text-center">Contact Us</h2>
+        <div flex="66">
+            <h2 class="section-header" style="text-align: right;">Contact Us</h2>
         </div>
-        <div flex="100" style="padding: 0px;">
-            <md-button class="md-primary md-raised" ng-click="vm.closeSideNav();">Close&nbsp; <i class="fa fa-times-circle"></i></md-button>
+        <div flex="33">
+            <md-button class="md-fab md-mini" style="background-color: #D0372C;" ng-click="vm.closeSideNav();"><i class="fa fa-times"></i></md-button>
         </div>
         <div flex="100" style="padding: 0px;">
             <md-card style="margin-top: 20px;">
                 <md-card-content layout-padding>
-                    <form name="home-contact-us">
+                    <div ng-show="vm.sentForm">
+                        <h2 class="section-header text-center">Thank you for contacting us!</h2>
+                        <h4 class="section-subheader text-center">We will get back with you shortly.</h4>
+                        <img src="../../../Img/shadowdmslogo_small2.png" style="margin-top: 20px;" class="center-block" alt="DMS Logo">
+                    </div>
+                    <form name="home-contact-us" ng-hide="vm.sentForm">
                         <div class="md-actions" layout="row" layout-align="space-between center">
                             <div>
                                 <h5 style="padding-top: 20px; padding-left: 10px; font-size: 16px; font-weight: 300; color: #999999; margin: 0px;">Dear DMS,</h5>
@@ -34,7 +39,7 @@
                             </md-input-container>
                             <md-input-container flex>
                                 <label>Topic</label>
-                                <md-select ng-model="vm.requestInfo.topicId">
+                                <md-select ng-model="vm.requestInfo.topic">
                                     <md-option value="Products">Products</md-option>
                                     <md-option value="Services">Services</md-option>
                                     <md-option value="Education">Education</md-option>
@@ -52,7 +57,7 @@
                             <textarea ng-required="true" ng-model="vm.requestInfo.message" rows="3" columns="5" md-maxlength="1000"></textarea>
                         </md-input-container>
                     </form>
-                    <div class="md-actions" layout="row" layout-align="space-between center">
+                    <div class="md-actions" layout="row" layout-align="space-between center" ng-hide="vm.sentForm">
                         <div></div>
                         <md-button>
                             <md-tooltip>
@@ -69,6 +74,5 @@
                 </md-card-content>
             </md-card>
         </div>
-
-    </section>
+   </section>
 </md-sidenav>
