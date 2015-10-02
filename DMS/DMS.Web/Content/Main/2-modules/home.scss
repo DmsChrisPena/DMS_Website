@@ -100,10 +100,9 @@
   margin-left: auto;
 }
 
-section#dmsHelp {
+section#theInstitution {
     @extend .container;
-    padding-top: 45px;
-    padding-bottom: 90px;
+    padding-bottom: 30px;
     border-bottom: 1px solid #eeeeee;
     div {
         &:first-child {
@@ -142,8 +141,7 @@ section#dmsHelp {
         }
         &:nth-child(3) {
             img {
-                margin-top: 16px;
-                width: 500px;
+                width: 450px;
                 @extend .center-block;
             }
             p {
@@ -154,6 +152,115 @@ section#dmsHelp {
         }
     }
 }
+section#yourSolution {
+    @extend .container;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eeeeee;
+    div {
+        &:first-child {
+            margin-top: 36px;
+            text-align: center;
+            padding-bottom: 36px;
+            h2 {
+                @extend .section-header;
+            }
+            h4 {
+                @extend .section-subheader;
+            }
+        }
+        &:nth-child(2) {
+            img {
+                width: 450px;
+                @extend .center-block;
+            }
+            p {
+                font-weight: 300;
+                margin: 0px;
+                color: #999999;
+            }
+        }
+        &:nth-child(3) {
+            @media(max-width: 1000px) {
+                padding-right: 3%;
+            }
+            padding-right: 50px;
+            padding-bottom: 50px;
+            h3 {
+                color: #4a6781;
+                font-weight: 300;
+                font-size: 26px;
+                margin: 0px;
+                @media(max-width: 1000px) {
+                    @extend .text-center;
+                }
+            }
+            p {
+                line-height: 1.75;
+                color: #666666;
+                font-weight: 400;
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+section#ourRevolution {
+    padding-bottom: 30px;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    .history-title {
+        h4 {
+            @extend .section-subheader;
+            @extend .text-center;
+            padding-bottom: 20px;
+        }
+    }
+    h5 {
+        padding-top: 36px;
+        @extend .section-header;
+        @extend .text-center;
+    }
+    h2 {
+        &:nth-child(1) {
+            padding-left: 15%;
+            padding-right: 15%;
+            @extend .section-header;
+            font-weight: 500;
+            font-size: 30px !important;
+            margin-bottom: 30px;
+            color: rgba(#333, .8);
+            @extend .text-center;
+        }
+    }
+
+    ul {
+        padding: 0px;
+        padding-right: 15%;
+        padding-left: 15%;
+        &:nth-child(2) {
+            li {
+                img {
+                    width: 50px;
+                    padding: 8px;
+                }
+            }
+        }
+        &:nth-child(3) {
+            line-height: 2;
+        }
+        li {
+            list-style: none;
+            p {
+                line-height: 1.75;
+                margin: 10px 0px;
+                font-weight: 400;
+                font-size: 16px;
+                color: #666666;
+            }
+        }
+    }
+}
+
 .testimonials {
     border-bottom: 4px solid #e8e8e8;
     background-color: #f5f5f5;
@@ -182,8 +289,8 @@ section#ourServices {
         padding-left: 15%;
         padding-right: 15%;
     }
-    padding-top: 70px;
-    padding-bottom: 90px;
+    padding-top: 36px;
+    padding-bottom: 30px;
     background-color: #fff;
     border-bottom: 1px solid #eeeeee;
     md-card {
