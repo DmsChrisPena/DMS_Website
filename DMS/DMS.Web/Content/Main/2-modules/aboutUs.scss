@@ -234,63 +234,6 @@ section#ourHistory {
     }
 }
 
-section#theIndustry {
-    padding-bottom: 90px;
-    border-top: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
-    .history-title {
-        h4 {
-            @extend .section-subheader;
-            @extend .text-center;
-            padding-bottom: 50px;
-        }
-    }
-    h5 {
-        padding-top: 60px;
-        @extend .section-header;
-        @extend .text-center;
-    }
-    h2 {
-        &:nth-child(1) {
-            padding-left: 15%;
-            padding-right: 15%;
-            @extend .section-header;
-            font-weight: 500;
-            font-size: 28px;
-            margin-bottom: 30px;
-            color: rgba(#333, .8);
-            @extend .text-center;
-        }
-    }
-
-    ul {
-        padding: 0px;
-        padding-right: 15%;
-        padding-left: 15%;
-        &:nth-child(2) {
-            li {
-                img {
-                    width: 50px;
-                    padding: 8px;
-                }
-            }
-        }
-        &:nth-child(3) {
-            line-height: 2;
-        }
-        li {
-            list-style: none;
-            p {
-                line-height: 1.75;
-                margin: 10px 0px;
-                font-weight: 400;
-                font-size: 16px;
-                color: #666666;
-            }
-        }
-    }
-}
-
 section#university {
     padding-top: 70px;
     padding-right: 50px;
