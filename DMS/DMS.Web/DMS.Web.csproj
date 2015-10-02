@@ -347,6 +347,8 @@
     <Content Include="gulpfile.js" />
     <Content Include="Img\DMS_Logo_White.png" />
     <Content Include="Img\home-image.jpg" />
+    <Content Include="Img\slider-2-monitors.png" />
+    <Content Include="Img\slider2.jpg" />
     <Content Include="Img\templateSlider\1.jpg" />
     <Content Include="Img\templateSlider\2.jpg" />
     <Content Include="Img\templateSlider\3.jpg" />
