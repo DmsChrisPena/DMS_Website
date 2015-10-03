@@ -23,6 +23,7 @@
                 template: '<ui-view/>',
             }).state('products', { // products pages
                 url: '/products',
+                controller: "productsController as vm",
                 templateUrl: 'app/components/solutions/products.html'
             }).state('education.academic', { 
                 url: '/academic',
