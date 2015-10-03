@@ -1,4 +1,32 @@
-﻿section#main-slider {
+﻿.topSwipeSlider {
+    div {
+        max-height: 550px;
+        div {
+                img {
+                    max-height: 100%;
+                    max-width: 100%;
+                }
+        }
+    }
+}
+
+section#cta-home {
+    -webkit-box-shadow: 0px -2px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -2px 4px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px -2px 4px 0px rgba(0,0,0,0.75);
+    height: 50px;
+    background-color: #212121;
+    p {
+        @extend .text-center;
+        color: #fff;
+        font-weight: 300;
+        font-size: 14px;
+        margin: 0px;
+        padding-top: 14px;
+    }
+}
+
+section#main-slider {
     background-image: url("../../../Img/home-image2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -417,22 +445,6 @@ section#whyUs {
                 background-color: #009688;
             }
         }
-    }
-}
-
-section#cta-home {
-    -webkit-box-shadow: 0px -2px 4px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px -2px 4px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px -2px 4px 0px rgba(0,0,0,0.75);
-    height: 50px;
-    background-color: #009688;
-    p {
-        @extend .text-center;
-        color: #fff;
-        font-weight: 300;
-        font-size: 14px;
-        margin: 0px;
-        padding-top: 14px;
     }
 }
 
