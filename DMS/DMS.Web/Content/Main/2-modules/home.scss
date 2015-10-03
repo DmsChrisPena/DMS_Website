@@ -59,7 +59,7 @@
                 }
                 &:nth-child(4) {
                     .md-button {
-                        background-color: $secondary-6;
+                        /*background-color: $secondary-6;*/
                     }
                 }
             }
@@ -129,7 +129,7 @@ section#dmsHelp {
                 font-size: 26px;
                 margin: 0px;
                 @media(max-width: 1000px) {
-                    @extend .text-center;
+                    /*@extend .text-center;*/
                 }
             }
             p {
@@ -144,7 +144,7 @@ section#dmsHelp {
             img {
                 margin-top: 16px;
                 width: 500px;
-                @extend .center-block;
+                /*@extend .center-block;*/
             }
             p {
                 font-weight: 300;
@@ -193,7 +193,7 @@ section#ourServices {
             margin-bottom: 30px;
         }
         md-card-content {
-            @extend .text-center;
+            /*@extend .text-center;*/
             h2 {
                 color: #444444;
                 font-size: 26px;

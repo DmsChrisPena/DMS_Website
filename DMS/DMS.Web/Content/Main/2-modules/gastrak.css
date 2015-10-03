@@ -1,0 +1,86 @@
+section#gastrak-navbar {
+  padding-right: 23%;
+  height: 40px;
+  background-color: rgba(244, 67, 54, 0.8);
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
+  @media (max-width: 955px) {
+    section#gastrak-navbar {
+      padding-right: 0px; } }
+  @media (max-width: 520px) {
+    section#gastrak-navbar {
+      height: 86px; } }
+  section#gastrak-navbar ul {
+    margin: 0px; }
+    section#gastrak-navbar ul li {
+      margin-left: 25%;
+      display: inline;
+      list-style-type: none; }
+      @media (min-width: 1450px) {
+        section#gastrak-navbar ul li {
+          margin-left: 23%; } }
+      @media (min-width: 1630px) {
+        section#gastrak-navbar ul li {
+          margin-left: 20%; } }
+      @media (min-width: 1630px) {
+        section#gastrak-navbar ul li {
+          margin-left: 15%; } }
+      @media (min-width: 1630px) {
+        section#gastrak-navbar ul li {
+          margin-left: 10%; } }
+      @media (max-width: 955px) {
+        section#gastrak-navbar ul li {
+          margin-left: 0px; } }
+  section#gastrak-navbar .md-button {
+    line-height: 30px;
+    min-height: 10px;
+    font-size: 11px;
+    font-weight: 400;
+    color: #fff;
+    margin-left: 0px;
+    margin-right: 0px; }
+    section#gastrak-navbar .md-button:first-child {
+      float: left !important;
+      font-size: 14px;
+      font-weight: 500;
+      margin-left: 20%; }
+      @media (min-width: 1450px) {
+        section#gastrak-navbar .md-button:first-child {
+          margin-left: 25%; } }
+      @media (min-width: 1630px) {
+        section#gastrak-navbar .md-button:first-child {
+          margin-left: 30%; } }
+      @media (min-width: 1850px) {
+        section#gastrak-navbar .md-button:first-child {
+          margin-left: 35%; } }
+      @media (min-width: 1850px) {
+        section#gastrak-navbar .md-button:first-child {
+          margin-left: 40%; } }
+
+section#gastrak-header-pic {
+  text-align: center;
+  background-color: blue;
+  /*background-image: url(../../../Img/graph11.jpg);*/
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  height: 227px; }
+  section#gastrak-header-pic .gastrak-header-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.25); }
+    section#gastrak-header-pic .gastrak-header-overlay h2 {
+      margin: 0px;
+      padding-top: 50px;
+      color: white;
+      font-size: 64px; }
+    section#gastrak-header-pic .gastrak-header-overlay p {
+      color: white;
+      font-size: 24px; }
+
+section#gastrak-overview {
+  height: 500px; }
+
+/*# sourceMappingURL=gastrak.css.map */

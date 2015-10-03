@@ -291,7 +291,18 @@
     <Content Include="Content\Main\0-tools\slider\navigation.css" />
     <Content Include="Content\Main\0-tools\slider\noneed.css" />
     <Content Include="Content\Main\0-tools\slider\settings.css" />
-    <Content Include="Content\Main\main.css" />
+    <Content Include="Content\Main\2-modules\gaspro.css">
+      <DependentUpon>gaspro.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Main\2-modules\gastrak.css">
+      <DependentUpon>gastrak.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Main\2-modules\home.css">
+      <DependentUpon>home.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Main\main.css">
+      <DependentUpon>main.scss</DependentUpon>
+    </Content>
     <Content Include="Content\masterslider\jquery.easing.min.js" />
     <Content Include="Content\masterslider\jquery.min.js" />
     <Content Include="Content\masterslider\masterslider.js" />
