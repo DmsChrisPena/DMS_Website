@@ -6,3 +6,67 @@
         }
     }
 }
+
+
+section#services-overview {
+    margin-bottom: 45px;
+    .overview-content {
+        padding-bottom: 45px;
+        border-bottom: 1px solid #ddd;
+        p {
+            padding-left: 15%;
+            padding-right: 15%;
+            @extend .text-center;
+            @extend .para-content;
+        }
+    }
+    .services-img {
+        border-bottom: 1px solid #ddd;
+        img {
+            height: 300px;
+            padding-bottom: 30px;
+        }
+    }
+
+    .services-content {
+        border-bottom: 1px solid #ddd;
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        p {
+            line-height: 1.75;
+            color: #666666;
+            font-size: 16px;
+            margin: 0px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.services-container {
+    padding-top: 30px;
+}
+
+section#contact-us-services {
+    height: auto;
+    padding-bottom: 45px;
+    img {
+        margin-bottom: 6px;
+    }
+    h4 {
+        font-size: 24px !important;
+        font-weight: 500;
+    }
+    p {
+        @extend .para-content;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+}
+
+.para-content {
+    line-height: 1.75;
+    color: #666666;
+    font-size: 16px;
+}

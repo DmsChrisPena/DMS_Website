@@ -7,6 +7,7 @@
         var vm = this;
         vm.topics = {};
         vm.requestInfo = {};
+        vm.sentForm = false;
         
         vm.closeSideNav = closeSideNav;
         vm.sendRequest = sendRequest;
@@ -20,6 +21,7 @@
         }
 
         function successRequest(data) {
+            vm.sentForm = true;
             vm.requestInfo = {};
         }
         function failRequest(data) {
