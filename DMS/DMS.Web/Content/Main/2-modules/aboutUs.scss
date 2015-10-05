@@ -357,6 +357,7 @@ section#university {
 }
 
 section#about-navbar {
+    z-index: 999;
     padding-right: 23%;
     @media (max-width: 955px) {
         padding-right: 0px
