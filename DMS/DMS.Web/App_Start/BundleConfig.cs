@@ -31,8 +31,8 @@ namespace DMS.Web
                       "~/Content/Slider/navigation.css",
                       "~/Content/animate.css",
                       "~/Content/masterslider/style/masterslider.css",
-                      "~/Content/masterslider/style/ms-laptop-style.css",
                       "~/Content/masterslider/skins/default/style.css",
+                      "~/Content/laptopSlider/ms-laptop-style.css",
                       "~/Content/masterslider/skins/black-2/style.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
