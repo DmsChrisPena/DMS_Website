@@ -199,6 +199,9 @@ section#gaspro-features {
         width: 100%;    
         padding-bottom: 30px;
         background-color: rgba(#424242, .75);
+        .middle-margin {
+            max-width: 100px;
+        }
         h2 {
             @extend .section-header;
             @extend .text-center;
