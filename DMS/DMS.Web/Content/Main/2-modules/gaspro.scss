@@ -96,14 +96,16 @@ section#gaspro-navbar {
 
 section#gaspro-overview {
     background-color: #f5f5f5;
-    padding-top: 2%;
+    padding-top: 20px;
+    padding-bottom: 10px;
     div#textBoxSpacing {
         padding-top: 1%;
         padding-bottom: 1%;
+
+            padding-left: 5%;
         h2 {
             @extend .section-header;
             font-size: 30px;
-            padding-left: 20%;
         }
         h5 {
             width: 75%;
@@ -113,7 +115,6 @@ section#gaspro-overview {
             line-height: 1.5;
             font-size: 17px;
             margin: 0px;
-            padding-left: 20%;
         }
         p {
             width: 75%;
@@ -123,7 +124,6 @@ section#gaspro-overview {
             line-height: 1.5;
             font-size: 14px;
             margin: 0px;
-            padding-left: 20%;
         }
     }
 }
@@ -231,5 +231,33 @@ section#gaspro-features {
             color: white;
             font-weight: 300;
         }
+    }
+}
+
+section#customization {
+    padding-top: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+    p {
+        padding-bottom: 20px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+
+section#train-implement-cloud {
+    margin-top: 30px;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+    padding-bottom: 60px;
+    i {
+        font-size: 72px;
+        color: #424242;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    p {
+        @extend .para-content;
     }
 }
