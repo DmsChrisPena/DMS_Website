@@ -17,10 +17,11 @@ namespace DMS.Data.Migrations
         {
             ContactTopic[] topics = new ContactTopic[]
             {
-                new ContactTopic {Topic = "Demos" },
                 new ContactTopic {Topic = "Products" },
                 new ContactTopic {Topic = "Services" },
-                new ContactTopic {Topic = "Education" }
+                new ContactTopic {Topic = "Education" },
+                new ContactTopic {Topic = "Demo" },
+                new ContactTopic {Topic = "Other" }
             };
 
             context.ContactTopics.AddOrUpdate(t => t.Topic, topics);

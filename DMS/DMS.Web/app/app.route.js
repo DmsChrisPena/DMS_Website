@@ -17,26 +17,14 @@
                 url: '/about',
                 templateUrl: 'app/components/about/about.html',
                 controller: "aboutController as vm"
-            }).state('education', { // education pages
-                abstract: true,
+            }).state('education', { // education page
                 url: '/education',
-                template: '<ui-view/>',
+                controller: "educationController as vm",
+                templateUrl: 'app/components/education/views/academic.html'
             }).state('products', { // products pages
                 url: '/products',
                 controller: "productsController as vm",
                 templateUrl: 'app/components/solutions/products.html'
-            }).state('education.academic', { 
-                url: '/academic',
-                templateUrl: 'app/components/education/views/academic.html',
-                controller: 'educationController as vm'
-            }).state('education.certification', { 
-                url: '/certification',
-                templateUrl: 'app/components/education/views/certification.html',
-                controller: 'educationController as vm'
-            }).state('education.publications', { 
-                url: '/publications',
-                templateUrl: 'app/components/education/views/publications.html',
-                controller: 'educationController as vm'
             }).state('services', { // services pages
                 url: '/services',
                 templateUrl: 'app/components/services/services.html'
