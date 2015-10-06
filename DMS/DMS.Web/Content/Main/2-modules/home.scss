@@ -1,6 +1,6 @@
 ﻿.topSwipeSlider {
     div {
-        max-height: 650px;
+        max-height: 550px;
         div {
                 img {
                     max-height: 100%;
@@ -396,7 +396,7 @@ section#whyUs {
     div {
         &:nth-child(1) {
             h2 {
-                padding-top: 16px;
+                padding-top: 50px;
                 padding-bottom: 0px;
                 @extend .section-header;
                 font-size: 28px;
