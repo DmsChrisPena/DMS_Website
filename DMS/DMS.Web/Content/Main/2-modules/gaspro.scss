@@ -98,11 +98,22 @@ section#gaspro-overview {
     background-color: #f5f5f5;
     padding-top: 2%;
     div#textBoxSpacing {
-        padding-top: 3%;
-        padding-bottom: 3%;
+        padding-top: 1%;
+        padding-bottom: 1%;
         h2 {
             @extend .section-header;
-            @extend .text-center;
+            font-size: 30px;
+            padding-left: 20%;
+        }
+        h5 {
+            width: 75%;
+            font-family: Roboto;
+            font-weight: 500;
+            color: #333;
+            line-height: 1.5;
+            font-size: 17px;
+            margin: 0px;
+            padding-left: 20%;
         }
         p {
             width: 75%;
@@ -113,12 +124,6 @@ section#gaspro-overview {
             font-size: 14px;
             margin: 0px;
             padding-left: 20%;
-            &:nth-child(2) {
-                padding-top: 5%;
-            }
-            &:nth-child(3) {
-                padding-top: 8%;
-            }
         }
     }
 }
