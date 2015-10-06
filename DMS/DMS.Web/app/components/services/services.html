@@ -1,17 +1,17 @@
 ﻿<section id="sub-navbar-overview" class="animated flipInX">
-    <md-button class="animated fadeIn">
+    <md-button class="animated fadeIn" href="#consulting-section">
         <img src="../../../Img/navbar-icons/account-multiple.png" alt="consulting" style="max-width: 60px; max-height: 60px;"/>
         <p>Consulting</p>
     </md-button>
-    <md-button class="animated fadeIn">
+    <md-button class="animated fadeIn" href="#accounting-section">
         <img src="../../../Img/navbar-icons/cash-multiple.png" alt="Accounting" style="max-width: 60px; max-height: 60px;"/>
         <p>Accounting</p>
     </md-button>
-    <md-button class="animated fadeIn">
+    <md-button class="animated fadeIn" href="#implementation-section">
         <img src="../../../Img/navbar-icons/clipboard-check.png" alt="Implementation" style="max-width: 60px; max-height: 60px;"/>
         <p>Implementation</p>
     </md-button>
-    <md-button class="animated fadeIn">
+    <md-button class="animated fadeIn" href="#training-section">
         <img src="../../../Img/navbar-icons/school.png" alt="Training" style="max-width: 60px; max-height: 60px;"/>
         <p>Training</p>
     </md-button>
@@ -27,7 +27,7 @@
         <div class="services-img" flex="50" hide-md hide-sm>
             <img class="img-responsive center-block animated fadeIn" src="../../../Img/consulting.png" alt="Consulting" />
         </div>
-        <div class="services-content" flex="50" flex-md="100" flex-sm="100">
+        <div class="services-content" id="consulting-section" flex="50" flex-md="100" flex-sm="100">
             <h2 class="text-center section-header">Consulting</h2>
             <img hide-gt-md class="img-responsive center-block animated fadeIn" style="height: 250px; margin-bottom: 30px;" src="../../../Img/consulting.png" alt="Consulting" />
             <p>We boast a team of individuals with education and experience in forensic and gas accounting, computer science, economics, finance, marketing, supply-chain and advanced mathematics.<br /><br />
@@ -37,7 +37,7 @@ DMS uses this extensive industry knowledge and education to give your operation 
                 <md-button class="md-raised" aria-label="Accounting Contact Us" ng-click="vm.openContactUs();">Contact us today for package and pricing inquiries.</md-button></p>
         </div>
     </div>
-    <div class="services-container" flex="100" layout="row" layout-wrap>
+    <div class="services-container" flex="100" layout="row" layout-wrap id="accounting-section">
         <div class="services-content" flex="50" flex-md="100" flex-sm="100">
             <h2 class="text-center section-header">Accounting</h2>
             <img hide-gt-md style="height: 250px; margin-bottom: 30px;" class="img-responsive center-block animated fadeIn" src="../../../Img/accounting.png" alt="Accounting" />
@@ -51,7 +51,7 @@ With DMS' Back Office Accounting services, you can leave your complicated accoun
             <img class="img-responsive center-block animated fadeIn" src="../../../Img/accounting.png" alt="Accounting" />
         </div>
     </div>
-    <div class="services-container" flex="100" layout="row" layout-wrap>
+    <div class="services-container" flex="100" layout="row" layout-wrap id="implementation-section">
         <div class="services-img" flex="50" hide-md hide-sm>
             <img class="img-responsive center-block animated fadeIn" src="../../../Img/implementation.png" alt="Implementation" />
         </div>
@@ -65,7 +65,7 @@ DMS offers implementation services to complement our systems to get you on the r
                 <md-button class="md-raised" aria-label="Accounting Contact Us" ng-click="vm.openContactUs();">Contact us for more information.</md-button></p>
         </div>
     </div>
-    <div class="services-container" flex="100" layout="row" layout-wrap>
+    <div class="services-container" flex="100" layout="row" layout-wrap id="training-section">
         <div class="services-content" flex="50" flex-md="100" flex-sm="100">
             <h2 class="text-center section-header">Training</h2>
             <img hide-gt-md style="height: 250px; margin-bottom: 30px;" class="img-responsive center-block animated fadeIn" src="../../../Img/training.png" alt="Training" />
