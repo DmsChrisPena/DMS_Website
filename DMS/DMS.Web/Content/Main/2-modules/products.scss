@@ -1,5 +1,5 @@
 ﻿section#sub-navbar-overview {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     background-color: rgba(242,242,242,0.6);
     height: 80px;
     text-align: center;
@@ -23,6 +23,37 @@
             padding-top: 8px;
             height: 42px;
         }
+    }
+}
+
+section#products-description {
+    margin-bottom: 40px;
+}
+
+section#hosted-products {
+    padding-bottom: 30px;
+    div {
+        margin-left: 40%;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    .fa-check {
+         display: block;
+    }
+    .fa-check::before {
+        padding-right: 14px;
+        color: #4051B5;
+    }
+    ul {
+        padding-right: 30px;
+    }
+    li {
+        font-size: 16px;
+        @extend .text-center;
+        color: #333;
+        font-weight: 300;
+        text-align: left;
     }
 }
 
