@@ -270,6 +270,14 @@
     <Content Include="Content\animate.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\desktop-style\display.png" />
+    <Content Include="Content\desktop-style\flat-display.png" />
+    <Content Include="Content\desktop-style\ms-display-style.css" />
+    <Content Include="Content\desktop-style\skin.png" />
+    <Content Include="Content\laptopSlider\flat-laptop.png" />
+    <Content Include="Content\laptopSlider\laptop.png" />
+    <Content Include="Content\laptopSlider\ms-laptop-style.css" />
+    <Content Include="Content\laptopSlider\skin.png" />
     <Content Include="Content\Main\0-tools\cPanel X.html" />
     <Content Include="Content\Main\0-tools\cPanel X_files\ajaxapp-min.css" />
     <Content Include="Content\Main\0-tools\cPanel X_files\ajaxapp-min.js" />
@@ -361,6 +369,7 @@
     <Content Include="gulpfile.js" />
     <Content Include="Img\DMS_Logo_White.png" />
     <Content Include="Img\home-image.jpg" />
+    <Content Include="Img\skin.png" />
     <Content Include="Img\slider-2-monitors.png" />
     <Content Include="Img\slider2.jpg" />
     <Content Include="Img\templateSlider\1.jpg" />
