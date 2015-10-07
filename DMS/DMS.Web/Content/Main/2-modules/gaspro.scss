@@ -257,16 +257,18 @@ section#customization {
     margin-bottom: 30px;
     border-bottom: 1px solid rgba(0,0,0,0.12);
     p {
-        padding-bottom: 20px;
+        @extend .text-center;
         padding-left: 10%;
         padding-right: 10%;
+    }
+    img {
+        margin-top: 20px;
     }
 }
 
 
 section#train-implement-cloud {
     margin-top: 30px;
-    border-bottom: 1px solid rgba(0,0,0,0.12);
     padding-bottom: 60px;
     i {
         font-size: 72px;
@@ -277,5 +279,6 @@ section#train-implement-cloud {
     }
     p {
         @extend .para-content;
+        padding: 5%;
     }
 }
