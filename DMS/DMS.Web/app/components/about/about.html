@@ -1,12 +1,12 @@
 ﻿<section id="about-navbar" class="animated flipInX" layout="row">
     <ul flex="100" class="container">
         <li>
-            <md-button hide-sm hide-md class="about-header" ui-sref="about">About</md-button>
-            <md-button href="#ourMission">Our Mission</md-button>
-            <md-button href="#ourHistory">History</md-button>
-            <md-button href="#theIndustry">The Industry</md-button>
-            <md-button href="#university">University</md-button>
-            <md-button href="" ng-click="vm.openContactUs();">Contact Us</md-button>
+            <md-button hide-sm hide-md class="about-header" href="#top">About</md-button>
+            <md-button ng-click="vm.goToElement('ourMission');">Our Mission</md-button>
+            <md-button ng-click="vm.goToElement('ourHistory');">History</md-button>
+            <md-button ng-click="vm.goToElement('university');">University</md-button>
+            <md-button ng-click="vm.goToElement('whyUs');">Why DMS</md-button>
+            <md-button ng-click="vm.openContactUs();">Contact Us</md-button>
         </li>
     </ul>
 </section>

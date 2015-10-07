@@ -27,22 +27,7 @@
                 templateUrl: 'app/components/solutions/products.html'
             }).state('services', { // services pages
                 url: '/services',
-                templateUrl: 'app/components/services/services.html'
-            }).state('services.consulting', { 
-                url: '/consulting',
-                templateUrl: 'app/components/services/views/consulting.html',
-                controller: 'servicesController as vm'
-            }).state('services.front', { 
-                url: '/front',
-                templateUrl: 'app/components/services/views/front.html',
-                controller: 'servicesController as vm'
-            }).state('services.middle', { 
-                url: '/middle',
-                templateUrl: 'app/components/services/views/middle.html',
-                controller: 'servicesController as vm'
-            }).state('services.back', { 
-                url: '/back',
-                templateUrl: 'app/components/services/views/back.html',
+                templateUrl: 'app/components/services/services.html',
                 controller: 'servicesController as vm'
             }).state('gaspro', { // gaspro pages
                 url: '/gaspro',

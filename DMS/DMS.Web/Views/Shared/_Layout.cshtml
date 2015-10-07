@@ -138,6 +138,12 @@
     @Scripts.Render("~/bundles/jquery")
     <script>
         $(window).stellar();
+
+        $("a[href='#top']").click(function () {
+            $("html, body").animate({ scrollTop: 0 }, 1000);
+            return false;
+        });
+
     </script>
     <script src="~/Scripts/SliderJS/jquery.themepunch.revolution.min.js"></script>
     <script src="~/Scripts/SliderJS/jquery.themepunch.tools.min.js"></script>
