@@ -94,6 +94,11 @@ section#gaspro-navbar {
     }
 }
 
+.add-on-responsive {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 section#gaspro-overview {
     background-color: #f5f5f5;
     padding-top: 20px;
@@ -108,7 +113,7 @@ section#gaspro-overview {
             font-size: 30px;
         }
         h5 {
-            width: 75%;
+            width: 100%;
             font-family: Roboto;
             font-weight: 500;
             color: #333;
@@ -117,7 +122,7 @@ section#gaspro-overview {
             margin: 0px;
         }
         p {
-            width: 75%;
+            width: 100%;
             font-family: Roboto;
             font-weight: 400;
             color: #333;
@@ -125,6 +130,16 @@ section#gaspro-overview {
             font-size: 14px;
             margin: 0px;
         }
+        .md-button {
+            margin-left: 20%;
+            @extend .text-center;
+        }
+    }
+}
+
+.gaspro-features-slider {
+    p {
+        @extend .para-content;
     }
 }
 
