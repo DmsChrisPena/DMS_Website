@@ -128,18 +128,20 @@
 .social-media {
    h4 {
         margin-top: 16px;
-        margin-bottom: 6px;
+        margin-bottom: 2px;
         @extend .section-header;
         @extend .text-center;
         font-weight: 300;
-        font-size: 18px;
+        font-size: 16px;
         color: #fff;
    }
    ul {
+       margin-top: 6px;
        padding: 0px;
        @extend .text-center;
        li {
            a {
+               color: white;
                padding: 2px 4px;
                font-size: 24px;
            }
@@ -147,38 +149,49 @@
            display: inline-block;
            &:nth-child(1) {
                a {
-                   color: #3B5998;
+                   &:hover {
+                    color: #3B5998;
+                   }
                }
            }
            &:nth-child(2) {
                a {
-                   color: #659FCB;
-               }
+                    &:hover {
+                        color: #659FCB;
+                    }
+                 }
            }
            &:nth-child(3) {
                a {
-                   color: #7C5641;
+                   &:hover {
+                        color: #7C5641;
+                    }
                }
            }
            &:nth-child(4) {
                a {
-                   color: #007BB6;
+                   &:hover {
+                        color: #007BB6;
+                    }
                }
            }
            &:nth-child(5) {
                a {
-                   color: #DD4F43;
+                   &:hover {
+                        color: #DD4F43;
+                    }
                }
            }
            &:nth-child(6) {
                a {
-                   color: #CB2027;
+                   &:hover {
+                        color: #CB2027;
+                    }
                }
            }
        }
    }
 }
-
 section#footer-topbar {
     height: 30px;
     background-color: #263238;
