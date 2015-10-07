@@ -1,17 +1,17 @@
 ﻿<section id="sub-navbar-overview" class="animated flipInX">
-    <md-button class="animated fadeIn" href="#consulting-section">
+    <md-button class="animated fadeIn" ng-click="vm.goToElement('consulting-section');">
         <img src="../../../Img/navbar-icons/seminars.png" alt="Seminars" style="max-width: 60px; max-height: 60px;" />
         <p>Seminars</p>
     </md-button>
-    <md-button class="animated fadeIn" href="#accounting-section">
+    <md-button class="animated fadeIn" ng-click="vm.goToElement('accounting-section');">
         <img src="../../../Img/navbar-icons/conferences.png" alt="Conferences" style="max-width: 60px; max-height: 60px;" />
         <p>Conferences</p>
     </md-button>
-    <md-button class="animated fadeIn" href="#implementation-section">
+    <md-button class="animated fadeIn" ng-click="vm.goToElement('implementation-section');">
         <img src="../../../Img/navbar-icons/online.png" alt="Online Certification" style="max-width: 60px; max-height: 60px;" />
         <p>Online Certification</p>
     </md-button>
-    <md-button class="animated fadeIn" href="#training-section">
+    <md-button class="animated fadeIn" ng-click="vm.goToElement('training-section');">
         <img src="../../../Img/navbar-icons/college-courses.png" alt="College Courses" style="max-width: 60px; max-height: 60px;" />
         <p>College Courses</p>
     </md-button>
@@ -99,3 +99,13 @@
     <p class="text-center">To learn more about our services, products, pricing <br />or to request a demo please contact us.</p>
     <md-button class="center-block md-raised md-primary" aria-label="Services Contact Us" ng-click="vm.openContactUs();">Click Here</md-button>
 </section>
+
+<script>
+    $(window).bind('scroll', function () {
+        if ($(window).scrollTop() > 40) {
+            $("#sub-navbar-overview").addClass("fix-the-navbar");
+        } else {
+            $("#sub-navbar-overview").removeClass("fix-the-navbar");
+        }
+    });
+</script>
