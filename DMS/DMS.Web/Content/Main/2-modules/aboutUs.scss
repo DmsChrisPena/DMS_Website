@@ -68,30 +68,48 @@
 }*/
 
 section#ourMission {
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 30px;
+    padding-top: 30px;
     h2 {
         padding-bottom: 0px;
         @extend .section-header;
         font-size: 40px;
         text-align: center;
     }
-    .parallax-ourMission {
-        background-image: url("../../../Img/parallaxholder_cropped.jpg");
-        background-position: top;
-        background-size: contain;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        height: 300px;
+    .mission-main-para {
+        @media (max-width: 850px) {
+            padding-right: 5%;
+            padding-left: 5%;
+        }
+        padding-right: 15%;
+        padding-left: 15%;
+        @extend .text-center;
     }
-    .ourMission-pic-1 {
-        background-image: url(https://static.pexels.com/photos/1171/person-apple-laptop-notebook-large.jpg);
+    .bridge {
+        max-width: 300px;
+        height: 150px;
+        padding-top: 10px;
     }
-    .ourMission-pic-2 {
-        background-image: url(https://static.pexels.com/photos/45/coffee-apple-iphone-desk-large.jpg);
-        background-position: center;
+    
+    .mission-para-2 {
+        padding-right: 10%;
+        @media (max-width: 850px) {
+            @extend .text-center;
+            padding-left: 5%;
+        }
     }
-    .ourMission-pic-3 {
-        background-image: url(https://static.pexels.com/photos/7422/pexels-photo-medium.jpg);
-        background-position: bottom;
+    .lightbulb {
+        max-width: 400px;
+        height: 200px;
+        margin-left: 0px
+    }
+    ul {
+        padding-top: 16px;
+        li {
+            @extend .para-content;
+            padding-bottom: 6px;
+        }
     }
 }
 
