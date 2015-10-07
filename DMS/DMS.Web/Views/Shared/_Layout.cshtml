@@ -133,24 +133,21 @@
             </div>
         </div>
     </section>
-
-  
     @Scripts.Render("~/bundles/jquery")
-    <script>
-        $(window).stellar();
 
         $("a[href='#top']").click(function () {
             $("html, body").animate({ scrollTop: 0 }, 1000);
             return false;
         });
 
-    </script>
     <script src="~/Scripts/SliderJS/jquery.themepunch.revolution.min.js"></script>
     <script src="~/Scripts/SliderJS/jquery.themepunch.tools.min.js"></script>
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/angular")
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.5.0/angular-material-icons.min.js"></script> 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.5.0/angular-material-icons.min.js"></script>
+    <script>
+        $(window).stellar();
+    </script>
    
 </body>
 </html>

@@ -5,7 +5,6 @@
 
     function gastrakController() {
         var vm = this;
-
     }
 
 })();
