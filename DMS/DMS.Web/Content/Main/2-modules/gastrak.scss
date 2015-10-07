@@ -105,6 +105,63 @@ section#gastrak-overview {
     margin-left: auto;
 }
 
+section#gastrak-features {
+    padding-bottom: 60px;
+    padding-top: 30px;
+    h2 {
+        @extend .section-header;
+        @extend .text-center;
+        margin-top: 30px;
+        padding-bottom: 3%;
+    }
+    h3 {
+        @extend .text-center;
+        font-size: 30px;
+        font-weight: 300;
+        color:#444444;
+        border-bottom: 1px solid #eeeeee;
+    }
+    h4 {
+        font-size: 24px;
+        font-weight: 300;
+        color:#444444;
+    }
+    h5 {
+        @extend .section-subheader;
+        @extend .text-center;
+        border-bottom: 1px solid #eeeeee;
+        font-size: 16px;
+        padding-bottom: 12px;
+    }
+
+    md-card {
+        @extend .card-shadow;
+        &:nth-child(1) {
+
+        }
+    }
+
+    .gaspro-features-slider-bold {
+        font-size: 18px;
+        font-weight: 400;
+        color:#444444;
+    }
+}
+
+section#gastrak-compliance {
+    padding-top: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+    p {
+        @extend .text-center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    img {
+        margin-top: 20px;
+    }
+}
+
 .gastrak-cloud-bg {
     background-color: #f5f5f5;
     border-top: 1px solid rgba(0,0,0,0.12);

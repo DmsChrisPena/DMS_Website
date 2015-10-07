@@ -10,12 +10,12 @@
 <section id="gaspro-navbar" class="animated fadeInRightBig" layout="row">
     <ul flex="100" class="container">
         <li>
-            <md-button hide-sm hide-md class="gaspro-header" ui-sref="gaspro"><img src="../../../Img/gaspro_white.png" alt="GasPro" style="max-width: 80px; max-height: 25px;" />  GasPro</md-button>
-            <md-button href="#gaspro-overview">Overview</md-button>
-            <md-button href="#gaspro-features">Features</md-button>
-            <md-button href="#gaspro-customization">Customization</md-button>
-            <md-button href="#gaspro-setup">Setup</md-button>
-            <md-button href="" ng-click="vm.openContactUs();">Contact Us</md-button>
+            <md-button hide-sm hide-md class="gaspro-header" href="#top"><img src="../../../Img/gaspro_white.png" alt="GasPro" style="max-width: 80px; max-height: 25px;" />  GasPro</md-button>
+            <md-button ng-click="vm.goToElement('gaspro-features');">Features</md-button>
+            <md-button ng-click="vm.goToElement('gaspro-functionality');">Functionality</md-button>
+            <md-button ng-click="vm.goToElement('customization');">Customization</md-button>
+            <md-button ng-click="vm.goToElement('train-implement-cloud');">Setup</md-button>
+            <md-button ng-click="vm.openContactUs();">Contact Us</md-button>
         </li>
     </ul>
 </section>
@@ -302,7 +302,7 @@
     </div>
 </section>
 
-<div class="gaspro-parallax" flex="100">
+<div class="gaspro-parallax" flex="100" id="gaspro-functionality">
     <div class="gaspro-overlay">
         <h2 flex="100">GasPro’s Amazing Functionality</h2>
         <div class="md-actions" layout="row" layout-align="center center">

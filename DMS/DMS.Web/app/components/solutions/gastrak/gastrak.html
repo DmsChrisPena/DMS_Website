@@ -8,12 +8,12 @@
 <section id="gastrak-navbar" class="animated fadeInRightBig" layout="row">
     <ul flex="100" class="container">
         <li>
-            <md-button hide-sm hide-md class="about-header" ui-sref="about">GasTrak</md-button>
-            <md-button href="#ourMission">Overview</md-button>
-            <md-button href="#ourHistory">Features</md-button>
-            <md-button href="#theIndustry">Compliance</md-button>
-            <md-button href="#university">Build Your Solution</md-button>
-            <md-button href="" ng-click="vm.openContactUs();">Contact Us</md-button>
+            <md-button hide-sm hide-md class="gastrak-header" href="#top">GasTrak</md-button>
+            <md-button ng-click="vm.goToElement('gastrak-features');">Features</md-button>
+            <md-button ng-click="vm.goToElement('gastrak-functionality');">Functionality</md-button>
+            <md-button ng-click="vm.goToElement('gastrak-compliance');">Compliance</md-button>
+            <md-button ng-click="vm.goToElement('gastrak-byos');">Build Your Solution</md-button>
+            <md-button ng-click="vm.openContactUs();">Contact Us</md-button>
         </li>
     </ul>
 </section>
@@ -47,7 +47,7 @@
     </section>
 </div>
 
-<section class="container" id="gaspro-features" layout="row" layout-wrap>
+<section class="container" id="gastrak-features" layout="row" layout-wrap>
         <h2 flex="100">GasPro's Unique Features</h2>
         <div flex="100" class="gaspro-features-slider" layout="row" layout-wrap>
             <div flex="100">
@@ -271,7 +271,7 @@
         </div>
     </section>
 
-<div class="gaspro-parallax" style="background-image: url(../../../../Img/tech3.jpg)" flex="100" ng-controller="gasproController as vm">
+<div id="gastrak-functionality" class="gaspro-parallax" style="background-image: url(../../../../Img/tech3.jpg)" flex="100" ng-controller="gasproController as vm">
     <div class="gaspro-overlay">
         <h2 flex="100">GasPro’s Amazing Functionality</h2>
         <div class="md-actions" layout="row" layout-align="center center">
@@ -388,7 +388,7 @@
     </div>
 </div>
 
-<section class="container" id="customization" style="margin-bottom: 0px; border: none;" layout="column" layout-align="center center" layout-wrap>
+<section class="container" id="gastrak-compliance" style="margin-bottom: 0px; border: none;" layout="column" layout-align="center center" layout-wrap>
     <h2 class="section-header">Customization</h2>
     <p class="para-content">
         While GasPro is seamless and powerful right off the shelf, we understand that your operation may have specific, complex requirements.<br />
@@ -399,7 +399,7 @@
     <img class="center-block img-responsive" style="border-radius: 4px; height: 350px;" src="../../../../Img/GTO_GA.jpg" alt="Customization" />
 </section>
 
-<div class="gastrak-cloud-bg">
+<div class="gastrak-cloud-bg" id="gastrak-byos">
     <section id="train-implement-cloud" class="container text-center" layout="row" layout-wrap style="margin-top: 0px; padding-top: 30px;">
         <h2 flex="100" class="section-header" style="font-size: 42px; margin-bottom: 30px;">Setup</h2>
         <div flex="33" flex-md="100" flex-sm="100">
@@ -438,7 +438,8 @@
         });
     </script>
 
-    <div ng-include="'/app/components/contact/smallContactUs.html'"></div>
+<div ng-include="'/app/components/contact/smallContactUs.html'"></div>
+<div ng-include="'/app/components/contact/sidenavContactUs.html'"></div>
     <script type="text/javascript">
 
 

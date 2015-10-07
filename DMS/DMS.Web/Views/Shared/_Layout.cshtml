@@ -135,10 +135,23 @@
     </section>
     @Scripts.Render("~/bundles/jquery")
 
+    <script>
         $("a[href='#top']").click(function () {
             $("html, body").animate({ scrollTop: 0 }, 1000);
             return false;
         });
+
+        //$('a[href^="#"]').on('click', function (event) {
+        //    var target = $(this.href);
+        //    if (target.length) {
+        //        event.preventDefault();
+        //        $('html, body').animate({
+        //            scrollTop: target.offset().top
+        //        }, 1000);
+        //    }
+        //});
+    </script>
+
 
     <script src="~/Scripts/SliderJS/jquery.themepunch.revolution.min.js"></script>
     <script src="~/Scripts/SliderJS/jquery.themepunch.tools.min.js"></script>

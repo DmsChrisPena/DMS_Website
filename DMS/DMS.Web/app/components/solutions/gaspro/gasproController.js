@@ -1,14 +1,18 @@
 ﻿(function () {
     angular
         .module("DMSApp")
-        .controller("gasproController", ['$mdSidenav', gasproController]);
+        .controller("gasproController", ['$mdSidenav', 'smoothScroll', gasproController]);
 
-    function gasproController($mdSidenav) {
+    function gasproController($mdSidenav, smoothScroll) {
         var vm = this;
         vm.showProductionServices = true;
         vm.showMiddleMarketing = false;
         vm.showLocalDistribution = false;
         vm.ending = "Production Services Market";
+
+        vm.goToElement = function (eID) {
+            smoothScroll.scrollTo(eID, 50);
+        };
 
         vm.openContactUs = function () {
             $mdSidenav('right').toggle();
