@@ -631,7 +631,65 @@ section#whyUs {
     right: 100px; 
     top: 150px;
     color: white;
-    background-color: rgba(244, 67, 54, .75);
+    background-color: rgba(244, 67, 54, .85);
     padding: 8px;
     width: 33%;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+}
+
+.hps-title-main-1 {
+    @extend .section-header;
+    right: 350px; 
+    top: 125px;
+    color: white;
+    background-color: rgba(63, 81, 181, .75);
+    padding: 8px;
+    width: 60%;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+    text-align:center;
+}
+
+.dms-the-best {
+    font-size: 66px !important;
+    font-weight: 400;
+}
+
+.hps-title-main-2 {
+    font-weight: 300;
+    font-size: 58px;
+    color: white;
+    right: 520px; 
+    top: 240px;
+    padding: 8px;
+    background-color: rgba(244, 67, 54, .75);
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+}
+
+.hps-title-solution {
+    @extend .hps-title1;
+    background-color: rgba(63, 81, 181, .85);
+    top: 50px;
+    left: 100px;
+}
+
+.hps-future-1 {
+    @extend .hps-title1;
+    background-color: rgba(0, 150, 136, .85);
+    width: 21%;
+    top: 50px;
+    right: 100px;
+}
+
+.hps-future-2 {
+    @extend .hps-title1;
+    width: 24%;
+    background-color: rgba(244, 67, 54, .85);
+    top: 400px;
+    left: 100px;
 }
