@@ -6,6 +6,10 @@
     function aboutController($mdSidenav, smoothScroll) {
         var vm = this;
 
+        vm.goToTop = function () {
+            smoothScroll.scrollToTop();
+        }
+
         vm.goToElement = function (eID){
             smoothScroll.scrollTo(eID, 0);
         };

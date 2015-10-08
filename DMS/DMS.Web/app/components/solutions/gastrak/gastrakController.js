@@ -10,6 +10,10 @@
             smoothScroll.scrollTo(eID, 50);
         };
 
+        vm.goToTop = function () {
+            smoothScroll.scrollToTop();
+        }
+
         vm.openContactUs = function () {
             $mdSidenav('right').toggle();
         };
