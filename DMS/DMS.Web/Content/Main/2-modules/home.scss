@@ -625,3 +625,13 @@ section#whyUs {
     @extend .img-responsive;
     left: 800px;
 }
+
+.hps-title1 {
+    @extend .section-header;
+    right: 100px; 
+    top: 150px;
+    color: white;
+    background-color: rgba(244, 67, 54, .75);
+    padding: 8px;
+    width: 33%;
+}
