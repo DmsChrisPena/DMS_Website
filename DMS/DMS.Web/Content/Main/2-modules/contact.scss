@@ -86,8 +86,14 @@ md-sidenav {
     color: #999999;
     margin: 0px;
 }
+
+.md-sidenav-right {
+    z-index: 999;
+}
+
 section#contactUs-sidenav {
     @extend .container;
+    z-index: 999;
     padding-top: 90px;
     padding-bottom: 90px;
     padding: 40px;
