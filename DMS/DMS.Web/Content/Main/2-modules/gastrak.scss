@@ -99,10 +99,13 @@ section#gastrak-overview {
     padding-top: 45px;
     padding-bottom: 45px;
     height: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 0px;
+    padding-left: 0px;
     margin-right: auto;
     margin-left: auto;
+    p {
+        font-size: 14px;
+    }
 }
 
 section#gastrak-features {
@@ -159,6 +162,7 @@ section#gastrak-compliance {
     }
     img {
         margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
 
