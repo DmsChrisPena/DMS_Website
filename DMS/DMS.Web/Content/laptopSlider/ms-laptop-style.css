@@ -18,7 +18,7 @@
 
 .ms-laptop-template .ms-nav-prev,
 .ms-laptop-template .ms-nav-next {
-    background: url(../../Img/skin.png) no-repeat -11px -9px;
+    background: url(/skin.png) no-repeat -11px -9px;
     width: 35px;
     height: 40px;
     left: -80px;
@@ -48,7 +48,7 @@
 .ms-laptop-template .ms-bullet {
 	width: 10px;
 	height: 10px;
-	background: url(../../Img/skin.png) no-repeat -112px -25px;
+	background: url(/skin.png) no-repeat -112px -25px;
 	margin: 4px;
 }
 
