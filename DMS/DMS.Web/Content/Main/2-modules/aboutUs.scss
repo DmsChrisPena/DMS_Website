@@ -68,9 +68,28 @@
 }*/
 
 section#ourMission {
-    border-bottom: 1px solid #eeeeee;
-    margin-bottom: 30px;
-    padding-top: 30px;
+    background-image: url("../../../Img/about/bridge.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+    .ourMission-overlay {
+        padding-top: 50px;
+        padding-bottom: 0px;
+        background: rgba(33,33,33,0.60);
+        width: 100%;
+        height: 500px;
+        ul {
+            @extend .text-center;
+            padding-top: 16px;     
+            li {
+                color: white !important;
+                @extend .para-content;
+                padding-bottom: 6px;
+                font-family: roboto;
+            }
+        }
+    }
     md-card {
         background-color: #F44336;
         @extend .card-shadow;
@@ -80,15 +99,18 @@ section#ourMission {
         @extend .section-header;
         font-size: 40px;
         text-align: center;
+        color: white;
     }
     .mission-main-para {
         @media (max-width: 850px) {
             padding-right: 5%;
             padding-left: 5%;
         }
+        padding-bottom: 1%;
         padding-right: 15%;
         padding-left: 15%;
         @extend .text-center;
+        color: white;
     }
     .bridge {
         max-width: 300px;
@@ -108,16 +130,10 @@ section#ourMission {
         height: 200px;
         margin-left: 0px
     }
-    ul {
-        padding-top: 16px;
-        li {
-            @extend .para-content;
-            padding-bottom: 6px;
-        }
-    }
 }
 
 section#cta-about {
+    margin-top: -5px;
     background-color: #424242;
     height: auto;
     -webkit-box-shadow: 0px -2px 4px 0px rgba(0,0,0,0.75);
