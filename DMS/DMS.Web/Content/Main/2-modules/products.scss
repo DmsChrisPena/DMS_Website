@@ -1,5 +1,39 @@
 ﻿section#sub-navbar-overview {
-    z-index: 999;
+    z-index: 40;
+    margin-bottom: 40px;
+    background-color: rgba(242,242,242,0.6);
+    height: 80px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+    @media (max-width: 490px) {
+        height: 175px;
+    }
+    .md-button {
+        margin-top: 2px;
+        margin-left: 12px;
+        margin-right: 12px;
+        p {
+            margin: 0px;
+            line-height: 14px;
+            font-size: 11px;
+            font-weight: 400;
+            color: #333;
+            text-transform: none;
+        }
+        img {
+            padding-top: 8px;
+            height: 42px;
+        }
+    }
+}
+
+.show-fixed-nav {
+    display: block !important;
+}
+
+section#sub-navbar-overview1 {
+    display: none;
+    z-index: 40;
     margin-bottom: 40px;
     background-color: rgba(242,242,242,0.6);
     height: 80px;

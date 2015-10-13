@@ -17,6 +17,25 @@
     </md-button>
 </section>
 
+<section id="sub-navbar-overview1">
+    <md-button class="animated fadeIn" ui-sref="gaspro">
+        <img src="../../../Img/navbar-icons/fire.png" alt="GasPro" style="max-width: 60px; max-height: 60px;" />
+        <p>GasPro</p>
+    </md-button>
+    <md-button class="animated fadeIn" ui-sref="gastrak">
+        <img src="../../../Img/navbar-icons/trending-up.png" alt="GasTrak" />
+        <p>GasTrak</p>
+    </md-button>
+    <md-button class="animated fadeIn" ui-sref="" ng-click="vm.comingEnergypro($event)">
+        <img src="../../../Img/navbar-icons/lightbulb.png" alt="EnergyPro" />
+        <p>EnergyPro</p>
+    </md-button>
+    <md-button class="animated fadeIn" ui-sref="" ng-click="vm.comingExecView($event)">
+        <img src="../../../Img/navbar-icons/chart-bar.png" alt="Executive View" />
+        <p>Executive View</p>
+    </md-button>
+</section>
+
 <section id="products-description" layout="row" layout-wrap>
     <div flex="100">
         <h2 class="section-header text-center">
@@ -105,3 +124,15 @@
 </section>
 
 <div ng-include="'/app/components/contact/smallContactUs.html'"></div>
+
+<script>
+    $(window).bind('scroll', function () {
+        if ($(window).scrollTop() > 40) {
+            $("#sub-navbar-overview").addClass("fix-the-navbar");
+            $("#sub-navbar-overview1").addClass("show-fixed-nav");
+        } else {
+            $("#sub-navbar-overview").removeClass("fix-the-navbar");
+            $("#sub-navbar-overview1").removeClass("show-fixed-nav");
+        }
+    });
+</script>

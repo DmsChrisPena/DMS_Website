@@ -17,6 +17,25 @@
     </md-button>
 </section>
 
+<section id="sub-navbar-overview1">
+    <md-button class="animated fadeIn" ng-click="vm.goToElement('consulting-section');">
+        <img src="../../../Img/navbar-icons/seminars.png" alt="Seminars" style="max-width: 60px; max-height: 60px;" />
+        <p>Seminars</p>
+    </md-button>
+    <md-button class="animated fadeIn" ng-click="vm.goToElement('accounting-section');">
+        <img src="../../../Img/navbar-icons/conferences.png" alt="Conferences" style="max-width: 60px; max-height: 60px;" />
+        <p>Conferences</p>
+    </md-button>
+    <md-button class="animated fadeIn" ng-click="vm.goToElement('implementation-section');">
+        <img src="../../../Img/navbar-icons/online.png" alt="Online Certification" style="max-width: 60px; max-height: 60px;" />
+        <p>Online Certification</p>
+    </md-button>
+    <md-button class="animated fadeIn" ng-click="vm.goToElement('training-section');">
+        <img src="../../../Img/navbar-icons/college-courses.png" alt="College Courses" style="max-width: 60px; max-height: 60px;" />
+        <p>College Courses</p>
+    </md-button>
+</section>
+
 <section class="container" id="services-overview" layout="row" layout-wrap ng-controller="NavBarController as vm">
     <div class="overview-content" flex="100">
         <h2 class="section-header text-center">Education Overview</h2>
@@ -104,8 +123,10 @@
     $(window).bind('scroll', function () {
         if ($(window).scrollTop() > 40) {
             $("#sub-navbar-overview").addClass("fix-the-navbar");
+            $("#sub-navbar-overview1").addClass("show-fixed-nav");
         } else {
             $("#sub-navbar-overview").removeClass("fix-the-navbar");
+            $("#sub-navbar-overview1").removeClass("show-fixed-nav");
         }
     });
 </script>
