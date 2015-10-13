@@ -1,21 +1,17 @@
-﻿<section id="about-navbar" layout="row">
-    <div flex="100">
-        <md-tabs md-dynamic-height md-selected="selectedIndex" md-center-tabs md-border-bottom style="background-color: rgba(242,242,242,0.6);">
-            <md-tab label="Overview">
-            </md-tab>
-            <md-tab label="Our Mission">
-            </md-tab>
-            <md-tab label="History">
-            </md-tab>
-            <md-tab label="University">
-            </md-tab>
-            <md-tab label="Contact Us">
-            </md-tab>
-        </md-tabs>
-    </div>
+﻿<section id="about-navbar" class="animated flipInX" layout="row">
+    <ul flex="100" class="container">
+        <li>
+            <md-button hide-sm hide-md class="about-header" ng-click="vm.goToTop();">About</md-button>
+            <md-button ng-click="vm.goToElement('ourMission');">Our Mission</md-button>
+            <md-button ng-click="vm.goToElement('ourHistory');">History</md-button>
+            <md-button ng-click="vm.goToElement('university');">University</md-button>
+            <md-button ng-click="vm.goToElement('whyUs');">Why DMS</md-button>
+            <md-button ng-click="vm.openContactUs();">Contact Us</md-button>
+        </li>
+    </ul>
 </section>
 
-<section layout="row" id="ourMission" layout-wrap>
+<!--<section class="container" layout="row" id="ourMission" layout-wrap>
     <div flex="100">
         <h2>Our Mission</h2>
         <div layout="row">
@@ -46,11 +42,11 @@
                 <div layout="row">
                     <md-card>
                         <ul>
-                            <li>Our products automate your processes, filling the need for additional personnel as you significantly increase your production</li>
+                            <li>Our <b>products</b> automate your processes, filling the need for additional personnel as you significantly increase your production</li>
                             <li></li>
-                            <li>Our services save you time, eliminating the need for in-house brute-force accounting, scheduling, consulting and training</li>
+                            <li>Our <b>services</b> save you time, eliminating the need for in-house brute-force accounting, scheduling, consulting and training</li>
                             <li></li>
-                            <li>Our Learn&trade; programs boost your personnel's knowledge, keeping your organization continually ahead of the curve</li>
+                            <li>Our <b>Learn&trade;</b> programs boost your personnel's knowledge, keeping your organization continually ahead of the curve</li>
                         </ul>
                     </md-card>
                 </div>
@@ -66,28 +62,57 @@
             <div flex="10"></div>
         </div>
     </div>
+</section>-->
+
+<section class="container" layout="row" layout-wrap id="ourMission">
+    <h2 flex="100">Our Mission</h2>
+    <p class="para-content mission-main-para">Our industry has always been plagued by a gap between demand for industry experts  and the supply of a skilled labor force; we see this gap as increasing in the future. The gas industry is on the course to rapidly grow particularly due to recent developments in fracking and LNG technology. The primary problem is that companies still try, buy and implement solutions like they did in the 80's.  </p>
+    <div flex="100" layout="row" layout-wrap>
+        <!--<img flex="33" flex-md="100" flex-sm="100" class="img-responsive center-block bridge animated slideInLeft" src="../../../Img/Bridge_StudyInTeal_Small.png" alt="Our Mission Image" />-->
+        <md-card flex="50" offset="25" style="background-color: #3F51B5;">
+            <p class="para-content mission-para-2 animated slideInRight" style="padding: 0px 12px; color: white;">
+                Our mission here at DMS is simple.
+                We are here to provide effective and easy-to-implement solutions that close this gap, without costing millions of dollars.
+            </p>
+        </md-card>
+    </div>
+    <div flex="10"></div>
+    <ul flex="80">
+        <li class="fa fa-check">
+            <span style="font-family: roboto;">Our products automate your processes, filling the need for additional personnel as you significantly increase your production</span>
+</li>
+        <li class="fa fa-check">
+            <span style="font-family: roboto;">Our services save you time, eliminating the need for in-house brute-force accounting, scheduling, consulting and training</span>
+</li>
+        <li class="fa fa-check">
+            <span style="font-family: roboto;">Our educational programs boost your personnel's knowledge, keeping your organization continually ahead of the curve</span>
+</li>
+    </ul>
+    <div flex="10"></div>
+    <p flex="100" class="para-content text-center"></p>
 </section>
 
-<section layout="row" id="parallax-spacer" layout-wrap>
+<!--<section layout="row" id="parallax-spacer" layout-wrap>
         <div class="parallax-spacing" flex="100">
             <div class="parallax-overlay">
                 <p>Since 1993, many of the biggest industry players have trusted us to handle their critical tasks.</p>
             </div>
         </div>
-<<<<<<< HEAD
-=======
-    </div>
 
->>>>>>> a951d7613f678e61982956bad2e9db669fb6727b
+</section>-->
+
+<section class="animated slideInUp" id="cta-home" style="background-color: #F44336; height: auto;">
+    <p style="margin: 4px 0px; padding: 8px 0px;">DMS is setting a new idustry standard.<br />
+Our solutions are as simple as you want and as complex as you need.</p>
 </section>
 
-<section layout="row" id="ourHistory" layout-wrap>
-    <div flex offset="33"></div>
-    <div flex="66" class="history-title">
+<section class="container" layout="row" id="ourHistory" layout-wrap>
+    <div flex offset="33" hide-md hide-sm></div>
+    <div flex="66" flex-md="100" flex-sm="100" class="history-title">
         <h2>Our History</h2>
         <h4>Since 1993, many of the biggest industry players have trusted us to handle their critical tasks.</h4>
     </div>
-    <div flex="33" class="founder-picture">
+    <div flex="33" flex-md="100" flex-sm="100" class="founder-picture">
         <md-card>
             <md-card-content>
                 <img src="../../../img/frankpena.jpg" class="img-responsive img-circle" alt="Founder Picture" />
@@ -97,7 +122,7 @@
         </md-card>
 
     </div>
-    <div flex="66" layout="column" class="our-main-history">
+    <div flex="66" flex-md="100" flex-sm="100" layout="column" class="our-main-history">
         <div class="founding">
             <h4>Founding</h4>
             <p>In 1993, a group of pipeline, accounting and mathematic experts gathered to create a better and seamless way to manage the business functions of companies operating in this emerging sector. This group formed Data Management Solutions.</p>
@@ -120,78 +145,26 @@
             </ul>
         </div>
         <div class="today">
-            <h4>Today</h4>
+            <h4>Future</h4>
             <p>Our organization is a blend of people who have been here from the beginning and young, new ambitious people. Our team boasts a broad yet rich background, with education and experience including forensic and gas accounting, computer science, economics, finance, marketing, supply-chain and advanced mathematics.</p>
             <p>We pool our resources together solely to provide you with the most effective and comprehensive solutions currently available to the industry.  </p>
         </div>
     </div>
 </section>
 
-<section id="theIndustry" layout="row" layout-wrap>
-    <div class="industry-parallax" flex="100">
-        <div class="industry-overlay">
-            <p>"The gas industry and the solutions providers who serve it are at a critical time. Solutions providers have not changed they way they do business in the last 50 years."</p>
-        </div>
+<div class="industry-parallax" flex="100">
+    <div class="industry-overlay">
+        <p>"The gas industry and the solutions providers who serve it are at a critical time. Solutions providers have not changed they way they do business in the last 50 years."</p>
     </div>
-    <h2 flex="100">The Industry</h2>
-    <div flex="100" class="history-title">
-        <h4>Different. From top to bottom.</h4>
-    </div>
-    <div flex="50" class="how-others-do-it" layout="row" layout-wrap>
-        <h2 flex="100">How Others Do It</h2>
-        <ul flex="100">
-            <li layout="row">
-                <i flex="10" class="fa fa-money"></i>
-                <p flex="90">Costs millions of dollars upfront</p>
-            </li>
-            <li layout="row">
-                <i flex="10" class="fa fa-clock-o"></i>
-                <p flex="90"> Requires teams of consultants years to implement</p>
-            </li>
-            <li layout="row">
-                <i flex="10" class="fa fa-line-chart"></i>
-                <p flex="90">Poorly integrates re-hashed systems, resulting in a kludge of a solution</p>
-            </li>
-            <li layout="row">
-                <i flex="10" class="fa fa-user"></i>
-                <p flex="90">"Includes" a 10+ person IT team to simply maintain functionality of the system</p>
-            </li>
-        </ul>
-    </div>
-    <div flex="50" class="how-we-do-it" layout="row" layout-wrap>
-        <h2 flex="100">How We Do It</h2>
-        <ul flex="100">
-            <li layout="row">
-                <i flex="10" class="fa fa-money"></i>
-                <p flex="90">No up-front licensing charge pricing</p>
-            </li>
-            <li layout="row">
-                <i flex="10" class="fa fa-clock-o"></i>
-                <p flex="90"> Can implement in months without a pricey consulting army (100% implementation success rate)</p>
-            </li>
-            <li layout="row">
-                <i flex="10" class="fa fa-line-chart"></i>
-                <p flex="90">A seamless solution from trades to reporting</p>
-            </li>
-            <li layout="row">
-                <i flex="10" class="fa fa-user"></i>
-                <p flex="90">Our systems work; no reason to staff multitudes of IT personnel to keep it functioning</p>
-            </li>
-        </ul>
-    </div>
-</section>
+</div>
 
-<<<<<<< HEAD
-<section id="university"></section>
-=======
-<section id="university" layout="row" layout-wrap>
-
-   <h2 flex="100" class="UniversityHeader">University</h2>
+<section id="university" class="container" layout="row" layout-wrap>
+    <h2 flex="100" class="UniversityHeader">University of Houston</h2>
 
     <div flex="100" layout="row" class="sentence1">
         <div flex="20"></div>
         <h4 flex="60">
-            One of our passions and biggest sources of pride is our affiliation with the University of Houston.
+            One of our biggest sources of pride is our affiliation with the Univeristy of Houston
         </h4>
         <div flex="20"></div>
     </div>
@@ -205,8 +178,8 @@
     </div>
 
 
-    
-    <div flex="70" class="content">
+
+    <div flex="70" flex-md="100" flex-sm="100" class="content">
 
         <div layout="row" flex="100">
             <div flex="10"></div>
@@ -222,7 +195,7 @@
             <div flex="10"></div>
         </div>
 
-        <div layout="row"  flex="100">
+        <div layout="row" flex="100">
             <div flex="10"></div>
             <div flex="80">
                 <div class="success">
@@ -237,7 +210,8 @@
             <div flex="10"></div>
         </div>
 
-        <div layout="row"  flex="100">
+<<<<<<< HEAD
+        <!--<div layout="row" flex="100">
             <div flex="10"></div>
             <div flex="80">
                 <div class="value">
@@ -250,27 +224,71 @@
                 </div>
             </div>
             <div flex="10"></div>
-        </div>
+        </div>-->
 
+=======
+>>>>>>> fb15a6f29609da9e3680adc3187b6b8ff1c11836
     </div>
 
-    <div flex="20" class="picture">
+    <div flex="30" flex-md="100" flex-sm="100" class="picture">
         <md-card>
             <md-card-content>
-                <img src="../../../Img/University.png" height="500" />
+                <img src="../../../Img/University.png" height="500" class="img-responsive center-block" />
             </md-card-content>
         </md-card>
     </div>
 
     <div flex="10"></div>
-
 </section>
 
-<section id="testimonials">
-
+<section class="container-fluid" layout="row" id="whyUs" layout-wrap>
+    <div flex="50" flex-md="100" flex-sm="100">
+        <h2>Why DMS?</h2>
+        <h4 class="section-subheader text-center">We have proven that our solutions can improve any business.</h4>
+        <ul>
+            <li layout="row">
+                <div flex="20">
+                    <h4>Proven</h4>
+                    <img class="center-block img-responsive" style="height: 50px;" src="../../../Img/shield.png" alt="Alternate Text" />
+                </div>
+                <div flex="80">
+                    <p>DMS’ clients include some of the more prominent names in the industry including Producers, Government Agencies, Marketing, and Local Distribution companies.</p>
+                </div>
+            </li>
+            <li layout="row">
+                <div flex="20">
+                    <h4>Trusted</h4>
+                    <img class="center-block img-responsive" style="height: 50px;" src="../../../Img/trophy.png" alt="Alternate Text" />
+                </div>
+                <div flex="80">
+                    <p>Our commitment to our clients’ success has been our primary objective since day one and continues to be so today. To that end, DMS has always and will continue to celebrate successful implementations and not successful sales.</p>
+                </div>
+            </li>
+            <li layout="row">
+                <div flex="20">
+                    <h4>Commited</h4>
+                    <img class="center-block img-responsive" style="height: 50px;" src="../../../Img/bank.png" alt="Alternate Text" />
+                </div>
+                <div flex="80">
+                    <p>The company they formed was Data Management Solutions (DMS). The solution they created was GasPro, an integrated gas management and trading software system providing transparency and efficiencies across the front, middle, and back offices. </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div hide-md hide-sm flex="50" class="background-right">
+        <div class="why-us-overlay"></div>
+    </div>
 </section>
->>>>>>> a951d7613f678e61982956bad2e9db669fb6727b
 
-<section id="testimonials"></section>
+<script>
+    $(window).bind('scroll', function () {
+        if ($(window).scrollTop() > 100) {
+            $("#about-navbar").addClass("fix-the-navbar");
+        } else {
+            $("#about-navbar").removeClass("fix-the-navbar");
+        }
+    });
+</script>
 
 <div ng-include="'/app/components/contact/inPageContactUs.html'"></div>
+<div ng-include="'/app/components/contact/sidenavContactUs.html'"></div>

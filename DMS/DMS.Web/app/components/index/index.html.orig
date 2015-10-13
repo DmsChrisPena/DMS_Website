@@ -93,10 +93,10 @@
 
 <section class="animated slideInUp" id="cta-home">
 <<<<<<< HEAD
-    <p>Solutions. As simple as you want, as robust as you need.</p>
+    <p>Solutions. As simple as you want, as robust as you need.</p>
 =======
-    <p>Solutions. As simple as you want it. As complex as you need it.</p>
->>>>>>> b7cde61be0f97d022914ad987c446c0b8a1afd9f
+    <p>Solutions. As simple as you want, as robust as you need.</p>
+>>>>>>> fb15a6f29609da9e3680adc3187b6b8ff1c11836
 </section>
 
 <section layot="row" id="ourServices" layout-wrap>
