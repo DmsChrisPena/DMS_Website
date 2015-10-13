@@ -1,232 +1,317 @@
-﻿<!-- START REVOLUTION SLIDER 5.0 -->
-<div class="rev_slider_wrapper">
-    <div id="slider1" class="rev_slider" data-version="5.0">
-        <ul>
-            <li data-transition="fade">
-                <!-- MAIN IMAGE -->
-                <img src="../../../Img/dms_home_slider_background.png" alt="" width="1920" height="1280">
-                <!-- LAYER NR. 1 -->
-                <div class="tp-caption News-Title"
-                        data-x="left" data-hoffset="0"
-                        data-y="top" data-voffset="0"
-                        data-whitespace="normal"
-                        data-transform_idle="o:1;"http://localhost:51829/Img/dms_home_slider_text___card.png
-                        data-transform_in="o:0"
-                        data-transform_out="o:0"
-                        data-start="500"><img height="535" width="1440" src="../../../Img/dms_home_slider_text___card.png" /></div>
-            </li>
+﻿<section class="topSwipeSlider">
+        <!-- masterslider -->
+        <div class="master-slider ms-skin-default" id="masterslider">
+            <div class="ms-slide">
+                <img src="../../../Content/masterslider/style/blank.gif" data-src="../../../Img/IndexSlider/slider1-blank-short.jpg" alt="lorem ipsum dolor sit"/>
+                <h2 class="ms-layer hps-title-main-1"
+                    data-type="text"
+                    data-duration="1400"
+                    data-ease="easeOutExpo"
+                    data-effect="rotate3dtop(90,0,0,80)">
+                    <span class="dms-the-best">Data Management Solutions</span> <br />
+                    <span style="font-size: 28px;">Elegant ETRM Solutions that fit your needs and just make sense.</span>
+                </h2>
+                <h4 class="ms-layer hps-title-main-2"
+                    data-type="text"
+			        data-duration="1800"
+			        data-delay="140"
+		 	        data-ease="easeOutExpo"
+		 	        data-effect="bottom(40)">
+                    The Industry is Changing...
+                </h4>
+            </div>
+            <div class="ms-slide">
+                <img src="../../../Content/masterslider/style/blank.gif" data-src="../../../Img/IndexSlider/slider2-blank-short.jpg" alt="lorem ipsum dolor sit" />
+                <h2 class="ms-layer hps-title1"
+                    data-type="text"
+                    data-duration="1400"
+                    data-ease="easeOutExpo"
+                    data-effect="rotate3dtop(90,0,0,80)">
+                    Because of Fracking, there is a coming energy boom where experts and innovators will be in even shorter supply than they already are.
+                </h2>
+            </div>
+            <div class="ms-slide">
+                <img src="../../../Content/masterslider/style/blank.gif" data-src="../../../Img/IndexSlider/slider3-blank-short.jpg" alt="lorem ipsum dolor sit" />
+                <h2 class="ms-layer hps-title-solution"
+                    data-type="text"
+                    data-duration="1400"
+                    data-ease="easeOutExpo"
+                    data-effect="rotate3dtop(90,0,0,80)">
+                    Our ETRM Products and Services let you do more with less.
+                </h2>
+            </div>
+            <div class="ms-slide">
+                <img src="../../../Content/masterslider/style/blank.gif" data-src="../../../Img/IndexSlider/slider4-blank-short.jpg" alt="lorem ipsum dolor sit" />
+                <h2 class="ms-layer hps-future-1"
+                    data-type="text"
+                    data-duration="1400"
+                    data-ease="easeOutExpo"
+                    data-effect="rotate3dtop(90,0,0,80)">
+                    The Future is Here
+                </h2>
+                <h2 class="ms-layer hps-future-2"
+                    data-type="text"
+                    data-duration="1400"
+                    data-ease="easeOutExpo"
+                    data-effect="rotate3dtop(90,0,0,80)">
+                    Affordable Products <br/>
+                    Easy Implementation <br />
+                    Seamless Solutions
+                </h2>
+            </div>
+            <!--<div class="ms-slide">
+                <img src="../../../Content/masterslider/style/blank.gif" data-src="../../../Img/IndexSlider/slider1.jpg" alt="lorem ipsum dolor sit" />
+            </div>
+            <div class="ms-slide">
+                <img src="../../../Content/masterslider/style/blank.gif" data-src="../../../Img/IndexSlider/slider2.jpg" alt="lorem ipsum dolor sit" />
+            </div>
+            <div class="ms-slide">
+                <img src="../../../Content/masterslider/style/blank.gif" data-src="../../../Img/IndexSlider/slider3.jpg" alt="lorem ipsum dolor sit" />
+            </div>
+            <div class="ms-slide">
+                <img src="../../../Content/masterslider/style/blank.gif" data-src="../../../Img/IndexSlider/slider4.jpg" alt="lorem ipsum dolor sit" />
+            </div>-->
+        </div>
+</section>
+<script type="text/javascript">
 
-            <li data-transition="fade">
-                <!-- MAIN IMAGE -->
-                <img src="../../../Img/home-image4.jpg" alt="" width="1920" height="1280">
-                <!-- LAYER NR. 1 -->
-                <div class="tp-caption News-Title"
-                        data-x="left" data-hoffset="340"
-                        data-y="top" data-voffset="0"
-                        data-whitespace="normal"
-                        data-transform_idle="o:1;"
-                        data-transform_in="o:0"
-                        data-transform_out="o:0"
-                        data-start="500"><img style="height: 500px;" src="http://www.chartjs.org/assets/responsive.svg" alt="Alternate Text" /></div>
-            </li>
-        </ul>
-    </div><!-- END REVOLUTION SLIDER -->
-</div><!-- END OF SLIDER WRAPPER -->
-<script>
-jQuery(document).ready(function() {
-   jQuery("#slider1").revolution({
-      sliderType:"slider",
-      sliderLayout:"auto",
-      delay:9000,
-      navigation: {
-          arrows:{enable:true}
-      },
-      gridwidth:1440,
-      gridheight:535
-    });
-});
+
+		var slider = new MasterSlider();
+
+		slider.control('arrows');
+		slider.control('bullets' , {autohide:false, align:'bottom', margin:10});
+
+		slider.setup('masterslider' , {
+			width: 1640,
+			height:800,
+			space:5,
+			view: 'stack',
+			loop:true
+		});
+
 </script>
 
-<section id="cta-home">
-    <p>Explain one of your product benefits here. Let users know how they can benefit using your product.</p>
-</section>
-<section layout="row" id="dmsHelp" layout-wrap>
-    <div flex="100">
-        <h2>How Can DMS Help?</h2>
-        <h4>The New and Revolutionary Approach of Providing a Proven and Affordable ETRM Solution.</h4>
-    </div>
-    <div flex="50" flex-md="100" flex-sm="100">
-        <h3>Here's our Solution</h3>
-        <p>Explain one of your product benefits here. Let users know how they can benefit using your product. It’s also a good idea to back it up with a testimonial or tweet from your users.</p>
-        <p>The original PSD of the graphic is included in the package. You can easily customise the PSD to meet your needs.</p>
-        <p>Explain one of your product benefits here. Let users know how they can benefit using your product. It’s also a good idea to back it up with a testimonial or tweet from your users.</p>
-        <div class="testimonials">
-            <p>
-                “Yes, I do support and endorse GasPro openly. I’ll show prospects what the system does for us. When DMS grows, that’s good for us too.”
-            </p>
-            <p>- Midstream marketer</p>
-        </div>
-
-    </div>
+<section class="animated slideInUp" id="cta-home">
 <<<<<<< HEAD
-    <div flex="66">
-        <img class="center-block img-responsive" style="height: 460px;" src="../../../Img/BridgeTheGap_Final.png" alt="Alternate Text" />
+    <p>Solutions. As simple as you want, as robust as you need.</p>
 =======
-    <div flex="50" flex-md="100" flex-sm="100">
-        <img class="center-block img-responsive" src="../../../Img/BridgeTheGap_LessBusy.png" alt="Alternate Text" />
->>>>>>> 4789063e57d98dad0ddc0d33962df9693446cd1b
-        <!--<p class="text-center">Above is a screenshot of our upcoming product EnergyPro</p>-->
-    </div>
-
+    <p>Solutions. As simple as you want it. As complex as you need it.</p>
+>>>>>>> b7cde61be0f97d022914ad987c446c0b8a1afd9f
 </section>
+
 <section layot="row" id="ourServices" layout-wrap>
     <div flex="100">
-        <h2>Our Solutions</h2>
+        <h2>How Can DMS Help?</h2>
         <h4>We have been providing software services and solutions for over 20 years.</h4>
     </div>
     <md-card hide-gt-md>
         <md-card-content>
-            <ng-md-icon icon="supervisor_account" size="72" style="fill: #3F51B5;"></ng-md-icon>
-            <h2 class="md-title">Products</h2>
+            <p class="text-center"><ng-md-icon icon="desktop_mac" style="fill: #3F51B5;" size="72"></ng-md-icon></p>
+            <h2 class="md-title text-center">Products</h2>
             <p>
-                The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-                two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+                Trading. Logistics. Settlement. Connectivity. <br />
+                A complete gas management solution.
+            </p>
+            <p>
+                From two-user LDCs to 100+ user enterprise engagements, DMS provides all of our business partners with ETRM systems that fit their specific needs in seamless and robust ways.
             </p>
         </md-card-content>
         <div class="md-actions" layout="row" layout-align="center center">
-            <md-button class="md-raised md-primary">Learn More</md-button>
+            <md-button class="md-raised md-primary" href="/products#top">Learn More</md-button>
         </div>
     </md-card>
     <md-card hide-gt-md>
         <md-card-content>
-            <ng-md-icon icon="wallet_membership" size="72" style="fill: #3F51B5;"></ng-md-icon>
-            <h2 class="md-title">Services</h2>
+            <p class="text-center"><ng-md-icon icon="location_city" size="72" style="fill: #3F51B5;"></ng-md-icon></p>
+                <h2 class="md-title text-center">Services</h2>
             <p>
-                The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-                two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+                Looking to expand the reach of your business without expanding your in-house staff?
+            </p>
+            <p>
+                DMS provides consulting, implementation and back-office services that allow you to minimize your liabilities and rapidly expand and maintain your business.
             </p>
         </md-card-content>
         <div class="md-actions" layout="row" layout-align="center center">
-            <md-button class="md-raised md-primary">Learn More</md-button>
+            <md-button class="md-raised md-primary" href="/services#top">Learn More</md-button>
         </div>
     </md-card>
     <md-card hide-gt-md>
         <md-card-content>
-            <ng-md-icon icon="assignment" size="72" style="fill: #3F51B5;"></ng-md-icon>
-            <h2 class="md-title">Learn</h2>
+            <p class="text-center"><ng-md-icon icon="local_library" size="72" style="fill: #3F51B5;"></ng-md-icon></p>
+                <h2 class="md-title text-center">Education</h2>
+<p>
+                DMS staff have taught thousands of students at the undergraduate and graduate level the ins and outs of the industry while using our systems.
+            </p>
             <p>
-                The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-                two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+                Our onsite seminars, regional conferences and online certification courses add value to your current personnel.
             </p>
         </md-card-content>
         <div class="md-actions" layout="row" layout-align="center center">
-            <md-button class="md-raised md-primary">Learn More</md-button>
+            <md-button class="md-raised md-primary" href="/education#top">Learn More</md-button>
         </div>
-    </md-card>    
+    </md-card>
     <div flex="100">
         <md-content layout="row">
             <md-card hide-md hide-sm>
-                <md-card-content>
-                    <ng-md-icon icon="supervisor_account" size="72" style="fill: #3F51B5;"></ng-md-icon>
+                <md-card-content class="solutions-card">
+                    <ng-md-icon icon="desktop_mac" size="72" style="fill: #3F51B5;"></ng-md-icon>
                     <h2 class="md-title">Products</h2>
                     <p>
-                        The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-                        two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+                        Trading. Logistics. Settlement. Connectivity. <br />
+                        A complete gas management solution.
+                    </p>
+                    <p>
+                        From two-user LDCs to 100+ user enterprise engagements, DMS provides all of our business partners with ETRM systems that fit their specific needs in seamless and robust ways.
                     </p>
                 </md-card-content>
                 <div class="md-actions" layout="row" layout-align="center center">
-                    <md-button class="md-raised md-primary">Learn More</md-button>
+                    <md-button class="md-raised md-primary" href="/products#top">Learn More</md-button>
                 </div>
             </md-card>
             <md-card hide-md hide-sm>
-                <md-card-content>
-                    <ng-md-icon icon="wallet_membership" size="72" style="fill: #3F51B5;"></ng-md-icon>
+                <md-card-content class="solutions-card">
+                    <ng-md-icon icon="location_city" size="72" style="fill: #3F51B5;"></ng-md-icon>
                     <h2 class="md-title">Services</h2>
                     <p>
-                        The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-                        two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+                        Looking to expand the reach of your business without expanding your in-house staff?
+                    </p>
+                    <p>
+                        DMS provides consulting, implementation and back-office services that allow you to minimize your liabilities and rapidly expand and maintain your business.
                     </p>
                 </md-card-content>
                 <div class="md-actions" layout="row" layout-align="center center">
-                    <md-button class="md-raised md-primary">Learn More</md-button>
+                    <md-button class="md-raised md-primary" href="/services#top">Learn More</md-button>
                 </div>
             </md-card>
             <md-card hide-md hide-sm>
-                <md-card-content>
-                    <ng-md-icon icon="assignment" size="72" style="fill: #3F51B5;"></ng-md-icon>
-                    <h2 class="md-title">Learn</h2>
+                <md-card-content class="solutions-card">
+                    <ng-md-icon icon="local_library" size="72" style="fill: #3F51B5;"></ng-md-icon>
+                    <h2 class="md-title">Education</h2>
                     <p>
-                        The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-                        two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+                        DMS staff have taught thousands of students at the undergraduate and graduate level the ins and outs of the industry while using our systems.
+                    </p>
+                    <p>
+                        Our onsite seminars, regional conferences and online certification courses add value to your current personnel.
                     </p>
                 </md-card-content>
                 <div class="md-actions" layout="row" layout-align="center center">
-                    <md-button class="md-raised md-primary">Learn More</md-button>
+                    <md-button class="md-raised md-primary" href="/education#top">Learn More</md-button>
                 </div>
             </md-card>
         </md-content>
     </div>
 </section>
-<section class="container-fluid" style="padding-right: 0px;" layout="row" id="whyUs" layout-wrap>
+
+<div class="industry-parallax home-page-para" data-stellar-ratio="2" flex="100">
+    <div class="industry-overlay">
+        <p>
+            “We are streamlined.
+            DMS has allowed us to increase our volume of transactions without having to increase our staff. We can have scalability without increasing hires. It allows us to put our attention and effort on other aspects of our business.”
+        </p>
+        <p>- Midstream marketer - 1.9 billion annual cost</p>
+    </div>
+</div>
+
+<section layout="row" id="theInstitution" layout-wrap>
+    <div flex="100">
+        <h2>The Institution</h2>
+        <h4>Because of Fracking, the Industry is heading toward a Resource Deficit.</h4>
+    </div>
     <div flex="50" flex-md="100" flex-sm="100">
-        <h2>Why DMS?</h2>
-        <h4 class="section-subheader text-center">We have proven that our solutions can improve any business.</h4>
-        <ul>
+        <h3>Here's the problem.</h3>
+        <p>The energy sector is at a critical point in time.</p>
+        <p>There is a coming energy boom where experts and innovators will be in even shorter supply than they already are. Compound this with the fact that the industry has been plagued with ETRM systems and consultants that are expensive, sluggish and unresponsive.</p>
+        <p>What are you left with? An organization that isn't reaching its fullest potential.</p>
+    </div>
+    <div flex="50" flex-md="100" flex-sm="100">
+        <img class="center-block img-responsive" src="../../../Img/BridgeTheGap_Institution.png" alt="Alternate Text" />
+    </div>
+</section>
+
+<section layout="row" id="yourSolution" layout-wrap>
+    <div flex="100">
+        <h2>Your Solution</h2>
+        <h4>We meet the industry's current and coming needs head on.</h4>
+    </div>
+    <div flex="50" flex-md="100" flex-sm="100">
+        <img class="center-block img-responsive" src="../../../Img/BridgeTheGap_Solution.png" alt="Alternate Text" />
+    </div>
+    <div flex="50" flex-md="100" flex-sm="100">
+        <h3>Here's how we help.</h3>
+        <p>Our ETRM products and services let you do more with less. We automate your current processes and allow you to significantly increase your business reach without equally increasing your in-house personnel.</p>
+        <p>Our model serves where the industry is going, not where it has been. How solutions have historically been provided is unacceptable, and we're here to set new industry standards.</p>
+    </div>
+</section>
+
+<section class="container" id="ourRevolution" layout="row" layout-wrap>
+    <h5 flex="100">Our Revolution</h5>
+    <div flex="100" class="history-title">
+        <h4>Different. From top to bottom.</h4>
+    </div>
+    <div flex="50" flex-md="100" flex-sm="100" class="how-others-do-it" layout="row" layout-wrap>
+        <h2 flex="100">How Others Do It</h2>
+        <ul flex="100">
             <li layout="row">
-                <div flex="20">
-                    <h4>Proven</h4>
-                    <img class="center-block img-responsive" style="height: 50px;" src="../../../Img/shield.png" alt="Alternate Text" />
-                </div>
-                <div flex="80">
-                    <p>DMS’ clients include some of the more prominent names in the industry including Producers, Government Agencies, Marketing, and Local Distribution companies.</p>
-                </div>
+                <img class="center-block img-responsive" style="height: 50px;" src="../../../Img/money_red.png" alt="Alternate Text" />
+                <p flex="90">Requires millions of dollars upfront</p>
             </li>
             <li layout="row">
-                <div flex="20">
-                    <h4>Trusted</h4>
-                    <img class="center-block img-responsive" style="height: 50px;" src="../../../Img/trophy.png" alt="Alternate Text" />
-                </div>
-                <div flex="80">
-                    <p>Our commitment to our clients’ success has been our primary objective since day one and continues to be so today. To that end, DMS has always and will continue to celebrate successful implementations and not successful sales.</p>
-                </div>
+                <img class="center-block img-responsive" style="height: 50px;" src="../../../Img/clock_red.png" alt="Alternate Text" />
+                <p flex="90">Requires teams of consultants years to implement</p>
             </li>
             <li layout="row">
-                <div flex="20">
-                    <h4>Commited</h4>
-                    <img class="center-block img-responsive" style="height: 50px;" src="../../../Img/bank.png" alt="Alternate Text" />
-                </div>
-                <div flex="80">
-                    <p>The company they formed was Data Management Solutions (DMS). The solution they created was GasPro, an integrated gas management and trading software system providing transparency and efficiencies across the front, middle, and back offices. </p>
-                </div>
+                <img class="center-block img-responsive" style="height: 50px;" src="../../../Img/line_red.png" alt="Alternate Text" />
+                <p flex="90">Poorly integrates re-hashed systems, resulting in a messy and convoluted solution</p>
+            </li>
+            <li layout="row">
+                <img class="center-block img-responsive" style="height: 50px;" src="../../../Img/user_red.png" alt="Alternate Text" />
+                <p flex="90">"Includes" a 10+ person IT team to simply maintain functionality of the system</p>
             </li>
         </ul>
-        <div hide-lg hide-md hide-sm class="md-actions" layout="row" layout-align="center center">
-            <md-button class="md-raised md-primary">Learn More</md-button>
-        </div>
     </div>
-    <div hide-md hide-sm flex="50" class="background-right">
-        <div class="why-us-overlay"></div>
+    <div flex="50" flex-md="100" flex-sm="100" class="how-we-do-it" layout="row" layout-wrap>
+        <h2 flex="100">How We Do It</h2>
+        <ul flex="100">
+            <li layout="row">
+                <img class="center-block img-responsive" style="height: 50px;" src="../../../Img/money_indigo.png" alt="Alternate Text" />
+                <p flex="90">No up-front capitol investment pricing options</p>
+            </li>
+            <li layout="row">
+                <img class="center-block img-responsive" style="height: 50px;" src="../../../Img/clock_indigo.png" alt="Alternate Text" />
+                <p flex="90"> Can implement in months without a pricey consulting army (100% implementation success rate)</p>
+            </li>
+            <li layout="row">
+                <img class="center-block img-responsive" style="height: 50px;" src="../../../Img/line_indigo.png" alt="Alternate Text" />
+                <p flex="90">A seamless solution from trades to reporting</p>
+            </li>
+            <li layout="row">
+                <img class="center-block img-responsive" style="height: 50px;" src="../../../Img/user_indigo.png" alt="Alternate Text" />
+                <p flex="90">Our systems work; no reason to staff multitudes of IT personnel to keep it functioning</p>
+            </li>
+        </ul>
     </div>
 </section>
 
 <div ng-include="'/app/components/contact/inPageContactUs.html'"></div>
+<div ng-include="'/app/components/contact/sidenavContactUs.html'"></div>
 
 <div id="sticky-header" style="width: 100%; height: 0px;" layout="row" ng-controller="NavBarController as vm">
     <ul flex="100" id="stick-ul2">
         <li>
-            <md-button ui-sref="index" aria-label="Home">
+            <md-button href="" ng-click="vm.goToTop();" aria-label="Home">
                 <img src="../../../Img/shadowdmslogo_small2.png" class="center-block" alt="DMS Logo" />
             </md-button>
-            <md-button ui-sref="products">Products</md-button>
-            <md-button ui-sref="about">Services</md-button>
-            <md-button ui-sref="about">Education</md-button>
-            <md-button ui-sref="about">Testimonials</md-button>
-            <md-button ui-sref="about">About</md-button>
-            <md-button aria-label="Contact Us" ui-sref="about"><i class="fa fa-envelope-o"></i></md-button>
+            <md-button href="/products#top">Products</md-button>
+            <md-button href="/services#top">Services</md-button>
+            <md-button href="/education#top">Education</md-button>
+            <md-button href="/testimonials#top">Testimonials</md-button>
+            <md-button href="/about#top">About</md-button>
+            <a class="md-button" aria-label="Home" ng-click="vm.openContactUs();">
+                <i class="fa fa-envelope"></i>
+            </a>
         </li>
     </ul>
 </div>
-
 <script>
         $("#stick-ul1").hide();
         $("#stick-ul2").hide();
