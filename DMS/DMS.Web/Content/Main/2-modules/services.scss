@@ -19,6 +19,13 @@ section#services-overview {
             @extend .para-content;
         }
     }
+    .md-button {
+        @media(max-width: 990px) {
+              display: block;
+              margin-right: auto;
+              margin-left: auto;
+        }
+    }
     .services-img {
         border-bottom: 1px solid #ddd;
         img {
