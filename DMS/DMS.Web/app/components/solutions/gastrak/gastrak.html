@@ -18,6 +18,19 @@
     </ul>
 </section>
 
+<section id="gastrak-navbar1" class="animated fadeIn" layout="row">
+    <ul flex="100" class="container">
+        <li>
+            <md-button hide-sm hide-md class="gastrak-header" ng-click="vm.goToTop();">GasTrak</md-button>
+            <md-button ng-click="vm.goToElement('gastrak-features');">Features</md-button>
+            <md-button ng-click="vm.goToElement('gastrak-functionality');">Functionality</md-button>
+            <md-button ng-click="vm.goToElement('gastrak-compliance');">Compliance</md-button>
+            <md-button ng-click="vm.goToElement('gastrak-byos');">Build Your Solution</md-button>
+            <md-button ng-click="vm.openContactUs();">Contact Us</md-button>
+        </li>
+    </ul>
+</section>
+
 <div class="gastrak-features-bg">
     <section id="gastrak-overview" class="container" layout="row" layout-wrap>
         <div flex="60" flex-md="100" flex-sm="100" class="ms-display-template">
@@ -434,10 +447,12 @@
 </div>
     <script>
         $(window).bind('scroll', function () {
-            if ($(window).scrollTop() > 255) {
-                $("#gastrak-navbar").addClass("fix-the-navbar");
+            if ($(window).scrollTop() > 270) {
+                $("#gastrak-navbar1").addClass("fix-the-navbar");
+                $("#gastrak-navbar1").addClass("remove-display2");
             } else {
-                $("#gastrak-navbar").removeClass("fix-the-navbar");
+                $("#gastrak-navbar1").removeClass("fix-the-navbar");
+                $("#gastrak-navbar1").removeClass("remove-display2");
             }
         });
     </script>
