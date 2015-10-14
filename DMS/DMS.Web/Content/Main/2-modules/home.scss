@@ -10,36 +10,71 @@
 }
 #slider-card {
     background-color: rgba(#333, .35);
-    height: 50vw;
-    width: 50vw;
-    right: 140px;
-    top: 100px;
+    height: 50vmin !important;
+    width: 50vmin !important;
+    right: 25px;
+    top: 4px;
     border-radius: 4px;
     -webkit-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
 }
 
+.slider-spin {
+    right: 238px;
+    top: 214px;
+    height: 13vw !important;
+    width: 13vw !important;
+    max-height: 197px !important;
+    max-width: 196px !important;
+    @media (min-width: 1500px) {
+        right: 214px !important;
+        top: 190px !important;
+    }
+    @media (min-width: 1550px) {
+        right: 220px !important;
+        top: 180px !important;
+    }
+}
+
 .slider-spin1 {
-    right: 150px;
-    top: 100px;
+    float: right;
+    position: relative !important;
+    height: 36% !important;
+    width: 36% !important;
+    max-width: 530px !important;
+    max-height: 523px !important;
+    margin-top: 20px;
+    margin-right: 60px;
 }
 .bigtext {
     @extend .section-header;
     @extend .text-center;
     font-size: 2.85vw !important;
-    line-height: .85;
-    right: 350px;
-    top: 330px;
+    line-height: 40px;
+    right: 270px;
+    top: 266px;
     color: white !important;
+    @media (min-width: 1500px) {
+        right: 245px !important;
+        top: 227px !important;
+    }
+    @media (min-width: 1550px) {
+        right: 245px !important;
+        top: 222px !important;
+        line-height: .85 !important;
+    }
+    @media (min-width: 1600px) {
+        font-size: 42px !important;
+    }
+}
+.solutionText {
+    font-size: 2.15vw !important;
+    @media (min-width: 1600px) {
+        font-size: 36px !important;
+    }
 }
 #img-rotate {
-    max-height: 200px;
-    max-width: 200px;
-    width: 13vw !important;
-    height: 13vw !important;
-    top: 260px;
-    right: 320px;
     -webkit-animation:spin 20s linear infinite;
     -moz-animation:spin 20s linear infinite;
     animation:spin 20s linear infinite;
