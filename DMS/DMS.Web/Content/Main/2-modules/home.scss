@@ -8,6 +8,45 @@
         }
     }
 }
+#slider-card {
+    background-color: rgba(#333, .35);
+    height: 50vw;
+    width: 50vw;
+    right: 140px;
+    top: 100px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
+}
+
+.slider-spin1 {
+    right: 150px;
+    top: 100px;
+}
+.bigtext {
+    @extend .section-header;
+    @extend .text-center;
+    font-size: 2.85vw !important;
+    line-height: .85;
+    right: 350px;
+    top: 330px;
+    color: white !important;
+}
+#img-rotate {
+    max-height: 200px;
+    max-width: 200px;
+    width: 13vw !important;
+    height: 13vw !important;
+    top: 260px;
+    right: 320px;
+    -webkit-animation:spin 20s linear infinite;
+    -moz-animation:spin 20s linear infinite;
+    animation:spin 20s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 section#cta-home {
     -webkit-box-shadow: 0px -2px 4px 0px rgba(0,0,0,0.75);
