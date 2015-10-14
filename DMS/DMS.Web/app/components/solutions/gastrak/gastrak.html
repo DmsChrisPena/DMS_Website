@@ -297,9 +297,9 @@
             <div flex="10"></div>
         </div>
         <div class="md-actions" layout="row" layout-align="center center">
-            <md-button class="md-raised" ng-click="vm.goToProductionServices();">Production Services</md-button>
-            <md-button class="md-raised" ng-click="vm.goToMiddleMarketing();">Middle Marketing</md-button>
-            <md-button class="md-raised" ng-click="vm.goToLocalDistribution();">Local Distribution</md-button>
+            <md-button ng-disabled="vm.showProductionServices" class="md-raised group-btn left-btn" ng-click="vm.goToProductionServices();">Production Services</md-button>
+            <md-button ng-disabled="vm.showMiddleMarketing" class="md-raised group-btn middle-btn" ng-click="vm.goToMiddleMarketing();">Middle Marketing</md-button>
+            <md-button ng-disabled="vm.showLocalDistribution" class="md-raised group-btn right-btn" ng-click="vm.goToLocalDistribution();">Local Distribution</md-button>
         </div>
         <!--<div class="md-actions" layout="row" layout-align="center center">
             <div flex="10"></div>
