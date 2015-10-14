@@ -516,13 +516,37 @@ section#ourServices {
 
 .home-page-para {
     background-image: url(https://enerdynamics.files.wordpress.com/2011/07/pipeline-againsat-mountain-backdrop.jpg) !important;
-    .industry-overlay {
+    md-card {
+        background-color: rgba(#056e98, .55);
+        margin-left: 10%;
+        margin-right: 10%;
+        p {
+            color: #fff;
+            line-height: 2;
+            font-weight: 300;
+            font-size: 24px;
+            text-align: center;
+            @media (max-width: 990px) {
+                padding-top: 50px;
+            }
+            @media (max-width: 770px) {
+                padding-top: 30px;
+            }
+            @media (max-width: 633px) {
+                padding-top: 50px;
+                font-size: 20px;
+            }
+            @media (max-width: 529px) {
+                padding-top: 30px;
+            }
+            @media (max-width: 447px) {
+                padding-top: 50px;
+                font-size: 16px;
+            }
+        }
         p {
             &:first-child {
                 font-size: 22px !important;
-                padding-top: 70px !important;
-                padding-left: 15%;
-                padding-right: 15%;
                 margin-bottom: 0px;
                 @media (max-width: 1158px) {
                     padding-top: 40px !important;
