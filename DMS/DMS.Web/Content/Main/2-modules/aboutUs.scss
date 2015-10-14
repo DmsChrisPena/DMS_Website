@@ -388,6 +388,44 @@ section#ourHistory {
     }
 }
 
+.about-industry-parallax {
+    background-image: url(http://www.commendusa.com/uploads/media/oil-gas-industry_01.jpg);
+    background-size: cover;
+    background-position: 40% 90%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 300px;
+    padding-left: 15%;
+    padding-right: 15%;
+    md-card {
+        background-color: rgba(#251f39, .65);
+        p {
+            color: #fff;
+            line-height: 2;
+            font-weight: 300;
+            font-size: 24px;
+            text-align: center;
+            /*@media (max-width: 990px) {
+                padding-top: 50px;
+            }
+            @media (max-width: 770px) {
+                padding-top: 30px;
+            }
+            @media (max-width: 633px) {
+                padding-top: 50px;
+                font-size: 20px;
+            }
+            @media (max-width: 529px) {
+                padding-top: 30px;
+            }
+            @media (max-width: 447px) {
+                padding-top: 50px;
+                font-size: 16px;
+            }*/
+        }
+    }
+}
+
 section#university {
     padding-top: 70px;
     border-bottom: 1px solid #eeeeee;
