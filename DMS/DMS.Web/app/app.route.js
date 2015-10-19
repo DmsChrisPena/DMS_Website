@@ -26,7 +26,7 @@
                 controller: "productsController as vm",
                 templateUrl: 'app/components/solutions/products.html'
             }).state('services', { // services pages
-                url: '/services',
+                url: '/services/:goTo',
                 templateUrl: 'app/components/services/services.html',
                 controller: 'servicesController as vm'
             }).state('gaspro', { // gaspro pages

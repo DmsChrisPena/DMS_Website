@@ -31,7 +31,7 @@
 
 section#gaspro-navbar {
     padding-right: 23%;
-    z-index: 999;
+    z-index: 40;
     @media (max-width: 955px) {
         padding-right: 0px
     }
@@ -101,7 +101,7 @@ section#gaspro-navbar {
 section#gaspro-navbar1 {
     display: none;
     padding-right: 23%;
-    z-index: 999;
+    z-index: 40;
     @media (max-width: 955px) {
         padding-right: 0px
     }
@@ -286,6 +286,36 @@ section#gaspro-features {
         background-color: rgba(#424242, .75);
         .middle-margin {
             max-width: 100px;
+        }
+        .group-btn {
+            font-size: 16px;
+            margin: 20px 0;
+            padding: 3px 15px 3px 15px;
+            color: #424242;
+            background-color: white;
+            text-transform: none;
+            font-weight: 400;
+            min-width:100px;
+        }
+        .left-btn {
+            border-radius: 3px 0 0 3px;
+        }
+        .middle-btn {
+            border-radius: 0;
+            border-left: 1px solid rgba(#E0E0E0, 0.96);
+            border-right: 1px solid rgba(#E0E0E0, 0.96);
+        }
+        .right-btn {
+            border-radius: 0 3px 3px 0;
+        }
+        .md-button:not([disabled]):hover {
+            background-color: rgba(#E0E0E0, 0.96);
+            color: rgba(#009688, 0.96);
+            transition: 0.3s;
+        }
+        .md-button[disabled] {
+            background-color: rgba(#757575, 0.96);
+            color: rgba(#ffffff, 0.96);
         }
         h2 {
             @extend .section-header;

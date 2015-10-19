@@ -67,6 +67,71 @@
     }
 }*/
 
+section#about-navbar {
+    z-index: 40;
+    padding-right: 23%;
+    @media (max-width: 955px) {
+        padding-right: 0px
+    }
+    @media (max-width: 520px) {
+        height: 86px;
+    }
+    height: 40px;
+    background-color: rgba(0,150,136, 0.8);
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+    ul {
+        margin: 0px;
+        li {
+            margin-left: 25%;
+            display: inline;
+            list-style-type: none;
+            @media(min-width: 1450px) {
+                margin-left: 23%;
+            }
+            @media(min-width: 1630px) {
+                margin-left: 20%;
+            }
+            @media(min-width: 1630px) {
+                margin-left: 15%;
+            }
+            @media(min-width: 1630px) {
+                margin-left: 10%;
+            }
+            @media (max-width: 955px) {
+                margin-left: 0px;
+            }
+        }
+    }
+    .md-button {
+        line-height: 30px;
+        min-height: 10px;
+        font-size: 11px;
+        font-weight: 400;
+        color: #fff;
+        margin-left: 0px;
+        margin-right: 0px;
+        &:first-child {
+            @media(min-width: 1450px) {
+                margin-left: 25%;
+            }
+            @media(min-width: 1630px) {
+                margin-left: 30%;
+            }
+            @media(min-width: 1850px) {
+                margin-left: 35%;
+            }
+            @media(min-width: 1850px) {
+                margin-left: 40%;
+            }
+            float: left !important;
+            font-size: 14px;
+            font-weight: 500;
+            margin-left: 20%;
+        }
+    }
+}
+
 section#ourMission {
     background-image: url("../../../Img/about/bridge.jpg");
     background-repeat: no-repeat;
@@ -323,6 +388,44 @@ section#ourHistory {
     }
 }
 
+.about-industry-parallax {
+    background-image: url(http://www.commendusa.com/uploads/media/oil-gas-industry_01.jpg);
+    background-size: cover;
+    background-position: 40% 90%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 300px;
+    padding-left: 15%;
+    padding-right: 15%;
+    md-card {
+        background-color: rgba(#251f39, .65);
+        p {
+            color: #fff;
+            line-height: 2;
+            font-weight: 300;
+            font-size: 24px;
+            text-align: center;
+            /*@media (max-width: 990px) {
+                padding-top: 50px;
+            }
+            @media (max-width: 770px) {
+                padding-top: 30px;
+            }
+            @media (max-width: 633px) {
+                padding-top: 50px;
+                font-size: 20px;
+            }
+            @media (max-width: 529px) {
+                padding-top: 30px;
+            }
+            @media (max-width: 447px) {
+                padding-top: 50px;
+                font-size: 16px;
+            }*/
+        }
+    }
+}
+
 section#university {
     padding-top: 70px;
     border-bottom: 1px solid #eeeeee;
@@ -440,71 +543,6 @@ section#university {
     }
     .picture {
         padding-top: 5%;
-    }
-}
-
-section#about-navbar {
-    z-index: 999;
-    padding-right: 23%;
-    @media (max-width: 955px) {
-        padding-right: 0px
-    }
-    @media (max-width: 520px) {
-        height: 86px;
-    }
-    height: 40px;
-    background-color: rgba(0,150,136, 0.8);
-    text-align: center;
-    border-bottom: 1px solid rgba(0,0,0,0.12);
-    ul {
-        margin: 0px;
-        li {
-            margin-left: 25%;
-            display: inline;
-            list-style-type: none;
-            @media(min-width: 1450px) {
-                margin-left: 23%;
-            }
-            @media(min-width: 1630px) {
-                margin-left: 20%;
-            }
-            @media(min-width: 1630px) {
-                margin-left: 15%;
-            }
-            @media(min-width: 1630px) {
-                margin-left: 10%;
-            }
-            @media (max-width: 955px) {
-                margin-left: 0px;
-            }
-        }
-    }
-    .md-button {
-        line-height: 30px;
-        min-height: 10px;
-        font-size: 11px;
-        font-weight: 400;
-        color: #fff;
-        margin-left: 0px;
-        margin-right: 0px;
-        &:first-child {
-            @media(min-width: 1450px) {
-                margin-left: 25%;
-            }
-            @media(min-width: 1630px) {
-                margin-left: 30%;
-            }
-            @media(min-width: 1850px) {
-                margin-left: 35%;
-            }
-            @media(min-width: 1850px) {
-                margin-left: 40%;
-            }
-            float: left !important;
-            font-size: 14px;
-            font-weight: 500;
-            margin-left: 20%;
-        }
     }
 }
 

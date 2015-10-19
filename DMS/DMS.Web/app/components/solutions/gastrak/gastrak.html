@@ -297,9 +297,9 @@
             <div flex="10"></div>
         </div>
         <div class="md-actions" layout="row" layout-align="center center">
-            <md-button class="md-raised" ng-click="vm.goToProductionServices();">Production Services</md-button>
-            <md-button class="md-raised" ng-click="vm.goToMiddleMarketing();">Middle Marketing</md-button>
-            <md-button class="md-raised" ng-click="vm.goToLocalDistribution();">Local Distribution</md-button>
+            <md-button ng-disabled="vm.showProductionServices" class="md-raised group-btn left-btn" ng-click="vm.goToProductionServices();">Production Services</md-button>
+            <md-button ng-disabled="vm.showMiddleMarketing" class="md-raised group-btn middle-btn" ng-click="vm.goToMiddleMarketing();">Middle Marketing</md-button>
+            <md-button ng-disabled="vm.showLocalDistribution" class="md-raised group-btn right-btn" ng-click="vm.goToLocalDistribution();">Local Distribution</md-button>
         </div>
         <!--<div class="md-actions" layout="row" layout-align="center center">
             <div flex="10"></div>
@@ -425,7 +425,7 @@
             <p>
                 DMS prides itself on its 100% Implementation Success Rate for GasTrak systems. In a matter of weeks, we get you completely up and running - trading, invoicing, reporting and accounting, fast. DMS prepares your organization for success from Day 1.
             </p>
-            <md-button class="md-raised md-primary" aria-label="Accounting Contact Us" href="/services#implementation-section">Learn More</md-button>
+            <md-button class="md-raised md-primary" aria-label="Accounting Contact Us" ui-sref="services({goTo: 'implementation'})">Learn More</md-button>
         </div>
         <div flex="33" flex-md="100" flex-sm="100">
             <img class="img-responsive center-block imp-setup" src="../../../../Img/gastrakImages/cloud.png" alt="Implementation Image" />
@@ -441,7 +441,7 @@
             <p>
                 Using GasTrak to its fullest potential is essential when looking to automate and grow your business. We offer in-house, online, video and other training packages catered to fit your specific needs. We keep your personnel sharp from Day 1 to Year 10.
             </p>
-            <md-button class="md-raised md-primary" aria-label="Accounting Contact Us" href="/services#training-section">Learn More</md-button>
+            <md-button class="md-raised md-primary" aria-label="Accounting Contact Us" ui-sref="services({goTo: 'training'})">Learn More</md-button>
         </div>
     </section>
 </div>
