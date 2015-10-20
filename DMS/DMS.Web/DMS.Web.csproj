@@ -364,6 +364,8 @@
     <Content Include="Content\masterslider\style\ms-laptop-style.css" />
     <Content Include="Content\masterslider\style\skin.png" />
     <Content Include="Content\masterslider\style\video-close-btn.png" />
+    <Content Include="Content\text-rotator\jquery.simple-text-rotator.js" />
+    <Content Include="Content\text-rotator\simpletextrotator.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

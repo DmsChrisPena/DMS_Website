@@ -71,8 +71,8 @@
                          data-type="image" />
                     <h3 class="ms-layer bold-text-white bigtext"
                         data-type="text">
-                        DM <br />
-                        <span class="solutionText">Solutions</span>
+                        DMS <br />
+                        <span style="width: 20px;" class="solutionText rotate">Simple...,Solutions</span>
                     </h3>
                 </div>
             </div>
@@ -95,8 +95,8 @@
                      data-type="image" />
                 <h3 class="ms-layer bold-text-white bigtext"
                     data-type="text">
-                    DM <br />
-                    <span class="solutionText">Solutions</span>
+                    DMS <br />
+                    <span style="width: 20px;" class="solutionText rotate">Simple...,Solutions</span>
                 </h3>
             </div>
             <div class="ms-slide">
@@ -118,8 +118,8 @@
                      data-type="image" />
                 <h3 class="ms-layer bold-text-white bigtext"
                     data-type="text">
-                    DM <br />
-                    <span style="font-size: 2.15vw;">Solutions</span>
+                    DMS <br />
+                    <span style="width: 20px;" class="solutionText rotate">Simple...,Solutions</span>
                 </h3>
             </div>
             <div class="ms-slide">
@@ -141,8 +141,8 @@
                      data-type="image" />
                 <h3 class="ms-layer bold-text-white bigtext"
                     data-type="text">
-                    DM <br />
-                    <span style="font-size: 2.15vw;">Solutions</span>
+                    DMS <br />
+                    <span style="width: 20px;" class="solutionText rotate">Simple...,Solutions</span>
                 </h3>
             </div>
         </div>
@@ -164,7 +164,11 @@
 			autplay: true,
 			loop:true
 		});
-
+		$(".rotate").textrotator({
+		    animation: "flipUp", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+		    separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+		    speed: 2000 // How many milliseconds until the next word show.
+		});
 </script>
 
 <section class="animated slideInUp" id="cta-home">
