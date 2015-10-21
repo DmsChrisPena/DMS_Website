@@ -33,11 +33,17 @@
 
 <div class="gastrak-features-bg">
     <section id="gastrak-overview" class="container" layout="row" layout-wrap>
-        <div flex="60" flex-md="100" flex-sm="100" class="ms-display-template">
+        <div flex="50" flex-md="100" flex-sm="100" class="ms-display-template" style="margin-top: 40px;">
             <div class="ms-display-cont">
                 <img src="../../../../Content/desktop-style/display.png" class="ms-display-bg" />
                 <div class="ms-dis-slider-cont">
                     <div class="master-slider ms-skin-default" id="masterslider">
+                        <div class="ms-slide">
+                            <img src="../../../../Content/masterslider/style/blank.gif" data-src="../../../Img/gastrakImages/slider/GasTrak1.png" alt="lorem ipsum dolor sit" />
+                        </div>
+                        <div class="ms-slide">
+                            <img src="../../../../Content/masterslider/style/blank.gif" data-src="../../../Img/gastrakImages/slider/GasTrak1.png" alt="lorem ipsum dolor sit" />
+                        </div>
                         <div class="ms-slide">
                             <img src="../../../../Content/masterslider/style/blank.gif" data-src="../../../Img/gastrakImages/slider/GasTrak1.png" alt="lorem ipsum dolor sit" />
                         </div>
@@ -51,14 +57,21 @@
                 </div>
             </div>
         </div>
-        <div flex="40" flex-md="100" flex-sm="100" class="gastrak-desc">
-            <h2 class="text-center section-header">GasTrak Overview</h2>
+        <div flex="50" flex-md="100" flex-sm="100" class="gastrak-desc">
+            <h2 class="text-center section-header">Seamless. Simple. Revolutionary.</h2>
             <p class="para-content">
-                DMS is simplifying the way the gas industry tries and buys software. Perfect for small to midsize operations, GasTrak is chock full of seamless functionality accompanied by a pricing model where you only pay for exactly what you need, for as long as you need it.<br /> <br />
-
-                Included with GasTrak is a base level of physical trading and gas accounting. If your organization needs more tools such as financial trading, extensive ad-hoc reporting and other connectivity (ICE, Platts, NYMEX, etc.), take a look at our Build Your Own Solution section and configure the solution that's perfect for you.<br /> <br />
-
-                GasTrak is paid by monthly subscription. There is no up-front capital investment and no enormous contract binding you for years. We're so confident that you'll love our product, that giving it to you monthly - and affordably - will keep you as customers for as long as you're in business. 
+                Perfect for small to midsize operations, GasTrak is a physical trading and gas accounting system accompanied by a pricing model where you only pay for exactly what you need, for as long as you need it.
+            </p>
+            <p class="para-content">
+                If your organization needs more advanced functionality such as financial trading, extensive ad-hoc reporting and other connectivity (ICE, Platts, NYMEX, etc.), contact us and together we will configure the solution that's perfect for you.
+            </p>
+            <h5>GasTrak is paid by monthly subscription.</h5>
+            <p class="para-content" style="margin-top: 0px;">
+                There is no up-front capital investment and no enormous contract binding you for years. We're so confident that you'll love our product, that giving it to you monthly - and affordably - will keep you as customers for as long as you're doing business.
+            </p>
+            <p class="para-content">
+                <a ui-sref="testimonials">See what our clients have to say about DMS and the value our products bring.</a> <br />
+                <md-button class="md-raised md-primary center-block" style="margin-top: 30px;" aria-label="Accounting Contact Us" ng-click="vm.openContactUs();">Contact us for more information</md-button>
             </p>
         </div>
     </section>
@@ -296,10 +309,19 @@
             <div flex="80"><h5>GasTrak has been successfully serving all business segments in the Gas industry since the early 90’s by providing a truly seamless, user friendly solution from deal capture through financial statements. GasTrak also provides the unique functionality required to succeed in the Production Services Market, Middle Market, and Local Distribution Market.</h5></div>
             <div flex="10"></div>
         </div>
-        <div class="md-actions" layout="row" layout-align="center center">
-            <md-button ng-disabled="vm.showProductionServices" class="md-raised group-btn left-btn" ng-click="vm.goToProductionServices();">Production Services</md-button>
-            <md-button ng-disabled="vm.showMiddleMarketing" class="md-raised group-btn middle-btn" ng-click="vm.goToMiddleMarketing();">Middle Marketing</md-button>
-            <md-button ng-disabled="vm.showLocalDistribution" class="md-raised group-btn right-btn" ng-click="vm.goToLocalDistribution();">Local Distribution</md-button>
+        <div class="md-actions" layout="row" layout-align="center center" layout-wrap>
+            <md-button ng-disabled="vm.showProductionServices" class="md-raised group-btn left-btn btn-func" ng-click="vm.goToProductionServices();">
+                <i class="fa fa-folder-o btn-functionality"></i> <br />
+                Production Services
+            </md-button>
+            <md-button ng-disabled="vm.showMiddleMarketing" class="md-raised group-btn middle-bt btn-func" ng-click="vm.goToMiddleMarketing();">
+                <i class="fa fa-line-chart btn-functionality"></i> <br />
+                Middle Marketing
+            </md-button>
+            <md-button ng-disabled="vm.showLocalDistribution" class="md-raised group-btn right-btn btn-func" ng-click="vm.goToLocalDistribution();">
+                <i class="fa fa-balance-scale btn-functionality"></i> <br />
+                Local Distribution
+            </md-button>
         </div>
         <!--<div class="md-actions" layout="row" layout-align="center center">
             <div flex="10"></div>
@@ -464,12 +486,13 @@
 
         var slider = new MasterSlider();
         slider.setup('masterslider', {
-            width: 507,
-            height: 286,
+            width: 490,
+            height: 276,
             speed: 20,
             preload: 0,
             space: 2,
-            view: 'flow'
+            view: 'flow',
+            autoplay: true
         });
         slider.control('arrows');
         slider.control('bullets', { autohide: false });

@@ -62,7 +62,7 @@
             <div class="ms-slide">
                 <img src="../../../Content/masterslider/style/blank.gif" data-src="../../../Img/IndexSlider/swiper1.jpg" alt="lorem ipsum dolor sit" />
                 <div layout="row" layout-align="end center">
-                    <img src="../../../Content/masterslider/style/blank.gif" data-src="http://www.dms-online.co/wp-content/themes/dmstheme/img/circular-dots.png" alt="Icon"
+                    <img src="../../../Content/masterslider/style/blank.gif" data-src="../../../Img/circular-dots.png" alt="Icon"
                          id="img-rotate"
                          class="ms-layer slider-spin"
                          data-type="image" />
@@ -71,8 +71,8 @@
                          data-type="image" />
                     <h3 class="ms-layer bold-text-white bigtext"
                         data-type="text">
-                        DM <br />
-                        <span class="solutionText">Solutions</span>
+                        DMS <br />
+                        <span style="width: 20px;" class="solutionText rotate">Simple...,Solutions</span>
                     </h3>
                 </div>
             </div>
@@ -82,7 +82,7 @@
                      id="slider-card"
                      class="ms-layer"
                      data-type="image"></div>-->
-                <img src="../../../Content/masterslider/style/blank.gif" data-src="http://www.dms-online.co/wp-content/themes/dmstheme/img/circular-dots.png" alt="Icon"
+                <img src="../../../Content/masterslider/style/blank.gif" data-src="../../../Img/circular-dots.png" alt="Icon"
                      id="img-rotate"
                      class="ms-layer slider-spin"
                      data-type="image"
@@ -95,8 +95,8 @@
                      data-type="image" />
                 <h3 class="ms-layer bold-text-white bigtext"
                     data-type="text">
-                    DM <br />
-                    <span class="solutionText">Solutions</span>
+                    DMS <br />
+                    <span style="width: 20px;" class="solutionText rotate">Simple...,Solutions</span>
                 </h3>
             </div>
             <div class="ms-slide">
@@ -105,7 +105,7 @@
                      id="slider-card"
                      class="ms-layer"
                      data-type="image"></div>-->
-                <img src="../../../Content/masterslider/style/blank.gif" data-src="http://www.dms-online.co/wp-content/themes/dmstheme/img/circular-dots.png" alt="Icon"
+                <img src="../../../Content/masterslider/style/blank.gif" data-src="../../../Img/circular-dots.png" alt="Icon"
                      id="img-rotate"
                      class="ms-layer slider-spin"
                      data-type="image"
@@ -118,8 +118,8 @@
                      data-type="image" />
                 <h3 class="ms-layer bold-text-white bigtext"
                     data-type="text">
-                    DM <br />
-                    <span style="font-size: 2.15vw;">Solutions</span>
+                    DMS <br />
+                    <span style="width: 20px;" class="solutionText rotate">Simple...,Solutions</span>
                 </h3>
             </div>
             <div class="ms-slide">
@@ -128,7 +128,7 @@
                      id="slider-card"
                      class="ms-layer"
                      data-type="image"></div>-->
-                <img src="../../../Content/masterslider/style/blank.gif" data-src="http://www.dms-online.co/wp-content/themes/dmstheme/img/circular-dots.png" alt="Icon"
+                <img src="../../../Content/masterslider/style/blank.gif" data-src="../../../Img/circular-dots.png" alt="Icon"
                      id="img-rotate"
                      class="ms-layer slider-spin"
                      data-type="image"
@@ -141,8 +141,8 @@
                      data-type="image" />
                 <h3 class="ms-layer bold-text-white bigtext"
                     data-type="text">
-                    DM <br />
-                    <span style="font-size: 2.15vw;">Solutions</span>
+                    DMS <br />
+                    <span style="width: 20px;" class="solutionText rotate">Simple...,Solutions</span>
                 </h3>
             </div>
         </div>
@@ -160,10 +160,15 @@
 			height:800,
 			space:5,
 			view: 'stack',
-			instantStartLayers:false,
+			instantStartLayers: true,
+			autplay: true,
 			loop:true
 		});
-
+		$(".rotate").textrotator({
+		    animation: "flipUp", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+		    separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+		    speed: 2000 // How many milliseconds until the next word show.
+		});
 </script>
 
 <section class="animated slideInUp" id="cta-home">
