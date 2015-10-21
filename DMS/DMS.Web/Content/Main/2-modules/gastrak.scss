@@ -176,6 +176,10 @@ section#gastrak-overview {
     p {
         font-size: 14px;
     }
+    h2 {
+        @extend .section-header;
+        font-size: 30px;
+    }
     h5 {
         width: 100%;
         font-family: Roboto;
@@ -254,4 +258,54 @@ section#gastrak-compliance {
 .imp-setup {
     max-height: 125px;
     max-width: 125px;
+}
+
+.btn-functionality {
+    padding: 10px 10px;
+    font-size: 36px !important;
+}
+
+.btn-func {
+    background-color: #323d49 !important;
+    color: #7a7d81 !important;
+    border: 2px solid rgba(#ddd, .50);
+    border-radius: 0px !important;
+    width: 22%;
+    @media(max-width: 860px) {
+        width: 28%;
+    }
+    @media(max-width: 680px) {
+        width: 32%;
+    }
+    @media(max-width: 600px) {
+        width: 100% !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+    }
+    &:nth-child(1) {
+        border-right: none;
+    }
+    &:nth-child(2) {
+        border-right: none;
+
+    }
+    &:nth-child(3) {
+    }
+    &:hover {
+        i {
+            color: #83d8ff;
+        }
+        font-weight: 700 !important;
+        color: #FFF !important;
+        background-color: #3b4753 !important;
+    }
+    &:disabled {
+        i {
+            color: #83d8ff;
+        }
+        font-weight: 700 !important;
+        color: #FFF !important;
+        cursor: default !important;
+        background-color: #3b4753 !important;
+    }
 }
