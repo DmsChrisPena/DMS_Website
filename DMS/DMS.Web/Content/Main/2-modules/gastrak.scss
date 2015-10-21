@@ -278,9 +278,11 @@ section#gastrak-compliance {
         width: 32%;
     }
     @media(max-width: 600px) {
-        width: 100% !important;
-        min-width: 100% !important;
-        max-width: 100% !important;
+        width: 80% !important;
+        min-width: 80% !important;
+        max-width: 80% !important;
+         border-right: 2px solid rgba(#ddd, .50) !important;
+        
     }
     &:nth-child(1) {
         border-right: none;
@@ -290,6 +292,7 @@ section#gastrak-compliance {
 
     }
     &:nth-child(3) {
+
     }
     &:hover {
         i {
