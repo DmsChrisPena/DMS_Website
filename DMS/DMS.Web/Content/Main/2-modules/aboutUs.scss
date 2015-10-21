@@ -356,7 +356,7 @@ section#ourHistory {
     .industry-overlay {
         height: 100%;
         width: 100%;
-        background-color: rgba(#424242, .65);
+        background-color: rgba(#424242, .5);
         p {
             color: #fff;
             line-height: 2;
@@ -364,7 +364,7 @@ section#ourHistory {
             font-size: 24px;
             padding-left: 20%;
             padding-right: 20%;
-            padding-top: 80px;
+            padding-top: 90px;
             margin-top: 0px;
             text-align: center;
             @media (max-width: 990px) {
