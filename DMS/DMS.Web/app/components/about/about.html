@@ -1,4 +1,11 @@
-﻿<section id="about-navbar" class="animated flipInX" layout="row">
+﻿<section id="about-header-pic" class="animated fadeInLeftBig">
+    <div class="about-header-overlay">
+        <h2 class="section-header">Our mission here at DMS is simple</h2>
+        <p class="section-subheader">We are here to provide effective and easy-to-implement solutions that close this gap, without costing millions of dollars.</p>
+    </div>
+</section>
+
+<section id="about-navbar" class="animated fadeInRightBig" layout="row">
     <ul flex="100" class="container">
         <li>
             <md-button hide-sm hide-md class="about-header" ng-click="vm.goToTop();">About</md-button>
@@ -11,76 +18,20 @@
     </ul>
 </section>
 
-<!--<section class="container" layout="row" id="ourMission" layout-wrap>
-    <div flex="100">
-        <h2>Our Mission</h2>
-        <div layout="row">
-            <div flex="10"></div>
-            <p flex="80">
-                Our industry has always been fazed with a gap between industry positions and skilled labor force; we see this gap as increasing in the future. The gas industry is on the course to rapidly grow particularly due to recent developments in fracking and LNG technology. The primary problem is that companies still try, buy and implement solutions like they did in the 80's.
-            </p>
-            <div flex="10"></div>
-        </div>
-        <div layout="row" layout-align="center center">
-            <div flex="10"></div>
-            <div flex="35">
-                <div layout="row">
-                    <p>Our mission here at DMS is simple.</p>
-                </div>
-                <div layout="row">
-                    <img class="center-block img-responsive" style="height: 460px;" src="../../../Img/Bridge_StudyInTeal_Small.png" alt="Alternate Text" />
-                </div>
-                <div layout="row">
-                    <h3><i>We are here to provide effective and easy-to-implement solutions that bridge this gap, without costing millions of dollars.</i></h3>
-                </div>
-            </div>
-            <div flex="10"></div>
-            <div flex="35">
-                <div layout="row">
-                    <p>The ever-increasing gap between demand and supply for expert personnel must be met, and we meet it head-on:</p>
-                </div>
-                <div layout="row">
-                    <md-card>
-                        <ul>
-                            <li>Our <b>products</b> automate your processes, filling the need for additional personnel as you significantly increase your production</li>
-                            <li></li>
-                            <li>Our <b>services</b> save you time, eliminating the need for in-house brute-force accounting, scheduling, consulting and training</li>
-                            <li></li>
-                            <li>Our <b>Learn&trade;</b> programs boost your personnel's knowledge, keeping your organization continually ahead of the curve</li>
-                        </ul>
-                    </md-card>
-                </div>
-            </div>
-            <div flex="10"></div>
-        </div>
-        <div layout="row">
-            <div flex="10"></div>
-            <h3 flex="80">
-                DMS is setting a new idustry standard.
-                Our solutions are as simple as you want and as complex as you need.
-            </h3>
-            <div flex="10"></div>
-        </div>
-    </div>
-</section>-->
+<section id="about-navbar1" class="animated fadeIn container" layout="row">
+    <ul flex="100">
+        <li>
+            <md-button hide-sm hide-md class="about-header" ng-click="vm.goToTop();">About</md-button>
+            <md-button ng-click="vm.goToElement('ourMission');">Our Mission</md-button>
+            <md-button ng-click="vm.goToElement('ourHistory');">History</md-button>
+            <md-button ng-click="vm.goToElement('university');">University</md-button>
+            <md-button ng-click="vm.goToElement('whyUs');">Why DMS</md-button>
+            <md-button ng-click="vm.openContactUs();">Contact Us</md-button>
+        </li>
+    </ul>
+</section>
 
-<!--<section layout="row" layout-wrap id="ourMission">
-    <div class="ourMission-overlay">
-        <h2 flex="100">Our Mission</h2>
-        <p class="para-content mission-main-para">Our industry has always been plagued by a gap between demand for industry experts  and the supply of a skilled labor force; we see this gap as increasing in the future. The gas industry is on the course to rapidly grow particularly due to recent developments in fracking and LNG technology. The primary problem is that companies still try, buy and implement solutions like they did in the 80's.  </p>
-        <div flex="100" layout="row" layout-wrap>
-            <md-card flex="50" offset="25">
-                <p class="para-content mission-para-2 animated slideInRight" style="padding: 0px 12px; color: white;">
-                    Our mission here at DMS is simple.
-                    We are here to provide effective and easy-to-implement solutions that close this gap, without costing millions of dollars.
-                </p>
-            </md-card>
-        </div>
-        <p flex="100" class="para-content text-center"></p>
-    </div>
-</section>-->
-<section layout="row" layout-wrap id="ourMission2">
-    <!--<img class="center-block img-responsive" style="height: 50px;" src="../../../Img/about/bridge-narrow.jpg" alt="Alternate Text" />-->
+<!--<section layout="row" layout-wrap id="ourMission2">
     <div class="ourMission2-heading">
         <md-card flex="100">
             <h2 flex="100">Our Mission</h2>
@@ -90,28 +41,11 @@
                 We are here to provide effective and easy-to-implement solutions that close this gap, without costing millions of dollars.</p>
         </md-card>
     </div>
-    <div flex="100" layout="row" layout-wrap>
-        <!--<md-card flex="50" offset="25">
-            <p class="para-content mission-para-2 animated slideInRight" style="padding: 0px 12px; color: white;">
-                Our mission here at DMS is simple.
-                We are here to provide effective and easy-to-implement solutions that close this gap, without costing millions of dollars.
-            </p>
-        </md-card>-->
-    </div>
 </section>
-
-<!--<section layout="row" id="parallax-spacer" layout-wrap>
-        <div class="parallax-spacing" flex="100">
-            <div class="parallax-overlay">
-                <p>Since 1993, many of the biggest industry players have trusted us to handle their critical tasks.</p>
-            </div>
-        </div>
-
-</section>-->
 
 <section class="animated slideInUp" id="cta-about">
     <p style="margin: 4px 0px; padding: 8px 0px;">Solutions is part of our name for a reason.</p>
-</section>
+</section>-->-->
 
 <section class="container" layout="row" id="ourHistory" layout-wrap>
     <div flex offset="33" hide-md hide-sm></div>
@@ -164,12 +98,6 @@
         <p>"The gas industry and the solutions providers who serve it are at a critical time. Solutions providers have not changed they way they do business in the last 50 years."</p>
     </div>
 </div>
-
-<!--<div class="about-industry-parallax" flex="100" layout="row" layout-align="center center">
-    <md-card>
-        <p>"The gas industry and the solutions providers who serve it are at a critical time. Solutions providers have not changed they way they do business in the last 50 years."</p>
-    </md-card>
-</div>-->
 
 <section id="university" class="container" layout="row" layout-wrap>
     <h2 flex="100" class="UniversityHeader">University of Houston</h2>
@@ -277,13 +205,15 @@
 </section>
 
 <script>
-    $(window).bind('scroll', function () {
-        if ($(window).scrollTop() > 100) {
-            $("#about-navbar").addClass("fix-the-navbar");
-        } else {
-            $("#about-navbar").removeClass("fix-the-navbar");
-        }
-    });
+        $(window).bind('scroll', function () {
+            if ($(window).scrollTop() > 270) {
+                $("#about-navbar1").addClass("fix-the-navbar");
+                $("#about-navbar1").addClass("remove-display2");
+            } else {
+                $("#about-navbar1").removeClass("fix-the-navbar");
+                $("#about-navbar1").removeClass("remove-display2");
+            }
+        });
 </script>
 
 <div ng-include="'/app/components/contact/inPageContactUs.html'"></div>
