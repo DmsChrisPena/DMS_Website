@@ -465,7 +465,15 @@ section#ourServices {
                 }
                 .md-actions {
                     .md-button {
-                        background-color: #3F51B5;
+                        &:nth-child(1) {
+                            background-color: #3F51B5;
+                        }
+                        &:nth-child(2) {
+                            background-color: #F44336;
+                        }
+                        &:nth-child(3) {
+                            background-color: #009688;
+                        }
                     }
                 }
             }
