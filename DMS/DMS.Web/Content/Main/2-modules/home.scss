@@ -5,6 +5,9 @@
                 img {
                     max-height: 100%;
                 }
+                p {
+                    max-width: 50%;
+                }
         }
     }
 }
@@ -831,7 +834,7 @@ section#ourServices {
 
 .header-slider {
     left: 100px;
-    top: 100px;
+    top: 75px;
     font-family: "Roboto", sans-serif !important;
     font-weight: 500;
     font-size: 96px;
@@ -842,6 +845,6 @@ section#ourServices {
     color: #FFF;
     font-weight: 400;
     font-size: 40px;
-    top: 250px;
+    top: 225px;
     left: 100px;
 }
