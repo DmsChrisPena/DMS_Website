@@ -16,6 +16,11 @@
             font-size: 13px;
             line-height: 1.8;
         }
+        img {
+            @media(max-width: 1000px) {
+                margin: auto;
+            }
+        }
     }
 
     .find-us {
