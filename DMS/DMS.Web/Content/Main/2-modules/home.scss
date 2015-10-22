@@ -74,6 +74,26 @@
         font-size: 36px !important;
     }
 }
+
+/*.slider-spin1 {
+      position: absolute !important;
+      right: 5vw !important;
+      top: 50% !important;
+      transform: translateY(-50%) !important;
+    @media(max-width: 1400px) {
+        width: 468px;
+        height: 463px;
+        max-width: 468px;
+        max-height: 463px;
+    }
+    @media(max-width: 930px) {
+        display: none !important;
+    }
+}
+
+.slider-spin {
+}*/
+
 #img-rotate {
     -webkit-animation:spin 20s linear infinite;
     -moz-animation:spin 20s linear infinite;
