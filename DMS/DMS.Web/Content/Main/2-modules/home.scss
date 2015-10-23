@@ -587,11 +587,12 @@ section#ourServices {
     background-position: 40% 46%;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 300px;
+    height: auto;
     .industry-overlay {
         height: 100%;
         width: 100%;
         background-color: rgba(#424242, .5);
+        padding-bottom: 30px;
         p {
             color: #fff;
             line-height: 2;
