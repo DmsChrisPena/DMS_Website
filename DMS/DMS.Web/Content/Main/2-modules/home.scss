@@ -838,6 +838,9 @@ section#ourServices {
     font-family: "Roboto", sans-serif !important;
     font-weight: 500;
     font-size: 92px;
+    @media(min-width: 1700px) {
+
+    }
     color: #FFF;
 }
 
@@ -861,5 +864,8 @@ section#ourServices {
 }
 
 .slider-letters {
-    font-size: 3.8vw;
+    font-size: 64px;
+    @media(max-width: 1630px) {
+        font-size: 3.8vw;
+    }
 }

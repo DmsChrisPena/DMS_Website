@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #37474F;
-    border-top: 1px dashed rgba(#455A64, .8);
+    border: 1px solid rgba(#333, .2);
     color: white !important;
 
     .about-dms {
@@ -200,4 +200,20 @@
 section#footer-topbar {
     height: 30px;
     background-color: #263238;
+}
+
+section#subfooter {
+    border-top: 1px solid rgba(#777777, .40);
+    height: auto;
+    color: #777777;
+    text-align: center;
+    .md-button {
+        font-size: 12px;
+        font-weight: 500;
+        &:hover {
+            color: #FFF;
+            font-size: 14px;
+            transition: all .14s ease-in-out;
+        }    
+    }
 }

@@ -80,9 +80,13 @@
                     data-duration="2701"
                     data-effect="scalefrom(0.5,0.5,456,200)"
                     data-ease="easeOutExpo">
-                    D<span class="slider-letters">ata</span> M<span class="slider-letters">anagement</span> S<span class="slider-letters">olutions</span>
+                    D<span class="slider-letters" data-type="text">ata</span> M<span data-type="text" class="slider-letters">anagement</span> S<span data-type="text" class="slider-letters">olutions</span>
 </h2>
-                <p class="ms-layer header-content">
+                <p class="ms-layer header-content"
+                   data-delay="100"
+                    data-duration="2701"
+                    data-effect="scalefrom(0.5,0.5,456,200)"
+                    data-ease="easeOutExpo">
                     Lorem ipsum dolor sit amet, eleifend at urna suspendisse elit, duis id sociis malesuada eget, quam vitae adipiscing eu.
                     <br />
                     <md-button class="md-raised cta-slider" aria-label="Contact Us" ng-click="vm.openContactUs();">Contact Us Today</md-button>
@@ -106,6 +110,23 @@
                     DMS <br />
                     <span style="width: 20px;" class="solutionText">Solutions</span>
                 </h3>
+                <h2 class="ms-layer header-slider"
+                    data-type="text"
+                    data-delay="100"
+                    data-duration="2701"
+                    data-effect="scalefrom(0.5,0.5,456,200)"
+                    data-ease="easeOutExpo">
+                   Trading
+                </h2>
+                <p class="ms-layer header-content"
+                   data-delay="100"
+                    data-duration="2701"
+                    data-effect="scalefrom(0.5,0.5,456,200)"
+                    data-ease="easeOutExpo">
+                    Lorem ipsum dolor sit amet, eleifend at urna suspendisse elit, duis id sociis malesuada eget, quam vitae adipiscing eu.
+                    <br />
+                    <md-button class="md-raised cta-slider" aria-label="Contact Us" ng-click="vm.openContactUs();">Contact Us Today</md-button>
+                </p>
             </div>
             <div class="ms-slide">
                 <img src="../../../Content/masterslider/style/blank.gif" data-src="../../../Img/IndexSlider/swiper3.jpg" alt="lorem ipsum dolor sit" />
@@ -125,6 +146,23 @@
                     DMS <br />
                     <span style="width: 20px;" class="solutionText">Solutions</span>
                 </h3>
+                <h2 class="ms-layer header-slider"
+                    data-type="text"
+                    data-delay="100"
+                    data-duration="2701"
+                    data-effect="scalefrom(0.5,0.5,456,200)"
+                    data-ease="easeOutExpo">
+                    Accounting
+                </h2>
+                <p class="ms-layer header-content"
+                   data-delay="100"
+                    data-duration="2701"
+                    data-effect="scalefrom(0.5,0.5,456,200)"
+                    data-ease="easeOutExpo">
+                    Lorem ipsum dolor sit amet, eleifend at urna suspendisse elit, duis id sociis malesuada eget, quam vitae adipiscing eu.
+                    <br />
+                    <md-button class="md-raised cta-slider" aria-label="Contact Us" ng-click="vm.openContactUs();">Contact Us Today</md-button>
+                </p>
             </div>
             <div class="ms-slide">
                 <img src="../../../Content/masterslider/style/blank.gif" data-src="../../../Img/IndexSlider/swiper4.jpg" alt="lorem ipsum dolor sit" />
@@ -144,6 +182,23 @@
                     DMS <br />
                     <span style="width: 20px;" class="solutionText">Solutions</span>
                 </h3>
+                <h2 class="ms-layer header-slider"
+                    data-type="text"
+                    data-delay="100"
+                    data-duration="2701"
+                    data-effect="scalefrom(0.5,0.5,456,200)"
+                    data-ease="easeOutExpo">
+                    The Jews
+                </h2>
+                <p class="ms-layer header-content"
+                   data-delay="100"
+                    data-duration="2701"
+                    data-effect="scalefrom(0.5,0.5,456,200)"
+                    data-ease="easeOutExpo">
+                    Lorem ipsum dolor sit amet, eleifend at urna suspendisse elit, duis id sociis malesuada eget, quam vitae adipiscing eu.
+                    <br />
+                    <md-button class="md-raised cta-slider" aria-label="Contact Us" ng-click="vm.openContactUs();">Contact Us Today</md-button>
+                </p>
             </div>
         </div>
 </section>
@@ -162,7 +217,6 @@
 		    layout: 'fullwidth',
 			view: 'stack',
 			instantStartLayers: true,
-			autoplay: true,
             preload:0,
 			loop:true
 		});
@@ -181,11 +235,11 @@
         <md-card-content>
             <p class="text-center"><ng-md-icon icon="desktop_mac" style="fill: #3F51B5;" size="72"></ng-md-icon></p>
             <h2 class="md-title text-center" ui-sref="products({goTo: 'top'})">Products</h2>
-            <p>
+            <p class="text-center">
                 Trading. Logistics. Settlement. Connectivity. <br />
                 A complete gas management solution.
             </p>
-            <p>
+            <p class="text-center">
                 From two-user LDCs to 100+ user enterprise engagements, DMS provides all of our business partners with ETRM systems that fit their specific needs in seamless and robust ways.
             </p>
         </md-card-content>
@@ -197,10 +251,10 @@
         <md-card-content>
             <p class="text-center"><ng-md-icon icon="location_city" size="72" style="fill: #F44336;"></ng-md-icon></p>
                 <h2 class="md-title text-center" ui-sref="services({goTo: 'top'})">Services</h2>
-            <p>
+            <p class="text-center">
                 Looking to expand the reach of your business without expanding your in-house staff?
             </p>
-            <p>
+            <p class="text-center">
                 DMS provides consulting, implementation and front-to-back office services that allow you to minimize your liabilities and rapidly expand and maintain your business.
             </p>
         </md-card-content>
@@ -212,10 +266,10 @@
         <md-card-content>
             <p class="text-center"><ng-md-icon icon="local_library" size="72" style="fill: #009688;"></ng-md-icon></p>
                 <h2 class="md-title text-center" ui-sref="education({goTo: 'top'})">Education</h2>
-<p>
+<p class="text-center">
                 DMS staff have taught thousands of students at the undergraduate and graduate level the ins and outs of the industry while using our systems.
             </p>
-            <p>
+            <p class="text-center">
                 Our onsite seminars, regional conferences and online certification courses add value to your current personnel.
             </p>
         </md-card-content>
