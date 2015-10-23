@@ -43,7 +43,8 @@
                 controller: 'energyproController as vm'
             }).state('testimonials', { // testimonials pages
                 url: '/testimonials',
-                templateUrl: 'app/components/testimonials/testimonials.html'
+                templateUrl: 'app/components/testimonials/testimonials.html',
+                controller: 'testimonialsController as vm'
             });
     }
 

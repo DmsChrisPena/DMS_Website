@@ -17,6 +17,8 @@
         vm.openContactUs = function () {
             $mdSidenav('right').toggle();
         };
+
+        smoothScroll.scrollToTop();
     }
 
 })();

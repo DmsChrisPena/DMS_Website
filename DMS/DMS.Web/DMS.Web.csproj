@@ -263,6 +263,7 @@
     <Content Include="app\components\solutions\templates\comingSoonEnergyPro.html" />
     <Content Include="app\components\solutions\templates\comingSoonExecutiveView.html" />
     <Content Include="app\components\testimonials\testimonials.html" />
+    <Content Include="app\components\testimonials\testimonialsController.js" />
     <Content Include="App_Data\Email\CustomerMessage.txt" />
     <Content Include="App_Data\Email\HelpTeamMessage.txt" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
