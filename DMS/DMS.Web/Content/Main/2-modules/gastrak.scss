@@ -175,10 +175,12 @@ section#gastrak-overview {
     margin-left: auto;
     p {
         font-size: 14px;
+        padding-right: 20px;
     }
     h2 {
         @extend .section-header;
         font-size: 30px;
+        text-align: left !important;
     }
     h5 {
         width: 100%;
