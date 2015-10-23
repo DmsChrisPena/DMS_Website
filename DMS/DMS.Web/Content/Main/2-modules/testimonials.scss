@@ -31,14 +31,16 @@
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 1.5;
-                    font-style: italic;
                 }
                 md-card-content {
                     padding-top: 0px;
                     padding-left: 50px;
+                    &:nth-child(4) {
+                        font-style: italic;
+                    }
                     p {
                         &:nth-child(2) {
-                            padding-top: 0px;
+                            padding-top: 0px; 
                         }
                         margin: 0px;
                         padding-left: 5%;

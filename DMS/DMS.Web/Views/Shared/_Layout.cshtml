@@ -36,7 +36,7 @@
 
         @RenderBody()
 
-    <section id="md-footer">
+    <section id="md-footer" ng-controller="NavBarController as vm">
         <div class="container" layout="row" layout-wrap>
             <div flex="100" flex-gt-md="33" class="about-dms">
                 <div>
@@ -123,13 +123,13 @@
             </div>
         </div>
         <section id="subfooter">
-            <md-button>Home</md-button>
-            <md-button>Products</md-button>
-            <md-button>Services</md-button>
-            <md-button>Education</md-button>
-            <md-button>Testimonials</md-button>
-            <md-button>About</md-button>
-            <md-button>Contact Us</md-button>
+            <md-button ui-sref="index">Home</md-button>
+            <md-button ui-sref="products">Products</md-button>
+            <md-button ui-sref="services">Services</md-button>
+            <md-button ui-sref="education">Education</md-button>
+            <md-button ui-sref="testimonials">Testimonials</md-button>
+            <md-button ui-sref="about">About</md-button>
+            <md-button ui-sref="" ng-click="vm.openContactUs();">Contact Us</md-button>
         </section>
     </section>
 

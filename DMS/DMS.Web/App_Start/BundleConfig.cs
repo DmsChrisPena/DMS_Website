@@ -67,6 +67,7 @@ namespace DMS.Web
                       "~/app/components/solutions/productsController.js",
                       "~/app/components/solutions/gastrak/gastrakController.js",
                       "~/app/components/solutions/energypro/energyproController.js",
+                      "~/app/components/testimonials/testimonialsController.js",
                       "~/app/components/navbar/navBarController.js",
                       "~/Scripts/smoothScroll.js",
                       "~/Content/text-rotator/jquery.simple-text-rotator.js"));
