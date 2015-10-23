@@ -80,12 +80,12 @@
                     data-duration="2701"
                     data-effect="scalefrom(0.5,0.5,456,200)"
                     data-ease="easeOutExpo">
-                    Trading
-                </h2>
+                    D<span class="slider-letters">ata</span> M<span class="slider-letters">anagement</span> S<span class="slider-letters">olutions</span>
+</h2>
                 <p class="ms-layer header-content">
                     Lorem ipsum dolor sit amet, eleifend at urna suspendisse elit, duis id sociis malesuada eget, quam vitae adipiscing eu.
                     <br />
-                    <md-button class="md-raised" aria-label="Contact Us" ng-click="vm.openContactUs();">Contact Us For More Information</md-button>
+                    <md-button class="md-raised cta-slider" aria-label="Contact Us" ng-click="vm.openContactUs();">Contact Us Today</md-button>
                 </p>
             </div>
             <div class="ms-slide">
@@ -145,7 +145,6 @@
                     <span style="width: 20px;" class="solutionText">Solutions</span>
                 </h3>
             </div>
-
         </div>
 </section>
 <script type="text/javascript">
@@ -156,19 +155,16 @@
 		slider.control('arrows');
 		slider.control('bullets' , {autohide:false, align:'bottom', margin:10});
 
-		slider.setup('masterslider' , {
-			width: 1640,
-			height:800,
-			space:5,
+		slider.setup('masterslider', {
+		    width: 1600,    // slider standard width
+		    height: 800,   // slider standard height
+		    space: 1,
+		    layout: 'fullwidth',
 			view: 'stack',
 			instantStartLayers: true,
-			autplay: true,
+			autoplay: true,
+            preload:0,
 			loop:true
-		});
-		$(".rotate").textrotator({
-		    animation: "flipUp", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
-		    separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
-		    speed: 2000 // How many milliseconds until the next word show.
 		});
 </script>
 
@@ -321,13 +317,13 @@
         <h4>We meet the industry's current and coming needs head on.</h4>
     </div>
     <div flex="50" flex-md="100" flex-sm="100">
-        <img class="center-block img-responsive" src="../../../Img/BridgeTheGap_Final.png" alt="Alternate Text" />
-    </div>
-    <div flex="50" flex-md="100" flex-sm="100">
-        <h3>Here's how we help.</h3>
+        <h3 style="text-align: left;">Here's how we help.</h3>
         <p>Our ETRM products and services let you do more with less. We automate your current processes and allow you to significantly increase your business reach without equally increasing your in-house personnel.</p>
         <p>Our model serves where the industry is going, not where it has been. How solutions have historically been provided is unacceptable, and we're here to set new industry standards.</p>
         <p>Take a look at our <span ui-sref="products({goTo: 'top'})" style="cursor: pointer; color: #3F51B5; text-decoration: underline; font-weight: 500;">products</span>, <span ui-sref="services({goTo: 'top'})" style="cursor: pointer; color: #3F51B5; text-decoration: underline; font-weight: 500;">services</span> and <span ui-sref="education({goTo: 'top'})" style="cursor: pointer; color: #3F51B5; text-decoration: underline; font-weight: 500;">education</span> programs and see for yourself how we're setting new industry standards.</p>
+    </div>
+    <div flex="50" flex-md="100" flex-sm="100">
+        <img class="center-block img-responsive" src="../../../Img/BridgeTheGap_Final.png" alt="Alternate Text" />
     </div>
 </section>
 
