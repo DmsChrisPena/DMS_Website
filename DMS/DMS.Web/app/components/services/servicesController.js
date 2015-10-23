@@ -17,6 +17,9 @@
         else if (vm.goTo === "training") {
             smoothScroll.scrollTo('training-section', 100);
         }
+        else {
+            smoothScroll.scrollToTop();
+        }
     }
 
 })();

@@ -9,6 +9,8 @@
         vm.goToElement = function (eID){
             smoothScroll.scrollTo(eID, 50);
         };
+
+        smoothScroll.scrollToTop();
     }
 
 })();

@@ -1,7 +1,7 @@
 ﻿(function () {
-    angular.module("DMSApp").controller("productsController", ['$mdDialog', productsController]);
+    angular.module("DMSApp").controller("productsController", ['$mdDialog', 'smoothScroll', productsController]);
 
-    function productsController($mdDialog) {
+    function productsController($mdDialog, smoothScroll) {
         var vm = this;
 
         vm.comingEnergypro = comingEnergypro;
@@ -32,5 +32,7 @@
                 clickOutsideToClose: true
             });
         }
+
+        smoothScroll.scrollToTop();
     }
 })();
