@@ -178,11 +178,17 @@ section#gastrak-overview {
     p {
         font-size: 14px;
         padding-right: 20px;
+        @media(max-width: 600px) {
+            padding-left: 20px;
+        }
     }
     h2 {
         @extend .section-header;
         font-size: 30px;
         text-align: left !important;
+        @media(max-width: 600px) {
+            text-align: center !important;
+        }
     }
     h5 {
         width: 100%;
@@ -192,6 +198,9 @@ section#gastrak-overview {
         line-height: 1.5;
         font-size: 17px;
         margin: 0px;
+        @media(max-width: 600px) {
+            text-align: center !important;
+        }
     }
     .md-button {
         background-color: rgba(244,67,54, 0.8);
@@ -317,5 +326,13 @@ section#gastrak-compliance {
         color: #FFF !important;
         cursor: default !important;
         background-color: #3b4753 !important;
+    }
+}
+
+.sometimes-centered {
+    height: 350px;
+    @media(max-width: 600px) {
+        text-align: center;
+        height: auto !important;
     }
 }
