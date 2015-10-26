@@ -652,6 +652,7 @@
     <Content Include="Img\parallax-pipes.jpg" />
     <Content Include="Img\parallaxholder.jpg" />
     <Content Include="Img\parallaxholder_cropped.jpg" />
+    <Content Include="Img\pipelines.jpg" />
     <Content Include="Img\revchart.png" />
     <Content Include="Img\revolutionary.png" />
     <Content Include="Img\send.png" />
