@@ -89,6 +89,9 @@ section#hosted-products {
     padding-bottom: 30px;
     div {
         margin-left: 40%;
+        @media(max-width: 600px) {
+            margin-left: 14%;
+        }
     }
     h2 {
         font-size: 28px;
