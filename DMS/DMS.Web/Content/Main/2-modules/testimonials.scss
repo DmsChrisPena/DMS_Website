@@ -35,6 +35,9 @@
                 md-card-content {
                     padding-top: 0px;
                     padding-left: 50px;
+                    @media(max-width: 600px) {
+                        padding-left: 6px;
+                    }
                     &:nth-child(4) {
                         font-style: italic;
                     }
