@@ -259,6 +259,7 @@
     <Content Include="app\components\index\indexService.js" />
     <Content Include="app\components\index\index.html" />
     <Content Include="app\components\navbar\navBarController.js" />
+    <Content Include="app\components\navbar\sidenavNavbar.html" />
     <Content Include="app\components\services\services.html" />
     <Content Include="app\components\services\servicesController.js" />
     <Content Include="app\components\services\servicesService.js" />

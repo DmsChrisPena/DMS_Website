@@ -9,9 +9,13 @@
     @Scripts.Render("~/bundles/modernizr")
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
-<body>
+<body ng-controller="NavBarController as vm">
 
+<<<<<<< HEAD
     <md-toolbar ng-controller="NavBarController as vm" class="mobile-navbar">
+=======
+    <md-toolbar>
+>>>>>>> 903058773f12dbd612219ba5161a1da66a529a86
         <div class="navbar" layout="row">
             <ul flex="100">
                 <li>
@@ -32,6 +36,7 @@
         </div>
     </md-toolbar>
 
+<<<<<<< HEAD
     <md-toolbar ng-controller="NavBarController as vm" class="remove-display-mobile">
         <div class="my-navbar" layout="row">
             <ul flex="20">
@@ -44,11 +49,14 @@
         </div>
     </md-toolbar>
 
+=======
+    <div ng-include="'/app/components/navbar/sidenavNavbar.html'"></div>
+>>>>>>> 903058773f12dbd612219ba5161a1da66a529a86
     <div ng-include="'/app/components/contact/sidenavContactUs.html'"></div>
 
         @RenderBody()
 
-    <section id="md-footer" ng-controller="NavBarController as vm">
+    <section id="md-footer">
         <div class="container" layout="row" layout-wrap>
             <div flex="100" flex-gt-md="33" class="about-dms">
                 <div>
@@ -71,7 +79,7 @@
                     </li>
                 </ul>
             </div>
-            <div flex="100" flex-gt-md="33" layout="column">
+            <div flex="100" flex-gt-md="33">
                 <div flex="100" class="newsletter-footer">
                     <h4>Newsletter</h4>
                     <!-- Begin MailChimp Signup Form -->
@@ -144,7 +152,7 @@
             <md-button ui-sref="" ng-click="vm.openContactUs();">Contact Us</md-button>
         </section>
     </section>
-    <hamburger-toggle state="true"></hamburger-toggle>
+    <hamburger-toggle state="true" ng-click="vm.openNav();"></hamburger-toggle>
 
     @Scripts.Render("~/bundles/jquery")
 

@@ -10,9 +10,15 @@
             originatorEv = ev;
             $mdOpenMenu(ev);
         }
+        vm.openNav = function () {
+            $mdSidenav('left').toggle();
+        };
         vm.openContactUs = function () {
             $mdSidenav('right').toggle();
         };
+        vm.closeSideNav = function () {
+            $mdSidenav('left').toggle();
+        }
         vm.goToTop = function () {
             smoothScroll.scrollToTop();
         }

@@ -32,12 +32,12 @@
                                 <i class="fa fa-eraser"></i>
                             </md-button>
                         </div>
-                        <div layout="row" style="padding: 0px; text-align: left;">
-                            <md-input-container flex>
+                        <div layout="row" layout-wrap style="padding: 0px; text-align: left;">
+                            <md-input-container flex="50" flex-sm="100">
                                 <label>Name</label>
                                 <input ng-required="true" ng-model="vm.requestInfo.name" type="text" md-sidenav-focus>
                             </md-input-container>
-                            <md-input-container flex>
+                            <md-input-container flex="50" flex-sm="100">
                                 <label>Topic</label>
                                 <md-select ng-model="vm.requestInfo.topic">
                                     <md-option value="Products">Products</md-option>

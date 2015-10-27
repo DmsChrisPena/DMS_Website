@@ -61,8 +61,6 @@
   	margin-right: auto;
   	margin-left: auto;
 }
-
-
 md-toolbar {
     min-height: 44px;
     background-color: transparent !important;
@@ -283,7 +281,8 @@ md-toolbar {
     text-align: center;
 }
 
-.md-sidenav-right {
+.md-sidenav-left {
+    background-color: #fff;
     padding: 0px;
     text-align: left !important;
     min-width: 800px;
