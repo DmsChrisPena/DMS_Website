@@ -97,7 +97,7 @@ md-toolbar {
             text-align: center;
             margin: 0px;
             li {
-                display: inline-flex;
+                display: inline-flex !important;
                 color: rgba(255, 255, 255, 0.76);
                 font-size: 18px;
                 padding: 0px;
@@ -130,7 +130,7 @@ md-toolbar {
         }
         &:nth-child(1) {
             li {
-                display: inline-flex;
+                display: inline-flex !important;
                 .md-button {
                     color: rgba(0, 0, 0, 0.75);
                     margin: 0px;
@@ -196,7 +196,7 @@ md-toolbar {
             text-align: center;
             margin: 0px;
             li {
-                display: inline-flex;
+                display: inline-flex !important;
                 color: rgba(255, 255, 255, 0.76);
                 font-size: 18px;
                 padding: 0px;
@@ -231,7 +231,7 @@ md-toolbar {
         }
         &:nth-child(1) {
             li {
-                display: inline-flex;
+                display: inline-flex !important;
                 .md-button {
                     color: rgba(0, 0, 0, 0.75);
                     margin: 0px;
