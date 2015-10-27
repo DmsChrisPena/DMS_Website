@@ -138,8 +138,8 @@ namespace DMS.Data.Respositories
 
             // Add the message properties.
             myMessage.From = new MailAddress("DMSHelp@dmshouston.com", "DMS Online");
-            //string recipient = "DMSHelp@dmshouston.com";
-            string recipient = vm.Email;
+            string recipient = "DMSHelp@dmshouston.com";
+            //string recipient = vm.Email;
             myMessage.AddTo(recipient);
             myMessage.Subject = "New Online Request";
 
