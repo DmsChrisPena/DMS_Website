@@ -293,6 +293,10 @@
     <Content Include="Content\desktop-style\flat-display.png" />
     <Content Include="Content\desktop-style\ms-display-style.css" />
     <Content Include="Content\desktop-style\skin.png" />
+    <Content Include="Content\hamburger\angular-hamburger-toggle.css" />
+    <Content Include="Content\hamburger\angular-hamburger-toggle.js" />
+    <Content Include="Content\hamburger\angular-hamburger-toggle.min.css" />
+    <Content Include="Content\hamburger\angular-hamburger-toggle.min.js" />
     <Content Include="Content\laptopSlider\flat-laptop.png" />
     <Content Include="Content\laptopSlider\laptop.png" />
     <Content Include="Content\laptopSlider\ms-laptop-style.css" />
