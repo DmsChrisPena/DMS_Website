@@ -431,6 +431,10 @@ md-toolbar {
     @media (max-width: 600px) {
         margin-right: 90px;
     }
+    @media(max-width: 550px) {
+        margin-left: 100px;
+        margin-right: 0px;
+    }
     @media (max-width: 500px) {
         margin-right: 45px;
     }
@@ -439,11 +443,9 @@ md-toolbar {
     }
     @media (max-width: 400px) {
         margin-right: 5px;
-    @media(max-width: 550px) {
-        margin-left: 100px;
-        margin-right: 0px;
     }
 }
+
 .md-sidenav-right {
     a {
         font-size: 28px;
