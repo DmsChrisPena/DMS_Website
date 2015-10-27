@@ -9,9 +9,9 @@
     @Scripts.Render("~/bundles/modernizr")
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
-<body>
+<body ng-controller="NavBarController as vm">
 
-    <md-toolbar ng-controller="NavBarController as vm">
+    <md-toolbar>
         <div class="navbar" layout="row">
             <ul flex="100">
                 <li>
@@ -32,11 +32,12 @@
         </div>
     </md-toolbar>
 
+    <div ng-include="'/app/components/navbar/sidenavNavbar.html'"></div>
     <div ng-include="'/app/components/contact/sidenavContactUs.html'"></div>
 
         @RenderBody()
 
-    <section id="md-footer" ng-controller="NavBarController as vm">
+    <section id="md-footer">
         <div class="container" layout="row" layout-wrap>
             <div flex="100" flex-gt-md="33" class="about-dms">
                 <div>
@@ -132,7 +133,7 @@
             <md-button ui-sref="" ng-click="vm.openContactUs();">Contact Us</md-button>
         </section>
     </section>
-    <hamburger-toggle state="true"></hamburger-toggle>
+    <hamburger-toggle state="true" ng-click="vm.openNav();"></hamburger-toggle>
 
     @Scripts.Render("~/bundles/jquery")
 

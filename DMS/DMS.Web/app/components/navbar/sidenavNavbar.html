@@ -1,0 +1,25 @@
+﻿<style>
+    md-backdrop {
+        position: fixed;
+    }
+</style>
+<md-sidenav md-component-id="left" class="md-sidenav-left" style="padding: 40px; position: fixed;">
+    <section style="width: 100%; padding: 0px;" id="contactUs-sidenav" layout="row" layout-wrap>
+        <div flex="66">
+            <md-button ui-sref="index" ng-click="vm.closeSideNav();" aria-label="Home">
+                <img src="../../Img/shadowdmslogo_small2.png" class="center-block" alt="DMS Logo" />
+            </md-button>
+        </div>
+        <div flex="33">
+            <md-button class="md-fab md-mini" style="background-color: #D0372C;" ng-click="vm.closeSideNav();" aria-label="Close Contact Us"><i class="fa fa-times"></i></md-button>
+        </div>
+        <md-button flex="100" ui-sref="products" ng-click="vm.closeSideNav();">Products</md-button>
+        <md-button flex="100" aria-label="Open Services Page" ui-sref="services" ng-click="vm.closeSideNav();">Services</md-button>
+        <md-button flex="100" aria-label="Open Learn Page" ng-click="vm.closeSideNav();" ui-sref="education">Education</md-button>
+        <md-button flex="100" aria-label="Open about interactions menu" ng-click="vm.closeSideNav();" ui-sref="testimonials">Testimonials</md-button>
+        <md-button flex="100" aria-label="Open about interactions menu" ng-click="vm.closeSideNav();" ui-sref="about">About</md-button>
+        <a flex="100" class="md-button" aria-label="Home" ng-click="vm.openContactUs();">
+            <i class="fa fa-envelope"></i>
+        </a>
+    </section>
+</md-sidenav>
