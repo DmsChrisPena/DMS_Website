@@ -425,7 +425,11 @@ md-toolbar {
 
 .menu-logo {
     height: 100px;
-    margin-left: 100px;
+        margin-right: 110px;
+    @media(max-width: 550px) {
+        margin-left: 100px;
+        margin-right: 0px;
+    }
 }
 .md-sidenav-left {
     a {
