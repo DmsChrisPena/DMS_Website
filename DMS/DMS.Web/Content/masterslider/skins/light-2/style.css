@@ -7,7 +7,8 @@
 .ms-skin-light-2 .ms-video-btn{
 	width: 54px;
 	height: 54px;
-	background: url(light-skin-2.png) no-repeat -14px -150px;
+	background: url(
+        -2.png) no-repeat -14px -150px;
 	top: 50%;
 	left: 50%;
 	margin: -27px 0 0 -27px;
@@ -16,7 +17,7 @@
 .ms-skin-light-2 .ms-slide .ms-slide-vcbtn {
 	width: 27px;
 	height: 26px;
-	background: url(light-skin-2.png) no-repeat -24px -29px;
+	background: url(../../../Content/masterslider/skins/default/light-skin-2.png) no-repeat -24px -29px;
 	top: 30px;
 	right: 30px;
 }
@@ -26,7 +27,7 @@
 .ms-skin-light-2 .ms-nav-next,
 .ms-skin-light-2 .ms-nav-prev {
 	width: 53px;
-	background: url(light-skin-2.png);
+	background: url(../../../Content/masterslider/skins/default/light-skin-2.png);
 	background-position: -79px -19px;
 	height: 61px;
 	cursor: pointer;
@@ -182,7 +183,7 @@ only screen and (                min-resolution: 2dppx) {
 	.ms-skin-light-2 .ms-slide .ms-slide-vcbtn,
 	.ms-skin-light-2 .ms-nav-next,
 	.ms-skin-light-2 .ms-nav-prev{
-		background-image:url(light-skin-2-retina.png);
+		background-image:url(../../../Content/masterslider/skins/default/light-skin-2-retina.png);
 		background-size: 152px 225px;
 	}
 	
