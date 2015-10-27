@@ -330,9 +330,15 @@ section#gastrak-compliance {
 }
 
 .sometimes-centered {
-    height: 350px;
     @media(max-width: 600px) {
         text-align: center;
+        height: auto !important;
+    }
+}
+
+.height-issue {
+    height: 350px;
+    @media(max-width: 600px) {
         height: auto !important;
     }
 }

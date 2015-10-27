@@ -360,6 +360,9 @@ section#ourRevolution {
         padding: 0px;
         padding-right: 15%;
         padding-left: 15%;
+        @media(max-width: 600px) {
+            padding-left: 0px;
+        }
         &:nth-child(2) {
             li {
                 img {
