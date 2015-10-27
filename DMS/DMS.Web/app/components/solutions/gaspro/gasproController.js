@@ -19,7 +19,7 @@
         }
 
         vm.openContactUs = function () {
-            $mdSidenav('right').toggle();
+            $mdSidenav('left').toggle();
         };
 
         vm.goToProductionServices = goToProductionServices;

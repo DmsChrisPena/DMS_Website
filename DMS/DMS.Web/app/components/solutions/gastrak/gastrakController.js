@@ -15,7 +15,7 @@
         }
 
         vm.openContactUs = function () {
-            $mdSidenav('right').toggle();
+            $mdSidenav('left').toggle();
         };
     }
 
