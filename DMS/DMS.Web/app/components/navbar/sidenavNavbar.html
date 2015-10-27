@@ -5,12 +5,12 @@
 </style>
 <md-sidenav md-component-id="left" class="md-sidenav-left" style="padding: 40px; position: fixed;">
     <section style="width: 100%; padding: 0px;" id="contactUs-sidenav" layout="row" layout-wrap>
-        <div flex="66">
-            <md-button ui-sref="index" ng-click="vm.closeSideNav();" aria-label="Home">
-                <img src="../../Img/shadowdmslogo_small2.png" class="center-block" alt="DMS Logo" />
+        <div flex="90">
+            <md-button style="float: right;" ui-sref="index" ng-click="vm.closeSideNav();" aria-label="Home">
+                <img src="../../Img/shadowdmslogo_small2.png" class="center-block menu-logo" alt="DMS Logo" />
             </md-button>
         </div>
-        <div flex="33">
+        <div flex="10">
             <md-button class="md-fab md-mini" style="background-color: #D0372C;" ng-click="vm.closeSideNav();" aria-label="Close Contact Us"><i class="fa fa-times"></i></md-button>
         </div>
         <md-button flex="100" ui-sref="products" ng-click="vm.closeSideNav();">Products</md-button>
