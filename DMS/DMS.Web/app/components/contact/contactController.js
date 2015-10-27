@@ -17,11 +17,11 @@
         }
 
         function sendRequest() {
+            vm.sentForm = true;
             contactService.postRequest(vm.requestInfo).then(successRequest, failRequest);
         }
 
         function successRequest(data) {
-            vm.sentForm = true;
             vm.requestInfo = {};
         }
         function failRequest(data) {

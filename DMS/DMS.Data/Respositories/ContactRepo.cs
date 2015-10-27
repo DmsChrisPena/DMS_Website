@@ -65,14 +65,14 @@ namespace DMS.Data.Respositories
             SendGridMessage myMessage = new SendGridMessage();
 
             // Add the message properties.
-            myMessage.From = new MailAddress("DMSHelp@dmshouston.com", "The DMS Team");
+            myMessage.From = new MailAddress("DMSHelp@dmshouston.com", "Data Management Solutions");
             string recipient = vm.Email;
             myMessage.AddTo(recipient);
-            myMessage.Subject = "Thank You for Your Inquiry";
+            myMessage.Subject = "Thanks for Your Inquiry";
 
             //Add the HTML and Text bodies
             myMessage.Html = GetCustomerMessage(vm);
-            //myMessage.Text = "Hello World plain text!";
+            myMessage.Text = GetCustomerTextOnly(vm);
             //myMessage.AddAttachment(@"C:\file1.txt");
 
             // Create credentials, specifying your user name and password.
@@ -92,8 +92,32 @@ namespace DMS.Data.Respositories
 
             try
             {
-                message = File.ReadAllText("/Users/cpena1/documents/DMS_Website/DMS/DMS.Web/App_Data/Email/CustomerMessage.txt");
+                message = "Dear {{name}},<br/><br/>Thank you for your interest in DMS {{topic}}! We have received your inquiry and will respond as soon as possible.<br/><br/>Data Management Solutions";
+                
+                //message = File.ReadAllText("/Users/cpena1/documents/DMS_Website/DMS/DMS.Web/App_Data/Email/CustomerMessage.txt");
 
+                //message = File.ReadAllText("/DMS_Website/DMS/DMS.Web/App_Data/Email/CustomerMessage.txt");
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+
+            message = message.Replace("{{name}}", vm.Name);
+            message = message.Replace("{{topic}}", vm.Topic);
+
+            return message;
+        }
+
+        private string GetCustomerTextOnly(ContactRequestVM vm)
+        {
+            string message = null;
+
+            try
+            {
+                message = "Dear {{name}}, Thank you for your interest in DMS {{topic}}! We have received your inquiry and will respond as soon as possible. Thanks, Data Management Solutions";
+
+                //message = File.ReadAllText("/Users/cpena1/documents/DMS_Website/DMS/DMS.Web/App_Data/Email/CustomerMessage.txt");
                 //message = File.ReadAllText("/DMS_Website/DMS/DMS.Web/App_Data/Email/CustomerMessage.txt");
             }
             catch (Exception ex)
@@ -141,7 +165,8 @@ namespace DMS.Data.Respositories
 
             try
             {
-                message = File.ReadAllText("/Users/cpena1/documents/DMS_Website/DMS/DMS.Web/App_Data/Email/HelpTeamMessage.txt");
+                message = "DMS Team,<br/><br/>We have a new contact! Please respond to the message below. Remember <b>NOT</b> to hit reply to this message. Instead create a new message to the email address provided below. <br/>Thanks,<br/>DMS Online<br/><br/>Topic: {{topic}}<br/>Name: {{name}}<br/>Email: <a href='mailto:{{email}}?subject=Thanks for Your Inquiry'>{{email}}</a><br/>Message: {{message}}<br/>";
+                //message = File.ReadAllText("/Users/cpena1/documents/DMS_Website/DMS/DMS.Web/App_Data/Email/HelpTeamMessage.txt");
                 //message = File.ReadAllText("/DMS_Website/DMS/DMS.Web/App_Data/Email/HelpTeamMessage.txt");
             }
             catch (Exception ex)
