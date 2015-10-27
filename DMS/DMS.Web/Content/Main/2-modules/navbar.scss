@@ -291,3 +291,107 @@ md-toolbar {
         min-width: 100%;
     }
 }
+
+.remove-display-mobile {
+    @media(min-width: 700px) {
+        display: none;
+    }
+}
+.my-navbar {
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75) !important;
+    -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75) !important;
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75) !important;
+    height: 44px;
+    ul {
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        &:nth-child(1) {
+            text-align: center;
+            margin: 0px;
+            li {
+                display: inline;
+                color: rgba(255, 255, 255, 0.76);
+                font-size: 18px;
+                padding: 0px;
+                a {
+                    height: 44px !important;
+                    min-width: 40px !important;
+                }
+                .md-button {
+                    min-width: 30px !important;
+                    padding: 5px 40px 5px 40px;
+                    border-bottom: 3px solid transparent;
+                    transition: all .2s ease; 
+                    margin:0px;
+                    @media (min-width: 850px) {
+                        &:hover {
+                            img {
+                                height: 30px;
+                                -webkit-transition: all .2s;
+                            }
+                            border-bottom: 3px solid #009688;
+                        }
+                    }
+                }
+                img {
+                    @extend .center-block;
+                    height: 34px !important;
+                    margin: 0px;
+                    margin-top: 2px;
+                    -webkit-transition: all .2s;
+                    @media (max-width: 850px) {
+                        height: 20px;
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+        &:nth-child(1) {
+            li {
+                display: inline;
+                .md-button {
+                    color: rgba(0, 0, 0, 0.75);
+                    margin: 0px;
+                    font-weight: 500;
+                    height: 44px;
+                    padding: 5px 24px 1px 24px;
+                    /* HOVER OFF */
+                    border-bottom: 3px solid transparent;
+                    transition: border .2s ease;
+                    @media (max-width: 850px) {
+                        font-size: 12px;
+                        padding: 0px 12px 1px 12px;
+                        height: 10px;
+                    }
+                    &:hover {
+                        transition-duration: 2s;
+                        transition-timing-function: linear;
+                        transition: border .2s ease;  
+                        border-bottom: 3px solid #009688;
+                        color: black;
+                    }
+                }
+            }
+        }
+        &:nth-child(1) {
+            margin: 0px;
+            padding: 0px;
+            li {
+                display: inline;
+                .md-button {
+                    &:last-child {
+                        margin: 0px;
+                        color: rgba(0, 0, 0, 0.75);
+                        transition: all .2s ease;
+                        &:hover {
+                            font-size: 24px;
+                            color: black;
+                            transition: font-size .2s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

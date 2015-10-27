@@ -873,3 +873,10 @@ section#ourServices {
         font-size: 3.8vw;
     }
 }
+
+
+.mobile-navbar {
+    @media(max-width: 700px) {
+        display: none;
+    }
+}
