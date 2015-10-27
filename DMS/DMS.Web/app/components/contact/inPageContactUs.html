@@ -4,14 +4,8 @@
         <h4>Send us a quick message and we'll get in touch</h4>
     </div>
     <div flex="100" flex-gt-md="33">
-        <div layout="column">
-            <div flex="100">
-                <img style="margin-top: 50px;" class="img-responsive" src="../../../Img/cloud.png" alt="Cloud Solutions" />
-            </div>
-            <div flex="100">
-                <p>Don't hesitate to contact us for any questions or requests for demos. This goes straight to humans and we will reach out to you upon receipt shortly.</p>
-            </div>
-        </div>
+        <img style="margin-top: 50px;" class="img-responsive" src="../../../Img/cloud.png" alt="Cloud Solutions" />
+        <p>Don't hesitate to contact us for any questions or requests for demos. This goes straight to humans and we will reach out to you upon receipt shortly.</p>
     </div>
     <div flex="100" flex-gt-md="66">
         <md-card>
@@ -34,12 +28,12 @@
                             <i class="fa fa-eraser"></i>
                         </md-button>
                     </div>
-                    <div layout="row">
-                        <md-input-container flex>
+                    <div layout="row" layout-wrap>
+                        <md-input-container flex="50" flex-sm="100">
                             <label>Name</label>
                             <input ng-required="true" ng-model="vm.requestInfo.name" type="text">
                         </md-input-container>
-                        <md-input-container flex>
+                        <md-input-container flex="50" flex-sm="100">
                             <label>Topic</label>
                             <md-select ng-model="vm.requestInfo.topic">
                                 <md-option value="Products">Products</md-option>
