@@ -35,7 +35,8 @@ namespace DMS.Web
                       "~/Content/laptopSlider/ms-laptop-style.css",
                       "~/Content/masterslider/skins/black-2/style.css",
                       "~/Content/desktop-style/ms-display-style.css",
-                      "~/Content/text-rotator/simpletextrotator.css"));
+                      "~/Content/text-rotator/simpletextrotator.css",
+                      "~/Content/hamburger/angular-hamburger-toggle.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                       "~/Scripts/angular.js",
@@ -70,7 +71,8 @@ namespace DMS.Web
                       "~/app/components/testimonials/testimonialsController.js",
                       "~/app/components/navbar/navBarController.js",
                       "~/Scripts/smoothScroll.js",
-                      "~/Content/text-rotator/jquery.simple-text-rotator.js"));
+                      "~/Content/text-rotator/jquery.simple-text-rotator.js",
+                      "~/Content/hamburger/angular-hamburger-toggle.js"));
         }
     }
 }
