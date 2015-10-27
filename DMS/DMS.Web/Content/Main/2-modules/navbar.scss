@@ -196,7 +196,7 @@ md-toolbar {
             text-align: center;
             margin: 0px;
             li {
-                display: inline;
+                display: inline-flex;
                 color: rgba(255, 255, 255, 0.76);
                 font-size: 18px;
                 padding: 0px;
@@ -231,7 +231,7 @@ md-toolbar {
         }
         &:nth-child(1) {
             li {
-                display: inline;
+                display: inline-flex;
                 .md-button {
                     color: rgba(0, 0, 0, 0.75);
                     margin: 0px;
@@ -421,4 +421,16 @@ md-toolbar {
         display: none !important;
     }
 
+}
+
+.menu-logo {
+    height: 100px;
+    margin-left: 100px;
+}
+.md-sidenav-left {
+    a {
+        font-size: 28px;
+        font-weight: 300;
+        padding-top: 10px;
+    }
 }
