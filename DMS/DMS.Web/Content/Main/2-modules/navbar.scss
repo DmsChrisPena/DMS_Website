@@ -439,6 +439,9 @@ md-toolbar {
     }
     @media (max-width: 400px) {
         margin-right: 5px;
+    @media(max-width: 550px) {
+        margin-left: 100px;
+        margin-right: 0px;
     }
 }
 .md-sidenav-right {
