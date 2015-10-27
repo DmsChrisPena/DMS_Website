@@ -4,6 +4,13 @@
 	-webkit-font-smoothing: antialiased;
 }
 
+body {
+    @-moz-document url-prefix() {
+        min-height: 0%;
+        height: 0%;
+    }
+}
+
 .ms-tabs-slider .ms-view {
     background: #fff;
 }
