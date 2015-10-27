@@ -13,7 +13,7 @@
         vm.sendRequest = sendRequest;
 
         function closeSideNav() {
-            $mdSidenav('right').toggle();
+            $mdSidenav('left').toggle();
         }
 
         function sendRequest() {

@@ -11,13 +11,13 @@
             $mdOpenMenu(ev);
         }
         vm.openNav = function () {
-            $mdSidenav('left').toggle();
-        };
-        vm.openContactUs = function () {
             $mdSidenav('right').toggle();
         };
-        vm.closeSideNav = function () {
+        vm.openContactUs = function () {
             $mdSidenav('left').toggle();
+        };
+        vm.closeSideNav = function () {
+            $mdSidenav('right').toggle();
         }
         vm.goToTop = function () {
             smoothScroll.scrollToTop();
