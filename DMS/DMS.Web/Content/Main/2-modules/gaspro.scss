@@ -285,6 +285,10 @@ section#gaspro-features {
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: auto;
+    @media (max-width: 450px) {
+        background-position: 55% 46%;
+        background-attachment: scroll;
+    }
     .gaspro-overlay {
         height: 100%;
         width: 100%;    

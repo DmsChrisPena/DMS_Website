@@ -591,11 +591,17 @@ section#ourServices {
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: auto;
+    @media (max-width: 450px) {
+        background-attachment: scroll;
+    }
     .industry-overlay {
         height: 100%;
         width: 100%;
         background-color: rgba(#424242, .5);
         padding-bottom: 30px;
+        @media (max-width: 450px) {
+            padding-bottom: 20px;
+        }
         p {
             color: #fff;
             line-height: 2;
@@ -618,10 +624,6 @@ section#ourServices {
             @media (max-width: 529px) {
                 padding-top: 30px;
             }
-            @media (max-width: 447px) {
-                padding-top: 50px;
-                font-size: 16px;
-            }
         }
         p {
             &:first-child {
@@ -642,8 +644,10 @@ section#ourServices {
                     font-size: 16px !important;
                 }
                 @media (max-width: 450px) {
+                    padding-left: 10%;
+                    padding-right: 10%;
                     padding-top: 10px !important;
-                    font-size: 14px !important;
+                    font-size: 16px !important;
                 }
             }
             &:nth-child(2) {

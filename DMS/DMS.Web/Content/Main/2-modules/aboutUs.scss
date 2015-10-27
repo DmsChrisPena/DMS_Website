@@ -580,11 +580,15 @@ section#ourHistory {
 
 .industry-parallax {
     background-image: url(http://www.commendusa.com/uploads/media/oil-gas-industry_01.jpg);
+    background-color: rgba(0,150,136, 0.8);
     background-size: cover;
     background-position: 40% 46%;
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 300px;
+    @media (max-width: 450px) {
+        background-attachment: scroll;
+    }
     .industry-overlay {
         height: 100%;
         width: 100%;
@@ -614,7 +618,7 @@ section#ourHistory {
             }
             @media (max-width: 447px) {
                 padding-top: 50px;
-                font-size: 16px;
+                font-size: 17px;
             }
         }
     }
