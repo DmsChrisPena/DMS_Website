@@ -1,8 +1,9 @@
 ﻿section#gaspro-header-pic {
 	text-align:center;
-    background-color: $teal;
+    background-color: rgba(8, 53, 123, 0.8);
 	background-size: cover;
     background-image: url(../../../Img/oil2.jpg);
+    background-position: center 25%;
     /*background-position: center center;
     background-repeat: no-repeat;*/
 	/*background-attachment:fixed;*/
@@ -371,7 +372,6 @@ section#customization {
         margin-top: 20px;
     }
 }
-
 
 section#train-implement-cloud {
     margin-top: 30px;

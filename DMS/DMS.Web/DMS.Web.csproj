@@ -338,6 +338,7 @@
     <Content Include="Content\masterslider\jquery.min.js" />
     <Content Include="Content\masterslider\masterslider.js" />
     <Content Include="Content\masterslider\masterslider.min.js" />
+    <Content Include="Content\masterslider\masterslider.min.js.map" />
     <Content Include="Content\masterslider\skins\black-1\black-skin-1-retina.png" />
     <Content Include="Content\masterslider\skins\black-1\black-skin-1.png" />
     <Content Include="Content\masterslider\skins\black-1\style.css" />
@@ -831,13 +832,14 @@
     <Content Include="Content\Main\2-modules\testimonials.scss" />
     <Content Include="Content\Main\2-modules\services.scss" />
     <Content Include="Content\Main\2-modules\gastrak.scss" />
-    <Content Include="Content\masterslider\masterslider.min.js.map" />
     <Content Include="Content\Main\2-modules\gaspro.scss" />
     <Content Include="Metadata\deploymentTemplates\apiappconfig.azureresource.json" />
     <Content Include="apiapp.json" />
     <Content Include="Img\gaspro\masterslider\masterslider.min.js.map" />
     <Content Include="Img\IndexSlider\HomeSlider2.ai" />
     <Content Include="Img\IndexSlider\indexSliderWheel.ai" />
+    <Content Include="Content\masterslider\.DS_Store" />
+    <Content Include="Content\masterslider\skins\.DS_Store" />
     <None Include="Properties\PublishProfiles\dmshouston.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
