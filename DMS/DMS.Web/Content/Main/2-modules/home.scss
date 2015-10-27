@@ -367,6 +367,11 @@ section#ourRevolution {
             li {
                 img {
                     width: 50px;
+                    @media screen and (-webkit-min-device-pixel-ratio:0) {
+                        padding: 0px;
+                        margin-top: 8px;
+                        margin-bottom: 8px;
+                    }
                     padding: 8px;
                 }
             }

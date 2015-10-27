@@ -10,12 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body ng-controller="NavBarController as vm">
-
-<<<<<<< HEAD
-    <md-toolbar ng-controller="NavBarController as vm" class="mobile-navbar">
-=======
-    <md-toolbar>
->>>>>>> 903058773f12dbd612219ba5161a1da66a529a86
+    <md-toolbar class="mobile-navbar">
         <div class="navbar" layout="row">
             <ul flex="100">
                 <li>
@@ -25,8 +20,8 @@
                     <md-button ui-sref="products">Products</md-button>
                     <md-button aria-label="Open Services Page" ui-sref="services">Services</md-button>
                     <md-button aria-label="Open Learn Page" ui-sref="education">Education</md-button>
-                    <md-button aria-label="Open about interactions menu" ng-click="" ui-sref="testimonials">Testimonials</md-button>
-                    <md-button aria-label="Open about interactions menu" ng-click="" ui-sref="about">About</md-button>
+                    <md-button aria-label="Open about interactions menu" ui-sref="testimonials">Testimonials</md-button>
+                    <md-button aria-label="Open about interactions menu" ui-sref="about">About</md-button>
                     <a class="md-button" aria-label="Home" ng-click="vm.openContactUs();">
                         <i class="fa fa-envelope"></i>
                     </a>
@@ -36,8 +31,7 @@
         </div>
     </md-toolbar>
 
-<<<<<<< HEAD
-    <md-toolbar ng-controller="NavBarController as vm" class="remove-display-mobile">
+    <md-toolbar class="remove-display-mobile">
         <div class="my-navbar" layout="row">
             <ul flex="20">
                 <li>
@@ -49,9 +43,7 @@
         </div>
     </md-toolbar>
 
-=======
     <div ng-include="'/app/components/navbar/sidenavNavbar.html'"></div>
->>>>>>> 903058773f12dbd612219ba5161a1da66a529a86
     <div ng-include="'/app/components/contact/sidenavContactUs.html'"></div>
 
         @RenderBody()
