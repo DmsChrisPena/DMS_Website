@@ -434,7 +434,7 @@
 <div ng-include="'/app/components/contact/sidenavContactUs.html'"></div>
 
 <div id="sticky-header" style="width: 100%; height: 0px;" layout="row" ng-controller="NavBarController as vm">
-    <ul flex="100" id="stick-ul2">
+    <ul class="mobile-home2" flex="100" id="stick-ul2">
         <li>
             <md-button href="" ng-click="vm.goToTop();" aria-label="Home">
                 <img src="../../../Img/shadowdmslogo_small2.png" class="center-block" alt="DMS Logo" />
@@ -449,7 +449,22 @@
             </a>
         </li>
     </ul>
+    <ul layout="row" class="mobile-home1" layout-align="space-between center">
+        <li>
+            <md-button ui-sref="index" aria-label="Home">
+                <img src="../../../Img/shadowdmslogo_small2.png" style="margin-left: 12px;" class="center-block" alt="DMS Logo" />
+            </md-button>
+        </li>
+        <li>
+        </li>
+        <li>
+            <md-button ui-sref="index" aria-label="Hamburger" ng-click="vm.openNav();">
+                <i class="fa fa-bars" style="font-size: 28px; padding-top: 10px; padding-right: 12px;"></i>
+            </md-button>
+        </li>
+    </ul>
 </div>
+
 <script>
         $("#stick-ul1").hide();
         $("#stick-ul2").hide();
