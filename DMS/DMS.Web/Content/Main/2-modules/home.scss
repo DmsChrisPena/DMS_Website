@@ -590,13 +590,14 @@ section#ourServices {
 }
 
 .index-industry-parallax {
-    background-image: url(../../Img/pipelines.jpg);
+    background-image: url(../../Img/index/pipelines.jpg);
     background-size: cover;
     background-position: 40% 46%;
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: auto;
     @media (max-width: 450px) {
+        background-image: url(../../Img/index/m-pipelines.jpg);
         background-attachment: scroll;
     }
     .industry-overlay {

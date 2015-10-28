@@ -7,7 +7,7 @@
         var vm = this;
 
         vm.openContactUs = function () {
-            $mdSidenav('right').toggle();
+            $mdSidenav('left').toggle();
         };
 
         smoothScroll.scrollToTop();

@@ -689,6 +689,8 @@
     <Content Include="Img\gastrakImages\Reporting.PNG" />
     <Content Include="Img\gastrakImages\Scheduling.PNG" />
     <Content Include="Img\gastrakImages\slider\GasTrak1.png" />
+    <Content Include="Img\gastrakImages\slider\GasTrak2.png" />
+    <Content Include="Img\gastrakImages\slider\GasTrak3.png" />
     <Content Include="Img\gastrakImages\slider\GasTrak_01.PNG" />
     <Content Include="Img\gastrakImages\sourceInfo.PNG" />
     <Content Include="Img\gastrakImages\Trading.PNG" />
@@ -823,6 +825,7 @@
     <Content Include="Img\testimonials\05.jpg" />
     <Content Include="Img\testimonials\calculator.png" />
     <Content Include="Img\testimonials\cloud.png" />
+    <Content Include="Img\testimonials\implementation.png" />
     <Content Include="Img\testimonials\letter.png" />
     <Content Include="Img\testimonials\life-preserver.png" />
     <Content Include="Img\testimonials\merit-ribbon.png" />
