@@ -16,8 +16,8 @@
                 <md-card-content layout-padding>
                     <div ng-show="vm.sentForm" style="align-content:center;">
                         <h2 class="section-header text-center">Thank you for contacting us!</h2>
-                        <h4 class="section-subheader text-center">We will get back with you shortly.</h4>
                         <img src="../../../Img/contact/logo.png" style="margin-top: 20px;" class="center-block contact-us-logo" alt="DMS Logo">
+                        <h4 class="section-subheader text-center">We will get back with you shortly.</h4>
                     </div>
                     <form name="home-contact-us" ng-hide="vm.sentForm">
                         <div class="md-actions" layout="row" layout-align="space-between center">
@@ -57,13 +57,16 @@
                             <textarea ng-required="true" ng-model="vm.requestInfo.message" rows="3" columns="5" md-maxlength="1000"></textarea>
                         </md-input-container>
                     </form>
+                    <p ng-repeat="error in vm.errorRequest" style="text-align: center; color: #F44336; font-size: 14px;">
+                        {{error}}
+                    </p>
                     <div class="md-actions" layout="row" layout-align="space-between center" ng-hide="vm.sentForm">
                         <div></div>
-                        <md-button>
+                        <md-button ng-click="vm.sendRequest();">
                             <md-tooltip>
                                 Send Message
                             </md-tooltip>
-                            <img ng-click="vm.sendRequest();" class="center-block img-responsive" style="height: 65px;" src="../../../Img/contact/send.png" alt="Alternate Text" />
+                            <img class="center-block img-responsive" style="height: 65px;" src="../../../Img/contact/send.png" alt="Alternate Text" />
                             <!--<i class="fa fa-paper-plane"></i>-->
                         </md-button>
                         <div>

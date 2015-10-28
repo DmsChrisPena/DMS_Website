@@ -8,7 +8,15 @@
         vm.topics = {};
         vm.requestInfo = {};
         vm.sentForm = false;
-        
+        vm.errorRequest = [];
+        Object.size = function (obj) {
+            var size = 0, key;
+            for (key in obj) {
+                if (obj.hasOwnProperty(key)) size++;
+            }
+            return size;
+        };
+
         vm.closeSideNav = closeSideNav;
         vm.sendRequest = sendRequest;
 
@@ -17,15 +25,25 @@
         }
 
         function sendRequest() {
-            vm.sentForm = true;
+            if (vm.requestInfo.topic != undefined && vm.requestInfo.email != undefined) {
+                vm.sentForm = true;
+                vm.errrorRequest = [];
+            }
+
             contactService.postRequest(vm.requestInfo).then(successRequest, failRequest);
+
         }
 
         function successRequest(data) {
             vm.requestInfo = {};
         }
         function failRequest(data) {
-            vm.requestInfo = {};
+            var modelObj = data.modelState;
+            vm.errorRequest = [];
+            for (i = 0; i < Object.size(modelObj); i++) {
+                console.log(modelObj[Object.keys(modelObj)[i]][0]);
+                vm.errorRequest.push(modelObj[Object.keys(modelObj)[i]][0]);
+            }
         }
     }
 

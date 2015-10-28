@@ -1,14 +1,11 @@
 ﻿body, html {
+    @-moz-document url-prefix() {
+        min-height: 0% !important;
+        height: 0% !important;
+    }
 	font-family: "Roboto", sans-serif !important;
 	background-color: white;
 	-webkit-font-smoothing: antialiased;
-}
-
-body {
-    @-moz-document url-prefix() {
-        min-height: 0%;
-        height: 0%;
-    }
 }
 
 .ms-tabs-slider .ms-view {
