@@ -33,7 +33,7 @@
             }).success(function (result) {
                 deferred.resolve();
             }).error(function (result) {
-                deferred.reject();
+                deferred.reject(result);
             });
 
             return deferred.promise;

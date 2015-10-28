@@ -1,62 +1,4 @@
-﻿/*.md-topbar {
-    min-height: 30px !important;
-    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 1px 4px rgba(0,0,0,0.3);
-    box-shadow: none;
-    color: rgba(255, 255, 255, 0.76);
-    .topbar {
-        height: 30px;
-        background-color: $primary-8;
-        font-size: 12px;
-        ul.left {
-            padding-left: 7%;
-            margin-top: 6px;
-            text-align: left;
-            li {
-                display: inline;
-                text-transform: uppercase;
-                a {
-                    color: rgba(255, 255, 255, 0.76);
-                    text-decoration: none;
-                    border-bottom: 0px solid cyan;
-                    padding-bottom: 8px;
-                    font-size: 12px;
-                    transition: font-size .2s ease;
-                    &:hover {
-                        transition-duration: 2s;
-                        transition-timing-function: linear;
-                        transition: font-size .2s ease;
-                        color: white; 
-                        font-size: 16px;
-                    }
-                }
-            }
-        }
-        ul.right {
-            margin-top: 6px;
-            text-align: right;
-            padding-right: 7%;
-            li {
-                display: inline;
-                text-transform: uppercase;
-                a {
-                    border-bottom: 0px solid black;
-                    transition: border .2s ease;
-                    &:hover {
-                        transition-duration: 2s;
-                        transition-timing-function: linear;
-                        transition: border .2s ease;  
-                        transition: width 0.25s, top 0.2s;
-                        border-bottom: 2px solid $secondary-A2;
-                        color: white;
-                    }
-                }
-            }
-        }
-    }
-}*/
-
-.center-block {
+﻿.center-block {
   	display: block;
   	margin-right: auto;
   	margin-left: auto;
@@ -451,4 +393,5 @@ md-toolbar {
         padding-top: 10px;
     }
     min-width: 100%;
+}
 }

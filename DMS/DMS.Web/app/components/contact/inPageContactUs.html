@@ -10,7 +10,7 @@
     <div flex="100" flex-gt-md="66">
         <md-card>
             <md-card-content layout-padding>
-                <div ng-show="vm.sentForm" class="animated slideInRight">
+                <div ng-show="vm.sentForm">
                     <h2 class="section-header text-center">Thank you for contacting us!</h2>
                     <h4 class="section-subheader text-center">We will get back with you shortly.</h4>
                     <img src="../../../Img/shadowdmslogo_small2.png" style="margin-top: 20px;" class="center-block" alt="DMS Logo">
@@ -53,13 +53,16 @@
                         <textarea ng-required="true" ng-model="vm.requestInfo.message" rows="3" columns="5" md-maxlength="1000"></textarea>
                     </md-input-container>
                 </form>
+                <p ng-repeat="error in vm.errorRequest" style="text-align: center; color: #F44336; font-size: 14px;">
+                    {{error}}
+                </p>
                 <div class="md-actions" layout="row" layout-align="space-between center" ng-hide="vm.sentForm">
                     <div></div>
-                    <md-button>
+                    <md-button ng-click="vm.sendRequest();">
                         <md-tooltip>
                             Send Message
                         </md-tooltip>
-                        <img ng-click="vm.sendRequest();" class="center-block img-responsive" style="height: 50px;" src="../../../Img/send.png" alt="Alternate Text" />
+                        <img class="center-block img-responsive" style="height: 50px;" src="../../../Img/send.png" alt="Alternate Text" />
                         <!--<i class="fa fa-paper-plane"></i>-->
                     </md-button>
                     <div class="sincerely">
