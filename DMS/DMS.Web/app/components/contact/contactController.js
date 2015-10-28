@@ -16,7 +16,7 @@
             }
             return size;
         };
-        
+
         vm.closeSideNav = closeSideNav;
         vm.sendRequest = sendRequest;
 
@@ -27,6 +27,7 @@
         function sendRequest() {
             if (vm.requestInfo.topic != undefined && vm.requestInfo.email != undefined) {
                 vm.sentForm = true;
+                vm.errrorRequest = [];
             }
 
             contactService.postRequest(vm.requestInfo).then(successRequest, failRequest);
