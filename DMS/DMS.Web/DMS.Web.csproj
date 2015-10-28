@@ -737,6 +737,8 @@
     <Content Include="Img\skin.png" />
     <Content Include="Img\Slide_show_1_imagem.jpg" />
     <Content Include="Img\solution-bg2-overlay.png" />
+    <Content Include="Img\svg\logo.svg" />
+    <Content Include="Img\svg\send.svg" />
     <Content Include="Img\tech3.jpg" />
     <Content Include="Img\templateSlider\1.jpg" />
     <Content Include="Img\templateSlider\2.jpg" />
