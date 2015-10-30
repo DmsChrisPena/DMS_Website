@@ -16,5 +16,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/DmsChrisPena/DMS_Website.git"
+  },
+  "dependencies": {
+    "gulp-install": "^0.6.0"
   }
 }
