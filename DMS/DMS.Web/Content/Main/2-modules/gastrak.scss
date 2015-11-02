@@ -252,8 +252,9 @@ section#gastrak-features {
 
     md-card {
         @extend .card-shadow;
-        &:nth-child(1) {
-
+        img {
+            max-width:inherit;
+            max-height: 330px;
         }
     }
 
