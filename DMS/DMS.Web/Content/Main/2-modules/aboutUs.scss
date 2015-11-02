@@ -794,6 +794,9 @@ section#university {
     }
     .picture {
         padding-top: 5%;
+        md-card {
+            max-height: 495px;
+        }
     }
 }
 
