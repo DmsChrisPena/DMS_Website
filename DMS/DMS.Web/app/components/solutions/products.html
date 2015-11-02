@@ -7,11 +7,19 @@
         <img src="../../../Img/products/navbar/gastrak.svg" alt="GasTrak" />
         <p>GasTrak</p>
     </md-button>
-    <md-button class="animated fadeIn" href="" ng-click="vm.comingEnergypro($event)">
+    <md-button class="animated fadeIn not-firefox" ui-sref="" ng-click="vm.comingEnergypro($event)">
         <img src="../../../Img/products/navbar/energypro.svg" alt="EnergyPro" />
         <p>EnergyPro</p>
     </md-button>
-    <md-button class="animated fadeIn" href="" ng-click="vm.comingExecView($event)">
+    <md-button class="animated fadeIn not-firefox" ui-sref="" ng-click="vm.comingExecView($event)">
+        <img src="../../../Img/products/navbar/executiveview.svg" alt="Executive View" />
+        <p>Executive View</p>
+    </md-button>
+    <md-button class="animated fadeIn firefox-display" ui-sref="" ng-click="vm.firefoxAlert()">
+        <img src="../../../Img/products/navbar/energypro.svg" alt="EnergyPro" />
+        <p>EnergyPro</p>
+    </md-button>
+    <md-button class="animated fadeIn firefox-display" ui-sref="" ng-click="vm.firefoxAlert()">
         <img src="../../../Img/products/navbar/executiveview.svg" alt="Executive View" />
         <p>Executive View</p>
     </md-button>
@@ -87,9 +95,13 @@
                     Coming Soon - 2017
                 </p>
             </md-card-content>
-            <div class="md-actions" layout="row" layout-align="center center">
+            <div class="md-actions not-firefox" layout="row" layout-align="center center">
                 <md-button ng-click="vm.comingEnergypro($event)" class="md-raised md-primary">Learn More</md-button>
             </div>
+            <div class="md-actions firefox-display-button" layout="row" layout-align="center center">
+                <md-button ng-click="vm.firefoxAlert()" class="md-raised md-primary">Learn More</md-button>
+            </div>
+
         </md-card>
     </div>
     <div flex="25" flex-md="100" flex-sm="100" class="executiveView-card animated slideInUp">
@@ -103,8 +115,11 @@
 
                 </p>
             </md-card-content>
-            <div class="md-actions" layout="row" layout-align="center center">
+            <div class="md-actions not-firefox" layout="row" layout-align="center center">
                 <md-button ng-click="vm.comingExecView($event)" class="md-raised md-primary">Learn More</md-button>
+            </div>
+            <div class="md-actions firefox-display-button" layout="row" layout-align="center center">
+                <md-button ng-click="vm.firefoxAlert()" class="md-raised md-primary">Learn More</md-button>
             </div>
         </md-card>
     </div>

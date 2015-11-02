@@ -7,6 +7,7 @@
         vm.comingEnergypro = comingEnergypro;
         vm.comingExecView = comingExecView;
         vm.closeModal = closeModal;
+        vm.firefoxAlert = firefoxAlert;
 
         function closeModal($event) {
             if ($event) {
@@ -33,6 +34,10 @@
                 targetEvent: ev,
                 clickOutsideToClose: true
             });
+        }
+
+        function firefoxAlert() {
+            alert("This product is coming soon!");
         }
 
         smoothScroll.scrollToTop();
