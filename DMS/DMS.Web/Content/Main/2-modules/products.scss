@@ -160,17 +160,21 @@ section#product-overview {
 }
 
 .firefox-display {
-    display: none;
+    display: none !important;
+}
+
+.firefox-display-button {
+    display: none !important;
 }
 
 @-moz-document url-prefix() {
     .firefox-display {
         display: inline-block !important;
     }
-    .not-firefox {
-        display: none;
-    }
     .not-firefox-button {
         display: inline-flex !important;
+    }
+    .not-firefox {
+        display: none !important;
     }
 }
