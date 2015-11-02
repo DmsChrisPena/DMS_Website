@@ -178,3 +178,9 @@ section#product-overview {
         display: none !important;
     }
 }
+
+.md-tab-label {
+    flex: 1 1 auto !important;
+    z-index: 100 !important;
+    opacity: 1 !important;
+}
