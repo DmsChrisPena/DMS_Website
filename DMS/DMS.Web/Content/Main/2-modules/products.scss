@@ -158,3 +158,19 @@ section#product-overview {
     .executiveview-card {
     }
 }
+
+.firefox-display {
+    display: none;
+}
+
+@-moz-document url-prefix() {
+    .firefox-display {
+        display: inline-block !important;
+    }
+    .not-firefox {
+        display: none;
+    }
+    .not-firefox-button {
+        display: inline-flex !important;
+    }
+}
