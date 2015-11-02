@@ -17,6 +17,7 @@
 
         function comingEnergypro(ev) {
             $mdDialog.show({
+                controller: "productsController as vm",
                 templateUrl: 'App/components/solutions/templates/comingSoonEnergyPro.html',
                 parent: angular.element(document.body),
                 targetEvent: ev,
@@ -26,6 +27,7 @@
 
         function comingExecView(ev) {
             $mdDialog.show({
+                controller: "productsController as vm",
                 templateUrl: 'App/components/solutions/templates/comingSoonExecutiveView.html',
                 parent: angular.element(document.body),
                 targetEvent: ev,
