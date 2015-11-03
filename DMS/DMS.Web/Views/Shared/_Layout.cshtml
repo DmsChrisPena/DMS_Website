@@ -51,10 +51,10 @@
         </div>
     </md-toolbar>
 
+    @RenderBody()
+
     <div ng-include="'/app/components/navbar/sidenavNavbar.html'"></div>
     <div ng-include="'/app/components/contact/sidenavContactUs.html'"></div>
-
-        @RenderBody()
 
     <section id="md-footer">
         <div class="container" layout="row" layout-wrap>
