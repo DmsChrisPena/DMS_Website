@@ -66,3 +66,16 @@ body, html {
     -webkit-box-direction: normal; 
     -webkit-box-orient: vertical; 
 }
+
+@media all and (-ms-high-contrast: none) {
+    md-tabs-canvas.md-center-tabs {
+        // This is normally 'center' but we need to turn it off so the tabs aren't invisible.
+        text-align: left;
+    }
+
+    // The following correctly aligns the tabs to the center.
+    md-pagination-wrapper.md-center-tabs {
+        width: 100%;
+        text-align: center;
+    }
+}

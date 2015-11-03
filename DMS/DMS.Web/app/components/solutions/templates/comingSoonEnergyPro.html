@@ -1,8 +1,8 @@
-﻿<md-dialog aria-label="Coming Soon" ng-cloak ng-controller="productsController as vm">
+﻿<md-dialog aria-label="Coming Soon" ng-cloak>
     <div style="background-color: rgb(63,81,181); height: auto;">
         <p class="section-header text-center" style="color: white; font-size: 22px;">EnergyPro Coming Soon</p>
     </div>
-    <md-dialog-content style="max-width:400px;max-height:610px; ">
+    <md-dialog-content style="max-width:400px; max-height:610px;">
         <div>
             <img src="../../../../Img/products/energypro.svg" class="img-responsive center-block" style="height: 100px;" alt="Alternate Text" />
             <p class="para-content">
@@ -28,13 +28,12 @@
                         <div class="md-actions" layout="row" layout-align="center center">
                             <div class="clear"><input ng-click="vm.closeModal()" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button md-button md-raised md-primary"></div>
                             <div></div>
-                            <md-button ng-click="vm.closeModal($event)" class="md-raised">Close</md-button>
+                            <md-button ng-click="vm.closeModal($event);" class="md-raised">Close</md-button>
                         </div>
 
                     </div>
                 </form>
             </div>
-
             <!--End mc_embed_signup-->
         </div>
     </md-dialog-content>

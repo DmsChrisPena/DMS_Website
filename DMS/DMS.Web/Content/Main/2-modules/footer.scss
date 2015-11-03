@@ -151,7 +151,7 @@
        padding: 0px;
        @extend .text-center;
        li {
-           a {
+           span {
                color: white;
                padding: 2px 4px;
                font-size: 24px;
@@ -159,42 +159,42 @@
            list-style-type: none;
            display: inline-block;
            &:nth-child(1) {
-               a {
+               span {
                    &:hover {
                     color: #3B5998;
                    }
                }
            }
            &:nth-child(2) {
-               a {
+               span {
                     &:hover {
                         color: #659FCB;
                     }
                  }
            }
            &:nth-child(3) {
-               a {
+               span {
                    &:hover {
                         color: #007AB9;
                     }
                }
            }
            &:nth-child(4) {
-               a {
+               span {
                    &:hover {
                         color: #DD5144;
                     }
                }
            }
            &:nth-child(5) {
-               a {
+               span {
                    &:hover {
                         color: #DD4F43;
                     }
                }
            }
            &:nth-child(6) {
-               a {
+               span {
                    &:hover {
                         color: #CB2027;
                     }
