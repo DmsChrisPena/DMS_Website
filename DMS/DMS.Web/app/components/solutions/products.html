@@ -87,7 +87,8 @@
     </div>
     <div flex="25" flex-md="100" flex-sm="100" class="energypro-card animated slideInUp">
         <md-card>
-            <img class="img-responsive animated fadeIn change-cursor" src="../../../Img/products/energypro.svg" alt="Alternate Text" />
+            <img ng-click="vm.comingEnergypro($event)" class="img-responsive animated fadeIn change-cursor not-firefox" src="../../../Img/products/energypro.svg" alt="Alternate Text" />
+            <img ng-click="vm.firefoxAlert()" class="img-responsive animated fadeIn change-cursor firefox-display-button" src="../../../Img/products/energypro.svg" alt="Alternate Text" />
             <md-card-content>
                 <h2 class="md-title">EnergyPro</h2>
                 <p>
@@ -106,7 +107,8 @@
     </div>
     <div flex="25" flex-md="100" flex-sm="100" class="executiveView-card animated slideInUp">
         <md-card>
-            <img class="img-responsive animated fadeIn change-cursor" src="../../../Img/products/executiveview.svg" alt="Alternate Text" />
+            <img ng-click="vm.comingExecView($event)" class="img-responsive animated fadeIn change-cursor not-firefox" src="../../../Img/products/executiveview.svg" alt="Alternate Text" />
+            <img ng-click="vm.firefoxAlert()" class="img-responsive animated fadeIn change-cursor firefox-display-button" src="../../../Img/products/executiveview.svg" alt="Alternate Text" />
             <md-card-content>
                 <h2 class="md-title">Executive View</h2>
                 <p>
