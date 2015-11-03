@@ -569,10 +569,6 @@ section#ourHistory {
             color: #666666;
             font-size: 16px;
         }
-
-        .founding {
-
-        }
         .founder {
             &:nth-child(3) {
                 line-height: 2.5 !important;
@@ -590,6 +586,33 @@ section#ourHistory {
         .today {
 
         }
+    }
+}
+
+.founding {
+    padding-left: 60px;
+    @media(max-width: 700px) {
+        padding-left: 20px;
+    }
+    h4 {
+        border-bottom: 1px solid #eeeeee;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-weight: 400;
+        color: #444444;
+        font-size: 1.5em;
+        padding-bottom: 2px;
+        &:first-letter {
+            font-weight: 500;
+        }
+        &:first-child {
+            margin-top: 30px;
+        }
+    }
+    p {
+        line-height: 1.75;
+        color: #666666;
+        font-size: 16px;
     }
 }
 
