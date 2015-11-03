@@ -129,9 +129,13 @@ section#product-overview {
     height: auto;
     padding-bottom: 60px;
     img {
-        height: auto;
-        width: 200px;
+        height: 200px;
+        width: auto;
         @extend .center-block;
+        @media all and (-ms-high-contrast: none) {
+            width: auto;
+            max-height: 200px;
+        }
     }
     h2 {
         @extend .section-header;
