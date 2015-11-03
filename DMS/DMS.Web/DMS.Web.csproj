@@ -608,7 +608,7 @@
     <Content Include="Img\gaspro\slider\style\laptop.png" />
     <Content Include="Img\gaspro\slider\style\ms-laptop-style.css" />
     <Content Include="Img\gaspro\slider\style\skin.png" />
-    <Content Include="Img\gastrak\cloud.svg" />
+    <Content Include="Img\gastrak\cloud.png" />
     <Content Include="Img\gastrak\features\accounting.png" />
     <Content Include="Img\gastrak\features\actuals.png" />
     <Content Include="Img\gastrak\features\compliance.png" />
@@ -619,12 +619,12 @@
     <Content Include="Img\gastrak\gastrak-white.svg" />
     <Content Include="Img\gastrak\gastrakheadersomething.jpeg" />
     <Content Include="Img\gastrak\GTO_GA.jpg" />
-    <Content Include="Img\gastrak\implementation.svg" />
+    <Content Include="Img\gastrak\implementation.png" />
     <Content Include="Img\gastrak\slider\GasTrak1.png" />
     <Content Include="Img\gastrak\slider\GasTrak2.png" />
     <Content Include="Img\gastrak\slider\GasTrak3.png" />
     <Content Include="Img\gastrak\tech3.jpg" />
-    <Content Include="Img\gastrak\training.svg" />
+    <Content Include="Img\gastrak\training.png" />
     <Content Include="Img\index\gap-institution.png" />
     <Content Include="Img\index\gap-solution.png" />
     <Content Include="Img\index\m-pipelines.jpg" />

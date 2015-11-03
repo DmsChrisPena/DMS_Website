@@ -129,8 +129,8 @@ section#product-overview {
     height: auto;
     padding-bottom: 60px;
     img {
-        height: auto;
-        width: 200px;
+        height: 200px;
+        width: auto;
         @extend .center-block;
     }
     h2 {
