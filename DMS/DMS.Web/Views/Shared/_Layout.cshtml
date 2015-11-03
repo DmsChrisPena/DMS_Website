@@ -56,7 +56,7 @@
     <div ng-include="'/app/components/navbar/sidenavNavbar.html'"></div>
     <div ng-include="'/app/components/contact/sidenavContactUs.html'"></div>
 
-    <section id="md-footer">
+    <section id="md-footer" ng-show="vm.showFooter" ng-cloak>
         <div class="container" layout="row" layout-wrap>
             <div flex="100" flex-gt-md="33" class="about-dms">
                 <div>

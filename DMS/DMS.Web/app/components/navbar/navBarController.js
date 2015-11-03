@@ -1,10 +1,11 @@
 ﻿(function () {
     angular
         .module("DMSApp")
-        .controller("NavBarController", ['$mdDialog', '$mdSidenav', 'smoothScroll', NavBarController]);
+        .controller("NavBarController", ['$mdDialog', '$mdSidenav', 'smoothScroll', '$timeout', NavBarController]);
 
-    function NavBarController($mdDialog, $mdSidenav, smoothScroll) {
+    function NavBarController($mdDialog, $mdSidenav, smoothScroll, $timeout) {
         var vm = this;
+        vm.showFooter = false;
         var originatorEv;
         vm.openMenu = function ($mdOpenMenu, ev) {
             originatorEv = ev;
@@ -22,6 +23,11 @@
         vm.goToTop = function () {
             smoothScroll.scrollToTop();
         }
+
+        // delay showing the footer for 3 seconds
+        $timeout(function(){
+            vm.showFooter = true;
+        }, 3000);
     }
 
 })();
