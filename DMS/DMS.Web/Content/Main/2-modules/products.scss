@@ -184,3 +184,9 @@ section#product-overview {
     z-index: 100 !important;
     opacity: 1 !important;
 }
+
+.change-cursor { 
+    &:hover {
+        cursor: pointer;
+    }
+}
