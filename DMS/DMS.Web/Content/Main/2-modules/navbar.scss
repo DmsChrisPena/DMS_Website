@@ -17,7 +17,7 @@ md-toolbar {
         height: 55px !important;
     }
     @media (max-width: 370px) {
-        height: 120px !important;
+        height: auto !important;
     }
     width: 100% !important;
     background-color: rgba(#fff, .82) !important;
