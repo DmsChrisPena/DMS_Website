@@ -1,9 +1,4 @@
-﻿<style>
-    md-backdrop {
-        position: fixed;
-    }
-</style>
-<md-sidenav md-component-id="left" class="md-sidenav-left" style="padding: 40px; position: fixed;">
+﻿<md-sidenav md-component-id="left" class="md-sidenav-left" style="padding: 40px; position: fixed;">
     <section style="width: 100%; padding: 0px;" id="contactUs-sidenav" layout="row" layout-wrap ng-controller="contactController as vm">
         <div flex="66">
             <h2 class="section-header" style="text-align: right;">Contact Us</h2>
@@ -51,13 +46,11 @@
                                 <label>Email</label>
                                 <input ng-model="vm.requestInfo.email" type="email" ng-required="true">
                             </md-input-container>
+                            <md-input-container flex="100">
+                                <label>Message</label>
+                                <textarea ng-required="true" ng-model="vm.requestInfo.message" rows="3" columns="5" md-maxlength="1000"></textarea>
+                            </md-input-container>
 </div>
-                        <md-input-container style="text-align: left;">
-                        </md-input-container>
-                        <md-input-container style="text-align: left;">
-                            <label>Message</label>
-                            <textarea ng-required="true" ng-model="vm.requestInfo.message" rows="3" columns="5" md-maxlength="1000"></textarea>
-                        </md-input-container>
                     </form>
                     <p ng-repeat="error in vm.errorRequest" style="text-align: center; color: #F44336; font-size: 14px;">
                         {{error}}
